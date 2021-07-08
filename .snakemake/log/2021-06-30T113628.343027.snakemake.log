@@ -1,0 +1,26 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Job counts:
+	count	jobs
+	1	AlleleAtlas
+	1	ImputeNRP
+	1	ImputeRP
+	1	MergeVCFs
+	1	SNPEff
+	1	all
+	6
+Select jobs to execute...
+
+[Wed Jun 30 11:36:28 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr02.6.vcf.gz
+    output: results/ImputeRP_RP_Chr02.6.vcf.gz
+    jobid: 9
+    wildcards: chr=02, subset=6
+    resources: memory=300G, threads=15
+
+WorkflowError in line 1 of /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/rules/beagle/beagle_ImputeRP.smk:
+'Wildcards' object has no attribute 'cpus'
+  File "/cluster/software/conda-envs/envs/snakemake-5.3.0/lib/python3.6/site-packages/snakemake/executors/__init__.py", line 135, in run_jobs
+  File "/cluster/software/conda-envs/envs/snakemake-5.3.0/lib/python3.6/site-packages/snakemake/executors/__init__.py", line 966, in run

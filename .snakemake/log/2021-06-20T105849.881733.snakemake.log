@@ -1,0 +1,48 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	2	ImputeNRP
+	2	ImputeRP
+	1	MergeVCFs
+	1	PreformatNRP
+	1	PreformatRP
+	1	SNPEff
+	2	SplitVCF
+	1	all
+	11
+Select jobs to execute...
+
+[Sun Jun 20 11:02:17 2021]
+rule PreformatRP:
+    input: results/RenameSamples_Soy775_Chr01.vcf.gz
+    output: results/Preformat_Soy775_Chr01.vcf.gz
+    jobid: 3
+    wildcards: chr=01
+
+Activating conda environment: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/6e3b2aa0
+Terminating processes on user request, this might take some time.
+[Sun Jun 20 11:04:34 2021]
+Error in rule PreformatRP:
+    jobid: 3
+    output: results/Preformat_Soy775_Chr01.vcf.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/6e3b2aa0
+    shell:
+        
+		### Recode hets as missing data. ###
+		bcftools filter -S . -e 'GT="het"' -Ou results/RenameSamples_Soy775_Chr01.vcf.gz | 		### Calculte allele frequency for Alt alleles. ###
+		bcftools +fill-tags -Ou -- -t AF | 		### Remove alleles/positions with AF=0 or where there were no Ref allele calls. ###
+		bcftools view -Q 0.99999 -a -c1 -Ou | 		### Remove "inf" from QUAL column and trailing genotype info in FORMAT column.###
+		bcftools annotate -x QUAL,FORMAT | 		### The asterisk throws an error in SNPEff - replacing with <DEL>. ###
+		awk 'BEGIN{OFS=FS="	"} {gsub("*", "<DEL>", $5); print}' | 		bgzip -l 9 > results/Preformat_Soy775_Chr01.vcf.gz
+
+		### Index vcf file. ###
+		bcftools index --tbi results/Preformat_Soy775_Chr01.vcf.gz
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job PreformatRP since they might be corrupted:
+results/Preformat_Soy775_Chr01.vcf.gz
+Complete log: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/log/2021-06-20T105849.881733.snakemake.log

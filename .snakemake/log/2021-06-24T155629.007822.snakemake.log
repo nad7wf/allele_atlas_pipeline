@@ -1,0 +1,3 @@
+SyntaxError in line 5 of /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/rules/custom/AlleleAtlas.smk:
+invalid syntax
+  File "/storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/workflow/allele_atlas.smk", line 31, in <module>

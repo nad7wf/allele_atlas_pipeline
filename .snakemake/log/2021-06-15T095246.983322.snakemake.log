@@ -1,0 +1,30 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 50
+Job counts:
+	count	jobs
+	2	ImputeNRP
+	1	MergeVCFs
+	1	all
+	4
+Select jobs to execute...
+
+[Tue Jun 15 09:52:47 2021]
+rule ImputeNRP:
+    input: results/SplitVCF_NRP_Chr01.1.vcf.gz, results/ImputeRP_Soy775_Chr01.1.vcf.gz
+    output: results/ImputeNRP_NRP_Chr01.1.vcf.gz
+    jobid: 7
+    wildcards: chr=01, subset=1
+    resources: memory=200G, threads=1
+
+Submitted job 7 with external jobid 'Submitted batch job 22887429'.
+
+[Tue Jun 15 09:52:47 2021]
+rule ImputeNRP:
+    input: results/SplitVCF_NRP_Chr01.2.vcf.gz, results/ImputeRP_Soy775_Chr01.2.vcf.gz
+    output: results/ImputeNRP_NRP_Chr01.2.vcf.gz
+    jobid: 8
+    wildcards: chr=01, subset=2
+    resources: memory=200G, threads=1
+
+Submitted job 8 with external jobid 'Submitted batch job 22887430'.

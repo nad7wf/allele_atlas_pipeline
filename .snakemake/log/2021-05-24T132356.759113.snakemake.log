@@ -1,0 +1,4 @@
+SyntaxError:
+Not all output, log and benchmark files of rule SplitVCF contain the same wildcards. This is crucial though, in order to avoid that two or more jobs write to the same file.
+  File "/storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/workflow/allele_atlas.smk", line 9, in <module>
+  File "/storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/rules/beagle/beagle_SplitVCF.smk", line 11, in <module>

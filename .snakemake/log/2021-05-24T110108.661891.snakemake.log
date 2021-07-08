@@ -1,0 +1,4 @@
+TypeError in line 2 of /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/workflow/allele_atlas.smk:
+join() takes exactly one argument (2 given)
+  File "/storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/workflow/allele_atlas.smk", line 2, in <module>
+  File "/storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/workflow/allele_atlas.smk", line 2, in <listcomp>

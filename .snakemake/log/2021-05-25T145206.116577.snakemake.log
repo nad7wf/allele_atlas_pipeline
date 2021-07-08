@@ -1,0 +1,4 @@
+Building DAG of jobs...
+MissingInputException in line 1 of /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/rules/custom/SubAsterisk.smk:
+Missing input files for rule SubAsterisk:
+resources/remerged_datasets/Soy775NRP/Soy775NRP_01.vcf.gz

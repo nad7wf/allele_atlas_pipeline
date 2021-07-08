@@ -1,0 +1,16 @@
+Building DAG of jobs...
+Creating conda environment envs/custom.yml...
+Downloading and installing remote packages.
+CreateCondaEnvironmentException:
+Could not create conda environment from /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/rules/custom/../../envs/custom.yml:
+Collecting package metadata (repodata.json): ...working... done
+Solving environment: ...working... 
+Found conflicts! Looking for incompatible packages.
+This can take several minutes.  Press CTRL-C to abort.
+failed
+
+ResolvePackageNotFound: 
+  - gsl[version='>=2.6,<2.7.0a0']
+
+
+  File "/cluster/software/conda-envs/envs/snakemake-5.3.0/lib/python3.6/site-packages/snakemake/deployment/conda.py", line 352, in create

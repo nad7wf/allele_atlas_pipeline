@@ -1,0 +1,10 @@
+name: custom
+channels:
+ - conda-forge
+ - bioconda
+ - defaults
+dependencies:
+ - htslib
+ - bcftools
+ - pandas
+ - numpy

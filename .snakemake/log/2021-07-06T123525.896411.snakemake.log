@@ -1,0 +1,19 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Job counts:
+	count	jobs
+	1	ImputeRP
+	1	all
+	2
+Select jobs to execute...
+
+[Tue Jul  6 12:35:26 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr06.30.vcf.gz
+    output: results/ImputeRP_RP_Chr06.30.vcf.gz, results/beagle/ImputeRP_RP_Chr06.30
+    jobid: 7
+    wildcards: chr=06, subset=30
+    resources: memory=190G, threads=15
+
+Submitted job 7 with external jobid 'Submitted batch job 22982367'.

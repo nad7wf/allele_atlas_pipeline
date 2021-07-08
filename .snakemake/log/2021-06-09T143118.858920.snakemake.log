@@ -1,0 +1,18 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 50
+Job counts:
+	count	jobs
+	1	PreformatNRP
+	1	all
+	2
+Select jobs to execute...
+
+[Wed Jun  9 14:31:19 2021]
+rule PreformatNRP:
+    input: resources/NRP/NRP_Chr01.vcf.gz, resources/Soy775/Soy775_Chr01.vcf.gz
+    output: results/PreformatNRP_NRP_Chr01.vcf.gz
+    jobid: 2
+    wildcards: chr=01
+
+Submitted job 2 with external jobid 'Submitted batch job 22873116'.

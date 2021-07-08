@@ -1,0 +1,4 @@
+KeyError in line 9 of /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/rules/beagle/beagle_splitvcf.smk:
+'beagle'
+  File "/storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/workflow/allele_atlas.smk", line 9, in <module>
+  File "/storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/rules/beagle/beagle_splitvcf.smk", line 9, in <module>

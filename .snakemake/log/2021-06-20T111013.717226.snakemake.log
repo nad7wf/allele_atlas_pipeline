@@ -1,0 +1,31 @@
+Building DAG of jobs...
+Job counts:
+	count	jobs
+	2	ImputeNRP
+	2	ImputeRP
+	1	MergeVCFs
+	1	PreformatNRP
+	1	PreformatRP
+	1	SNPEff
+	2	SplitVCF
+	1	all
+	11
+
+[Sun Jun 20 11:11:29 2021]
+rule PreformatRP:
+    input: results/RenameSamples_Soy775_Chr01.vcf.gz
+    output: results/Preformat_Soy775_Chr01.vcf.gz
+    jobid: 3
+    wildcards: chr=01
+
+
+[Sun Jun 20 11:13:26 2021]
+rule PreformatNRP:
+    input: resources/NRP/NRP_Chr01.vcf.gz, results/Preformat_Soy775_Chr01.vcf.gz
+    output: results/Preformat_NRP_Chr01.vcf.gz
+    jobid: 4
+    wildcards: chr=01
+
+
+Terminating processes on user request, this might take some time.
+Complete log: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/log/2021-06-20T111013.717226.snakemake.log

@@ -1,0 +1,33 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 50
+Job counts:
+	count	jobs
+	1	SplitVCF
+	1	all
+	2
+Select jobs to execute...
+
+[Mon May 24 19:19:09 2021]
+rule SplitVCF:
+    input: results/SubAsterisk_KB100_Chr01.vcf.gz
+    output: results/KB100_Chr01.1.vcf.gz
+    log: reports/KB100_Chr01.log
+    jobid: 2
+    wildcards: sample=KB100, chr=Chr01
+
+Submitted job 2 with external jobid 'Submitted batch job 22843733'.
+[Mon May 24 19:25:09 2021]
+Finished job 2.
+1 of 2 steps (50%) done
+Select jobs to execute...
+
+[Mon May 24 19:25:09 2021]
+localrule all:
+    input: results/SubAsterisk_KB100_Chr01.vcf.gz, results/KB100_Chr01.1.vcf.gz
+    jobid: 0
+
+[Mon May 24 19:25:09 2021]
+Finished job 0.
+2 of 2 steps (100%) done
+Complete log: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/log/2021-05-24T191909.482136.snakemake.log

@@ -1,0 +1,32 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 50
+Job counts:
+	count	jobs
+	1	MergeVCFs
+	1	all
+	2
+Select jobs to execute...
+
+[Fri Jun  4 17:10:55 2021]
+rule MergeVCFs:
+    input: results/ImputeRP_Soy775_Chr01.1.vcf.gz, results/ImputeRP_Soy775_Chr01.2.vcf.gz, results/ImputeNRP_NRP_Chr01.1.vcf.gz, results/ImputeNRP_NRP_Chr01.2.vcf.gz, resources/beagle/mergevcf.jar
+    output: results/MergeVCFs_Soy775_Chr01.vcf.gz, results/MergeVCFs_NRP_Chr01.vcf.gz, results/MergeVCFs_Soy775_NRP_Chr01.vcf.gz
+    jobid: 9
+    wildcards: chr=01
+
+Submitted job 9 with external jobid 'Submitted batch job 22867128'.
+[Fri Jun  4 17:14:07 2021]
+Finished job 9.
+1 of 2 steps (50%) done
+Select jobs to execute...
+
+[Fri Jun  4 17:14:07 2021]
+localrule all:
+    input: results/SubAsterisk_Soy775_Chr01.vcf.gz, results/SubAsterisk_NRP_Chr01.vcf.gz, results/SplitVCF_Soy775_Chr01.1.vcf.gz, results/SplitVCF_Soy775_Chr01.2.vcf.gz, results/SplitVCF_NRP_Chr01.1.vcf.gz, results/SplitVCF_NRP_Chr01.2.vcf.gz, results/ImputeRP_Soy775_Chr01.1.vcf.gz, results/ImputeRP_Soy775_Chr01.2.vcf.gz, results/ImputeNRP_NRP_Chr01.1.vcf.gz, results/ImputeNRP_NRP_Chr01.2.vcf.gz, results/MergeVCFs_Soy775_NRP_Chr01.vcf.gz
+    jobid: 0
+
+[Fri Jun  4 17:14:07 2021]
+Finished job 0.
+2 of 2 steps (100%) done
+Complete log: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/log/2021-06-04T171052.699811.snakemake.log

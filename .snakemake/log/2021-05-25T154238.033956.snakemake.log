@@ -1,0 +1,61 @@
+Building DAG of jobs...
+Job counts:
+	count	jobs
+	1	ImputeNRP
+	2	ImputeRP
+	2	SplitVCF
+	2	SubAsterisk
+	1	all
+	8
+
+[Tue May 25 15:42:38 2021]
+rule SubAsterisk:
+    input: resources/Soy775/Soy775_Chr01.vcf.gz
+    output: results/SubAsterisk_Soy775_Chr01.vcf.gz
+    log: reports/SubAsterisk_Soy775_Chr01.log
+    jobid: 1
+    wildcards: id=Soy775, chr=01
+
+
+[Tue May 25 15:42:38 2021]
+rule SubAsterisk:
+    input: resources/NRP/NRP_Chr01.vcf.gz
+    output: results/SubAsterisk_NRP_Chr01.vcf.gz
+    log: reports/SubAsterisk_NRP_Chr01.log
+    jobid: 2
+    wildcards: id=NRP, chr=01
+
+
+[Tue May 25 15:42:38 2021]
+rule SplitVCF:
+    input: results/SubAsterisk_NRP_Chr01.vcf.gz
+    output: results/SplitVCF_NRP_Chr01.1.vcf.gz
+    log: reports/NRP_Chr01.log
+    jobid: 4
+    wildcards: id=NRP, chr=01
+
+
+[Tue May 25 15:42:38 2021]
+rule SplitVCF:
+    input: results/SubAsterisk_Soy775_Chr01.vcf.gz
+    output: results/SplitVCF_Soy775_Chr01.1.vcf.gz
+    log: reports/Soy775_Chr01.log
+    jobid: 3
+    wildcards: id=Soy775, chr=01
+
+
+[Tue May 25 15:42:38 2021]
+rule ImputeRP:
+    input: results/SplitVCF_Soy775_Chr01.1.vcf.gz
+    output: results/ImputeRP_Soy775_Chr01.1.vcf
+    log: reports/ImputeRP_Soy775_Chr01.1.log
+    jobid: 5
+    wildcards: id=Soy775, chr=01, subset=1
+
+RuleException in line 1 of /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/rules/beagle/beagle_ImputeRP.smk:
+'Resources' object has no attribute 'mem'
+  File "/cluster/software/conda-envs/envs/snakemake-5.3.0/lib/python3.6/site-packages/snakemake/executors/__init__.py", line 135, in run_jobs
+  File "/cluster/software/conda-envs/envs/snakemake-5.3.0/lib/python3.6/site-packages/snakemake/executors/__init__.py", line 140, in run
+  File "/cluster/software/conda-envs/envs/snakemake-5.3.0/lib/python3.6/site-packages/snakemake/executors/__init__.py", line 151, in _run
+  File "/cluster/software/conda-envs/envs/snakemake-5.3.0/lib/python3.6/site-packages/snakemake/executors/__init__.py", line 171, in printjob
+  File "/cluster/software/conda-envs/envs/snakemake-5.3.0/lib/python3.6/site-packages/snakemake/executors/__init__.py", line 157, in printjob

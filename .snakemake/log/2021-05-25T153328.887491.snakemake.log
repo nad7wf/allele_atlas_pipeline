@@ -1,0 +1,5 @@
+ValueError in line 15 of /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/workflow/allele_atlas.smk:
+expected '}' before end of string
+  File "/storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/workflow/allele_atlas.smk", line 15, in <module>
+  File "/cluster/software/conda-envs/envs/snakemake-5.3.0/lib/python3.6/string.py", line 194, in vformat
+  File "/cluster/software/conda-envs/envs/snakemake-5.3.0/lib/python3.6/string.py", line 204, in _vformat

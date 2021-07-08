@@ -1,0 +1,46 @@
+__default__:
+  partition: Lewis,hpc5,General
+  time: 0-02:00
+  cpus: 1
+  mem: 1G
+RenameSamples:
+  mem: 30G
+  job-name: RenameSamples
+  output: reports/RenameSamples-%j.slurm.out
+PreformatRP:
+  mem: 30G
+  time: 0-02:00
+  job-name: PreformatRP
+  output: reports/PreformatRP-%j.slurm.out
+PreformatNRP:
+  mem: 30G
+  time: 0-01:00
+  job-name: PreformatNRP
+  output: reports/PreformatNRP-%j.slurm.out
+SplitVCF:
+  mem: 20G
+  job-name: SplitVCF
+  output: reports/SplitVCF-%j.slurm.out
+ImputeRP:
+  time: 0-05:00
+  mem: 50G
+  cpus: 10
+  job-name: ImputeRP
+  output: reports/ImputeRP-%j.slurm.out
+ImputeNRP:
+  mem: 30G
+  job-name: ImputeNRP
+  output: reports/ImputeNRP-%j.slurm.out
+MergeVCFs:
+  mem: 30G
+  job-name: MergeVCFs
+  output: reports/MergeVCFs-%j.slurm.out
+SNPEff:
+  mem: 30G
+  job-name: SNPEff
+  output: reports/SNPEff-%j.slurm.out
+AlleleAtlas:
+  mem: 30G
+  time: 0-04:00
+  job-name: AlleleAtlas
+  output: reports/AlleleAtlas-%j.slurm.out

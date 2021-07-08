@@ -1,0 +1,44 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 50
+Job counts:
+	count	jobs
+	2	RenameSamples
+	1	all
+	3
+Select jobs to execute...
+
+[Sun Jun 20 10:48:06 2021]
+rule RenameSamples:
+    input: resources/Soy775/Soy775_Chr01.vcf.gz, resources/Soy775/Soy775_sample_name_correspondence_file.txt
+    output: results/RenameSamples_Soy775_Chr01.vcf.gz
+    jobid: 1
+    wildcards: id=Soy775, chr=01
+
+Submitted job 1 with external jobid 'Submitted batch job 22907307'.
+
+[Sun Jun 20 10:48:06 2021]
+rule RenameSamples:
+    input: resources/NRP/NRP_Chr01.vcf.gz, resources/NRP/NRP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_NRP_Chr01.vcf.gz
+    jobid: 2
+    wildcards: id=NRP, chr=01
+
+Submitted job 2 with external jobid 'Submitted batch job 22907308'.
+[Sun Jun 20 10:55:36 2021]
+Finished job 2.
+1 of 3 steps (33%) done
+[Sun Jun 20 10:57:07 2021]
+Finished job 1.
+2 of 3 steps (67%) done
+Select jobs to execute...
+
+[Sun Jun 20 10:57:07 2021]
+localrule all:
+    input: results/RenameSamples_Soy775_Chr01.vcf.gz, results/RenameSamples_NRP_Chr01.vcf.gz
+    jobid: 0
+
+[Sun Jun 20 10:57:07 2021]
+Finished job 0.
+3 of 3 steps (100%) done
+Complete log: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/log/2021-06-20T104754.137679.snakemake.log

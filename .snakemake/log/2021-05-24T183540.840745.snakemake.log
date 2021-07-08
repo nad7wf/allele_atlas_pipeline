@@ -1,0 +1,36 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 50
+Job counts:
+	count	jobs
+	1	SubAsterisk
+	1	all
+	2
+Select jobs to execute...
+
+[Mon May 24 18:35:40 2021]
+rule SubAsterisk:
+    input: resources/remerged_datasets/KB100/KB100_Chr01.vcf.gz
+    output: results/SubAsterisk_KB100_Chr01.vcf.gz
+    log: reports/SubAsterisk_KB100_Chr01.log
+    jobid: 1
+    wildcards: sample=KB100, chr=Chr01
+
+Submitted job 1 with external jobid 'Submitted batch job 22843703'.
+[Mon May 24 18:35:50 2021]
+Error in rule SubAsterisk:
+    jobid: 1
+    output: results/SubAsterisk_KB100_Chr01.vcf.gz
+    log: reports/SubAsterisk_KB100_Chr01.log (check log file(s) for error message)
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/77c813de
+    shell:
+        
+		gzip -dc resources/remerged_datasets/KB100/KB100_Chr01.vcf.gz | 		awk "{BEGIN(OFS=FS="\t")} {gsub("*", "<DEL>", \$5); print}" | 		bgzip -l 9 > results/SubAsterisk_KB100_Chr01.vcf.gz 		2> reports/SubAsterisk_KB100_Chr01.log
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22843703
+
+Error executing rule SubAsterisk on cluster (jobid: 1, external: Submitted batch job 22843703, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.sq21tjih/snakejob.SubAsterisk.1.sh). For error details see the cluster log and the log files of the involved rule(s).
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/log/2021-05-24T183540.840745.snakemake.log

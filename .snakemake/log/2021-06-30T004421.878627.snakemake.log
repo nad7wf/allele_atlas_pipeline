@@ -1,0 +1,2865 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Job counts:
+	count	jobs
+	20	AlleleAtlas
+	800	ImputeNRP
+	800	ImputeRP
+	20	MergeVCFs
+	20	PreformatNRP
+	20	PreformatRP
+	40	RenameSamples
+	20	SNPEff
+	40	SplitVCF
+	1	all
+	1781
+Select jobs to execute...
+
+[Wed Jun 30 00:44:24 2021]
+rule RenameSamples:
+    input: resources/RP/RP_Chr13.vcf.gz, resources/RP/RP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_RP_Chr13.vcf.gz
+    jobid: 13
+    wildcards: id=RP, chr=13
+
+Submitted job 13 with external jobid 'Submitted batch job 22958472'.
+
+[Wed Jun 30 00:44:24 2021]
+rule RenameSamples:
+    input: resources/NRP/NRP_Chr08.vcf.gz, resources/NRP/NRP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_NRP_Chr08.vcf.gz
+    jobid: 28
+    wildcards: id=NRP, chr=08
+
+Submitted job 28 with external jobid 'Submitted batch job 22958473'.
+
+[Wed Jun 30 00:44:24 2021]
+rule RenameSamples:
+    input: resources/RP/RP_Chr05.vcf.gz, resources/RP/RP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_RP_Chr05.vcf.gz
+    jobid: 5
+    wildcards: id=RP, chr=05
+
+Submitted job 5 with external jobid 'Submitted batch job 22958474'.
+
+[Wed Jun 30 00:44:24 2021]
+rule RenameSamples:
+    input: resources/NRP/NRP_Chr01.vcf.gz, resources/NRP/NRP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_NRP_Chr01.vcf.gz
+    jobid: 21
+    wildcards: id=NRP, chr=01
+
+Submitted job 21 with external jobid 'Submitted batch job 22958475'.
+
+[Wed Jun 30 00:44:24 2021]
+rule RenameSamples:
+    input: resources/RP/RP_Chr06.vcf.gz, resources/RP/RP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_RP_Chr06.vcf.gz
+    jobid: 6
+    wildcards: id=RP, chr=06
+
+Submitted job 6 with external jobid 'Submitted batch job 22958476'.
+
+[Wed Jun 30 00:44:24 2021]
+rule RenameSamples:
+    input: resources/NRP/NRP_Chr16.vcf.gz, resources/NRP/NRP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_NRP_Chr16.vcf.gz
+    jobid: 36
+    wildcards: id=NRP, chr=16
+
+Submitted job 36 with external jobid 'Submitted batch job 22958477'.
+
+[Wed Jun 30 00:44:24 2021]
+rule RenameSamples:
+    input: resources/RP/RP_Chr14.vcf.gz, resources/RP/RP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_RP_Chr14.vcf.gz
+    jobid: 14
+    wildcards: id=RP, chr=14
+
+Submitted job 14 with external jobid 'Submitted batch job 22958478'.
+
+[Wed Jun 30 00:44:24 2021]
+rule RenameSamples:
+    input: resources/NRP/NRP_Chr09.vcf.gz, resources/NRP/NRP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_NRP_Chr09.vcf.gz
+    jobid: 29
+    wildcards: id=NRP, chr=09
+
+Submitted job 29 with external jobid 'Submitted batch job 22958479'.
+
+[Wed Jun 30 00:44:24 2021]
+rule RenameSamples:
+    input: resources/RP/RP_Chr07.vcf.gz, resources/RP/RP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_RP_Chr07.vcf.gz
+    jobid: 7
+    wildcards: id=RP, chr=07
+
+Submitted job 7 with external jobid 'Submitted batch job 22958480'.
+
+[Wed Jun 30 00:44:24 2021]
+rule RenameSamples:
+    input: resources/NRP/NRP_Chr17.vcf.gz, resources/NRP/NRP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_NRP_Chr17.vcf.gz
+    jobid: 37
+    wildcards: id=NRP, chr=17
+
+Submitted job 37 with external jobid 'Submitted batch job 22958481'.
+
+[Wed Jun 30 00:44:24 2021]
+rule RenameSamples:
+    input: resources/NRP/NRP_Chr02.vcf.gz, resources/NRP/NRP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_NRP_Chr02.vcf.gz
+    jobid: 22
+    wildcards: id=NRP, chr=02
+
+Submitted job 22 with external jobid 'Submitted batch job 22958482'.
+
+[Wed Jun 30 00:44:24 2021]
+rule RenameSamples:
+    input: resources/RP/RP_Chr01.vcf.gz, resources/RP/RP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_RP_Chr01.vcf.gz
+    jobid: 1
+    wildcards: id=RP, chr=01
+
+Submitted job 1 with external jobid 'Submitted batch job 22958483'.
+
+[Wed Jun 30 00:44:24 2021]
+rule RenameSamples:
+    input: resources/RP/RP_Chr15.vcf.gz, resources/RP/RP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_RP_Chr15.vcf.gz
+    jobid: 15
+    wildcards: id=RP, chr=15
+
+Submitted job 15 with external jobid 'Submitted batch job 22958484'.
+
+[Wed Jun 30 00:44:24 2021]
+rule RenameSamples:
+    input: resources/NRP/NRP_Chr10.vcf.gz, resources/NRP/NRP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_NRP_Chr10.vcf.gz
+    jobid: 30
+    wildcards: id=NRP, chr=10
+
+Submitted job 30 with external jobid 'Submitted batch job 22958485'.
+
+[Wed Jun 30 00:44:24 2021]
+rule RenameSamples:
+    input: resources/RP/RP_Chr08.vcf.gz, resources/RP/RP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_RP_Chr08.vcf.gz
+    jobid: 8
+    wildcards: id=RP, chr=08
+
+Submitted job 8 with external jobid 'Submitted batch job 22958486'.
+
+[Wed Jun 30 00:44:25 2021]
+rule RenameSamples:
+    input: resources/NRP/NRP_Chr03.vcf.gz, resources/NRP/NRP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_NRP_Chr03.vcf.gz
+    jobid: 23
+    wildcards: id=NRP, chr=03
+
+Submitted job 23 with external jobid 'Submitted batch job 22958487'.
+
+[Wed Jun 30 00:44:25 2021]
+rule RenameSamples:
+    input: resources/NRP/NRP_Chr18.vcf.gz, resources/NRP/NRP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_NRP_Chr18.vcf.gz
+    jobid: 38
+    wildcards: id=NRP, chr=18
+
+Submitted job 38 with external jobid 'Submitted batch job 22958488'.
+
+[Wed Jun 30 00:44:25 2021]
+rule RenameSamples:
+    input: resources/RP/RP_Chr16.vcf.gz, resources/RP/RP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_RP_Chr16.vcf.gz
+    jobid: 16
+    wildcards: id=RP, chr=16
+
+Submitted job 16 with external jobid 'Submitted batch job 22958489'.
+
+[Wed Jun 30 00:44:25 2021]
+rule RenameSamples:
+    input: resources/NRP/NRP_Chr11.vcf.gz, resources/NRP/NRP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_NRP_Chr11.vcf.gz
+    jobid: 31
+    wildcards: id=NRP, chr=11
+
+Submitted job 31 with external jobid 'Submitted batch job 22958490'.
+
+[Wed Jun 30 00:44:25 2021]
+rule RenameSamples:
+    input: resources/RP/RP_Chr09.vcf.gz, resources/RP/RP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_RP_Chr09.vcf.gz
+    jobid: 9
+    wildcards: id=RP, chr=09
+
+Submitted job 9 with external jobid 'Submitted batch job 22958491'.
+
+[Wed Jun 30 00:44:25 2021]
+rule RenameSamples:
+    input: resources/NRP/NRP_Chr04.vcf.gz, resources/NRP/NRP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_NRP_Chr04.vcf.gz
+    jobid: 24
+    wildcards: id=NRP, chr=04
+
+Submitted job 24 with external jobid 'Submitted batch job 22958492'.
+
+[Wed Jun 30 00:44:25 2021]
+rule RenameSamples:
+    input: resources/NRP/NRP_Chr19.vcf.gz, resources/NRP/NRP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_NRP_Chr19.vcf.gz
+    jobid: 39
+    wildcards: id=NRP, chr=19
+
+Submitted job 39 with external jobid 'Submitted batch job 22958493'.
+
+[Wed Jun 30 00:44:25 2021]
+rule RenameSamples:
+    input: resources/RP/RP_Chr02.vcf.gz, resources/RP/RP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_RP_Chr02.vcf.gz
+    jobid: 2
+    wildcards: id=RP, chr=02
+
+Submitted job 2 with external jobid 'Submitted batch job 22958494'.
+
+[Wed Jun 30 00:44:25 2021]
+rule RenameSamples:
+    input: resources/RP/RP_Chr17.vcf.gz, resources/RP/RP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_RP_Chr17.vcf.gz
+    jobid: 17
+    wildcards: id=RP, chr=17
+
+Submitted job 17 with external jobid 'Submitted batch job 22958495'.
+
+[Wed Jun 30 00:44:25 2021]
+rule RenameSamples:
+    input: resources/NRP/NRP_Chr12.vcf.gz, resources/NRP/NRP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_NRP_Chr12.vcf.gz
+    jobid: 32
+    wildcards: id=NRP, chr=12
+
+Submitted job 32 with external jobid 'Submitted batch job 22958496'.
+
+[Wed Jun 30 00:44:25 2021]
+rule RenameSamples:
+    input: resources/RP/RP_Chr10.vcf.gz, resources/RP/RP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_RP_Chr10.vcf.gz
+    jobid: 10
+    wildcards: id=RP, chr=10
+
+Submitted job 10 with external jobid 'Submitted batch job 22958497'.
+
+[Wed Jun 30 00:44:25 2021]
+rule RenameSamples:
+    input: resources/NRP/NRP_Chr05.vcf.gz, resources/NRP/NRP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_NRP_Chr05.vcf.gz
+    jobid: 25
+    wildcards: id=NRP, chr=05
+
+Submitted job 25 with external jobid 'Submitted batch job 22958498'.
+
+[Wed Jun 30 00:44:25 2021]
+rule RenameSamples:
+    input: resources/NRP/NRP_Chr20.vcf.gz, resources/NRP/NRP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_NRP_Chr20.vcf.gz
+    jobid: 40
+    wildcards: id=NRP, chr=20
+
+Submitted job 40 with external jobid 'Submitted batch job 22958499'.
+
+[Wed Jun 30 00:44:25 2021]
+rule RenameSamples:
+    input: resources/RP/RP_Chr18.vcf.gz, resources/RP/RP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_RP_Chr18.vcf.gz
+    jobid: 18
+    wildcards: id=RP, chr=18
+
+Submitted job 18 with external jobid 'Submitted batch job 22958500'.
+
+[Wed Jun 30 00:44:25 2021]
+rule RenameSamples:
+    input: resources/RP/RP_Chr03.vcf.gz, resources/RP/RP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_RP_Chr03.vcf.gz
+    jobid: 3
+    wildcards: id=RP, chr=03
+
+Submitted job 3 with external jobid 'Submitted batch job 22958501'.
+
+[Wed Jun 30 00:44:25 2021]
+rule RenameSamples:
+    input: resources/NRP/NRP_Chr13.vcf.gz, resources/NRP/NRP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_NRP_Chr13.vcf.gz
+    jobid: 33
+    wildcards: id=NRP, chr=13
+
+Submitted job 33 with external jobid 'Submitted batch job 22958502'.
+
+[Wed Jun 30 00:44:25 2021]
+rule RenameSamples:
+    input: resources/RP/RP_Chr11.vcf.gz, resources/RP/RP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_RP_Chr11.vcf.gz
+    jobid: 11
+    wildcards: id=RP, chr=11
+
+Submitted job 11 with external jobid 'Submitted batch job 22958503'.
+
+[Wed Jun 30 00:44:25 2021]
+rule RenameSamples:
+    input: resources/NRP/NRP_Chr06.vcf.gz, resources/NRP/NRP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_NRP_Chr06.vcf.gz
+    jobid: 26
+    wildcards: id=NRP, chr=06
+
+Submitted job 26 with external jobid 'Submitted batch job 22958504'.
+
+[Wed Jun 30 00:44:25 2021]
+rule RenameSamples:
+    input: resources/RP/RP_Chr04.vcf.gz, resources/RP/RP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_RP_Chr04.vcf.gz
+    jobid: 4
+    wildcards: id=RP, chr=04
+
+Submitted job 4 with external jobid 'Submitted batch job 22958505'.
+
+[Wed Jun 30 00:44:25 2021]
+rule RenameSamples:
+    input: resources/RP/RP_Chr19.vcf.gz, resources/RP/RP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_RP_Chr19.vcf.gz
+    jobid: 19
+    wildcards: id=RP, chr=19
+
+Submitted job 19 with external jobid 'Submitted batch job 22958506'.
+
+[Wed Jun 30 00:44:25 2021]
+rule RenameSamples:
+    input: resources/NRP/NRP_Chr14.vcf.gz, resources/NRP/NRP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_NRP_Chr14.vcf.gz
+    jobid: 34
+    wildcards: id=NRP, chr=14
+
+Submitted job 34 with external jobid 'Submitted batch job 22958507'.
+
+[Wed Jun 30 00:44:25 2021]
+rule RenameSamples:
+    input: resources/RP/RP_Chr12.vcf.gz, resources/RP/RP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_RP_Chr12.vcf.gz
+    jobid: 12
+    wildcards: id=RP, chr=12
+
+Submitted job 12 with external jobid 'Submitted batch job 22958508'.
+
+[Wed Jun 30 00:44:25 2021]
+rule RenameSamples:
+    input: resources/NRP/NRP_Chr07.vcf.gz, resources/NRP/NRP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_NRP_Chr07.vcf.gz
+    jobid: 27
+    wildcards: id=NRP, chr=07
+
+Submitted job 27 with external jobid 'Submitted batch job 22958509'.
+
+[Wed Jun 30 00:44:25 2021]
+rule RenameSamples:
+    input: resources/NRP/NRP_Chr15.vcf.gz, resources/NRP/NRP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_NRP_Chr15.vcf.gz
+    jobid: 35
+    wildcards: id=NRP, chr=15
+
+Submitted job 35 with external jobid 'Submitted batch job 22958510'.
+
+[Wed Jun 30 00:44:25 2021]
+rule RenameSamples:
+    input: resources/RP/RP_Chr20.vcf.gz, resources/RP/RP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_RP_Chr20.vcf.gz
+    jobid: 20
+    wildcards: id=RP, chr=20
+
+Submitted job 20 with external jobid 'Submitted batch job 22958511'.
+[Wed Jun 30 00:48:05 2021]
+Finished job 31.
+1 of 1781 steps (0.06%) done
+[Wed Jun 30 00:48:31 2021]
+Finished job 37.
+2 of 1781 steps (0.11%) done
+[Wed Jun 30 00:48:32 2021]
+Finished job 22.
+3 of 1781 steps (0.17%) done
+[Wed Jun 30 00:49:10 2021]
+Finished job 29.
+4 of 1781 steps (0.22%) done
+[Wed Jun 30 00:49:23 2021]
+Finished job 28.
+5 of 1781 steps (0.28%) done
+[Wed Jun 30 00:49:23 2021]
+Finished job 36.
+6 of 1781 steps (0.34%) done
+[Wed Jun 30 00:49:49 2021]
+Finished job 21.
+7 of 1781 steps (0.39%) done
+[Wed Jun 30 00:49:50 2021]
+Finished job 23.
+8 of 1781 steps (0.45%) done
+[Wed Jun 30 00:49:50 2021]
+Finished job 39.
+9 of 1781 steps (0.51%) done
+[Wed Jun 30 00:50:16 2021]
+Finished job 24.
+10 of 1781 steps (0.56%) done
+[Wed Jun 30 00:50:28 2021]
+Finished job 30.
+11 of 1781 steps (0.62%) done
+[Wed Jun 30 00:51:30 2021]
+Finished job 38.
+12 of 1781 steps (0.67%) done
+[Wed Jun 30 00:52:19 2021]
+Finished job 32.
+13 of 1781 steps (0.73%) done
+[Wed Jun 30 00:52:55 2021]
+Finished job 25.
+14 of 1781 steps (0.79%) done
+[Wed Jun 30 00:54:07 2021]
+Finished job 2.
+15 of 1781 steps (0.84%) done
+Select jobs to execute...
+[Wed Jun 30 00:54:07 2021]
+Finished job 40.
+16 of 1781 steps (0.90%) done
+
+[Wed Jun 30 00:54:07 2021]
+rule PreformatRP:
+    input: results/RenameSamples_RP_Chr02.vcf.gz
+    output: results/Preformat_RP_Chr02.vcf.gz
+    jobid: 42
+    wildcards: chr=02
+
+Submitted job 42 with external jobid 'Submitted batch job 22958518'.
+[Wed Jun 30 00:54:19 2021]
+Finished job 33.
+17 of 1781 steps (0.95%) done
+[Wed Jun 30 00:55:06 2021]
+Finished job 16.
+18 of 1781 steps (1%) done
+Select jobs to execute...
+
+[Wed Jun 30 00:55:06 2021]
+rule PreformatRP:
+    input: results/RenameSamples_RP_Chr16.vcf.gz
+    output: results/Preformat_RP_Chr16.vcf.gz
+    jobid: 56
+    wildcards: chr=16
+
+Submitted job 56 with external jobid 'Submitted batch job 22958520'.
+[Wed Jun 30 00:55:55 2021]
+Finished job 26.
+19 of 1781 steps (1%) done
+[Wed Jun 30 00:56:43 2021]
+Finished job 11.
+20 of 1781 steps (1%) done
+Select jobs to execute...
+
+[Wed Jun 30 00:56:43 2021]
+rule PreformatRP:
+    input: results/RenameSamples_RP_Chr11.vcf.gz
+    output: results/Preformat_RP_Chr11.vcf.gz
+    jobid: 51
+    wildcards: chr=11
+
+Submitted job 51 with external jobid 'Submitted batch job 22958522'.
+[Wed Jun 30 00:56:54 2021]
+Finished job 14.
+21 of 1781 steps (1%) done
+Select jobs to execute...
+
+[Wed Jun 30 00:56:54 2021]
+rule PreformatRP:
+    input: results/RenameSamples_RP_Chr14.vcf.gz
+    output: results/Preformat_RP_Chr14.vcf.gz
+    jobid: 54
+    wildcards: chr=14
+
+Submitted job 54 with external jobid 'Submitted batch job 22958524'.
+[Wed Jun 30 00:57:18 2021]
+Finished job 1.
+22 of 1781 steps (1%) done
+Select jobs to execute...
+
+[Wed Jun 30 00:57:18 2021]
+rule PreformatRP:
+    input: results/RenameSamples_RP_Chr01.vcf.gz
+    output: results/Preformat_RP_Chr01.vcf.gz
+    jobid: 41
+    wildcards: chr=01
+
+Submitted job 41 with external jobid 'Submitted batch job 22958525'.
+[Wed Jun 30 00:57:19 2021]
+Finished job 9.
+23 of 1781 steps (1%) done
+Select jobs to execute...
+[Wed Jun 30 00:57:19 2021]
+Finished job 34.
+24 of 1781 steps (1%) done
+
+[Wed Jun 30 00:57:19 2021]
+rule PreformatRP:
+    input: results/RenameSamples_RP_Chr09.vcf.gz
+    output: results/Preformat_RP_Chr09.vcf.gz
+    jobid: 49
+    wildcards: chr=09
+
+Submitted job 49 with external jobid 'Submitted batch job 22958526'.
+[Wed Jun 30 00:57:54 2021]
+Finished job 13.
+25 of 1781 steps (1%) done
+Select jobs to execute...
+
+[Wed Jun 30 00:57:54 2021]
+rule PreformatRP:
+    input: results/RenameSamples_RP_Chr13.vcf.gz
+    output: results/Preformat_RP_Chr13.vcf.gz
+    jobid: 53
+    wildcards: chr=13
+
+Submitted job 53 with external jobid 'Submitted batch job 22958527'.
+[Wed Jun 30 00:58:18 2021]
+Finished job 6.
+26 of 1781 steps (1%) done
+Select jobs to execute...
+
+[Wed Jun 30 00:58:18 2021]
+rule PreformatRP:
+    input: results/RenameSamples_RP_Chr06.vcf.gz
+    output: results/Preformat_RP_Chr06.vcf.gz
+    jobid: 46
+    wildcards: chr=06
+
+Submitted job 46 with external jobid 'Submitted batch job 22958528'.
+[Wed Jun 30 00:58:31 2021]
+Finished job 27.
+27 of 1781 steps (2%) done
+[Wed Jun 30 00:58:55 2021]
+Finished job 15.
+28 of 1781 steps (2%) done
+Select jobs to execute...
+
+[Wed Jun 30 00:58:55 2021]
+rule PreformatRP:
+    input: results/RenameSamples_RP_Chr15.vcf.gz
+    output: results/Preformat_RP_Chr15.vcf.gz
+    jobid: 55
+    wildcards: chr=15
+
+Submitted job 55 with external jobid 'Submitted batch job 22958529'.
+[Wed Jun 30 00:59:43 2021]
+Finished job 17.
+29 of 1781 steps (2%) done
+Select jobs to execute...
+
+[Wed Jun 30 00:59:43 2021]
+rule PreformatRP:
+    input: results/RenameSamples_RP_Chr17.vcf.gz
+    output: results/Preformat_RP_Chr17.vcf.gz
+    jobid: 57
+    wildcards: chr=17
+
+Submitted job 57 with external jobid 'Submitted batch job 22958530'.
+[Wed Jun 30 01:00:07 2021]
+Finished job 8.
+30 of 1781 steps (2%) done
+Select jobs to execute...
+[Wed Jun 30 01:00:07 2021]
+Finished job 10.
+31 of 1781 steps (2%) done
+
+[Wed Jun 30 01:00:07 2021]
+rule PreformatRP:
+    input: results/RenameSamples_RP_Chr08.vcf.gz
+    output: results/Preformat_RP_Chr08.vcf.gz
+    jobid: 48
+    wildcards: chr=08
+
+Submitted job 48 with external jobid 'Submitted batch job 22958531'.
+Select jobs to execute...
+
+[Wed Jun 30 01:00:08 2021]
+rule PreformatRP:
+    input: results/RenameSamples_RP_Chr10.vcf.gz
+    output: results/Preformat_RP_Chr10.vcf.gz
+    jobid: 50
+    wildcards: chr=10
+
+Submitted job 50 with external jobid 'Submitted batch job 22958532'.
+[Wed Jun 30 01:01:32 2021]
+Finished job 7.
+32 of 1781 steps (2%) done
+Select jobs to execute...
+
+[Wed Jun 30 01:01:32 2021]
+rule PreformatRP:
+    input: results/RenameSamples_RP_Chr07.vcf.gz
+    output: results/Preformat_RP_Chr07.vcf.gz
+    jobid: 47
+    wildcards: chr=07
+
+Submitted job 47 with external jobid 'Submitted batch job 22958533'.
+[Wed Jun 30 01:02:20 2021]
+Finished job 3.
+33 of 1781 steps (2%) done
+Select jobs to execute...
+[Wed Jun 30 01:02:20 2021]
+Finished job 35.
+34 of 1781 steps (2%) done
+
+[Wed Jun 30 01:02:20 2021]
+rule PreformatRP:
+    input: results/RenameSamples_RP_Chr03.vcf.gz
+    output: results/Preformat_RP_Chr03.vcf.gz
+    jobid: 43
+    wildcards: chr=03
+
+Submitted job 43 with external jobid 'Submitted batch job 22958534'.
+[Wed Jun 30 01:02:56 2021]
+Finished job 12.
+35 of 1781 steps (2%) done
+Select jobs to execute...
+
+[Wed Jun 30 01:02:56 2021]
+rule PreformatRP:
+    input: results/RenameSamples_RP_Chr12.vcf.gz
+    output: results/Preformat_RP_Chr12.vcf.gz
+    jobid: 52
+    wildcards: chr=12
+
+Submitted job 52 with external jobid 'Submitted batch job 22958535'.
+[Wed Jun 30 01:03:20 2021]
+Finished job 19.
+36 of 1781 steps (2%) done
+Select jobs to execute...
+
+[Wed Jun 30 01:03:20 2021]
+rule PreformatRP:
+    input: results/RenameSamples_RP_Chr19.vcf.gz
+    output: results/Preformat_RP_Chr19.vcf.gz
+    jobid: 59
+    wildcards: chr=19
+
+Submitted job 59 with external jobid 'Submitted batch job 22958536'.
+[Wed Jun 30 01:03:56 2021]
+Finished job 51.
+37 of 1781 steps (2%) done
+Select jobs to execute...
+
+[Wed Jun 30 01:03:56 2021]
+rule PreformatNRP:
+    input: results/RenameSamples_NRP_Chr11.vcf.gz, results/Preformat_RP_Chr11.vcf.gz
+    output: results/Preformat_NRP_Chr11.vcf.gz
+    jobid: 71
+    wildcards: chr=11
+
+Submitted job 71 with external jobid 'Submitted batch job 22958537'.
+
+[Wed Jun 30 01:03:56 2021]
+rule SplitVCF:
+    input: results/Preformat_RP_Chr11.vcf.gz, resources/beagle/splitvcf.jar
+    output: results/SplitVCF_RP_Chr11.1.vcf.gz, results/SplitVCF_RP_Chr11.2.vcf.gz, results/SplitVCF_RP_Chr11.3.vcf.gz, results/SplitVCF_RP_Chr11.4.vcf.gz, results/SplitVCF_RP_Chr11.5.vcf.gz, results/SplitVCF_RP_Chr11.6.vcf.gz, results/SplitVCF_RP_Chr11.7.vcf.gz, results/SplitVCF_RP_Chr11.8.vcf.gz, results/SplitVCF_RP_Chr11.9.vcf.gz, results/SplitVCF_RP_Chr11.10.vcf.gz, results/SplitVCF_RP_Chr11.11.vcf.gz, results/SplitVCF_RP_Chr11.12.vcf.gz, results/SplitVCF_RP_Chr11.13.vcf.gz, results/SplitVCF_RP_Chr11.14.vcf.gz, results/SplitVCF_RP_Chr11.15.vcf.gz, results/SplitVCF_RP_Chr11.16.vcf.gz, results/SplitVCF_RP_Chr11.17.vcf.gz, results/SplitVCF_RP_Chr11.18.vcf.gz, results/SplitVCF_RP_Chr11.19.vcf.gz, results/SplitVCF_RP_Chr11.20.vcf.gz, results/SplitVCF_RP_Chr11.21.vcf.gz, results/SplitVCF_RP_Chr11.22.vcf.gz, results/SplitVCF_RP_Chr11.23.vcf.gz, results/SplitVCF_RP_Chr11.24.vcf.gz, results/SplitVCF_RP_Chr11.25.vcf.gz, results/SplitVCF_RP_Chr11.26.vcf.gz, results/SplitVCF_RP_Chr11.27.vcf.gz, results/SplitVCF_RP_Chr11.28.vcf.gz, results/SplitVCF_RP_Chr11.29.vcf.gz, results/SplitVCF_RP_Chr11.30.vcf.gz, results/SplitVCF_RP_Chr11.31.vcf.gz, results/SplitVCF_RP_Chr11.32.vcf.gz, results/SplitVCF_RP_Chr11.33.vcf.gz, results/SplitVCF_RP_Chr11.34.vcf.gz, results/SplitVCF_RP_Chr11.35.vcf.gz, results/SplitVCF_RP_Chr11.36.vcf.gz, results/SplitVCF_RP_Chr11.37.vcf.gz, results/SplitVCF_RP_Chr11.38.vcf.gz, results/SplitVCF_RP_Chr11.39.vcf.gz, results/SplitVCF_RP_Chr11.40.vcf.gz
+    jobid: 91
+    wildcards: id=RP, chr=11
+
+Submitted job 91 with external jobid 'Submitted batch job 22958538'.
+[Wed Jun 30 01:04:32 2021]
+Finished job 42.
+38 of 1781 steps (2%) done
+Select jobs to execute...
+[Wed Jun 30 01:04:32 2021]
+Finished job 20.
+39 of 1781 steps (2%) done
+
+[Wed Jun 30 01:04:32 2021]
+rule SplitVCF:
+    input: results/Preformat_RP_Chr02.vcf.gz, resources/beagle/splitvcf.jar
+    output: results/SplitVCF_RP_Chr02.1.vcf.gz, results/SplitVCF_RP_Chr02.2.vcf.gz, results/SplitVCF_RP_Chr02.3.vcf.gz, results/SplitVCF_RP_Chr02.4.vcf.gz, results/SplitVCF_RP_Chr02.5.vcf.gz, results/SplitVCF_RP_Chr02.6.vcf.gz, results/SplitVCF_RP_Chr02.7.vcf.gz, results/SplitVCF_RP_Chr02.8.vcf.gz, results/SplitVCF_RP_Chr02.9.vcf.gz, results/SplitVCF_RP_Chr02.10.vcf.gz, results/SplitVCF_RP_Chr02.11.vcf.gz, results/SplitVCF_RP_Chr02.12.vcf.gz, results/SplitVCF_RP_Chr02.13.vcf.gz, results/SplitVCF_RP_Chr02.14.vcf.gz, results/SplitVCF_RP_Chr02.15.vcf.gz, results/SplitVCF_RP_Chr02.16.vcf.gz, results/SplitVCF_RP_Chr02.17.vcf.gz, results/SplitVCF_RP_Chr02.18.vcf.gz, results/SplitVCF_RP_Chr02.19.vcf.gz, results/SplitVCF_RP_Chr02.20.vcf.gz, results/SplitVCF_RP_Chr02.21.vcf.gz, results/SplitVCF_RP_Chr02.22.vcf.gz, results/SplitVCF_RP_Chr02.23.vcf.gz, results/SplitVCF_RP_Chr02.24.vcf.gz, results/SplitVCF_RP_Chr02.25.vcf.gz, results/SplitVCF_RP_Chr02.26.vcf.gz, results/SplitVCF_RP_Chr02.27.vcf.gz, results/SplitVCF_RP_Chr02.28.vcf.gz, results/SplitVCF_RP_Chr02.29.vcf.gz, results/SplitVCF_RP_Chr02.30.vcf.gz, results/SplitVCF_RP_Chr02.31.vcf.gz, results/SplitVCF_RP_Chr02.32.vcf.gz, results/SplitVCF_RP_Chr02.33.vcf.gz, results/SplitVCF_RP_Chr02.34.vcf.gz, results/SplitVCF_RP_Chr02.35.vcf.gz, results/SplitVCF_RP_Chr02.36.vcf.gz, results/SplitVCF_RP_Chr02.37.vcf.gz, results/SplitVCF_RP_Chr02.38.vcf.gz, results/SplitVCF_RP_Chr02.39.vcf.gz, results/SplitVCF_RP_Chr02.40.vcf.gz
+    jobid: 82
+    wildcards: id=RP, chr=02
+
+Submitted job 82 with external jobid 'Submitted batch job 22958539'.
+
+[Wed Jun 30 01:04:32 2021]
+rule PreformatNRP:
+    input: results/RenameSamples_NRP_Chr02.vcf.gz, results/Preformat_RP_Chr02.vcf.gz
+    output: results/Preformat_NRP_Chr02.vcf.gz
+    jobid: 62
+    wildcards: chr=02
+
+Submitted job 62 with external jobid 'Submitted batch job 22958540'.
+Select jobs to execute...
+
+[Wed Jun 30 01:04:32 2021]
+rule PreformatRP:
+    input: results/RenameSamples_RP_Chr20.vcf.gz
+    output: results/Preformat_RP_Chr20.vcf.gz
+    jobid: 60
+    wildcards: chr=20
+
+Submitted job 60 with external jobid 'Submitted batch job 22958541'.
+[Wed Jun 30 01:07:08 2021]
+Finished job 56.
+40 of 1781 steps (2%) done
+Select jobs to execute...
+
+[Wed Jun 30 01:07:08 2021]
+rule SplitVCF:
+    input: results/Preformat_RP_Chr16.vcf.gz, resources/beagle/splitvcf.jar
+    output: results/SplitVCF_RP_Chr16.1.vcf.gz, results/SplitVCF_RP_Chr16.2.vcf.gz, results/SplitVCF_RP_Chr16.3.vcf.gz, results/SplitVCF_RP_Chr16.4.vcf.gz, results/SplitVCF_RP_Chr16.5.vcf.gz, results/SplitVCF_RP_Chr16.6.vcf.gz, results/SplitVCF_RP_Chr16.7.vcf.gz, results/SplitVCF_RP_Chr16.8.vcf.gz, results/SplitVCF_RP_Chr16.9.vcf.gz, results/SplitVCF_RP_Chr16.10.vcf.gz, results/SplitVCF_RP_Chr16.11.vcf.gz, results/SplitVCF_RP_Chr16.12.vcf.gz, results/SplitVCF_RP_Chr16.13.vcf.gz, results/SplitVCF_RP_Chr16.14.vcf.gz, results/SplitVCF_RP_Chr16.15.vcf.gz, results/SplitVCF_RP_Chr16.16.vcf.gz, results/SplitVCF_RP_Chr16.17.vcf.gz, results/SplitVCF_RP_Chr16.18.vcf.gz, results/SplitVCF_RP_Chr16.19.vcf.gz, results/SplitVCF_RP_Chr16.20.vcf.gz, results/SplitVCF_RP_Chr16.21.vcf.gz, results/SplitVCF_RP_Chr16.22.vcf.gz, results/SplitVCF_RP_Chr16.23.vcf.gz, results/SplitVCF_RP_Chr16.24.vcf.gz, results/SplitVCF_RP_Chr16.25.vcf.gz, results/SplitVCF_RP_Chr16.26.vcf.gz, results/SplitVCF_RP_Chr16.27.vcf.gz, results/SplitVCF_RP_Chr16.28.vcf.gz, results/SplitVCF_RP_Chr16.29.vcf.gz, results/SplitVCF_RP_Chr16.30.vcf.gz, results/SplitVCF_RP_Chr16.31.vcf.gz, results/SplitVCF_RP_Chr16.32.vcf.gz, results/SplitVCF_RP_Chr16.33.vcf.gz, results/SplitVCF_RP_Chr16.34.vcf.gz, results/SplitVCF_RP_Chr16.35.vcf.gz, results/SplitVCF_RP_Chr16.36.vcf.gz, results/SplitVCF_RP_Chr16.37.vcf.gz, results/SplitVCF_RP_Chr16.38.vcf.gz, results/SplitVCF_RP_Chr16.39.vcf.gz, results/SplitVCF_RP_Chr16.40.vcf.gz
+    jobid: 96
+    wildcards: id=RP, chr=16
+
+Submitted job 96 with external jobid 'Submitted batch job 22958543'.
+
+[Wed Jun 30 01:07:08 2021]
+rule PreformatNRP:
+    input: results/RenameSamples_NRP_Chr16.vcf.gz, results/Preformat_RP_Chr16.vcf.gz
+    output: results/Preformat_NRP_Chr16.vcf.gz
+    jobid: 76
+    wildcards: chr=16
+
+Submitted job 76 with external jobid 'Submitted batch job 22958544'.
+[Wed Jun 30 01:07:57 2021]
+Finished job 71.
+41 of 1781 steps (2%) done
+Select jobs to execute...
+
+[Wed Jun 30 01:07:57 2021]
+rule SplitVCF:
+    input: results/Preformat_NRP_Chr11.vcf.gz, resources/beagle/splitvcf.jar
+    output: results/SplitVCF_NRP_Chr11.1.vcf.gz, results/SplitVCF_NRP_Chr11.2.vcf.gz, results/SplitVCF_NRP_Chr11.3.vcf.gz, results/SplitVCF_NRP_Chr11.4.vcf.gz, results/SplitVCF_NRP_Chr11.5.vcf.gz, results/SplitVCF_NRP_Chr11.6.vcf.gz, results/SplitVCF_NRP_Chr11.7.vcf.gz, results/SplitVCF_NRP_Chr11.8.vcf.gz, results/SplitVCF_NRP_Chr11.9.vcf.gz, results/SplitVCF_NRP_Chr11.10.vcf.gz, results/SplitVCF_NRP_Chr11.11.vcf.gz, results/SplitVCF_NRP_Chr11.12.vcf.gz, results/SplitVCF_NRP_Chr11.13.vcf.gz, results/SplitVCF_NRP_Chr11.14.vcf.gz, results/SplitVCF_NRP_Chr11.15.vcf.gz, results/SplitVCF_NRP_Chr11.16.vcf.gz, results/SplitVCF_NRP_Chr11.17.vcf.gz, results/SplitVCF_NRP_Chr11.18.vcf.gz, results/SplitVCF_NRP_Chr11.19.vcf.gz, results/SplitVCF_NRP_Chr11.20.vcf.gz, results/SplitVCF_NRP_Chr11.21.vcf.gz, results/SplitVCF_NRP_Chr11.22.vcf.gz, results/SplitVCF_NRP_Chr11.23.vcf.gz, results/SplitVCF_NRP_Chr11.24.vcf.gz, results/SplitVCF_NRP_Chr11.25.vcf.gz, results/SplitVCF_NRP_Chr11.26.vcf.gz, results/SplitVCF_NRP_Chr11.27.vcf.gz, results/SplitVCF_NRP_Chr11.28.vcf.gz, results/SplitVCF_NRP_Chr11.29.vcf.gz, results/SplitVCF_NRP_Chr11.30.vcf.gz, results/SplitVCF_NRP_Chr11.31.vcf.gz, results/SplitVCF_NRP_Chr11.32.vcf.gz, results/SplitVCF_NRP_Chr11.33.vcf.gz, results/SplitVCF_NRP_Chr11.34.vcf.gz, results/SplitVCF_NRP_Chr11.35.vcf.gz, results/SplitVCF_NRP_Chr11.36.vcf.gz, results/SplitVCF_NRP_Chr11.37.vcf.gz, results/SplitVCF_NRP_Chr11.38.vcf.gz, results/SplitVCF_NRP_Chr11.39.vcf.gz, results/SplitVCF_NRP_Chr11.40.vcf.gz
+    jobid: 111
+    wildcards: id=NRP, chr=11
+
+Submitted job 111 with external jobid 'Submitted batch job 22958545'.
+[Wed Jun 30 01:08:20 2021]
+Finished job 49.
+42 of 1781 steps (2%) done
+Select jobs to execute...
+
+[Wed Jun 30 01:08:20 2021]
+rule PreformatNRP:
+    input: results/RenameSamples_NRP_Chr09.vcf.gz, results/Preformat_RP_Chr09.vcf.gz
+    output: results/Preformat_NRP_Chr09.vcf.gz
+    jobid: 69
+    wildcards: chr=09
+
+Submitted job 69 with external jobid 'Submitted batch job 22958546'.
+
+[Wed Jun 30 01:08:20 2021]
+rule SplitVCF:
+    input: results/Preformat_RP_Chr09.vcf.gz, resources/beagle/splitvcf.jar
+    output: results/SplitVCF_RP_Chr09.1.vcf.gz, results/SplitVCF_RP_Chr09.2.vcf.gz, results/SplitVCF_RP_Chr09.3.vcf.gz, results/SplitVCF_RP_Chr09.4.vcf.gz, results/SplitVCF_RP_Chr09.5.vcf.gz, results/SplitVCF_RP_Chr09.6.vcf.gz, results/SplitVCF_RP_Chr09.7.vcf.gz, results/SplitVCF_RP_Chr09.8.vcf.gz, results/SplitVCF_RP_Chr09.9.vcf.gz, results/SplitVCF_RP_Chr09.10.vcf.gz, results/SplitVCF_RP_Chr09.11.vcf.gz, results/SplitVCF_RP_Chr09.12.vcf.gz, results/SplitVCF_RP_Chr09.13.vcf.gz, results/SplitVCF_RP_Chr09.14.vcf.gz, results/SplitVCF_RP_Chr09.15.vcf.gz, results/SplitVCF_RP_Chr09.16.vcf.gz, results/SplitVCF_RP_Chr09.17.vcf.gz, results/SplitVCF_RP_Chr09.18.vcf.gz, results/SplitVCF_RP_Chr09.19.vcf.gz, results/SplitVCF_RP_Chr09.20.vcf.gz, results/SplitVCF_RP_Chr09.21.vcf.gz, results/SplitVCF_RP_Chr09.22.vcf.gz, results/SplitVCF_RP_Chr09.23.vcf.gz, results/SplitVCF_RP_Chr09.24.vcf.gz, results/SplitVCF_RP_Chr09.25.vcf.gz, results/SplitVCF_RP_Chr09.26.vcf.gz, results/SplitVCF_RP_Chr09.27.vcf.gz, results/SplitVCF_RP_Chr09.28.vcf.gz, results/SplitVCF_RP_Chr09.29.vcf.gz, results/SplitVCF_RP_Chr09.30.vcf.gz, results/SplitVCF_RP_Chr09.31.vcf.gz, results/SplitVCF_RP_Chr09.32.vcf.gz, results/SplitVCF_RP_Chr09.33.vcf.gz, results/SplitVCF_RP_Chr09.34.vcf.gz, results/SplitVCF_RP_Chr09.35.vcf.gz, results/SplitVCF_RP_Chr09.36.vcf.gz, results/SplitVCF_RP_Chr09.37.vcf.gz, results/SplitVCF_RP_Chr09.38.vcf.gz, results/SplitVCF_RP_Chr09.39.vcf.gz, results/SplitVCF_RP_Chr09.40.vcf.gz
+    jobid: 89
+    wildcards: id=RP, chr=09
+
+Submitted job 89 with external jobid 'Submitted batch job 22958547'.
+[Wed Jun 30 01:08:56 2021]
+Finished job 57.
+43 of 1781 steps (2%) done
+Select jobs to execute...
+[Wed Jun 30 01:08:56 2021]
+Finished job 54.
+44 of 1781 steps (2%) done
+
+[Wed Jun 30 01:08:56 2021]
+rule SplitVCF:
+    input: results/Preformat_RP_Chr17.vcf.gz, resources/beagle/splitvcf.jar
+    output: results/SplitVCF_RP_Chr17.1.vcf.gz, results/SplitVCF_RP_Chr17.2.vcf.gz, results/SplitVCF_RP_Chr17.3.vcf.gz, results/SplitVCF_RP_Chr17.4.vcf.gz, results/SplitVCF_RP_Chr17.5.vcf.gz, results/SplitVCF_RP_Chr17.6.vcf.gz, results/SplitVCF_RP_Chr17.7.vcf.gz, results/SplitVCF_RP_Chr17.8.vcf.gz, results/SplitVCF_RP_Chr17.9.vcf.gz, results/SplitVCF_RP_Chr17.10.vcf.gz, results/SplitVCF_RP_Chr17.11.vcf.gz, results/SplitVCF_RP_Chr17.12.vcf.gz, results/SplitVCF_RP_Chr17.13.vcf.gz, results/SplitVCF_RP_Chr17.14.vcf.gz, results/SplitVCF_RP_Chr17.15.vcf.gz, results/SplitVCF_RP_Chr17.16.vcf.gz, results/SplitVCF_RP_Chr17.17.vcf.gz, results/SplitVCF_RP_Chr17.18.vcf.gz, results/SplitVCF_RP_Chr17.19.vcf.gz, results/SplitVCF_RP_Chr17.20.vcf.gz, results/SplitVCF_RP_Chr17.21.vcf.gz, results/SplitVCF_RP_Chr17.22.vcf.gz, results/SplitVCF_RP_Chr17.23.vcf.gz, results/SplitVCF_RP_Chr17.24.vcf.gz, results/SplitVCF_RP_Chr17.25.vcf.gz, results/SplitVCF_RP_Chr17.26.vcf.gz, results/SplitVCF_RP_Chr17.27.vcf.gz, results/SplitVCF_RP_Chr17.28.vcf.gz, results/SplitVCF_RP_Chr17.29.vcf.gz, results/SplitVCF_RP_Chr17.30.vcf.gz, results/SplitVCF_RP_Chr17.31.vcf.gz, results/SplitVCF_RP_Chr17.32.vcf.gz, results/SplitVCF_RP_Chr17.33.vcf.gz, results/SplitVCF_RP_Chr17.34.vcf.gz, results/SplitVCF_RP_Chr17.35.vcf.gz, results/SplitVCF_RP_Chr17.36.vcf.gz, results/SplitVCF_RP_Chr17.37.vcf.gz, results/SplitVCF_RP_Chr17.38.vcf.gz, results/SplitVCF_RP_Chr17.39.vcf.gz, results/SplitVCF_RP_Chr17.40.vcf.gz
+    jobid: 97
+    wildcards: id=RP, chr=17
+
+Submitted job 97 with external jobid 'Submitted batch job 22958548'.
+
+[Wed Jun 30 01:08:56 2021]
+rule PreformatNRP:
+    input: results/RenameSamples_NRP_Chr17.vcf.gz, results/Preformat_RP_Chr17.vcf.gz
+    output: results/Preformat_NRP_Chr17.vcf.gz
+    jobid: 77
+    wildcards: chr=17
+
+Submitted job 77 with external jobid 'Submitted batch job 22958549'.
+Select jobs to execute...
+
+[Wed Jun 30 01:08:56 2021]
+rule PreformatNRP:
+    input: results/RenameSamples_NRP_Chr14.vcf.gz, results/Preformat_RP_Chr14.vcf.gz
+    output: results/Preformat_NRP_Chr14.vcf.gz
+    jobid: 74
+    wildcards: chr=14
+
+Submitted job 74 with external jobid 'Submitted batch job 22958550'.
+
+[Wed Jun 30 01:08:56 2021]
+rule SplitVCF:
+    input: results/Preformat_RP_Chr14.vcf.gz, resources/beagle/splitvcf.jar
+    output: results/SplitVCF_RP_Chr14.1.vcf.gz, results/SplitVCF_RP_Chr14.2.vcf.gz, results/SplitVCF_RP_Chr14.3.vcf.gz, results/SplitVCF_RP_Chr14.4.vcf.gz, results/SplitVCF_RP_Chr14.5.vcf.gz, results/SplitVCF_RP_Chr14.6.vcf.gz, results/SplitVCF_RP_Chr14.7.vcf.gz, results/SplitVCF_RP_Chr14.8.vcf.gz, results/SplitVCF_RP_Chr14.9.vcf.gz, results/SplitVCF_RP_Chr14.10.vcf.gz, results/SplitVCF_RP_Chr14.11.vcf.gz, results/SplitVCF_RP_Chr14.12.vcf.gz, results/SplitVCF_RP_Chr14.13.vcf.gz, results/SplitVCF_RP_Chr14.14.vcf.gz, results/SplitVCF_RP_Chr14.15.vcf.gz, results/SplitVCF_RP_Chr14.16.vcf.gz, results/SplitVCF_RP_Chr14.17.vcf.gz, results/SplitVCF_RP_Chr14.18.vcf.gz, results/SplitVCF_RP_Chr14.19.vcf.gz, results/SplitVCF_RP_Chr14.20.vcf.gz, results/SplitVCF_RP_Chr14.21.vcf.gz, results/SplitVCF_RP_Chr14.22.vcf.gz, results/SplitVCF_RP_Chr14.23.vcf.gz, results/SplitVCF_RP_Chr14.24.vcf.gz, results/SplitVCF_RP_Chr14.25.vcf.gz, results/SplitVCF_RP_Chr14.26.vcf.gz, results/SplitVCF_RP_Chr14.27.vcf.gz, results/SplitVCF_RP_Chr14.28.vcf.gz, results/SplitVCF_RP_Chr14.29.vcf.gz, results/SplitVCF_RP_Chr14.30.vcf.gz, results/SplitVCF_RP_Chr14.31.vcf.gz, results/SplitVCF_RP_Chr14.32.vcf.gz, results/SplitVCF_RP_Chr14.33.vcf.gz, results/SplitVCF_RP_Chr14.34.vcf.gz, results/SplitVCF_RP_Chr14.35.vcf.gz, results/SplitVCF_RP_Chr14.36.vcf.gz, results/SplitVCF_RP_Chr14.37.vcf.gz, results/SplitVCF_RP_Chr14.38.vcf.gz, results/SplitVCF_RP_Chr14.39.vcf.gz, results/SplitVCF_RP_Chr14.40.vcf.gz
+    jobid: 94
+    wildcards: id=RP, chr=14
+
+Submitted job 94 with external jobid 'Submitted batch job 22958551'.
+[Wed Jun 30 01:10:08 2021]
+Finished job 48.
+45 of 1781 steps (3%) done
+Select jobs to execute...
+
+[Wed Jun 30 01:10:08 2021]
+rule PreformatNRP:
+    input: results/RenameSamples_NRP_Chr08.vcf.gz, results/Preformat_RP_Chr08.vcf.gz
+    output: results/Preformat_NRP_Chr08.vcf.gz
+    jobid: 68
+    wildcards: chr=08
+
+Submitted job 68 with external jobid 'Submitted batch job 22958552'.
+
+[Wed Jun 30 01:10:08 2021]
+rule SplitVCF:
+    input: results/Preformat_RP_Chr08.vcf.gz, resources/beagle/splitvcf.jar
+    output: results/SplitVCF_RP_Chr08.1.vcf.gz, results/SplitVCF_RP_Chr08.2.vcf.gz, results/SplitVCF_RP_Chr08.3.vcf.gz, results/SplitVCF_RP_Chr08.4.vcf.gz, results/SplitVCF_RP_Chr08.5.vcf.gz, results/SplitVCF_RP_Chr08.6.vcf.gz, results/SplitVCF_RP_Chr08.7.vcf.gz, results/SplitVCF_RP_Chr08.8.vcf.gz, results/SplitVCF_RP_Chr08.9.vcf.gz, results/SplitVCF_RP_Chr08.10.vcf.gz, results/SplitVCF_RP_Chr08.11.vcf.gz, results/SplitVCF_RP_Chr08.12.vcf.gz, results/SplitVCF_RP_Chr08.13.vcf.gz, results/SplitVCF_RP_Chr08.14.vcf.gz, results/SplitVCF_RP_Chr08.15.vcf.gz, results/SplitVCF_RP_Chr08.16.vcf.gz, results/SplitVCF_RP_Chr08.17.vcf.gz, results/SplitVCF_RP_Chr08.18.vcf.gz, results/SplitVCF_RP_Chr08.19.vcf.gz, results/SplitVCF_RP_Chr08.20.vcf.gz, results/SplitVCF_RP_Chr08.21.vcf.gz, results/SplitVCF_RP_Chr08.22.vcf.gz, results/SplitVCF_RP_Chr08.23.vcf.gz, results/SplitVCF_RP_Chr08.24.vcf.gz, results/SplitVCF_RP_Chr08.25.vcf.gz, results/SplitVCF_RP_Chr08.26.vcf.gz, results/SplitVCF_RP_Chr08.27.vcf.gz, results/SplitVCF_RP_Chr08.28.vcf.gz, results/SplitVCF_RP_Chr08.29.vcf.gz, results/SplitVCF_RP_Chr08.30.vcf.gz, results/SplitVCF_RP_Chr08.31.vcf.gz, results/SplitVCF_RP_Chr08.32.vcf.gz, results/SplitVCF_RP_Chr08.33.vcf.gz, results/SplitVCF_RP_Chr08.34.vcf.gz, results/SplitVCF_RP_Chr08.35.vcf.gz, results/SplitVCF_RP_Chr08.36.vcf.gz, results/SplitVCF_RP_Chr08.37.vcf.gz, results/SplitVCF_RP_Chr08.38.vcf.gz, results/SplitVCF_RP_Chr08.39.vcf.gz, results/SplitVCF_RP_Chr08.40.vcf.gz
+    jobid: 88
+    wildcards: id=RP, chr=08
+
+Submitted job 88 with external jobid 'Submitted batch job 22958553'.
+[Wed Jun 30 01:10:20 2021]
+Finished job 46.
+46 of 1781 steps (3%) done
+Select jobs to execute...
+[Wed Jun 30 01:10:20 2021]
+Finished job 41.
+47 of 1781 steps (3%) done
+
+[Wed Jun 30 01:10:20 2021]
+rule PreformatNRP:
+    input: results/RenameSamples_NRP_Chr06.vcf.gz, results/Preformat_RP_Chr06.vcf.gz
+    output: results/Preformat_NRP_Chr06.vcf.gz
+    jobid: 66
+    wildcards: chr=06
+
+Submitted job 66 with external jobid 'Submitted batch job 22958554'.
+
+[Wed Jun 30 01:10:20 2021]
+rule SplitVCF:
+    input: results/Preformat_RP_Chr06.vcf.gz, resources/beagle/splitvcf.jar
+    output: results/SplitVCF_RP_Chr06.1.vcf.gz, results/SplitVCF_RP_Chr06.2.vcf.gz, results/SplitVCF_RP_Chr06.3.vcf.gz, results/SplitVCF_RP_Chr06.4.vcf.gz, results/SplitVCF_RP_Chr06.5.vcf.gz, results/SplitVCF_RP_Chr06.6.vcf.gz, results/SplitVCF_RP_Chr06.7.vcf.gz, results/SplitVCF_RP_Chr06.8.vcf.gz, results/SplitVCF_RP_Chr06.9.vcf.gz, results/SplitVCF_RP_Chr06.10.vcf.gz, results/SplitVCF_RP_Chr06.11.vcf.gz, results/SplitVCF_RP_Chr06.12.vcf.gz, results/SplitVCF_RP_Chr06.13.vcf.gz, results/SplitVCF_RP_Chr06.14.vcf.gz, results/SplitVCF_RP_Chr06.15.vcf.gz, results/SplitVCF_RP_Chr06.16.vcf.gz, results/SplitVCF_RP_Chr06.17.vcf.gz, results/SplitVCF_RP_Chr06.18.vcf.gz, results/SplitVCF_RP_Chr06.19.vcf.gz, results/SplitVCF_RP_Chr06.20.vcf.gz, results/SplitVCF_RP_Chr06.21.vcf.gz, results/SplitVCF_RP_Chr06.22.vcf.gz, results/SplitVCF_RP_Chr06.23.vcf.gz, results/SplitVCF_RP_Chr06.24.vcf.gz, results/SplitVCF_RP_Chr06.25.vcf.gz, results/SplitVCF_RP_Chr06.26.vcf.gz, results/SplitVCF_RP_Chr06.27.vcf.gz, results/SplitVCF_RP_Chr06.28.vcf.gz, results/SplitVCF_RP_Chr06.29.vcf.gz, results/SplitVCF_RP_Chr06.30.vcf.gz, results/SplitVCF_RP_Chr06.31.vcf.gz, results/SplitVCF_RP_Chr06.32.vcf.gz, results/SplitVCF_RP_Chr06.33.vcf.gz, results/SplitVCF_RP_Chr06.34.vcf.gz, results/SplitVCF_RP_Chr06.35.vcf.gz, results/SplitVCF_RP_Chr06.36.vcf.gz, results/SplitVCF_RP_Chr06.37.vcf.gz, results/SplitVCF_RP_Chr06.38.vcf.gz, results/SplitVCF_RP_Chr06.39.vcf.gz, results/SplitVCF_RP_Chr06.40.vcf.gz
+    jobid: 86
+    wildcards: id=RP, chr=06
+
+Submitted job 86 with external jobid 'Submitted batch job 22958555'.
+Select jobs to execute...
+
+[Wed Jun 30 01:10:21 2021]
+rule SplitVCF:
+    input: results/Preformat_RP_Chr01.vcf.gz, resources/beagle/splitvcf.jar
+    output: results/SplitVCF_RP_Chr01.1.vcf.gz, results/SplitVCF_RP_Chr01.2.vcf.gz, results/SplitVCF_RP_Chr01.3.vcf.gz, results/SplitVCF_RP_Chr01.4.vcf.gz, results/SplitVCF_RP_Chr01.5.vcf.gz, results/SplitVCF_RP_Chr01.6.vcf.gz, results/SplitVCF_RP_Chr01.7.vcf.gz, results/SplitVCF_RP_Chr01.8.vcf.gz, results/SplitVCF_RP_Chr01.9.vcf.gz, results/SplitVCF_RP_Chr01.10.vcf.gz, results/SplitVCF_RP_Chr01.11.vcf.gz, results/SplitVCF_RP_Chr01.12.vcf.gz, results/SplitVCF_RP_Chr01.13.vcf.gz, results/SplitVCF_RP_Chr01.14.vcf.gz, results/SplitVCF_RP_Chr01.15.vcf.gz, results/SplitVCF_RP_Chr01.16.vcf.gz, results/SplitVCF_RP_Chr01.17.vcf.gz, results/SplitVCF_RP_Chr01.18.vcf.gz, results/SplitVCF_RP_Chr01.19.vcf.gz, results/SplitVCF_RP_Chr01.20.vcf.gz, results/SplitVCF_RP_Chr01.21.vcf.gz, results/SplitVCF_RP_Chr01.22.vcf.gz, results/SplitVCF_RP_Chr01.23.vcf.gz, results/SplitVCF_RP_Chr01.24.vcf.gz, results/SplitVCF_RP_Chr01.25.vcf.gz, results/SplitVCF_RP_Chr01.26.vcf.gz, results/SplitVCF_RP_Chr01.27.vcf.gz, results/SplitVCF_RP_Chr01.28.vcf.gz, results/SplitVCF_RP_Chr01.29.vcf.gz, results/SplitVCF_RP_Chr01.30.vcf.gz, results/SplitVCF_RP_Chr01.31.vcf.gz, results/SplitVCF_RP_Chr01.32.vcf.gz, results/SplitVCF_RP_Chr01.33.vcf.gz, results/SplitVCF_RP_Chr01.34.vcf.gz, results/SplitVCF_RP_Chr01.35.vcf.gz, results/SplitVCF_RP_Chr01.36.vcf.gz, results/SplitVCF_RP_Chr01.37.vcf.gz, results/SplitVCF_RP_Chr01.38.vcf.gz, results/SplitVCF_RP_Chr01.39.vcf.gz, results/SplitVCF_RP_Chr01.40.vcf.gz
+    jobid: 81
+    wildcards: id=RP, chr=01
+
+Submitted job 81 with external jobid 'Submitted batch job 22958556'.
+
+[Wed Jun 30 01:10:21 2021]
+rule PreformatNRP:
+    input: results/RenameSamples_NRP_Chr01.vcf.gz, results/Preformat_RP_Chr01.vcf.gz
+    output: results/Preformat_NRP_Chr01.vcf.gz
+    jobid: 61
+    wildcards: chr=01
+
+Submitted job 61 with external jobid 'Submitted batch job 22958557'.
+[Wed Jun 30 01:10:32 2021]
+Finished job 62.
+48 of 1781 steps (3%) done
+Select jobs to execute...
+[Wed Jun 30 01:10:32 2021]
+Finished job 47.
+49 of 1781 steps (3%) done
+
+[Wed Jun 30 01:10:32 2021]
+rule SplitVCF:
+    input: results/Preformat_NRP_Chr02.vcf.gz, resources/beagle/splitvcf.jar
+    output: results/SplitVCF_NRP_Chr02.1.vcf.gz, results/SplitVCF_NRP_Chr02.2.vcf.gz, results/SplitVCF_NRP_Chr02.3.vcf.gz, results/SplitVCF_NRP_Chr02.4.vcf.gz, results/SplitVCF_NRP_Chr02.5.vcf.gz, results/SplitVCF_NRP_Chr02.6.vcf.gz, results/SplitVCF_NRP_Chr02.7.vcf.gz, results/SplitVCF_NRP_Chr02.8.vcf.gz, results/SplitVCF_NRP_Chr02.9.vcf.gz, results/SplitVCF_NRP_Chr02.10.vcf.gz, results/SplitVCF_NRP_Chr02.11.vcf.gz, results/SplitVCF_NRP_Chr02.12.vcf.gz, results/SplitVCF_NRP_Chr02.13.vcf.gz, results/SplitVCF_NRP_Chr02.14.vcf.gz, results/SplitVCF_NRP_Chr02.15.vcf.gz, results/SplitVCF_NRP_Chr02.16.vcf.gz, results/SplitVCF_NRP_Chr02.17.vcf.gz, results/SplitVCF_NRP_Chr02.18.vcf.gz, results/SplitVCF_NRP_Chr02.19.vcf.gz, results/SplitVCF_NRP_Chr02.20.vcf.gz, results/SplitVCF_NRP_Chr02.21.vcf.gz, results/SplitVCF_NRP_Chr02.22.vcf.gz, results/SplitVCF_NRP_Chr02.23.vcf.gz, results/SplitVCF_NRP_Chr02.24.vcf.gz, results/SplitVCF_NRP_Chr02.25.vcf.gz, results/SplitVCF_NRP_Chr02.26.vcf.gz, results/SplitVCF_NRP_Chr02.27.vcf.gz, results/SplitVCF_NRP_Chr02.28.vcf.gz, results/SplitVCF_NRP_Chr02.29.vcf.gz, results/SplitVCF_NRP_Chr02.30.vcf.gz, results/SplitVCF_NRP_Chr02.31.vcf.gz, results/SplitVCF_NRP_Chr02.32.vcf.gz, results/SplitVCF_NRP_Chr02.33.vcf.gz, results/SplitVCF_NRP_Chr02.34.vcf.gz, results/SplitVCF_NRP_Chr02.35.vcf.gz, results/SplitVCF_NRP_Chr02.36.vcf.gz, results/SplitVCF_NRP_Chr02.37.vcf.gz, results/SplitVCF_NRP_Chr02.38.vcf.gz, results/SplitVCF_NRP_Chr02.39.vcf.gz, results/SplitVCF_NRP_Chr02.40.vcf.gz
+    jobid: 102
+    wildcards: id=NRP, chr=02
+
+Submitted job 102 with external jobid 'Submitted batch job 22958558'.
+Select jobs to execute...
+
+[Wed Jun 30 01:10:32 2021]
+rule PreformatNRP:
+    input: results/RenameSamples_NRP_Chr07.vcf.gz, results/Preformat_RP_Chr07.vcf.gz
+    output: results/Preformat_NRP_Chr07.vcf.gz
+    jobid: 67
+    wildcards: chr=07
+
+Submitted job 67 with external jobid 'Submitted batch job 22958559'.
+
+[Wed Jun 30 01:10:33 2021]
+rule SplitVCF:
+    input: results/Preformat_RP_Chr07.vcf.gz, resources/beagle/splitvcf.jar
+    output: results/SplitVCF_RP_Chr07.1.vcf.gz, results/SplitVCF_RP_Chr07.2.vcf.gz, results/SplitVCF_RP_Chr07.3.vcf.gz, results/SplitVCF_RP_Chr07.4.vcf.gz, results/SplitVCF_RP_Chr07.5.vcf.gz, results/SplitVCF_RP_Chr07.6.vcf.gz, results/SplitVCF_RP_Chr07.7.vcf.gz, results/SplitVCF_RP_Chr07.8.vcf.gz, results/SplitVCF_RP_Chr07.9.vcf.gz, results/SplitVCF_RP_Chr07.10.vcf.gz, results/SplitVCF_RP_Chr07.11.vcf.gz, results/SplitVCF_RP_Chr07.12.vcf.gz, results/SplitVCF_RP_Chr07.13.vcf.gz, results/SplitVCF_RP_Chr07.14.vcf.gz, results/SplitVCF_RP_Chr07.15.vcf.gz, results/SplitVCF_RP_Chr07.16.vcf.gz, results/SplitVCF_RP_Chr07.17.vcf.gz, results/SplitVCF_RP_Chr07.18.vcf.gz, results/SplitVCF_RP_Chr07.19.vcf.gz, results/SplitVCF_RP_Chr07.20.vcf.gz, results/SplitVCF_RP_Chr07.21.vcf.gz, results/SplitVCF_RP_Chr07.22.vcf.gz, results/SplitVCF_RP_Chr07.23.vcf.gz, results/SplitVCF_RP_Chr07.24.vcf.gz, results/SplitVCF_RP_Chr07.25.vcf.gz, results/SplitVCF_RP_Chr07.26.vcf.gz, results/SplitVCF_RP_Chr07.27.vcf.gz, results/SplitVCF_RP_Chr07.28.vcf.gz, results/SplitVCF_RP_Chr07.29.vcf.gz, results/SplitVCF_RP_Chr07.30.vcf.gz, results/SplitVCF_RP_Chr07.31.vcf.gz, results/SplitVCF_RP_Chr07.32.vcf.gz, results/SplitVCF_RP_Chr07.33.vcf.gz, results/SplitVCF_RP_Chr07.34.vcf.gz, results/SplitVCF_RP_Chr07.35.vcf.gz, results/SplitVCF_RP_Chr07.36.vcf.gz, results/SplitVCF_RP_Chr07.37.vcf.gz, results/SplitVCF_RP_Chr07.38.vcf.gz, results/SplitVCF_RP_Chr07.39.vcf.gz, results/SplitVCF_RP_Chr07.40.vcf.gz
+    jobid: 87
+    wildcards: id=RP, chr=07
+
+Submitted job 87 with external jobid 'Submitted batch job 22958560'.
+[Wed Jun 30 01:10:33 2021]
+Finished job 53.
+50 of 1781 steps (3%) done
+Select jobs to execute...
+
+[Wed Jun 30 01:10:33 2021]
+rule PreformatNRP:
+    input: results/RenameSamples_NRP_Chr13.vcf.gz, results/Preformat_RP_Chr13.vcf.gz
+    output: results/Preformat_NRP_Chr13.vcf.gz
+    jobid: 73
+    wildcards: chr=13
+
+Submitted job 73 with external jobid 'Submitted batch job 22958561'.
+
+[Wed Jun 30 01:10:33 2021]
+rule SplitVCF:
+    input: results/Preformat_RP_Chr13.vcf.gz, resources/beagle/splitvcf.jar
+    output: results/SplitVCF_RP_Chr13.1.vcf.gz, results/SplitVCF_RP_Chr13.2.vcf.gz, results/SplitVCF_RP_Chr13.3.vcf.gz, results/SplitVCF_RP_Chr13.4.vcf.gz, results/SplitVCF_RP_Chr13.5.vcf.gz, results/SplitVCF_RP_Chr13.6.vcf.gz, results/SplitVCF_RP_Chr13.7.vcf.gz, results/SplitVCF_RP_Chr13.8.vcf.gz, results/SplitVCF_RP_Chr13.9.vcf.gz, results/SplitVCF_RP_Chr13.10.vcf.gz, results/SplitVCF_RP_Chr13.11.vcf.gz, results/SplitVCF_RP_Chr13.12.vcf.gz, results/SplitVCF_RP_Chr13.13.vcf.gz, results/SplitVCF_RP_Chr13.14.vcf.gz, results/SplitVCF_RP_Chr13.15.vcf.gz, results/SplitVCF_RP_Chr13.16.vcf.gz, results/SplitVCF_RP_Chr13.17.vcf.gz, results/SplitVCF_RP_Chr13.18.vcf.gz, results/SplitVCF_RP_Chr13.19.vcf.gz, results/SplitVCF_RP_Chr13.20.vcf.gz, results/SplitVCF_RP_Chr13.21.vcf.gz, results/SplitVCF_RP_Chr13.22.vcf.gz, results/SplitVCF_RP_Chr13.23.vcf.gz, results/SplitVCF_RP_Chr13.24.vcf.gz, results/SplitVCF_RP_Chr13.25.vcf.gz, results/SplitVCF_RP_Chr13.26.vcf.gz, results/SplitVCF_RP_Chr13.27.vcf.gz, results/SplitVCF_RP_Chr13.28.vcf.gz, results/SplitVCF_RP_Chr13.29.vcf.gz, results/SplitVCF_RP_Chr13.30.vcf.gz, results/SplitVCF_RP_Chr13.31.vcf.gz, results/SplitVCF_RP_Chr13.32.vcf.gz, results/SplitVCF_RP_Chr13.33.vcf.gz, results/SplitVCF_RP_Chr13.34.vcf.gz, results/SplitVCF_RP_Chr13.35.vcf.gz, results/SplitVCF_RP_Chr13.36.vcf.gz, results/SplitVCF_RP_Chr13.37.vcf.gz, results/SplitVCF_RP_Chr13.38.vcf.gz, results/SplitVCF_RP_Chr13.39.vcf.gz, results/SplitVCF_RP_Chr13.40.vcf.gz
+    jobid: 93
+    wildcards: id=RP, chr=13
+
+Submitted job 93 with external jobid 'Submitted batch job 22958562'.
+[Wed Jun 30 01:11:37 2021]
+Finished job 18.
+51 of 1781 steps (3%) done
+Select jobs to execute...
+
+[Wed Jun 30 01:11:37 2021]
+rule PreformatRP:
+    input: results/RenameSamples_RP_Chr18.vcf.gz
+    output: results/Preformat_RP_Chr18.vcf.gz
+    jobid: 58
+    wildcards: chr=18
+
+Submitted job 58 with external jobid 'Submitted batch job 22958563'.
+[Wed Jun 30 01:11:50 2021]
+Finished job 52.
+52 of 1781 steps (3%) done
+Select jobs to execute...
+
+[Wed Jun 30 01:11:50 2021]
+rule PreformatNRP:
+    input: results/RenameSamples_NRP_Chr12.vcf.gz, results/Preformat_RP_Chr12.vcf.gz
+    output: results/Preformat_NRP_Chr12.vcf.gz
+    jobid: 72
+    wildcards: chr=12
+
+Submitted job 72 with external jobid 'Submitted batch job 22958564'.
+
+[Wed Jun 30 01:11:50 2021]
+rule SplitVCF:
+    input: results/Preformat_RP_Chr12.vcf.gz, resources/beagle/splitvcf.jar
+    output: results/SplitVCF_RP_Chr12.1.vcf.gz, results/SplitVCF_RP_Chr12.2.vcf.gz, results/SplitVCF_RP_Chr12.3.vcf.gz, results/SplitVCF_RP_Chr12.4.vcf.gz, results/SplitVCF_RP_Chr12.5.vcf.gz, results/SplitVCF_RP_Chr12.6.vcf.gz, results/SplitVCF_RP_Chr12.7.vcf.gz, results/SplitVCF_RP_Chr12.8.vcf.gz, results/SplitVCF_RP_Chr12.9.vcf.gz, results/SplitVCF_RP_Chr12.10.vcf.gz, results/SplitVCF_RP_Chr12.11.vcf.gz, results/SplitVCF_RP_Chr12.12.vcf.gz, results/SplitVCF_RP_Chr12.13.vcf.gz, results/SplitVCF_RP_Chr12.14.vcf.gz, results/SplitVCF_RP_Chr12.15.vcf.gz, results/SplitVCF_RP_Chr12.16.vcf.gz, results/SplitVCF_RP_Chr12.17.vcf.gz, results/SplitVCF_RP_Chr12.18.vcf.gz, results/SplitVCF_RP_Chr12.19.vcf.gz, results/SplitVCF_RP_Chr12.20.vcf.gz, results/SplitVCF_RP_Chr12.21.vcf.gz, results/SplitVCF_RP_Chr12.22.vcf.gz, results/SplitVCF_RP_Chr12.23.vcf.gz, results/SplitVCF_RP_Chr12.24.vcf.gz, results/SplitVCF_RP_Chr12.25.vcf.gz, results/SplitVCF_RP_Chr12.26.vcf.gz, results/SplitVCF_RP_Chr12.27.vcf.gz, results/SplitVCF_RP_Chr12.28.vcf.gz, results/SplitVCF_RP_Chr12.29.vcf.gz, results/SplitVCF_RP_Chr12.30.vcf.gz, results/SplitVCF_RP_Chr12.31.vcf.gz, results/SplitVCF_RP_Chr12.32.vcf.gz, results/SplitVCF_RP_Chr12.33.vcf.gz, results/SplitVCF_RP_Chr12.34.vcf.gz, results/SplitVCF_RP_Chr12.35.vcf.gz, results/SplitVCF_RP_Chr12.36.vcf.gz, results/SplitVCF_RP_Chr12.37.vcf.gz, results/SplitVCF_RP_Chr12.38.vcf.gz, results/SplitVCF_RP_Chr12.39.vcf.gz, results/SplitVCF_RP_Chr12.40.vcf.gz
+    jobid: 92
+    wildcards: id=RP, chr=12
+
+Submitted job 92 with external jobid 'Submitted batch job 22958565'.
+[Wed Jun 30 01:12:04 2021]
+Finished job 91.
+53 of 1781 steps (3%) done
+Select jobs to execute...
+
+[Wed Jun 30 01:12:04 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr11.3.vcf.gz
+    output: results/ImputeRP_RP_Chr11.3.vcf.gz
+    jobid: 523
+    wildcards: chr=11, subset=3
+    resources: memory=200G, threads=15
+
+Submitted job 523 with external jobid 'Submitted batch job 22958566'.
+
+[Wed Jun 30 01:12:04 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr11.18.vcf.gz
+    output: results/ImputeRP_RP_Chr11.18.vcf.gz
+    jobid: 538
+    wildcards: chr=11, subset=18
+    resources: memory=200G, threads=15
+
+Submitted job 538 with external jobid 'Submitted batch job 22958567'.
+
+[Wed Jun 30 01:12:04 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr11.33.vcf.gz
+    output: results/ImputeRP_RP_Chr11.33.vcf.gz
+    jobid: 553
+    wildcards: chr=11, subset=33
+    resources: memory=200G, threads=15
+
+Submitted job 553 with external jobid 'Submitted batch job 22958568'.
+
+[Wed Jun 30 01:12:04 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr11.40.vcf.gz
+    output: results/ImputeRP_RP_Chr11.40.vcf.gz
+    jobid: 560
+    wildcards: chr=11, subset=40
+    resources: memory=200G, threads=15
+
+Submitted job 560 with external jobid 'Submitted batch job 22958569'.
+
+[Wed Jun 30 01:12:04 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr11.11.vcf.gz
+    output: results/ImputeRP_RP_Chr11.11.vcf.gz
+    jobid: 531
+    wildcards: chr=11, subset=11
+    resources: memory=200G, threads=15
+
+Submitted job 531 with external jobid 'Submitted batch job 22958570'.
+
+[Wed Jun 30 01:12:04 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr11.26.vcf.gz
+    output: results/ImputeRP_RP_Chr11.26.vcf.gz
+    jobid: 546
+    wildcards: chr=11, subset=26
+    resources: memory=200G, threads=15
+
+Submitted job 546 with external jobid 'Submitted batch job 22958571'.
+
+[Wed Jun 30 01:12:04 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr11.4.vcf.gz
+    output: results/ImputeRP_RP_Chr11.4.vcf.gz
+    jobid: 524
+    wildcards: chr=11, subset=4
+    resources: memory=200G, threads=15
+
+Submitted job 524 with external jobid 'Submitted batch job 22958572'.
+
+[Wed Jun 30 01:12:04 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr11.19.vcf.gz
+    output: results/ImputeRP_RP_Chr11.19.vcf.gz
+    jobid: 539
+    wildcards: chr=11, subset=19
+    resources: memory=200G, threads=15
+
+Submitted job 539 with external jobid 'Submitted batch job 22958573'.
+
+[Wed Jun 30 01:12:04 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr11.34.vcf.gz
+    output: results/ImputeRP_RP_Chr11.34.vcf.gz
+    jobid: 554
+    wildcards: chr=11, subset=34
+    resources: memory=200G, threads=15
+
+Submitted job 554 with external jobid 'Submitted batch job 22958574'.
+
+[Wed Jun 30 01:12:04 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr11.27.vcf.gz
+    output: results/ImputeRP_RP_Chr11.27.vcf.gz
+    jobid: 547
+    wildcards: chr=11, subset=27
+    resources: memory=200G, threads=15
+
+Submitted job 547 with external jobid 'Submitted batch job 22958575'.
+
+[Wed Jun 30 01:12:04 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr11.12.vcf.gz
+    output: results/ImputeRP_RP_Chr11.12.vcf.gz
+    jobid: 532
+    wildcards: chr=11, subset=12
+    resources: memory=200G, threads=15
+
+Submitted job 532 with external jobid 'Submitted batch job 22958576'.
+
+[Wed Jun 30 01:12:04 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr11.5.vcf.gz
+    output: results/ImputeRP_RP_Chr11.5.vcf.gz
+    jobid: 525
+    wildcards: chr=11, subset=5
+    resources: memory=200G, threads=15
+
+Submitted job 525 with external jobid 'Submitted batch job 22958577'.
+
+[Wed Jun 30 01:12:04 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr11.20.vcf.gz
+    output: results/ImputeRP_RP_Chr11.20.vcf.gz
+    jobid: 540
+    wildcards: chr=11, subset=20
+    resources: memory=200G, threads=15
+
+Submitted job 540 with external jobid 'Submitted batch job 22958578'.
+
+[Wed Jun 30 01:12:04 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr11.35.vcf.gz
+    output: results/ImputeRP_RP_Chr11.35.vcf.gz
+    jobid: 555
+    wildcards: chr=11, subset=35
+    resources: memory=200G, threads=15
+
+Submitted job 555 with external jobid 'Submitted batch job 22958579'.
+
+[Wed Jun 30 01:12:04 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr11.13.vcf.gz
+    output: results/ImputeRP_RP_Chr11.13.vcf.gz
+    jobid: 533
+    wildcards: chr=11, subset=13
+    resources: memory=200G, threads=15
+
+Submitted job 533 with external jobid 'Submitted batch job 22958580'.
+
+[Wed Jun 30 01:12:04 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr11.28.vcf.gz
+    output: results/ImputeRP_RP_Chr11.28.vcf.gz
+    jobid: 548
+    wildcards: chr=11, subset=28
+    resources: memory=200G, threads=15
+
+Submitted job 548 with external jobid 'Submitted batch job 22958581'.
+
+[Wed Jun 30 01:12:04 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr11.6.vcf.gz
+    output: results/ImputeRP_RP_Chr11.6.vcf.gz
+    jobid: 526
+    wildcards: chr=11, subset=6
+    resources: memory=200G, threads=15
+
+Submitted job 526 with external jobid 'Submitted batch job 22958582'.
+
+[Wed Jun 30 01:12:04 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr11.21.vcf.gz
+    output: results/ImputeRP_RP_Chr11.21.vcf.gz
+    jobid: 541
+    wildcards: chr=11, subset=21
+    resources: memory=200G, threads=15
+
+Submitted job 541 with external jobid 'Submitted batch job 22958583'.
+
+[Wed Jun 30 01:12:04 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr11.36.vcf.gz
+    output: results/ImputeRP_RP_Chr11.36.vcf.gz
+    jobid: 556
+    wildcards: chr=11, subset=36
+    resources: memory=200G, threads=15
+
+Submitted job 556 with external jobid 'Submitted batch job 22958584'.
+
+[Wed Jun 30 01:12:04 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr11.14.vcf.gz
+    output: results/ImputeRP_RP_Chr11.14.vcf.gz
+    jobid: 534
+    wildcards: chr=11, subset=14
+    resources: memory=200G, threads=15
+
+Submitted job 534 with external jobid 'Submitted batch job 22958585'.
+
+[Wed Jun 30 01:12:05 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr11.29.vcf.gz
+    output: results/ImputeRP_RP_Chr11.29.vcf.gz
+    jobid: 549
+    wildcards: chr=11, subset=29
+    resources: memory=200G, threads=15
+
+Submitted job 549 with external jobid 'Submitted batch job 22958586'.
+
+[Wed Jun 30 01:12:05 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr11.7.vcf.gz
+    output: results/ImputeRP_RP_Chr11.7.vcf.gz
+    jobid: 527
+    wildcards: chr=11, subset=7
+    resources: memory=200G, threads=15
+
+Submitted job 527 with external jobid 'Submitted batch job 22958587'.
+
+[Wed Jun 30 01:12:05 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr11.22.vcf.gz
+    output: results/ImputeRP_RP_Chr11.22.vcf.gz
+    jobid: 542
+    wildcards: chr=11, subset=22
+    resources: memory=200G, threads=15
+
+Submitted job 542 with external jobid 'Submitted batch job 22958588'.
+
+[Wed Jun 30 01:12:05 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr11.37.vcf.gz
+    output: results/ImputeRP_RP_Chr11.37.vcf.gz
+    jobid: 557
+    wildcards: chr=11, subset=37
+    resources: memory=200G, threads=15
+
+Submitted job 557 with external jobid 'Submitted batch job 22958589'.
+
+[Wed Jun 30 01:12:05 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr11.15.vcf.gz
+    output: results/ImputeRP_RP_Chr11.15.vcf.gz
+    jobid: 535
+    wildcards: chr=11, subset=15
+    resources: memory=200G, threads=15
+
+Submitted job 535 with external jobid 'Submitted batch job 22958590'.
+
+[Wed Jun 30 01:12:05 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr11.30.vcf.gz
+    output: results/ImputeRP_RP_Chr11.30.vcf.gz
+    jobid: 550
+    wildcards: chr=11, subset=30
+    resources: memory=200G, threads=15
+
+Submitted job 550 with external jobid 'Submitted batch job 22958591'.
+
+[Wed Jun 30 01:12:05 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr11.25.vcf.gz
+    output: results/ImputeRP_RP_Chr11.25.vcf.gz
+    jobid: 545
+    wildcards: chr=11, subset=25
+    resources: memory=200G, threads=15
+
+Submitted job 545 with external jobid 'Submitted batch job 22958592'.
+
+[Wed Jun 30 01:12:05 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr11.8.vcf.gz
+    output: results/ImputeRP_RP_Chr11.8.vcf.gz
+    jobid: 528
+    wildcards: chr=11, subset=8
+    resources: memory=200G, threads=15
+
+Submitted job 528 with external jobid 'Submitted batch job 22958593'.
+
+[Wed Jun 30 01:12:05 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr11.23.vcf.gz
+    output: results/ImputeRP_RP_Chr11.23.vcf.gz
+    jobid: 543
+    wildcards: chr=11, subset=23
+    resources: memory=200G, threads=15
+
+Submitted job 543 with external jobid 'Submitted batch job 22958594'.
+
+[Wed Jun 30 01:12:05 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr11.38.vcf.gz
+    output: results/ImputeRP_RP_Chr11.38.vcf.gz
+    jobid: 558
+    wildcards: chr=11, subset=38
+    resources: memory=200G, threads=15
+
+Submitted job 558 with external jobid 'Submitted batch job 22958595'.
+
+[Wed Jun 30 01:12:05 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr11.16.vcf.gz
+    output: results/ImputeRP_RP_Chr11.16.vcf.gz
+    jobid: 536
+    wildcards: chr=11, subset=16
+    resources: memory=200G, threads=15
+
+Submitted job 536 with external jobid 'Submitted batch job 22958596'.
+
+[Wed Jun 30 01:12:05 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr11.1.vcf.gz
+    output: results/ImputeRP_RP_Chr11.1.vcf.gz
+    jobid: 521
+    wildcards: chr=11, subset=1
+    resources: memory=200G, threads=15
+
+Submitted job 521 with external jobid 'Submitted batch job 22958597'.
+
+[Wed Jun 30 01:12:05 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr11.31.vcf.gz
+    output: results/ImputeRP_RP_Chr11.31.vcf.gz
+    jobid: 551
+    wildcards: chr=11, subset=31
+    resources: memory=200G, threads=15
+
+Submitted job 551 with external jobid 'Submitted batch job 22958598'.
+
+[Wed Jun 30 01:12:05 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr11.9.vcf.gz
+    output: results/ImputeRP_RP_Chr11.9.vcf.gz
+    jobid: 529
+    wildcards: chr=11, subset=9
+    resources: memory=200G, threads=15
+
+Submitted job 529 with external jobid 'Submitted batch job 22958599'.
+
+[Wed Jun 30 01:12:05 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr11.24.vcf.gz
+    output: results/ImputeRP_RP_Chr11.24.vcf.gz
+    jobid: 544
+    wildcards: chr=11, subset=24
+    resources: memory=200G, threads=15
+
+Submitted job 544 with external jobid 'Submitted batch job 22958600'.
+
+[Wed Jun 30 01:12:05 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr11.39.vcf.gz
+    output: results/ImputeRP_RP_Chr11.39.vcf.gz
+    jobid: 559
+    wildcards: chr=11, subset=39
+    resources: memory=200G, threads=15
+
+Submitted job 559 with external jobid 'Submitted batch job 22958601'.
+
+[Wed Jun 30 01:12:05 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr11.2.vcf.gz
+    output: results/ImputeRP_RP_Chr11.2.vcf.gz
+    jobid: 522
+    wildcards: chr=11, subset=2
+    resources: memory=200G, threads=15
+
+Submitted job 522 with external jobid 'Submitted batch job 22958602'.
+
+[Wed Jun 30 01:12:05 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr11.17.vcf.gz
+    output: results/ImputeRP_RP_Chr11.17.vcf.gz
+    jobid: 537
+    wildcards: chr=11, subset=17
+    resources: memory=200G, threads=15
+
+Submitted job 537 with external jobid 'Submitted batch job 22958603'.
+
+[Wed Jun 30 01:12:05 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr11.32.vcf.gz
+    output: results/ImputeRP_RP_Chr11.32.vcf.gz
+    jobid: 552
+    wildcards: chr=11, subset=32
+    resources: memory=200G, threads=15
+
+Submitted job 552 with external jobid 'Submitted batch job 22958604'.
+
+[Wed Jun 30 01:12:05 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr11.10.vcf.gz
+    output: results/ImputeRP_RP_Chr11.10.vcf.gz
+    jobid: 530
+    wildcards: chr=11, subset=10
+    resources: memory=200G, threads=15
+
+Submitted job 530 with external jobid 'Submitted batch job 22958605'.
+[Wed Jun 30 01:13:43 2021]
+Finished job 76.
+54 of 1781 steps (3%) done
+Select jobs to execute...
+
+[Wed Jun 30 01:13:43 2021]
+rule SplitVCF:
+    input: results/Preformat_NRP_Chr16.vcf.gz, resources/beagle/splitvcf.jar
+    output: results/SplitVCF_NRP_Chr16.1.vcf.gz, results/SplitVCF_NRP_Chr16.2.vcf.gz, results/SplitVCF_NRP_Chr16.3.vcf.gz, results/SplitVCF_NRP_Chr16.4.vcf.gz, results/SplitVCF_NRP_Chr16.5.vcf.gz, results/SplitVCF_NRP_Chr16.6.vcf.gz, results/SplitVCF_NRP_Chr16.7.vcf.gz, results/SplitVCF_NRP_Chr16.8.vcf.gz, results/SplitVCF_NRP_Chr16.9.vcf.gz, results/SplitVCF_NRP_Chr16.10.vcf.gz, results/SplitVCF_NRP_Chr16.11.vcf.gz, results/SplitVCF_NRP_Chr16.12.vcf.gz, results/SplitVCF_NRP_Chr16.13.vcf.gz, results/SplitVCF_NRP_Chr16.14.vcf.gz, results/SplitVCF_NRP_Chr16.15.vcf.gz, results/SplitVCF_NRP_Chr16.16.vcf.gz, results/SplitVCF_NRP_Chr16.17.vcf.gz, results/SplitVCF_NRP_Chr16.18.vcf.gz, results/SplitVCF_NRP_Chr16.19.vcf.gz, results/SplitVCF_NRP_Chr16.20.vcf.gz, results/SplitVCF_NRP_Chr16.21.vcf.gz, results/SplitVCF_NRP_Chr16.22.vcf.gz, results/SplitVCF_NRP_Chr16.23.vcf.gz, results/SplitVCF_NRP_Chr16.24.vcf.gz, results/SplitVCF_NRP_Chr16.25.vcf.gz, results/SplitVCF_NRP_Chr16.26.vcf.gz, results/SplitVCF_NRP_Chr16.27.vcf.gz, results/SplitVCF_NRP_Chr16.28.vcf.gz, results/SplitVCF_NRP_Chr16.29.vcf.gz, results/SplitVCF_NRP_Chr16.30.vcf.gz, results/SplitVCF_NRP_Chr16.31.vcf.gz, results/SplitVCF_NRP_Chr16.32.vcf.gz, results/SplitVCF_NRP_Chr16.33.vcf.gz, results/SplitVCF_NRP_Chr16.34.vcf.gz, results/SplitVCF_NRP_Chr16.35.vcf.gz, results/SplitVCF_NRP_Chr16.36.vcf.gz, results/SplitVCF_NRP_Chr16.37.vcf.gz, results/SplitVCF_NRP_Chr16.38.vcf.gz, results/SplitVCF_NRP_Chr16.39.vcf.gz, results/SplitVCF_NRP_Chr16.40.vcf.gz
+    jobid: 116
+    wildcards: id=NRP, chr=16
+
+Submitted job 116 with external jobid 'Submitted batch job 22958606'.
+[Wed Jun 30 01:14:00 2021]
+Finished job 55.
+55 of 1781 steps (3%) done
+Select jobs to execute...
+
+[Wed Jun 30 01:14:00 2021]
+rule SplitVCF:
+    input: results/Preformat_RP_Chr15.vcf.gz, resources/beagle/splitvcf.jar
+    output: results/SplitVCF_RP_Chr15.1.vcf.gz, results/SplitVCF_RP_Chr15.2.vcf.gz, results/SplitVCF_RP_Chr15.3.vcf.gz, results/SplitVCF_RP_Chr15.4.vcf.gz, results/SplitVCF_RP_Chr15.5.vcf.gz, results/SplitVCF_RP_Chr15.6.vcf.gz, results/SplitVCF_RP_Chr15.7.vcf.gz, results/SplitVCF_RP_Chr15.8.vcf.gz, results/SplitVCF_RP_Chr15.9.vcf.gz, results/SplitVCF_RP_Chr15.10.vcf.gz, results/SplitVCF_RP_Chr15.11.vcf.gz, results/SplitVCF_RP_Chr15.12.vcf.gz, results/SplitVCF_RP_Chr15.13.vcf.gz, results/SplitVCF_RP_Chr15.14.vcf.gz, results/SplitVCF_RP_Chr15.15.vcf.gz, results/SplitVCF_RP_Chr15.16.vcf.gz, results/SplitVCF_RP_Chr15.17.vcf.gz, results/SplitVCF_RP_Chr15.18.vcf.gz, results/SplitVCF_RP_Chr15.19.vcf.gz, results/SplitVCF_RP_Chr15.20.vcf.gz, results/SplitVCF_RP_Chr15.21.vcf.gz, results/SplitVCF_RP_Chr15.22.vcf.gz, results/SplitVCF_RP_Chr15.23.vcf.gz, results/SplitVCF_RP_Chr15.24.vcf.gz, results/SplitVCF_RP_Chr15.25.vcf.gz, results/SplitVCF_RP_Chr15.26.vcf.gz, results/SplitVCF_RP_Chr15.27.vcf.gz, results/SplitVCF_RP_Chr15.28.vcf.gz, results/SplitVCF_RP_Chr15.29.vcf.gz, results/SplitVCF_RP_Chr15.30.vcf.gz, results/SplitVCF_RP_Chr15.31.vcf.gz, results/SplitVCF_RP_Chr15.32.vcf.gz, results/SplitVCF_RP_Chr15.33.vcf.gz, results/SplitVCF_RP_Chr15.34.vcf.gz, results/SplitVCF_RP_Chr15.35.vcf.gz, results/SplitVCF_RP_Chr15.36.vcf.gz, results/SplitVCF_RP_Chr15.37.vcf.gz, results/SplitVCF_RP_Chr15.38.vcf.gz, results/SplitVCF_RP_Chr15.39.vcf.gz, results/SplitVCF_RP_Chr15.40.vcf.gz
+    jobid: 95
+    wildcards: id=RP, chr=15
+
+Submitted job 95 with external jobid 'Submitted batch job 22958607'.
+
+[Wed Jun 30 01:14:00 2021]
+rule PreformatNRP:
+    input: results/RenameSamples_NRP_Chr15.vcf.gz, results/Preformat_RP_Chr15.vcf.gz
+    output: results/Preformat_NRP_Chr15.vcf.gz
+    jobid: 75
+    wildcards: chr=15
+
+Submitted job 75 with external jobid 'Submitted batch job 22958608'.
+[Wed Jun 30 01:14:01 2021]
+Finished job 111.
+56 of 1781 steps (3%) done
+[Wed Jun 30 01:14:34 2021]
+Finished job 69.
+57 of 1781 steps (3%) done
+Select jobs to execute...
+
+[Wed Jun 30 01:14:34 2021]
+rule SplitVCF:
+    input: results/Preformat_NRP_Chr09.vcf.gz, resources/beagle/splitvcf.jar
+    output: results/SplitVCF_NRP_Chr09.1.vcf.gz, results/SplitVCF_NRP_Chr09.2.vcf.gz, results/SplitVCF_NRP_Chr09.3.vcf.gz, results/SplitVCF_NRP_Chr09.4.vcf.gz, results/SplitVCF_NRP_Chr09.5.vcf.gz, results/SplitVCF_NRP_Chr09.6.vcf.gz, results/SplitVCF_NRP_Chr09.7.vcf.gz, results/SplitVCF_NRP_Chr09.8.vcf.gz, results/SplitVCF_NRP_Chr09.9.vcf.gz, results/SplitVCF_NRP_Chr09.10.vcf.gz, results/SplitVCF_NRP_Chr09.11.vcf.gz, results/SplitVCF_NRP_Chr09.12.vcf.gz, results/SplitVCF_NRP_Chr09.13.vcf.gz, results/SplitVCF_NRP_Chr09.14.vcf.gz, results/SplitVCF_NRP_Chr09.15.vcf.gz, results/SplitVCF_NRP_Chr09.16.vcf.gz, results/SplitVCF_NRP_Chr09.17.vcf.gz, results/SplitVCF_NRP_Chr09.18.vcf.gz, results/SplitVCF_NRP_Chr09.19.vcf.gz, results/SplitVCF_NRP_Chr09.20.vcf.gz, results/SplitVCF_NRP_Chr09.21.vcf.gz, results/SplitVCF_NRP_Chr09.22.vcf.gz, results/SplitVCF_NRP_Chr09.23.vcf.gz, results/SplitVCF_NRP_Chr09.24.vcf.gz, results/SplitVCF_NRP_Chr09.25.vcf.gz, results/SplitVCF_NRP_Chr09.26.vcf.gz, results/SplitVCF_NRP_Chr09.27.vcf.gz, results/SplitVCF_NRP_Chr09.28.vcf.gz, results/SplitVCF_NRP_Chr09.29.vcf.gz, results/SplitVCF_NRP_Chr09.30.vcf.gz, results/SplitVCF_NRP_Chr09.31.vcf.gz, results/SplitVCF_NRP_Chr09.32.vcf.gz, results/SplitVCF_NRP_Chr09.33.vcf.gz, results/SplitVCF_NRP_Chr09.34.vcf.gz, results/SplitVCF_NRP_Chr09.35.vcf.gz, results/SplitVCF_NRP_Chr09.36.vcf.gz, results/SplitVCF_NRP_Chr09.37.vcf.gz, results/SplitVCF_NRP_Chr09.38.vcf.gz, results/SplitVCF_NRP_Chr09.39.vcf.gz, results/SplitVCF_NRP_Chr09.40.vcf.gz
+    jobid: 109
+    wildcards: id=NRP, chr=09
+
+Submitted job 109 with external jobid 'Submitted batch job 22958609'.
+[Wed Jun 30 01:14:35 2021]
+Finished job 50.
+58 of 1781 steps (3%) done
+Select jobs to execute...
+
+[Wed Jun 30 01:14:35 2021]
+rule PreformatNRP:
+    input: results/RenameSamples_NRP_Chr10.vcf.gz, results/Preformat_RP_Chr10.vcf.gz
+    output: results/Preformat_NRP_Chr10.vcf.gz
+    jobid: 70
+    wildcards: chr=10
+
+Submitted job 70 with external jobid 'Submitted batch job 22958610'.
+
+[Wed Jun 30 01:14:35 2021]
+rule SplitVCF:
+    input: results/Preformat_RP_Chr10.vcf.gz, resources/beagle/splitvcf.jar
+    output: results/SplitVCF_RP_Chr10.1.vcf.gz, results/SplitVCF_RP_Chr10.2.vcf.gz, results/SplitVCF_RP_Chr10.3.vcf.gz, results/SplitVCF_RP_Chr10.4.vcf.gz, results/SplitVCF_RP_Chr10.5.vcf.gz, results/SplitVCF_RP_Chr10.6.vcf.gz, results/SplitVCF_RP_Chr10.7.vcf.gz, results/SplitVCF_RP_Chr10.8.vcf.gz, results/SplitVCF_RP_Chr10.9.vcf.gz, results/SplitVCF_RP_Chr10.10.vcf.gz, results/SplitVCF_RP_Chr10.11.vcf.gz, results/SplitVCF_RP_Chr10.12.vcf.gz, results/SplitVCF_RP_Chr10.13.vcf.gz, results/SplitVCF_RP_Chr10.14.vcf.gz, results/SplitVCF_RP_Chr10.15.vcf.gz, results/SplitVCF_RP_Chr10.16.vcf.gz, results/SplitVCF_RP_Chr10.17.vcf.gz, results/SplitVCF_RP_Chr10.18.vcf.gz, results/SplitVCF_RP_Chr10.19.vcf.gz, results/SplitVCF_RP_Chr10.20.vcf.gz, results/SplitVCF_RP_Chr10.21.vcf.gz, results/SplitVCF_RP_Chr10.22.vcf.gz, results/SplitVCF_RP_Chr10.23.vcf.gz, results/SplitVCF_RP_Chr10.24.vcf.gz, results/SplitVCF_RP_Chr10.25.vcf.gz, results/SplitVCF_RP_Chr10.26.vcf.gz, results/SplitVCF_RP_Chr10.27.vcf.gz, results/SplitVCF_RP_Chr10.28.vcf.gz, results/SplitVCF_RP_Chr10.29.vcf.gz, results/SplitVCF_RP_Chr10.30.vcf.gz, results/SplitVCF_RP_Chr10.31.vcf.gz, results/SplitVCF_RP_Chr10.32.vcf.gz, results/SplitVCF_RP_Chr10.33.vcf.gz, results/SplitVCF_RP_Chr10.34.vcf.gz, results/SplitVCF_RP_Chr10.35.vcf.gz, results/SplitVCF_RP_Chr10.36.vcf.gz, results/SplitVCF_RP_Chr10.37.vcf.gz, results/SplitVCF_RP_Chr10.38.vcf.gz, results/SplitVCF_RP_Chr10.39.vcf.gz, results/SplitVCF_RP_Chr10.40.vcf.gz
+    jobid: 90
+    wildcards: id=RP, chr=10
+
+Submitted job 90 with external jobid 'Submitted batch job 22958611'.
+[Wed Jun 30 01:15:09 2021]
+Finished job 59.
+59 of 1781 steps (3%) done
+Select jobs to execute...
+
+[Wed Jun 30 01:15:09 2021]
+rule SplitVCF:
+    input: results/Preformat_RP_Chr19.vcf.gz, resources/beagle/splitvcf.jar
+    output: results/SplitVCF_RP_Chr19.1.vcf.gz, results/SplitVCF_RP_Chr19.2.vcf.gz, results/SplitVCF_RP_Chr19.3.vcf.gz, results/SplitVCF_RP_Chr19.4.vcf.gz, results/SplitVCF_RP_Chr19.5.vcf.gz, results/SplitVCF_RP_Chr19.6.vcf.gz, results/SplitVCF_RP_Chr19.7.vcf.gz, results/SplitVCF_RP_Chr19.8.vcf.gz, results/SplitVCF_RP_Chr19.9.vcf.gz, results/SplitVCF_RP_Chr19.10.vcf.gz, results/SplitVCF_RP_Chr19.11.vcf.gz, results/SplitVCF_RP_Chr19.12.vcf.gz, results/SplitVCF_RP_Chr19.13.vcf.gz, results/SplitVCF_RP_Chr19.14.vcf.gz, results/SplitVCF_RP_Chr19.15.vcf.gz, results/SplitVCF_RP_Chr19.16.vcf.gz, results/SplitVCF_RP_Chr19.17.vcf.gz, results/SplitVCF_RP_Chr19.18.vcf.gz, results/SplitVCF_RP_Chr19.19.vcf.gz, results/SplitVCF_RP_Chr19.20.vcf.gz, results/SplitVCF_RP_Chr19.21.vcf.gz, results/SplitVCF_RP_Chr19.22.vcf.gz, results/SplitVCF_RP_Chr19.23.vcf.gz, results/SplitVCF_RP_Chr19.24.vcf.gz, results/SplitVCF_RP_Chr19.25.vcf.gz, results/SplitVCF_RP_Chr19.26.vcf.gz, results/SplitVCF_RP_Chr19.27.vcf.gz, results/SplitVCF_RP_Chr19.28.vcf.gz, results/SplitVCF_RP_Chr19.29.vcf.gz, results/SplitVCF_RP_Chr19.30.vcf.gz, results/SplitVCF_RP_Chr19.31.vcf.gz, results/SplitVCF_RP_Chr19.32.vcf.gz, results/SplitVCF_RP_Chr19.33.vcf.gz, results/SplitVCF_RP_Chr19.34.vcf.gz, results/SplitVCF_RP_Chr19.35.vcf.gz, results/SplitVCF_RP_Chr19.36.vcf.gz, results/SplitVCF_RP_Chr19.37.vcf.gz, results/SplitVCF_RP_Chr19.38.vcf.gz, results/SplitVCF_RP_Chr19.39.vcf.gz, results/SplitVCF_RP_Chr19.40.vcf.gz
+    jobid: 99
+    wildcards: id=RP, chr=19
+
+Submitted job 99 with external jobid 'Submitted batch job 22958612'.
+
+[Wed Jun 30 01:15:09 2021]
+rule PreformatNRP:
+    input: results/RenameSamples_NRP_Chr19.vcf.gz, results/Preformat_RP_Chr19.vcf.gz
+    output: results/Preformat_NRP_Chr19.vcf.gz
+    jobid: 79
+    wildcards: chr=19
+
+Submitted job 79 with external jobid 'Submitted batch job 22958613'.
+[Wed Jun 30 01:15:25 2021]
+Finished job 77.
+60 of 1781 steps (3%) done
+Select jobs to execute...
+
+[Wed Jun 30 01:15:25 2021]
+rule SplitVCF:
+    input: results/Preformat_NRP_Chr17.vcf.gz, resources/beagle/splitvcf.jar
+    output: results/SplitVCF_NRP_Chr17.1.vcf.gz, results/SplitVCF_NRP_Chr17.2.vcf.gz, results/SplitVCF_NRP_Chr17.3.vcf.gz, results/SplitVCF_NRP_Chr17.4.vcf.gz, results/SplitVCF_NRP_Chr17.5.vcf.gz, results/SplitVCF_NRP_Chr17.6.vcf.gz, results/SplitVCF_NRP_Chr17.7.vcf.gz, results/SplitVCF_NRP_Chr17.8.vcf.gz, results/SplitVCF_NRP_Chr17.9.vcf.gz, results/SplitVCF_NRP_Chr17.10.vcf.gz, results/SplitVCF_NRP_Chr17.11.vcf.gz, results/SplitVCF_NRP_Chr17.12.vcf.gz, results/SplitVCF_NRP_Chr17.13.vcf.gz, results/SplitVCF_NRP_Chr17.14.vcf.gz, results/SplitVCF_NRP_Chr17.15.vcf.gz, results/SplitVCF_NRP_Chr17.16.vcf.gz, results/SplitVCF_NRP_Chr17.17.vcf.gz, results/SplitVCF_NRP_Chr17.18.vcf.gz, results/SplitVCF_NRP_Chr17.19.vcf.gz, results/SplitVCF_NRP_Chr17.20.vcf.gz, results/SplitVCF_NRP_Chr17.21.vcf.gz, results/SplitVCF_NRP_Chr17.22.vcf.gz, results/SplitVCF_NRP_Chr17.23.vcf.gz, results/SplitVCF_NRP_Chr17.24.vcf.gz, results/SplitVCF_NRP_Chr17.25.vcf.gz, results/SplitVCF_NRP_Chr17.26.vcf.gz, results/SplitVCF_NRP_Chr17.27.vcf.gz, results/SplitVCF_NRP_Chr17.28.vcf.gz, results/SplitVCF_NRP_Chr17.29.vcf.gz, results/SplitVCF_NRP_Chr17.30.vcf.gz, results/SplitVCF_NRP_Chr17.31.vcf.gz, results/SplitVCF_NRP_Chr17.32.vcf.gz, results/SplitVCF_NRP_Chr17.33.vcf.gz, results/SplitVCF_NRP_Chr17.34.vcf.gz, results/SplitVCF_NRP_Chr17.35.vcf.gz, results/SplitVCF_NRP_Chr17.36.vcf.gz, results/SplitVCF_NRP_Chr17.37.vcf.gz, results/SplitVCF_NRP_Chr17.38.vcf.gz, results/SplitVCF_NRP_Chr17.39.vcf.gz, results/SplitVCF_NRP_Chr17.40.vcf.gz
+    jobid: 117
+    wildcards: id=NRP, chr=17
+
+Submitted job 117 with external jobid 'Submitted batch job 22958614'.
+[Wed Jun 30 01:16:00 2021]
+Finished job 82.
+61 of 1781 steps (3%) done
+Select jobs to execute...
+[Wed Jun 30 01:16:00 2021]
+Finished job 60.
+62 of 1781 steps (3%) done
+
+[Wed Jun 30 01:16:00 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr02.18.vcf.gz
+    output: results/ImputeRP_RP_Chr02.18.vcf.gz
+    jobid: 178
+    wildcards: chr=02, subset=18
+    resources: memory=200G, threads=15
+
+Submitted job 178 with external jobid 'Submitted batch job 22958616'.
+
+[Wed Jun 30 01:16:00 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr02.11.vcf.gz
+    output: results/ImputeRP_RP_Chr02.11.vcf.gz
+    jobid: 171
+    wildcards: chr=02, subset=11
+    resources: memory=200G, threads=15
+
+Submitted job 171 with external jobid 'Submitted batch job 22958617'.
+
+[Wed Jun 30 01:16:00 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr02.26.vcf.gz
+    output: results/ImputeRP_RP_Chr02.26.vcf.gz
+    jobid: 186
+    wildcards: chr=02, subset=26
+    resources: memory=200G, threads=15
+
+Submitted job 186 with external jobid 'Submitted batch job 22958618'.
+
+[Wed Jun 30 01:16:00 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr02.40.vcf.gz
+    output: results/ImputeRP_RP_Chr02.40.vcf.gz
+    jobid: 200
+    wildcards: chr=02, subset=40
+    resources: memory=200G, threads=15
+
+Submitted job 200 with external jobid 'Submitted batch job 22958619'.
+
+[Wed Jun 30 01:16:00 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr02.4.vcf.gz
+    output: results/ImputeRP_RP_Chr02.4.vcf.gz
+    jobid: 164
+    wildcards: chr=02, subset=4
+    resources: memory=200G, threads=15
+
+Submitted job 164 with external jobid 'Submitted batch job 22958620'.
+
+[Wed Jun 30 01:16:00 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr02.19.vcf.gz
+    output: results/ImputeRP_RP_Chr02.19.vcf.gz
+    jobid: 179
+    wildcards: chr=02, subset=19
+    resources: memory=200G, threads=15
+
+Submitted job 179 with external jobid 'Submitted batch job 22958621'.
+
+[Wed Jun 30 01:16:00 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr02.34.vcf.gz
+    output: results/ImputeRP_RP_Chr02.34.vcf.gz
+    jobid: 194
+    wildcards: chr=02, subset=34
+    resources: memory=200G, threads=15
+
+Submitted job 194 with external jobid 'Submitted batch job 22958622'.
+
+[Wed Jun 30 01:16:00 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr02.12.vcf.gz
+    output: results/ImputeRP_RP_Chr02.12.vcf.gz
+    jobid: 172
+    wildcards: chr=02, subset=12
+    resources: memory=200G, threads=15
+
+Submitted job 172 with external jobid 'Submitted batch job 22958623'.
+
+[Wed Jun 30 01:16:00 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr02.27.vcf.gz
+    output: results/ImputeRP_RP_Chr02.27.vcf.gz
+    jobid: 187
+    wildcards: chr=02, subset=27
+    resources: memory=200G, threads=15
+
+Submitted job 187 with external jobid 'Submitted batch job 22958624'.
+
+[Wed Jun 30 01:16:00 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr02.5.vcf.gz
+    output: results/ImputeRP_RP_Chr02.5.vcf.gz
+    jobid: 165
+    wildcards: chr=02, subset=5
+    resources: memory=200G, threads=15
+
+Submitted job 165 with external jobid 'Submitted batch job 22958625'.
+
+[Wed Jun 30 01:16:00 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr02.20.vcf.gz
+    output: results/ImputeRP_RP_Chr02.20.vcf.gz
+    jobid: 180
+    wildcards: chr=02, subset=20
+    resources: memory=200G, threads=15
+
+Submitted job 180 with external jobid 'Submitted batch job 22958626'.
+
+[Wed Jun 30 01:16:00 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr02.35.vcf.gz
+    output: results/ImputeRP_RP_Chr02.35.vcf.gz
+    jobid: 195
+    wildcards: chr=02, subset=35
+    resources: memory=200G, threads=15
+
+Submitted job 195 with external jobid 'Submitted batch job 22958627'.
+
+[Wed Jun 30 01:16:01 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr02.13.vcf.gz
+    output: results/ImputeRP_RP_Chr02.13.vcf.gz
+    jobid: 173
+    wildcards: chr=02, subset=13
+    resources: memory=200G, threads=15
+
+Submitted job 173 with external jobid 'Submitted batch job 22958628'.
+
+[Wed Jun 30 01:16:01 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr02.28.vcf.gz
+    output: results/ImputeRP_RP_Chr02.28.vcf.gz
+    jobid: 188
+    wildcards: chr=02, subset=28
+    resources: memory=200G, threads=15
+
+Submitted job 188 with external jobid 'Submitted batch job 22958629'.
+
+[Wed Jun 30 01:16:01 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr02.6.vcf.gz
+    output: results/ImputeRP_RP_Chr02.6.vcf.gz
+    jobid: 166
+    wildcards: chr=02, subset=6
+    resources: memory=200G, threads=15
+
+Submitted job 166 with external jobid 'Submitted batch job 22958630'.
+
+[Wed Jun 30 01:16:01 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr02.14.vcf.gz
+    output: results/ImputeRP_RP_Chr02.14.vcf.gz
+    jobid: 174
+    wildcards: chr=02, subset=14
+    resources: memory=200G, threads=15
+
+Submitted job 174 with external jobid 'Submitted batch job 22958631'.
+
+[Wed Jun 30 01:16:01 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr02.38.vcf.gz
+    output: results/ImputeRP_RP_Chr02.38.vcf.gz
+    jobid: 198
+    wildcards: chr=02, subset=38
+    resources: memory=200G, threads=15
+
+Submitted job 198 with external jobid 'Submitted batch job 22958632'.
+
+[Wed Jun 30 01:16:01 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr02.23.vcf.gz
+    output: results/ImputeRP_RP_Chr02.23.vcf.gz
+    jobid: 183
+    wildcards: chr=02, subset=23
+    resources: memory=200G, threads=15
+
+Submitted job 183 with external jobid 'Submitted batch job 22958633'.
+
+[Wed Jun 30 01:16:01 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr02.16.vcf.gz
+    output: results/ImputeRP_RP_Chr02.16.vcf.gz
+    jobid: 176
+    wildcards: chr=02, subset=16
+    resources: memory=200G, threads=15
+
+Submitted job 176 with external jobid 'Submitted batch job 22958634'.
+
+[Wed Jun 30 01:16:01 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr02.31.vcf.gz
+    output: results/ImputeRP_RP_Chr02.31.vcf.gz
+    jobid: 191
+    wildcards: chr=02, subset=31
+    resources: memory=200G, threads=15
+
+Submitted job 191 with external jobid 'Submitted batch job 22958635'.
+
+[Wed Jun 30 01:16:01 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr02.1.vcf.gz
+    output: results/ImputeRP_RP_Chr02.1.vcf.gz
+    jobid: 161
+    wildcards: chr=02, subset=1
+    resources: memory=200G, threads=15
+
+Submitted job 161 with external jobid 'Submitted batch job 22958636'.
+
+[Wed Jun 30 01:16:01 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr02.9.vcf.gz
+    output: results/ImputeRP_RP_Chr02.9.vcf.gz
+    jobid: 169
+    wildcards: chr=02, subset=9
+    resources: memory=200G, threads=15
+
+Submitted job 169 with external jobid 'Submitted batch job 22958637'.
+
+[Wed Jun 30 01:16:01 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr02.24.vcf.gz
+    output: results/ImputeRP_RP_Chr02.24.vcf.gz
+    jobid: 184
+    wildcards: chr=02, subset=24
+    resources: memory=200G, threads=15
+
+Submitted job 184 with external jobid 'Submitted batch job 22958638'.
+
+[Wed Jun 30 01:16:01 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr02.39.vcf.gz
+    output: results/ImputeRP_RP_Chr02.39.vcf.gz
+    jobid: 199
+    wildcards: chr=02, subset=39
+    resources: memory=200G, threads=15
+
+Submitted job 199 with external jobid 'Submitted batch job 22958639'.
+
+[Wed Jun 30 01:16:01 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr02.2.vcf.gz
+    output: results/ImputeRP_RP_Chr02.2.vcf.gz
+    jobid: 162
+    wildcards: chr=02, subset=2
+    resources: memory=200G, threads=15
+
+Submitted job 162 with external jobid 'Submitted batch job 22958640'.
+
+[Wed Jun 30 01:16:01 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr02.17.vcf.gz
+    output: results/ImputeRP_RP_Chr02.17.vcf.gz
+    jobid: 177
+    wildcards: chr=02, subset=17
+    resources: memory=200G, threads=15
+
+Submitted job 177 with external jobid 'Submitted batch job 22958641'.
+
+[Wed Jun 30 01:16:01 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr02.32.vcf.gz
+    output: results/ImputeRP_RP_Chr02.32.vcf.gz
+    jobid: 192
+    wildcards: chr=02, subset=32
+    resources: memory=200G, threads=15
+
+Submitted job 192 with external jobid 'Submitted batch job 22958642'.
+
+[Wed Jun 30 01:16:01 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr02.25.vcf.gz
+    output: results/ImputeRP_RP_Chr02.25.vcf.gz
+    jobid: 185
+    wildcards: chr=02, subset=25
+    resources: memory=200G, threads=15
+
+Submitted job 185 with external jobid 'Submitted batch job 22958643'.
+Select jobs to execute...
+
+[Wed Jun 30 01:16:01 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr02.21.vcf.gz
+    output: results/ImputeRP_RP_Chr02.21.vcf.gz
+    jobid: 181
+    wildcards: chr=02, subset=21
+    resources: memory=200G, threads=15
+
+Submitted job 181 with external jobid 'Submitted batch job 22958644'.
+[Wed Jun 30 01:16:19 2021]
+Finished job 68.
+63 of 1781 steps (4%) done
+Select jobs to execute...
+
+[Wed Jun 30 01:16:19 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr02.36.vcf.gz
+    output: results/ImputeRP_RP_Chr02.36.vcf.gz
+    jobid: 196
+    wildcards: chr=02, subset=36
+    resources: memory=200G, threads=15
+
+Submitted job 196 with external jobid 'Submitted batch job 22958645'.
+[Wed Jun 30 01:17:19 2021]
+Finished job 74.
+64 of 1781 steps (4%) done
+Select jobs to execute...
+
+[Wed Jun 30 01:17:19 2021]
+rule SplitVCF:
+    input: results/Preformat_NRP_Chr08.vcf.gz, resources/beagle/splitvcf.jar
+    output: results/SplitVCF_NRP_Chr08.1.vcf.gz, results/SplitVCF_NRP_Chr08.2.vcf.gz, results/SplitVCF_NRP_Chr08.3.vcf.gz, results/SplitVCF_NRP_Chr08.4.vcf.gz, results/SplitVCF_NRP_Chr08.5.vcf.gz, results/SplitVCF_NRP_Chr08.6.vcf.gz, results/SplitVCF_NRP_Chr08.7.vcf.gz, results/SplitVCF_NRP_Chr08.8.vcf.gz, results/SplitVCF_NRP_Chr08.9.vcf.gz, results/SplitVCF_NRP_Chr08.10.vcf.gz, results/SplitVCF_NRP_Chr08.11.vcf.gz, results/SplitVCF_NRP_Chr08.12.vcf.gz, results/SplitVCF_NRP_Chr08.13.vcf.gz, results/SplitVCF_NRP_Chr08.14.vcf.gz, results/SplitVCF_NRP_Chr08.15.vcf.gz, results/SplitVCF_NRP_Chr08.16.vcf.gz, results/SplitVCF_NRP_Chr08.17.vcf.gz, results/SplitVCF_NRP_Chr08.18.vcf.gz, results/SplitVCF_NRP_Chr08.19.vcf.gz, results/SplitVCF_NRP_Chr08.20.vcf.gz, results/SplitVCF_NRP_Chr08.21.vcf.gz, results/SplitVCF_NRP_Chr08.22.vcf.gz, results/SplitVCF_NRP_Chr08.23.vcf.gz, results/SplitVCF_NRP_Chr08.24.vcf.gz, results/SplitVCF_NRP_Chr08.25.vcf.gz, results/SplitVCF_NRP_Chr08.26.vcf.gz, results/SplitVCF_NRP_Chr08.27.vcf.gz, results/SplitVCF_NRP_Chr08.28.vcf.gz, results/SplitVCF_NRP_Chr08.29.vcf.gz, results/SplitVCF_NRP_Chr08.30.vcf.gz, results/SplitVCF_NRP_Chr08.31.vcf.gz, results/SplitVCF_NRP_Chr08.32.vcf.gz, results/SplitVCF_NRP_Chr08.33.vcf.gz, results/SplitVCF_NRP_Chr08.34.vcf.gz, results/SplitVCF_NRP_Chr08.35.vcf.gz, results/SplitVCF_NRP_Chr08.36.vcf.gz, results/SplitVCF_NRP_Chr08.37.vcf.gz, results/SplitVCF_NRP_Chr08.38.vcf.gz, results/SplitVCF_NRP_Chr08.39.vcf.gz, results/SplitVCF_NRP_Chr08.40.vcf.gz
+    jobid: 108
+    wildcards: id=NRP, chr=08
+
+Submitted job 108 with external jobid 'Submitted batch job 22958646'.
+[Wed Jun 30 01:18:59 2021]
+Finished job 66.
+65 of 1781 steps (4%) done
+Select jobs to execute...
+
+[Wed Jun 30 01:18:59 2021]
+rule SplitVCF:
+    input: results/Preformat_NRP_Chr06.vcf.gz, resources/beagle/splitvcf.jar
+    output: results/SplitVCF_NRP_Chr06.1.vcf.gz, results/SplitVCF_NRP_Chr06.2.vcf.gz, results/SplitVCF_NRP_Chr06.3.vcf.gz, results/SplitVCF_NRP_Chr06.4.vcf.gz, results/SplitVCF_NRP_Chr06.5.vcf.gz, results/SplitVCF_NRP_Chr06.6.vcf.gz, results/SplitVCF_NRP_Chr06.7.vcf.gz, results/SplitVCF_NRP_Chr06.8.vcf.gz, results/SplitVCF_NRP_Chr06.9.vcf.gz, results/SplitVCF_NRP_Chr06.10.vcf.gz, results/SplitVCF_NRP_Chr06.11.vcf.gz, results/SplitVCF_NRP_Chr06.12.vcf.gz, results/SplitVCF_NRP_Chr06.13.vcf.gz, results/SplitVCF_NRP_Chr06.14.vcf.gz, results/SplitVCF_NRP_Chr06.15.vcf.gz, results/SplitVCF_NRP_Chr06.16.vcf.gz, results/SplitVCF_NRP_Chr06.17.vcf.gz, results/SplitVCF_NRP_Chr06.18.vcf.gz, results/SplitVCF_NRP_Chr06.19.vcf.gz, results/SplitVCF_NRP_Chr06.20.vcf.gz, results/SplitVCF_NRP_Chr06.21.vcf.gz, results/SplitVCF_NRP_Chr06.22.vcf.gz, results/SplitVCF_NRP_Chr06.23.vcf.gz, results/SplitVCF_NRP_Chr06.24.vcf.gz, results/SplitVCF_NRP_Chr06.25.vcf.gz, results/SplitVCF_NRP_Chr06.26.vcf.gz, results/SplitVCF_NRP_Chr06.27.vcf.gz, results/SplitVCF_NRP_Chr06.28.vcf.gz, results/SplitVCF_NRP_Chr06.29.vcf.gz, results/SplitVCF_NRP_Chr06.30.vcf.gz, results/SplitVCF_NRP_Chr06.31.vcf.gz, results/SplitVCF_NRP_Chr06.32.vcf.gz, results/SplitVCF_NRP_Chr06.33.vcf.gz, results/SplitVCF_NRP_Chr06.34.vcf.gz, results/SplitVCF_NRP_Chr06.35.vcf.gz, results/SplitVCF_NRP_Chr06.36.vcf.gz, results/SplitVCF_NRP_Chr06.37.vcf.gz, results/SplitVCF_NRP_Chr06.38.vcf.gz, results/SplitVCF_NRP_Chr06.39.vcf.gz, results/SplitVCF_NRP_Chr06.40.vcf.gz
+    jobid: 106
+    wildcards: id=NRP, chr=06
+
+Submitted job 106 with external jobid 'Submitted batch job 22958647'.
+[Wed Jun 30 01:19:00 2021]
+Finished job 43.
+66 of 1781 steps (4%) done
+Select jobs to execute...
+
+[Wed Jun 30 01:19:00 2021]
+rule SplitVCF:
+    input: results/Preformat_RP_Chr20.vcf.gz, resources/beagle/splitvcf.jar
+    output: results/SplitVCF_RP_Chr20.1.vcf.gz, results/SplitVCF_RP_Chr20.2.vcf.gz, results/SplitVCF_RP_Chr20.3.vcf.gz, results/SplitVCF_RP_Chr20.4.vcf.gz, results/SplitVCF_RP_Chr20.5.vcf.gz, results/SplitVCF_RP_Chr20.6.vcf.gz, results/SplitVCF_RP_Chr20.7.vcf.gz, results/SplitVCF_RP_Chr20.8.vcf.gz, results/SplitVCF_RP_Chr20.9.vcf.gz, results/SplitVCF_RP_Chr20.10.vcf.gz, results/SplitVCF_RP_Chr20.11.vcf.gz, results/SplitVCF_RP_Chr20.12.vcf.gz, results/SplitVCF_RP_Chr20.13.vcf.gz, results/SplitVCF_RP_Chr20.14.vcf.gz, results/SplitVCF_RP_Chr20.15.vcf.gz, results/SplitVCF_RP_Chr20.16.vcf.gz, results/SplitVCF_RP_Chr20.17.vcf.gz, results/SplitVCF_RP_Chr20.18.vcf.gz, results/SplitVCF_RP_Chr20.19.vcf.gz, results/SplitVCF_RP_Chr20.20.vcf.gz, results/SplitVCF_RP_Chr20.21.vcf.gz, results/SplitVCF_RP_Chr20.22.vcf.gz, results/SplitVCF_RP_Chr20.23.vcf.gz, results/SplitVCF_RP_Chr20.24.vcf.gz, results/SplitVCF_RP_Chr20.25.vcf.gz, results/SplitVCF_RP_Chr20.26.vcf.gz, results/SplitVCF_RP_Chr20.27.vcf.gz, results/SplitVCF_RP_Chr20.28.vcf.gz, results/SplitVCF_RP_Chr20.29.vcf.gz, results/SplitVCF_RP_Chr20.30.vcf.gz, results/SplitVCF_RP_Chr20.31.vcf.gz, results/SplitVCF_RP_Chr20.32.vcf.gz, results/SplitVCF_RP_Chr20.33.vcf.gz, results/SplitVCF_RP_Chr20.34.vcf.gz, results/SplitVCF_RP_Chr20.35.vcf.gz, results/SplitVCF_RP_Chr20.36.vcf.gz, results/SplitVCF_RP_Chr20.37.vcf.gz, results/SplitVCF_RP_Chr20.38.vcf.gz, results/SplitVCF_RP_Chr20.39.vcf.gz, results/SplitVCF_RP_Chr20.40.vcf.gz
+    jobid: 100
+    wildcards: id=RP, chr=20
+
+Submitted job 100 with external jobid 'Submitted batch job 22958648'.
+[Wed Jun 30 01:19:39 2021]
+Finished job 67.
+67 of 1781 steps (4%) done
+Select jobs to execute...
+[Wed Jun 30 01:19:40 2021]
+Finished job 97.
+68 of 1781 steps (4%) done
+
+[Wed Jun 30 01:19:40 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr02.30.vcf.gz
+    output: results/ImputeRP_RP_Chr02.30.vcf.gz
+    jobid: 190
+    wildcards: chr=02, subset=30
+    resources: memory=200G, threads=15
+
+Submitted job 190 with external jobid 'Submitted batch job 22958649'.
+Select jobs to execute...
+
+[Wed Jun 30 01:19:40 2021]
+rule SplitVCF:
+    input: results/Preformat_NRP_Chr07.vcf.gz, resources/beagle/splitvcf.jar
+    output: results/SplitVCF_NRP_Chr07.1.vcf.gz, results/SplitVCF_NRP_Chr07.2.vcf.gz, results/SplitVCF_NRP_Chr07.3.vcf.gz, results/SplitVCF_NRP_Chr07.4.vcf.gz, results/SplitVCF_NRP_Chr07.5.vcf.gz, results/SplitVCF_NRP_Chr07.6.vcf.gz, results/SplitVCF_NRP_Chr07.7.vcf.gz, results/SplitVCF_NRP_Chr07.8.vcf.gz, results/SplitVCF_NRP_Chr07.9.vcf.gz, results/SplitVCF_NRP_Chr07.10.vcf.gz, results/SplitVCF_NRP_Chr07.11.vcf.gz, results/SplitVCF_NRP_Chr07.12.vcf.gz, results/SplitVCF_NRP_Chr07.13.vcf.gz, results/SplitVCF_NRP_Chr07.14.vcf.gz, results/SplitVCF_NRP_Chr07.15.vcf.gz, results/SplitVCF_NRP_Chr07.16.vcf.gz, results/SplitVCF_NRP_Chr07.17.vcf.gz, results/SplitVCF_NRP_Chr07.18.vcf.gz, results/SplitVCF_NRP_Chr07.19.vcf.gz, results/SplitVCF_NRP_Chr07.20.vcf.gz, results/SplitVCF_NRP_Chr07.21.vcf.gz, results/SplitVCF_NRP_Chr07.22.vcf.gz, results/SplitVCF_NRP_Chr07.23.vcf.gz, results/SplitVCF_NRP_Chr07.24.vcf.gz, results/SplitVCF_NRP_Chr07.25.vcf.gz, results/SplitVCF_NRP_Chr07.26.vcf.gz, results/SplitVCF_NRP_Chr07.27.vcf.gz, results/SplitVCF_NRP_Chr07.28.vcf.gz, results/SplitVCF_NRP_Chr07.29.vcf.gz, results/SplitVCF_NRP_Chr07.30.vcf.gz, results/SplitVCF_NRP_Chr07.31.vcf.gz, results/SplitVCF_NRP_Chr07.32.vcf.gz, results/SplitVCF_NRP_Chr07.33.vcf.gz, results/SplitVCF_NRP_Chr07.34.vcf.gz, results/SplitVCF_NRP_Chr07.35.vcf.gz, results/SplitVCF_NRP_Chr07.36.vcf.gz, results/SplitVCF_NRP_Chr07.37.vcf.gz, results/SplitVCF_NRP_Chr07.38.vcf.gz, results/SplitVCF_NRP_Chr07.39.vcf.gz, results/SplitVCF_NRP_Chr07.40.vcf.gz
+    jobid: 107
+    wildcards: id=NRP, chr=07
+
+Submitted job 107 with external jobid 'Submitted batch job 22958650'.
+[Wed Jun 30 01:20:01 2021]
+Finished job 96.
+69 of 1781 steps (4%) done
+Select jobs to execute...
+
+[Wed Jun 30 01:20:01 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr16.7.vcf.gz
+    output: results/ImputeRP_RP_Chr16.7.vcf.gz
+    jobid: 727
+    wildcards: chr=16, subset=7
+    resources: memory=200G, threads=15
+
+Submitted job 727 with external jobid 'Submitted batch job 22958651'.
+[Wed Jun 30 01:20:40 2021]
+Finished job 72.
+70 of 1781 steps (4%) done
+Select jobs to execute...
+
+[Wed Jun 30 01:20:40 2021]
+rule SplitVCF:
+    input: results/Preformat_NRP_Chr12.vcf.gz, resources/beagle/splitvcf.jar
+    output: results/SplitVCF_NRP_Chr12.1.vcf.gz, results/SplitVCF_NRP_Chr12.2.vcf.gz, results/SplitVCF_NRP_Chr12.3.vcf.gz, results/SplitVCF_NRP_Chr12.4.vcf.gz, results/SplitVCF_NRP_Chr12.5.vcf.gz, results/SplitVCF_NRP_Chr12.6.vcf.gz, results/SplitVCF_NRP_Chr12.7.vcf.gz, results/SplitVCF_NRP_Chr12.8.vcf.gz, results/SplitVCF_NRP_Chr12.9.vcf.gz, results/SplitVCF_NRP_Chr12.10.vcf.gz, results/SplitVCF_NRP_Chr12.11.vcf.gz, results/SplitVCF_NRP_Chr12.12.vcf.gz, results/SplitVCF_NRP_Chr12.13.vcf.gz, results/SplitVCF_NRP_Chr12.14.vcf.gz, results/SplitVCF_NRP_Chr12.15.vcf.gz, results/SplitVCF_NRP_Chr12.16.vcf.gz, results/SplitVCF_NRP_Chr12.17.vcf.gz, results/SplitVCF_NRP_Chr12.18.vcf.gz, results/SplitVCF_NRP_Chr12.19.vcf.gz, results/SplitVCF_NRP_Chr12.20.vcf.gz, results/SplitVCF_NRP_Chr12.21.vcf.gz, results/SplitVCF_NRP_Chr12.22.vcf.gz, results/SplitVCF_NRP_Chr12.23.vcf.gz, results/SplitVCF_NRP_Chr12.24.vcf.gz, results/SplitVCF_NRP_Chr12.25.vcf.gz, results/SplitVCF_NRP_Chr12.26.vcf.gz, results/SplitVCF_NRP_Chr12.27.vcf.gz, results/SplitVCF_NRP_Chr12.28.vcf.gz, results/SplitVCF_NRP_Chr12.29.vcf.gz, results/SplitVCF_NRP_Chr12.30.vcf.gz, results/SplitVCF_NRP_Chr12.31.vcf.gz, results/SplitVCF_NRP_Chr12.32.vcf.gz, results/SplitVCF_NRP_Chr12.33.vcf.gz, results/SplitVCF_NRP_Chr12.34.vcf.gz, results/SplitVCF_NRP_Chr12.35.vcf.gz, results/SplitVCF_NRP_Chr12.36.vcf.gz, results/SplitVCF_NRP_Chr12.37.vcf.gz, results/SplitVCF_NRP_Chr12.38.vcf.gz, results/SplitVCF_NRP_Chr12.39.vcf.gz, results/SplitVCF_NRP_Chr12.40.vcf.gz
+    jobid: 112
+    wildcards: id=NRP, chr=12
+
+Submitted job 112 with external jobid 'Submitted batch job 22958652'.
+[Wed Jun 30 01:21:00 2021]
+Finished job 61.
+71 of 1781 steps (4%) done
+Select jobs to execute...
+
+[Wed Jun 30 01:21:00 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr16.22.vcf.gz
+    output: results/ImputeRP_RP_Chr16.22.vcf.gz
+    jobid: 742
+    wildcards: chr=16, subset=22
+    resources: memory=200G, threads=15
+
+Submitted job 742 with external jobid 'Submitted batch job 22958653'.
+[Wed Jun 30 01:21:01 2021]
+Finished job 73.
+72 of 1781 steps (4%) done
+Select jobs to execute...
+
+[Wed Jun 30 01:21:01 2021]
+rule SplitVCF:
+    input: results/Preformat_RP_Chr03.vcf.gz, resources/beagle/splitvcf.jar
+    output: results/SplitVCF_RP_Chr03.1.vcf.gz, results/SplitVCF_RP_Chr03.2.vcf.gz, results/SplitVCF_RP_Chr03.3.vcf.gz, results/SplitVCF_RP_Chr03.4.vcf.gz, results/SplitVCF_RP_Chr03.5.vcf.gz, results/SplitVCF_RP_Chr03.6.vcf.gz, results/SplitVCF_RP_Chr03.7.vcf.gz, results/SplitVCF_RP_Chr03.8.vcf.gz, results/SplitVCF_RP_Chr03.9.vcf.gz, results/SplitVCF_RP_Chr03.10.vcf.gz, results/SplitVCF_RP_Chr03.11.vcf.gz, results/SplitVCF_RP_Chr03.12.vcf.gz, results/SplitVCF_RP_Chr03.13.vcf.gz, results/SplitVCF_RP_Chr03.14.vcf.gz, results/SplitVCF_RP_Chr03.15.vcf.gz, results/SplitVCF_RP_Chr03.16.vcf.gz, results/SplitVCF_RP_Chr03.17.vcf.gz, results/SplitVCF_RP_Chr03.18.vcf.gz, results/SplitVCF_RP_Chr03.19.vcf.gz, results/SplitVCF_RP_Chr03.20.vcf.gz, results/SplitVCF_RP_Chr03.21.vcf.gz, results/SplitVCF_RP_Chr03.22.vcf.gz, results/SplitVCF_RP_Chr03.23.vcf.gz, results/SplitVCF_RP_Chr03.24.vcf.gz, results/SplitVCF_RP_Chr03.25.vcf.gz, results/SplitVCF_RP_Chr03.26.vcf.gz, results/SplitVCF_RP_Chr03.27.vcf.gz, results/SplitVCF_RP_Chr03.28.vcf.gz, results/SplitVCF_RP_Chr03.29.vcf.gz, results/SplitVCF_RP_Chr03.30.vcf.gz, results/SplitVCF_RP_Chr03.31.vcf.gz, results/SplitVCF_RP_Chr03.32.vcf.gz, results/SplitVCF_RP_Chr03.33.vcf.gz, results/SplitVCF_RP_Chr03.34.vcf.gz, results/SplitVCF_RP_Chr03.35.vcf.gz, results/SplitVCF_RP_Chr03.36.vcf.gz, results/SplitVCF_RP_Chr03.37.vcf.gz, results/SplitVCF_RP_Chr03.38.vcf.gz, results/SplitVCF_RP_Chr03.39.vcf.gz, results/SplitVCF_RP_Chr03.40.vcf.gz
+    jobid: 83
+    wildcards: id=RP, chr=03
+
+Submitted job 83 with external jobid 'Submitted batch job 22958654'.
+[Wed Jun 30 01:22:00 2021]
+Finished job 102.
+73 of 1781 steps (4%) done
+[Wed Jun 30 01:22:00 2021]
+Finished job 88.
+74 of 1781 steps (4%) done
+Select jobs to execute...
+
+[Wed Jun 30 01:22:00 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr08.28.vcf.gz
+    output: results/ImputeRP_RP_Chr08.28.vcf.gz
+    jobid: 428
+    wildcards: chr=08, subset=28
+    resources: memory=200G, threads=15
+
+Submitted job 428 with external jobid 'Submitted batch job 22958655'.
+
+[Wed Jun 30 01:22:00 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr02.15.vcf.gz
+    output: results/ImputeRP_RP_Chr02.15.vcf.gz
+    jobid: 175
+    wildcards: chr=02, subset=15
+    resources: memory=200G, threads=15
+
+Submitted job 175 with external jobid 'Submitted batch job 22958656'.
+[Wed Jun 30 01:23:01 2021]
+Finished job 89.
+75 of 1781 steps (4%) done
+Select jobs to execute...
+
+[Wed Jun 30 01:23:01 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr09.5.vcf.gz
+    output: results/ImputeRP_RP_Chr09.5.vcf.gz
+    jobid: 445
+    wildcards: chr=09, subset=5
+    resources: memory=200G, threads=15
+
+Submitted job 445 with external jobid 'Submitted batch job 22958658'.
+[Wed Jun 30 01:23:19 2021]
+Finished job 116.
+76 of 1781 steps (4%) done
+[Wed Jun 30 01:24:57 2021]
+Finished job 86.
+77 of 1781 steps (4%) done
+Select jobs to execute...
+
+[Wed Jun 30 01:24:57 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr08.22.vcf.gz
+    output: results/ImputeRP_RP_Chr08.22.vcf.gz
+    jobid: 422
+    wildcards: chr=08, subset=22
+    resources: memory=200G, threads=15
+
+Submitted job 422 with external jobid 'Submitted batch job 22958659'.
+
+[Wed Jun 30 01:24:57 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr08.24.vcf.gz
+    output: results/ImputeRP_RP_Chr08.24.vcf.gz
+    jobid: 424
+    wildcards: chr=08, subset=24
+    resources: memory=200G, threads=15
+
+Submitted job 424 with external jobid 'Submitted batch job 22958660'.
+[Wed Jun 30 01:25:17 2021]
+Finished job 4.
+78 of 1781 steps (4%) done
+Select jobs to execute...
+
+[Wed Jun 30 01:25:17 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr09.18.vcf.gz
+    output: results/ImputeRP_RP_Chr09.18.vcf.gz
+    jobid: 458
+    wildcards: chr=09, subset=18
+    resources: memory=200G, threads=15
+
+Submitted job 458 with external jobid 'Submitted batch job 22958661'.
+[Wed Jun 30 01:26:16 2021]
+Finished job 92.
+79 of 1781 steps (4%) done
+Select jobs to execute...
+
+[Wed Jun 30 01:26:16 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr16.36.vcf.gz
+    output: results/ImputeRP_RP_Chr16.36.vcf.gz
+    jobid: 756
+    wildcards: chr=16, subset=36
+    resources: memory=200G, threads=15
+
+Submitted job 756 with external jobid 'Submitted batch job 22958662'.
+[Wed Jun 30 01:26:37 2021]
+Finished job 81.
+80 of 1781 steps (4%) done
+Select jobs to execute...
+
+[Wed Jun 30 01:26:37 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr09.12.vcf.gz
+    output: results/ImputeRP_RP_Chr09.12.vcf.gz
+    jobid: 452
+    wildcards: chr=09, subset=12
+    resources: memory=200G, threads=15
+
+Submitted job 452 with external jobid 'Submitted batch job 22958663'.
+[Wed Jun 30 01:26:57 2021]
+Finished job 87.
+81 of 1781 steps (5%) done
+Select jobs to execute...
+
+[Wed Jun 30 01:26:57 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr06.10.vcf.gz
+    output: results/ImputeRP_RP_Chr06.10.vcf.gz
+    jobid: 330
+    wildcards: chr=06, subset=10
+    resources: memory=200G, threads=15
+
+Submitted job 330 with external jobid 'Submitted batch job 22958664'.
+[Wed Jun 30 01:28:17 2021]
+Finished job 94.
+82 of 1781 steps (5%) done
+Select jobs to execute...
+
+[Wed Jun 30 01:28:18 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr07.39.vcf.gz
+    output: results/ImputeRP_RP_Chr07.39.vcf.gz
+    jobid: 399
+    wildcards: chr=07, subset=39
+    resources: memory=200G, threads=15
+
+Submitted job 399 with external jobid 'Submitted batch job 22958665'.
+[Wed Jun 30 01:29:18 2021]
+Finished job 93.
+83 of 1781 steps (5%) done
+Select jobs to execute...
+
+[Wed Jun 30 01:29:18 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr16.23.vcf.gz
+    output: results/ImputeRP_RP_Chr16.23.vcf.gz
+    jobid: 743
+    wildcards: chr=16, subset=23
+    resources: memory=200G, threads=15
+
+Submitted job 743 with external jobid 'Submitted batch job 22958666'.
+[Wed Jun 30 01:29:35 2021]
+Finished job 75.
+84 of 1781 steps (5%) done
+Select jobs to execute...
+
+[Wed Jun 30 01:29:35 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr14.12.vcf.gz
+    output: results/ImputeRP_RP_Chr14.12.vcf.gz
+    jobid: 652
+    wildcards: chr=14, subset=12
+    resources: memory=200G, threads=15
+
+Submitted job 652 with external jobid 'Submitted batch job 22958667'.
+[Wed Jun 30 01:29:37 2021]
+Finished job 5.
+85 of 1781 steps (5%) done
+Select jobs to execute...
+
+[Wed Jun 30 01:29:37 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr07.37.vcf.gz
+    output: results/ImputeRP_RP_Chr07.37.vcf.gz
+    jobid: 397
+    wildcards: chr=07, subset=37
+    resources: memory=200G, threads=15
+
+Submitted job 397 with external jobid 'Submitted batch job 22958668'.
+[Wed Jun 30 01:32:17 2021]
+Finished job 58.
+86 of 1781 steps (5%) done
+Select jobs to execute...
+
+[Wed Jun 30 01:32:18 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr16.21.vcf.gz
+    output: results/ImputeRP_RP_Chr16.21.vcf.gz
+    jobid: 741
+    wildcards: chr=16, subset=21
+    resources: memory=200G, threads=15
+
+Submitted job 741 with external jobid 'Submitted batch job 22958669'.
+[Wed Jun 30 01:35:36 2021]
+Finished job 70.
+87 of 1781 steps (5%) done
+Select jobs to execute...
+[Wed Jun 30 01:35:36 2021]
+Finished job 95.
+88 of 1781 steps (5%) done
+
+[Wed Jun 30 01:35:36 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr14.11.vcf.gz
+    output: results/ImputeRP_RP_Chr14.11.vcf.gz
+    jobid: 651
+    wildcards: chr=14, subset=11
+    resources: memory=200G, threads=15
+
+Submitted job 651 with external jobid 'Submitted batch job 22958670'.
+Select jobs to execute...
+
+[Wed Jun 30 01:35:36 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr16.18.vcf.gz
+    output: results/ImputeRP_RP_Chr16.18.vcf.gz
+    jobid: 738
+    wildcards: chr=16, subset=18
+    resources: memory=200G, threads=15
+
+Submitted job 738 with external jobid 'Submitted batch job 22958671'.
+[Wed Jun 30 01:37:36 2021]
+Finished job 109.
+89 of 1781 steps (5%) done
+[Wed Jun 30 01:44:17 2021]
+Finished job 90.
+90 of 1781 steps (5%) done
+Select jobs to execute...
+
+[Wed Jun 30 01:44:17 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr07.16.vcf.gz
+    output: results/ImputeRP_RP_Chr07.16.vcf.gz
+    jobid: 376
+    wildcards: chr=07, subset=16
+    resources: memory=200G, threads=15
+
+Submitted job 376 with external jobid 'Submitted batch job 22958674'.
+
+[Wed Jun 30 01:44:17 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr13.3.vcf.gz
+    output: results/ImputeRP_RP_Chr13.3.vcf.gz
+    jobid: 603
+    wildcards: chr=13, subset=3
+    resources: memory=200G, threads=15
+
+Submitted job 603 with external jobid 'Submitted batch job 22958675'.
+[Wed Jun 30 01:56:17 2021]
+Finished job 79.
+91 of 1781 steps (5%) done
+Select jobs to execute...
+
+[Wed Jun 30 01:56:17 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr14.4.vcf.gz
+    output: results/ImputeRP_RP_Chr14.4.vcf.gz
+    jobid: 644
+    wildcards: chr=14, subset=4
+    resources: memory=200G, threads=15
+
+Submitted job 644 with external jobid 'Submitted batch job 22958676'.
+[Wed Jun 30 01:56:37 2021]
+Finished job 117.
+92 of 1781 steps (5%) done
+[Wed Jun 30 02:05:12 2021]
+Finished job 99.
+93 of 1781 steps (5%) done
+Select jobs to execute...
+
+[Wed Jun 30 02:05:12 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr14.35.vcf.gz
+    output: results/ImputeRP_RP_Chr14.35.vcf.gz
+    jobid: 675
+    wildcards: chr=14, subset=35
+    resources: memory=200G, threads=15
+
+Submitted job 675 with external jobid 'Submitted batch job 22958677'.
+
+[Wed Jun 30 02:05:12 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr13.1.vcf.gz
+    output: results/ImputeRP_RP_Chr13.1.vcf.gz
+    jobid: 601
+    wildcards: chr=13, subset=1
+    resources: memory=200G, threads=15
+
+Submitted job 601 with external jobid 'Submitted batch job 22958678'.
+[Wed Jun 30 03:50:59 2021]
+Finished job 523.
+94 of 1781 steps (5%) done
+Select jobs to execute...
+
+[Wed Jun 30 03:50:59 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr06.36.vcf.gz
+    output: results/ImputeRP_RP_Chr06.36.vcf.gz
+    jobid: 356
+    wildcards: chr=06, subset=36
+    resources: memory=200G, threads=15
+
+Submitted job 356 with external jobid 'Submitted batch job 22958694'.
+[Wed Jun 30 03:55:40 2021]
+Finished job 553.
+95 of 1781 steps (5%) done
+Select jobs to execute...
+
+[Wed Jun 30 03:55:40 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr10.11.vcf.gz
+    output: results/ImputeRP_RP_Chr10.11.vcf.gz
+    jobid: 491
+    wildcards: chr=10, subset=11
+    resources: memory=200G, threads=15
+
+Submitted job 491 with external jobid 'Submitted batch job 22958695'.
+[Wed Jun 30 03:58:40 2021]
+Error in rule ImputeRP:
+    jobid: 538
+    output: results/ImputeRP_RP_Chr11.18.vcf.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/d5dcf93c
+    shell:
+        
+		java -Xmx200G 			-jar /scratch/nad7wf/miniconda/pkgs/beagle-5.1_24Aug19.3e8-hdfd78af_1/share/beagle-5.1_24Aug19.3e8-1/beagle.jar 			nthreads=15 			gt=results/SplitVCF_RP_Chr11.18.vcf.gz 			out=results/ImputeRP_RP_Chr11.18
+
+		rm "results/ImputeRP_RP_Chr11.18.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22958567
+
+Error executing rule ImputeRP on cluster (jobid: 538, external: Submitted batch job 22958567, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.yqf422qy/snakejob.ImputeRP.538.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jun 30 04:13:17 2021]
+Finished job 524.
+96 of 1781 steps (5%) done
+[Wed Jun 30 04:23:26 2021]
+Error in rule ImputeRP:
+    jobid: 554
+    output: results/ImputeRP_RP_Chr11.34.vcf.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/d5dcf93c
+    shell:
+        
+		java -Xmx200G 			-jar /scratch/nad7wf/miniconda/pkgs/beagle-5.1_24Aug19.3e8-hdfd78af_1/share/beagle-5.1_24Aug19.3e8-1/beagle.jar 			nthreads=15 			gt=results/SplitVCF_RP_Chr11.34.vcf.gz 			out=results/ImputeRP_RP_Chr11.34
+
+		rm "results/ImputeRP_RP_Chr11.34.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22958574
+
+Error executing rule ImputeRP on cluster (jobid: 554, external: Submitted batch job 22958574, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.yqf422qy/snakejob.ImputeRP.554.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jun 30 04:25:20 2021]
+Finished job 546.
+97 of 1781 steps (5%) done
+[Wed Jun 30 04:25:39 2021]
+Finished job 547.
+98 of 1781 steps (6%) done
+[Wed Jun 30 04:27:52 2021]
+Finished job 531.
+99 of 1781 steps (6%) done
+[Wed Jun 30 04:28:30 2021]
+Finished job 525.
+100 of 1781 steps (6%) done
+[Wed Jun 30 04:32:57 2021]
+Finished job 533.
+101 of 1781 steps (6%) done
+[Wed Jun 30 04:45:38 2021]
+Error in rule ImputeRP:
+    jobid: 540
+    output: results/ImputeRP_RP_Chr11.20.vcf.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/d5dcf93c
+    shell:
+        
+		java -Xmx200G 			-jar /scratch/nad7wf/miniconda/pkgs/beagle-5.1_24Aug19.3e8-hdfd78af_1/share/beagle-5.1_24Aug19.3e8-1/beagle.jar 			nthreads=15 			gt=results/SplitVCF_RP_Chr11.20.vcf.gz 			out=results/ImputeRP_RP_Chr11.20
+
+		rm "results/ImputeRP_RP_Chr11.20.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22958578
+
+Error executing rule ImputeRP on cluster (jobid: 540, external: Submitted batch job 22958578, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.yqf422qy/snakejob.ImputeRP.540.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jun 30 04:48:29 2021]
+Finished job 532.
+102 of 1781 steps (6%) done
+[Wed Jun 30 04:48:30 2021]
+Finished job 526.
+103 of 1781 steps (6%) done
+[Wed Jun 30 04:50:19 2021]
+Finished job 541.
+104 of 1781 steps (6%) done
+[Wed Jun 30 04:52:25 2021]
+Finished job 548.
+105 of 1781 steps (6%) done
+[Wed Jun 30 04:58:08 2021]
+Finished job 549.
+106 of 1781 steps (6%) done
+[Wed Jun 30 05:00:32 2021]
+Error in rule ImputeRP:
+    jobid: 560
+    output: results/ImputeRP_RP_Chr11.40.vcf.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/d5dcf93c
+    shell:
+        
+		java -Xmx200G 			-jar /scratch/nad7wf/miniconda/pkgs/beagle-5.1_24Aug19.3e8-hdfd78af_1/share/beagle-5.1_24Aug19.3e8-1/beagle.jar 			nthreads=15 			gt=results/SplitVCF_RP_Chr11.40.vcf.gz 			out=results/ImputeRP_RP_Chr11.40
+
+		rm "results/ImputeRP_RP_Chr11.40.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22958569
+
+Error executing rule ImputeRP on cluster (jobid: 560, external: Submitted batch job 22958569, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.yqf422qy/snakejob.ImputeRP.560.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jun 30 05:00:50 2021]
+Error in rule ImputeRP:
+    jobid: 555
+    output: results/ImputeRP_RP_Chr11.35.vcf.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/d5dcf93c
+    shell:
+        
+		java -Xmx200G 			-jar /scratch/nad7wf/miniconda/pkgs/beagle-5.1_24Aug19.3e8-hdfd78af_1/share/beagle-5.1_24Aug19.3e8-1/beagle.jar 			nthreads=15 			gt=results/SplitVCF_RP_Chr11.35.vcf.gz 			out=results/ImputeRP_RP_Chr11.35
+
+		rm "results/ImputeRP_RP_Chr11.35.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22958579
+
+Error executing rule ImputeRP on cluster (jobid: 555, external: Submitted batch job 22958579, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.yqf422qy/snakejob.ImputeRP.555.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jun 30 05:03:14 2021]
+Finished job 557.
+107 of 1781 steps (6%) done
+[Wed Jun 30 05:04:44 2021]
+Finished job 556.
+108 of 1781 steps (6%) done
+[Wed Jun 30 05:08:39 2021]
+Finished job 550.
+109 of 1781 steps (6%) done
+[Wed Jun 30 05:09:12 2021]
+Finished job 108.
+110 of 1781 steps (6%) done
+[Wed Jun 30 05:10:06 2021]
+Finished job 112.
+111 of 1781 steps (6%) done
+[Wed Jun 30 05:10:41 2021]
+Finished job 107.
+112 of 1781 steps (6%) done
+[Wed Jun 30 05:11:02 2021]
+Finished job 535.
+113 of 1781 steps (6%) done
+[Wed Jun 30 05:11:32 2021]
+Finished job 106.
+114 of 1781 steps (6%) done
+[Wed Jun 30 05:11:36 2021]
+Finished job 542.
+115 of 1781 steps (6%) done
+[Wed Jun 30 05:11:36 2021]
+Finished job 545.
+116 of 1781 steps (7%) done
+[Wed Jun 30 05:15:14 2021]
+Finished job 100.
+117 of 1781 steps (7%) done
+[Wed Jun 30 05:18:24 2021]
+Error in rule ImputeRP:
+    jobid: 527
+    output: results/ImputeRP_RP_Chr11.7.vcf.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/d5dcf93c
+    shell:
+        
+		java -Xmx200G 			-jar /scratch/nad7wf/miniconda/pkgs/beagle-5.1_24Aug19.3e8-hdfd78af_1/share/beagle-5.1_24Aug19.3e8-1/beagle.jar 			nthreads=15 			gt=results/SplitVCF_RP_Chr11.7.vcf.gz 			out=results/ImputeRP_RP_Chr11.7
+
+		rm "results/ImputeRP_RP_Chr11.7.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22958587
+
+Error executing rule ImputeRP on cluster (jobid: 527, external: Submitted batch job 22958587, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.yqf422qy/snakejob.ImputeRP.527.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jun 30 05:18:41 2021]
+Finished job 528.
+118 of 1781 steps (7%) done
+[Wed Jun 30 05:20:07 2021]
+Finished job 536.
+119 of 1781 steps (7%) done
+[Wed Jun 30 05:20:21 2021]
+Finished job 83.
+120 of 1781 steps (7%) done
+[Wed Jun 30 05:23:22 2021]
+Finished job 551.
+121 of 1781 steps (7%) done
+[Wed Jun 30 05:31:54 2021]
+Finished job 543.
+122 of 1781 steps (7%) done
+[Wed Jun 30 06:06:54 2021]
+Finished job 544.
+123 of 1781 steps (7%) done
+[Wed Jun 30 06:08:31 2021]
+Finished job 529.
+124 of 1781 steps (7%) done
+[Wed Jun 30 06:09:19 2021]
+Finished job 522.
+125 of 1781 steps (7%) done
+[Wed Jun 30 06:10:23 2021]
+Finished job 537.
+126 of 1781 steps (7%) done
+[Wed Jun 30 06:11:59 2021]
+Finished job 552.
+127 of 1781 steps (7%) done
+[Wed Jun 30 06:19:11 2021]
+Error in rule ImputeRP:
+    jobid: 521
+    output: results/ImputeRP_RP_Chr11.1.vcf.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/d5dcf93c
+    shell:
+        
+		java -Xmx200G 			-jar /scratch/nad7wf/miniconda/pkgs/beagle-5.1_24Aug19.3e8-hdfd78af_1/share/beagle-5.1_24Aug19.3e8-1/beagle.jar 			nthreads=15 			gt=results/SplitVCF_RP_Chr11.1.vcf.gz 			out=results/ImputeRP_RP_Chr11.1
+
+		rm "results/ImputeRP_RP_Chr11.1.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22958597
+
+Error executing rule ImputeRP on cluster (jobid: 521, external: Submitted batch job 22958597, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.yqf422qy/snakejob.ImputeRP.521.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jun 30 06:30:08 2021]
+Error in rule ImputeRP:
+    jobid: 534
+    output: results/ImputeRP_RP_Chr11.14.vcf.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/d5dcf93c
+    shell:
+        
+		java -Xmx200G 			-jar /scratch/nad7wf/miniconda/pkgs/beagle-5.1_24Aug19.3e8-hdfd78af_1/share/beagle-5.1_24Aug19.3e8-1/beagle.jar 			nthreads=15 			gt=results/SplitVCF_RP_Chr11.14.vcf.gz 			out=results/ImputeRP_RP_Chr11.14
+
+		rm "results/ImputeRP_RP_Chr11.14.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22958585
+
+Error executing rule ImputeRP on cluster (jobid: 534, external: Submitted batch job 22958585, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.yqf422qy/snakejob.ImputeRP.534.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jun 30 06:32:13 2021]
+Finished job 178.
+128 of 1781 steps (7%) done
+[Wed Jun 30 06:40:31 2021]
+Finished job 164.
+129 of 1781 steps (7%) done
+[Wed Jun 30 06:40:33 2021]
+Finished job 559.
+130 of 1781 steps (7%) done
+[Wed Jun 30 06:43:48 2021]
+Error in rule ImputeRP:
+    jobid: 558
+    output: results/ImputeRP_RP_Chr11.38.vcf.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/d5dcf93c
+    shell:
+        
+		java -Xmx200G 			-jar /scratch/nad7wf/miniconda/pkgs/beagle-5.1_24Aug19.3e8-hdfd78af_1/share/beagle-5.1_24Aug19.3e8-1/beagle.jar 			nthreads=15 			gt=results/SplitVCF_RP_Chr11.38.vcf.gz 			out=results/ImputeRP_RP_Chr11.38
+
+		rm "results/ImputeRP_RP_Chr11.38.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22958595
+
+Error executing rule ImputeRP on cluster (jobid: 558, external: Submitted batch job 22958595, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.yqf422qy/snakejob.ImputeRP.558.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jun 30 06:45:31 2021]
+Finished job 179.
+131 of 1781 steps (7%) done
+[Wed Jun 30 06:47:01 2021]
+Error in rule ImputeRP:
+    jobid: 186
+    output: results/ImputeRP_RP_Chr02.26.vcf.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/d5dcf93c
+    shell:
+        
+		java -Xmx200G 			-jar /scratch/nad7wf/miniconda/pkgs/beagle-5.1_24Aug19.3e8-hdfd78af_1/share/beagle-5.1_24Aug19.3e8-1/beagle.jar 			nthreads=15 			gt=results/SplitVCF_RP_Chr02.26.vcf.gz 			out=results/ImputeRP_RP_Chr02.26
+
+		rm "results/ImputeRP_RP_Chr02.26.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22958618
+
+Error executing rule ImputeRP on cluster (jobid: 186, external: Submitted batch job 22958618, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.yqf422qy/snakejob.ImputeRP.186.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jun 30 06:48:01 2021]
+Finished job 194.
+132 of 1781 steps (7%) done
+[Wed Jun 30 06:52:32 2021]
+Finished job 165.
+133 of 1781 steps (7%) done
+[Wed Jun 30 06:56:20 2021]
+Finished job 530.
+134 of 1781 steps (8%) done
+[Wed Jun 30 06:57:03 2021]
+Finished job 195.
+135 of 1781 steps (8%) done
+[Wed Jun 30 07:04:03 2021]
+Finished job 173.
+136 of 1781 steps (8%) done
+[Wed Jun 30 07:10:23 2021]
+Finished job 188.
+137 of 1781 steps (8%) done
+[Wed Jun 30 07:16:42 2021]
+Error in rule ImputeRP:
+    jobid: 187
+    output: results/ImputeRP_RP_Chr02.27.vcf.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/d5dcf93c
+    shell:
+        
+		java -Xmx200G 			-jar /scratch/nad7wf/miniconda/pkgs/beagle-5.1_24Aug19.3e8-hdfd78af_1/share/beagle-5.1_24Aug19.3e8-1/beagle.jar 			nthreads=15 			gt=results/SplitVCF_RP_Chr02.27.vcf.gz 			out=results/ImputeRP_RP_Chr02.27
+
+		rm "results/ImputeRP_RP_Chr02.27.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22958624
+
+Error executing rule ImputeRP on cluster (jobid: 187, external: Submitted batch job 22958624, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.yqf422qy/snakejob.ImputeRP.187.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jun 30 07:19:01 2021]
+Error in rule ImputeRP:
+    jobid: 200
+    output: results/ImputeRP_RP_Chr02.40.vcf.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/d5dcf93c
+    shell:
+        
+		java -Xmx200G 			-jar /scratch/nad7wf/miniconda/pkgs/beagle-5.1_24Aug19.3e8-hdfd78af_1/share/beagle-5.1_24Aug19.3e8-1/beagle.jar 			nthreads=15 			gt=results/SplitVCF_RP_Chr02.40.vcf.gz 			out=results/ImputeRP_RP_Chr02.40
+
+		rm "results/ImputeRP_RP_Chr02.40.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22958619
+
+Error executing rule ImputeRP on cluster (jobid: 200, external: Submitted batch job 22958619, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.yqf422qy/snakejob.ImputeRP.200.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jun 30 07:25:06 2021]
+Finished job 191.
+138 of 1781 steps (8%) done
+[Wed Jun 30 07:36:06 2021]
+Error in rule ImputeRP:
+    jobid: 183
+    output: results/ImputeRP_RP_Chr02.23.vcf.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/d5dcf93c
+    shell:
+        
+		java -Xmx200G 			-jar /scratch/nad7wf/miniconda/pkgs/beagle-5.1_24Aug19.3e8-hdfd78af_1/share/beagle-5.1_24Aug19.3e8-1/beagle.jar 			nthreads=15 			gt=results/SplitVCF_RP_Chr02.23.vcf.gz 			out=results/ImputeRP_RP_Chr02.23
+
+		rm "results/ImputeRP_RP_Chr02.23.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22958633
+
+Error executing rule ImputeRP on cluster (jobid: 183, external: Submitted batch job 22958633, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.yqf422qy/snakejob.ImputeRP.183.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jun 30 07:37:30 2021]
+Error in rule ImputeRP:
+    jobid: 198
+    output: results/ImputeRP_RP_Chr02.38.vcf.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/d5dcf93c
+    shell:
+        
+		java -Xmx200G 			-jar /scratch/nad7wf/miniconda/pkgs/beagle-5.1_24Aug19.3e8-hdfd78af_1/share/beagle-5.1_24Aug19.3e8-1/beagle.jar 			nthreads=15 			gt=results/SplitVCF_RP_Chr02.38.vcf.gz 			out=results/ImputeRP_RP_Chr02.38
+
+		rm "results/ImputeRP_RP_Chr02.38.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22958632
+
+Error executing rule ImputeRP on cluster (jobid: 198, external: Submitted batch job 22958632, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.yqf422qy/snakejob.ImputeRP.198.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jun 30 07:42:24 2021]
+Finished job 199.
+139 of 1781 steps (8%) done
+[Wed Jun 30 07:48:29 2021]
+Error in rule ImputeRP:
+    jobid: 161
+    output: results/ImputeRP_RP_Chr02.1.vcf.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/d5dcf93c
+    shell:
+        
+		java -Xmx200G 			-jar /scratch/nad7wf/miniconda/pkgs/beagle-5.1_24Aug19.3e8-hdfd78af_1/share/beagle-5.1_24Aug19.3e8-1/beagle.jar 			nthreads=15 			gt=results/SplitVCF_RP_Chr02.1.vcf.gz 			out=results/ImputeRP_RP_Chr02.1
+
+		rm "results/ImputeRP_RP_Chr02.1.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22958636
+
+Error executing rule ImputeRP on cluster (jobid: 161, external: Submitted batch job 22958636, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.yqf422qy/snakejob.ImputeRP.161.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jun 30 07:50:34 2021]
+Error in rule ImputeRP:
+    jobid: 171
+    output: results/ImputeRP_RP_Chr02.11.vcf.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/d5dcf93c
+    shell:
+        
+		java -Xmx200G 			-jar /scratch/nad7wf/miniconda/pkgs/beagle-5.1_24Aug19.3e8-hdfd78af_1/share/beagle-5.1_24Aug19.3e8-1/beagle.jar 			nthreads=15 			gt=results/SplitVCF_RP_Chr02.11.vcf.gz 			out=results/ImputeRP_RP_Chr02.11
+
+		rm "results/ImputeRP_RP_Chr02.11.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22958617
+
+Error executing rule ImputeRP on cluster (jobid: 171, external: Submitted batch job 22958617, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.yqf422qy/snakejob.ImputeRP.171.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jun 30 07:52:27 2021]
+Finished job 177.
+140 of 1781 steps (8%) done
+[Wed Jun 30 07:54:25 2021]
+Finished job 192.
+141 of 1781 steps (8%) done
+[Wed Jun 30 07:57:54 2021]
+Finished job 181.
+142 of 1781 steps (8%) done
+[Wed Jun 30 07:58:33 2021]
+Finished job 169.
+143 of 1781 steps (8%) done
+[Wed Jun 30 08:00:42 2021]
+Finished job 190.
+144 of 1781 steps (8%) done
+[Wed Jun 30 08:01:47 2021]
+Finished job 196.
+145 of 1781 steps (8%) done
+[Wed Jun 30 08:02:14 2021]
+Error in rule ImputeRP:
+    jobid: 184
+    output: results/ImputeRP_RP_Chr02.24.vcf.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/d5dcf93c
+    shell:
+        
+		java -Xmx200G 			-jar /scratch/nad7wf/miniconda/pkgs/beagle-5.1_24Aug19.3e8-hdfd78af_1/share/beagle-5.1_24Aug19.3e8-1/beagle.jar 			nthreads=15 			gt=results/SplitVCF_RP_Chr02.24.vcf.gz 			out=results/ImputeRP_RP_Chr02.24
+
+		rm "results/ImputeRP_RP_Chr02.24.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22958638
+
+Error executing rule ImputeRP on cluster (jobid: 184, external: Submitted batch job 22958638, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.yqf422qy/snakejob.ImputeRP.184.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jun 30 08:05:15 2021]
+Finished job 742.
+146 of 1781 steps (8%) done
+[Wed Jun 30 08:07:39 2021]
+Finished job 428.
+147 of 1781 steps (8%) done
+[Wed Jun 30 08:12:25 2021]
+Finished job 175.
+148 of 1781 steps (8%) done
+[Wed Jun 30 08:19:47 2021]
+Finished job 422.
+149 of 1781 steps (8%) done
+[Wed Jun 30 08:27:00 2021]
+Error in rule ImputeRP:
+    jobid: 424
+    output: results/ImputeRP_RP_Chr08.24.vcf.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/d5dcf93c
+    shell:
+        
+		java -Xmx200G 			-jar /scratch/nad7wf/miniconda/pkgs/beagle-5.1_24Aug19.3e8-hdfd78af_1/share/beagle-5.1_24Aug19.3e8-1/beagle.jar 			nthreads=15 			gt=results/SplitVCF_RP_Chr08.24.vcf.gz 			out=results/ImputeRP_RP_Chr08.24
+
+		rm "results/ImputeRP_RP_Chr08.24.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22958660
+
+Error executing rule ImputeRP on cluster (jobid: 424, external: Submitted batch job 22958660, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.yqf422qy/snakejob.ImputeRP.424.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jun 30 08:38:50 2021]
+Error in rule ImputeRP:
+    jobid: 727
+    output: results/ImputeRP_RP_Chr16.7.vcf.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/d5dcf93c
+    shell:
+        
+		java -Xmx200G 			-jar /scratch/nad7wf/miniconda/pkgs/beagle-5.1_24Aug19.3e8-hdfd78af_1/share/beagle-5.1_24Aug19.3e8-1/beagle.jar 			nthreads=15 			gt=results/SplitVCF_RP_Chr16.7.vcf.gz 			out=results/ImputeRP_RP_Chr16.7
+
+		rm "results/ImputeRP_RP_Chr16.7.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22958651
+
+Error executing rule ImputeRP on cluster (jobid: 727, external: Submitted batch job 22958651, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.yqf422qy/snakejob.ImputeRP.727.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jun 30 08:41:02 2021]
+Error in rule ImputeRP:
+    jobid: 458
+    output: results/ImputeRP_RP_Chr09.18.vcf.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/d5dcf93c
+    shell:
+        
+		java -Xmx200G 			-jar /scratch/nad7wf/miniconda/pkgs/beagle-5.1_24Aug19.3e8-hdfd78af_1/share/beagle-5.1_24Aug19.3e8-1/beagle.jar 			nthreads=15 			gt=results/SplitVCF_RP_Chr09.18.vcf.gz 			out=results/ImputeRP_RP_Chr09.18
+
+		rm "results/ImputeRP_RP_Chr09.18.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22958661
+
+Error executing rule ImputeRP on cluster (jobid: 458, external: Submitted batch job 22958661, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.yqf422qy/snakejob.ImputeRP.458.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jun 30 08:43:02 2021]
+Error in rule ImputeRP:
+    jobid: 756
+    output: results/ImputeRP_RP_Chr16.36.vcf.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/d5dcf93c
+    shell:
+        
+		java -Xmx200G 			-jar /scratch/nad7wf/miniconda/pkgs/beagle-5.1_24Aug19.3e8-hdfd78af_1/share/beagle-5.1_24Aug19.3e8-1/beagle.jar 			nthreads=15 			gt=results/SplitVCF_RP_Chr16.36.vcf.gz 			out=results/ImputeRP_RP_Chr16.36
+
+		rm "results/ImputeRP_RP_Chr16.36.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22958662
+
+Error executing rule ImputeRP on cluster (jobid: 756, external: Submitted batch job 22958662, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.yqf422qy/snakejob.ImputeRP.756.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jun 30 08:46:02 2021]
+Finished job 330.
+150 of 1781 steps (8%) done
+[Wed Jun 30 08:47:52 2021]
+Error in rule ImputeRP:
+    jobid: 176
+    output: results/ImputeRP_RP_Chr02.16.vcf.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/d5dcf93c
+    shell:
+        
+		java -Xmx200G 			-jar /scratch/nad7wf/miniconda/pkgs/beagle-5.1_24Aug19.3e8-hdfd78af_1/share/beagle-5.1_24Aug19.3e8-1/beagle.jar 			nthreads=15 			gt=results/SplitVCF_RP_Chr02.16.vcf.gz 			out=results/ImputeRP_RP_Chr02.16
+
+		rm "results/ImputeRP_RP_Chr02.16.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22958634
+
+Error executing rule ImputeRP on cluster (jobid: 176, external: Submitted batch job 22958634, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.yqf422qy/snakejob.ImputeRP.176.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jun 30 08:49:27 2021]
+Finished job 452.
+151 of 1781 steps (8%) done
+[Wed Jun 30 09:00:40 2021]
+Error in rule ImputeRP:
+    jobid: 652
+    output: results/ImputeRP_RP_Chr14.12.vcf.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/d5dcf93c
+    shell:
+        
+		java -Xmx200G 			-jar /scratch/nad7wf/miniconda/pkgs/beagle-5.1_24Aug19.3e8-hdfd78af_1/share/beagle-5.1_24Aug19.3e8-1/beagle.jar 			nthreads=15 			gt=results/SplitVCF_RP_Chr14.12.vcf.gz 			out=results/ImputeRP_RP_Chr14.12
+
+		rm "results/ImputeRP_RP_Chr14.12.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22958667
+
+Error executing rule ImputeRP on cluster (jobid: 652, external: Submitted batch job 22958667, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.yqf422qy/snakejob.ImputeRP.652.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jun 30 09:09:40 2021]
+Error in rule ImputeRP:
+    jobid: 743
+    output: results/ImputeRP_RP_Chr16.23.vcf.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/d5dcf93c
+    shell:
+        
+		java -Xmx200G 			-jar /scratch/nad7wf/miniconda/pkgs/beagle-5.1_24Aug19.3e8-hdfd78af_1/share/beagle-5.1_24Aug19.3e8-1/beagle.jar 			nthreads=15 			gt=results/SplitVCF_RP_Chr16.23.vcf.gz 			out=results/ImputeRP_RP_Chr16.23
+
+		rm "results/ImputeRP_RP_Chr16.23.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22958666
+
+Error executing rule ImputeRP on cluster (jobid: 743, external: Submitted batch job 22958666, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.yqf422qy/snakejob.ImputeRP.743.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jun 30 09:10:03 2021]
+Finished job 738.
+152 of 1781 steps (9%) done
+[Wed Jun 30 09:16:52 2021]
+Finished job 603.
+153 of 1781 steps (9%) done
+[Wed Jun 30 09:19:26 2021]
+Error in rule ImputeRP:
+    jobid: 376
+    output: results/ImputeRP_RP_Chr07.16.vcf.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/d5dcf93c
+    shell:
+        
+		java -Xmx200G 			-jar /scratch/nad7wf/miniconda/pkgs/beagle-5.1_24Aug19.3e8-hdfd78af_1/share/beagle-5.1_24Aug19.3e8-1/beagle.jar 			nthreads=15 			gt=results/SplitVCF_RP_Chr07.16.vcf.gz 			out=results/ImputeRP_RP_Chr07.16
+
+		rm "results/ImputeRP_RP_Chr07.16.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22958674
+
+Error executing rule ImputeRP on cluster (jobid: 376, external: Submitted batch job 22958674, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.yqf422qy/snakejob.ImputeRP.376.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jun 30 09:22:44 2021]
+Finished job 399.
+154 of 1781 steps (9%) done
+[Wed Jun 30 09:25:08 2021]
+Error in rule ImputeRP:
+    jobid: 356
+    output: results/ImputeRP_RP_Chr06.36.vcf.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/d5dcf93c
+    shell:
+        
+		java -Xmx200G 			-jar /scratch/nad7wf/miniconda/pkgs/beagle-5.1_24Aug19.3e8-hdfd78af_1/share/beagle-5.1_24Aug19.3e8-1/beagle.jar 			nthreads=15 			gt=results/SplitVCF_RP_Chr06.36.vcf.gz 			out=results/ImputeRP_RP_Chr06.36
+
+		rm "results/ImputeRP_RP_Chr06.36.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22958694
+
+Error executing rule ImputeRP on cluster (jobid: 356, external: Submitted batch job 22958694, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.yqf422qy/snakejob.ImputeRP.356.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jun 30 09:26:25 2021]
+Error in rule ImputeRP:
+    jobid: 675
+    output: results/ImputeRP_RP_Chr14.35.vcf.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/d5dcf93c
+    shell:
+        
+		java -Xmx200G 			-jar /scratch/nad7wf/miniconda/pkgs/beagle-5.1_24Aug19.3e8-hdfd78af_1/share/beagle-5.1_24Aug19.3e8-1/beagle.jar 			nthreads=15 			gt=results/SplitVCF_RP_Chr14.35.vcf.gz 			out=results/ImputeRP_RP_Chr14.35
+
+		rm "results/ImputeRP_RP_Chr14.35.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22958677
+
+Error executing rule ImputeRP on cluster (jobid: 675, external: Submitted batch job 22958677, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.yqf422qy/snakejob.ImputeRP.675.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jun 30 09:28:15 2021]
+Error in rule ImputeRP:
+    jobid: 601
+    output: results/ImputeRP_RP_Chr13.1.vcf.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/d5dcf93c
+    shell:
+        
+		java -Xmx200G 			-jar /scratch/nad7wf/miniconda/pkgs/beagle-5.1_24Aug19.3e8-hdfd78af_1/share/beagle-5.1_24Aug19.3e8-1/beagle.jar 			nthreads=15 			gt=results/SplitVCF_RP_Chr13.1.vcf.gz 			out=results/ImputeRP_RP_Chr13.1
+
+		rm "results/ImputeRP_RP_Chr13.1.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22958678
+
+Error executing rule ImputeRP on cluster (jobid: 601, external: Submitted batch job 22958678, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.yqf422qy/snakejob.ImputeRP.601.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jun 30 09:33:46 2021]
+Error in rule ImputeRP:
+    jobid: 162
+    output: results/ImputeRP_RP_Chr02.2.vcf.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/d5dcf93c
+    shell:
+        
+		java -Xmx200G 			-jar /scratch/nad7wf/miniconda/pkgs/beagle-5.1_24Aug19.3e8-hdfd78af_1/share/beagle-5.1_24Aug19.3e8-1/beagle.jar 			nthreads=15 			gt=results/SplitVCF_RP_Chr02.2.vcf.gz 			out=results/ImputeRP_RP_Chr02.2
+
+		rm "results/ImputeRP_RP_Chr02.2.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22958640
+
+Error executing rule ImputeRP on cluster (jobid: 162, external: Submitted batch job 22958640, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.yqf422qy/snakejob.ImputeRP.162.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jun 30 09:38:10 2021]
+Error in rule ImputeRP:
+    jobid: 644
+    output: results/ImputeRP_RP_Chr14.4.vcf.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/d5dcf93c
+    shell:
+        
+		java -Xmx200G 			-jar /scratch/nad7wf/miniconda/pkgs/beagle-5.1_24Aug19.3e8-hdfd78af_1/share/beagle-5.1_24Aug19.3e8-1/beagle.jar 			nthreads=15 			gt=results/SplitVCF_RP_Chr14.4.vcf.gz 			out=results/ImputeRP_RP_Chr14.4
+
+		rm "results/ImputeRP_RP_Chr14.4.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22958676
+
+Error executing rule ImputeRP on cluster (jobid: 644, external: Submitted batch job 22958676, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.yqf422qy/snakejob.ImputeRP.644.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jun 30 09:38:54 2021]
+Error in rule ImputeRP:
+    jobid: 741
+    output: results/ImputeRP_RP_Chr16.21.vcf.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/d5dcf93c
+    shell:
+        
+		java -Xmx200G 			-jar /scratch/nad7wf/miniconda/pkgs/beagle-5.1_24Aug19.3e8-hdfd78af_1/share/beagle-5.1_24Aug19.3e8-1/beagle.jar 			nthreads=15 			gt=results/SplitVCF_RP_Chr16.21.vcf.gz 			out=results/ImputeRP_RP_Chr16.21
+
+		rm "results/ImputeRP_RP_Chr16.21.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22958669
+
+Error executing rule ImputeRP on cluster (jobid: 741, external: Submitted batch job 22958669, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.yqf422qy/snakejob.ImputeRP.741.sh). For error details see the cluster log and the log files of the involved rule(s).

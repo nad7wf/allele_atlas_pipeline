@@ -1,0 +1,36 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	2	RenameSamples
+	1	all
+	3
+Select jobs to execute...
+
+[Sun Jun 20 10:22:45 2021]
+rule RenameSamples:
+    input: resources/Soy775/Soy775_Chr01.vcf.gz, resources/Soy775/Soy775_sample_name_correspondence_file.txt
+    output: results/RenameSamples_Soy775_Chr01.vcf.gz
+    jobid: 1
+    wildcards: id=Soy775, chr=01
+
+Activating conda environment: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/6e3b2aa0
+Terminating processes on user request, this might take some time.
+[Sun Jun 20 10:40:56 2021]
+Error in rule RenameSamples:
+    jobid: 1
+    output: results/RenameSamples_Soy775_Chr01.vcf.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/6e3b2aa0
+    shell:
+        
+		gzip -dc resources/Soy775/Soy775_Chr01.vcf.gz | 			bcftools reheader  			-s resources/Soy775/Soy775_sample_name_correspondence_file.txt - | 			bgzip -l 9 > results/RenameSamples_Soy775_Chr01.vcf.gz
+
+		bcftools index --tbi results/RenameSamples_Soy775_Chr01.vcf.gz
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job RenameSamples since they might be corrupted:
+results/RenameSamples_Soy775_Chr01.vcf.gz
+Complete log: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/log/2021-06-20T102055.300115.snakemake.log

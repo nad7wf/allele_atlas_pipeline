@@ -1,0 +1,84 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 50
+Job counts:
+	count	jobs
+	1	ImputeNRP
+	1	ImputeRP
+	1	MergeVCFs
+	2	SplitVCF
+	2	SubAsterisk
+	1	all
+	8
+Select jobs to execute...
+
+[Thu May 27 12:02:49 2021]
+rule SubAsterisk:
+    input: resources/Soy775/Soy775_Chr01.vcf.gz
+    output: results/SubAsterisk_Soy775_Chr01.vcf.gz
+    log: reports/SubAsterisk_Soy775_Chr01.log
+    jobid: 1
+    wildcards: id=Soy775, chr=01
+
+Submitted job 1 with external jobid 'Submitted batch job 22847677'.
+
+[Thu May 27 12:02:50 2021]
+rule SubAsterisk:
+    input: resources/NRP/NRP_Chr01.vcf.gz
+    output: results/SubAsterisk_NRP_Chr01.vcf.gz
+    log: reports/SubAsterisk_NRP_Chr01.log
+    jobid: 2
+    wildcards: id=NRP, chr=01
+
+Submitted job 2 with external jobid 'Submitted batch job 22847678'.
+[Thu May 27 12:14:40 2021]
+Finished job 1.
+1 of 8 steps (12%) done
+Select jobs to execute...
+
+[Thu May 27 12:14:40 2021]
+rule SplitVCF:
+    input: results/SubAsterisk_Soy775_Chr01.vcf.gz, resources/beagle/splitvcf.jar
+    output: results/SplitVCF_Soy775_Chr01.1.vcf.gz
+    log: reports/SplitVCF_Soy775_Chr01.log
+    jobid: 3
+    wildcards: id=Soy775, chr=01
+
+Submitted job 3 with external jobid 'Submitted batch job 22847685'.
+[Thu May 27 12:30:41 2021]
+Finished job 3.
+2 of 8 steps (25%) done
+Select jobs to execute...
+
+[Thu May 27 12:30:41 2021]
+rule ImputeRP:
+    input: results/SplitVCF_Soy775_Chr01.1.vcf.gz
+    output: results/ImputeRP_Soy775_Chr01.1.vcf.gz
+    log: reports/ImputeRP_Soy775_Chr01.1.log
+    jobid: 5
+    wildcards: chr=01, subset=1
+    resources: memory=20G
+
+Submitted job 5 with external jobid 'Submitted batch job 22847701'.
+[Thu May 27 12:50:13 2021]
+Error in rule ImputeRP:
+    jobid: 5
+    output: results/ImputeRP_Soy775_Chr01.1.vcf.gz
+    log: reports/ImputeRP_Soy775_Chr01.1.log (check log file(s) for error message)
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/e283fd6b
+    shell:
+        
+		java -Xmx20G 			-jar /scratch/nad7wf/miniconda/pkgs/beagle-5.2_21Apr21.304-hdfd78af_0/share/beagle-5.2_21Apr21.304-0/beagle.jar 			gt=results/SplitVCF_Soy775_Chr01.1.vcf.gz 			out=results/ImputeRP_Soy775_Chr01.1 			2> reports/ImputeRP_Soy775_Chr01.1.log
+
+		rm "results/ImputeRP_Soy775_Chr01.1.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22847701
+
+Error executing rule ImputeRP on cluster (jobid: 5, external: Submitted batch job 22847701, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.sohdr2j_/snakejob.ImputeRP.5.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Thu May 27 12:56:53 2021]
+Finished job 2.
+3 of 8 steps (38%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/log/2021-05-27T120249.747650.snakemake.log

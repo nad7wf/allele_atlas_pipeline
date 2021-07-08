@@ -1,0 +1,4 @@
+NameError in line 7 of /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/rules/beagle/beagle_ImputeRP.smk:
+name 'RP_id' is not defined
+  File "/storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/workflow/allele_atlas.smk", line 27, in <module>
+  File "/storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/rules/beagle/beagle_ImputeRP.smk", line 7, in <module>

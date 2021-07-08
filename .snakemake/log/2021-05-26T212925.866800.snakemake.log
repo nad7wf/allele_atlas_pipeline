@@ -1,0 +1,5 @@
+Building DAG of jobs...
+MissingInputException in line 1 of /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/rules/beagle/beagle_MergeVCFs.smk:
+Missing input files for rule MergeVCFs:
+results/ImputeNRP_NRP_Chr01.1.vcf
+results/ImputeRP_Soy775_Chr01.1.vcf

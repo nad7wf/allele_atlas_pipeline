@@ -1,0 +1,40 @@
+Building DAG of jobs...
+Creating conda environment envs/custom.yml...
+Downloading and installing remote packages.
+CreateCondaEnvironmentException:
+Could not create conda environment from /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/rules/custom/../../envs/custom.yml:
+Collecting package metadata (repodata.json): ...working... done
+Solving environment: ...working... 
+Building graph of deps:   0%|          | 0/5 [00:00<?, ?it/s]
+Examining bcftools=1.10:   0%|          | 0/5 [00:00<?, ?it/s]
+Examining @/linux-64::__linux==3.10.0=0:  20%|██        | 1/5 [00:00<00:00, 191.44it/s]
+Examining @/linux-64::__glibc==2.17=0:  40%|████      | 2/5 [00:00<00:00, 372.51it/s]  
+Examining @/linux-64::__unix==0=0:  60%|██████    | 3/5 [00:00<00:00, 546.23it/s]    
+Examining @/linux-64::__archspec==1=x86_64:  80%|████████  | 4/5 [00:00<00:00, 713.32it/s]
+                                                                                          
+
+Determining conflicts:   0%|          | 0/5 [00:00<?, ?it/s]
+                                                            
+Found conflicts! Looking for incompatible packages.
+This can take several minutes.  Press CTRL-C to abort.
+failed
+Solving environment: ...working... 
+
+Building graph of deps:   0%|          | 0/5 [00:00<?, ?it/s]
+Examining bcftools=1.10:   0%|          | 0/5 [00:00<?, ?it/s]
+Examining @/linux-64::__linux==3.10.0=0:  20%|██        | 1/5 [00:00<00:00, 178.03it/s]
+Examining @/linux-64::__glibc==2.17=0:  40%|████      | 2/5 [00:00<00:00, 345.10it/s]  
+Examining @/linux-64::__unix==0=0:  60%|██████    | 3/5 [00:00<00:00, 504.79it/s]    
+Examining @/linux-64::__archspec==1=x86_64:  80%|████████  | 4/5 [00:00<00:00, 657.44it/s]
+                                                                                          
+
+Determining conflicts:   0%|          | 0/5 [00:00<?, ?it/s]
+                                                            
+Found conflicts! Looking for incompatible packages.
+This can take several minutes.  Press CTRL-C to abort.
+failed
+
+UnsatisfiableError: 
+
+
+  File "/cluster/software/conda-envs/envs/snakemake-5.3.0/lib/python3.6/site-packages/snakemake/deployment/conda.py", line 352, in create

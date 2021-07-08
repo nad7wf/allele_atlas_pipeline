@@ -1,0 +1,3 @@
+NameError in line 2 of /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/workflow/allele_atlas.smk:
+name 'conf' is not defined
+  File "/storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/workflow/allele_atlas.smk", line 2, in <module>

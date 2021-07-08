@@ -1,0 +1,32 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 50
+Job counts:
+	count	jobs
+	1	PreformatNRP
+	1	all
+	2
+Select jobs to execute...
+
+[Wed Jun  9 19:58:55 2021]
+rule PreformatNRP:
+    input: resources/NRP/NRP_Chr01.vcf.gz, resources/Soy775/Soy775_Chr01.vcf.gz
+    output: results/Preformat_NRP_Chr01.vcf.gz
+    jobid: 2
+    wildcards: chr=01
+
+Submitted job 2 with external jobid 'Submitted batch job 22873437'.
+[Wed Jun  9 21:24:30 2021]
+Finished job 2.
+1 of 2 steps (50%) done
+Select jobs to execute...
+
+[Wed Jun  9 21:24:30 2021]
+localrule all:
+    input: results/Preformat_Soy775_Chr01.vcf.gz, results/Preformat_NRP_Chr01.vcf.gz
+    jobid: 0
+
+[Wed Jun  9 21:24:30 2021]
+Finished job 0.
+2 of 2 steps (100%) done
+Complete log: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/log/2021-06-09T195855.132443.snakemake.log

@@ -1,0 +1,812 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 50
+Job counts:
+	count	jobs
+	398	ImputeNRP
+	373	ImputeRP
+	20	MergeVCFs
+	3	SplitVCF
+	1	all
+	795
+Select jobs to execute...
+
+[Tue Jun  8 18:14:13 2021]
+rule ImputeNRP:
+    input: results/SplitVCF_NRP_Chr01.13.vcf.gz, results/ImputeRP_Soy775_Chr01.13.vcf.gz
+    output: results/ImputeNRP_NRP_Chr01.13.vcf.gz
+    jobid: 493
+    wildcards: chr=01, subset=13
+    resources: memory=150G
+
+Submitted job 493 with external jobid 'Submitted batch job 22872361'.
+
+[Tue Jun  8 18:14:13 2021]
+rule ImputeRP:
+    input: results/SplitVCF_Soy775_Chr04.8.vcf.gz
+    output: results/ImputeRP_Soy775_Chr04.8.vcf.gz
+    jobid: 148
+    wildcards: chr=04, subset=8
+    resources: memory=200G
+
+Submitted job 148 with external jobid 'Submitted batch job 22872362'.
+
+[Tue Jun  8 18:14:13 2021]
+rule ImputeRP:
+    input: results/SplitVCF_Soy775_Chr19.8.vcf.gz
+    output: results/ImputeRP_Soy775_Chr19.8.vcf.gz
+    jobid: 448
+    wildcards: chr=19, subset=8
+    resources: memory=200G
+
+Submitted job 448 with external jobid 'Submitted batch job 22872363'.
+
+[Tue Jun  8 18:14:13 2021]
+rule ImputeNRP:
+    input: results/SplitVCF_NRP_Chr07.6.vcf.gz, results/ImputeRP_Soy775_Chr07.6.vcf.gz
+    output: results/ImputeNRP_NRP_Chr07.6.vcf.gz
+    jobid: 606
+    wildcards: chr=07, subset=6
+    resources: memory=150G
+
+Submitted job 606 with external jobid 'Submitted batch job 22872364'.
+
+[Tue Jun  8 18:14:13 2021]
+rule ImputeNRP:
+    input: results/SplitVCF_NRP_Chr01.6.vcf.gz, results/ImputeRP_Soy775_Chr01.6.vcf.gz
+    output: results/ImputeNRP_NRP_Chr01.6.vcf.gz
+    jobid: 486
+    wildcards: chr=01, subset=6
+    resources: memory=150G
+
+Submitted job 486 with external jobid 'Submitted batch job 22872365'.
+
+[Tue Jun  8 18:14:13 2021]
+rule ImputeNRP:
+    input: results/SplitVCF_NRP_Chr01.14.vcf.gz, results/ImputeRP_Soy775_Chr01.14.vcf.gz
+    output: results/ImputeNRP_NRP_Chr01.14.vcf.gz
+    jobid: 494
+    wildcards: chr=01, subset=14
+    resources: memory=150G
+
+Submitted job 494 with external jobid 'Submitted batch job 22872366'.
+
+[Tue Jun  8 18:14:14 2021]
+rule ImputeNRP:
+    input: results/SplitVCF_NRP_Chr07.14.vcf.gz, results/ImputeRP_Soy775_Chr07.14.vcf.gz
+    output: results/ImputeNRP_NRP_Chr07.14.vcf.gz
+    jobid: 614
+    wildcards: chr=07, subset=14
+    resources: memory=150G
+
+Submitted job 614 with external jobid 'Submitted batch job 22872367'.
+
+[Tue Jun  8 18:14:14 2021]
+rule ImputeRP:
+    input: results/SplitVCF_Soy775_Chr04.9.vcf.gz
+    output: results/ImputeRP_Soy775_Chr04.9.vcf.gz
+    jobid: 149
+    wildcards: chr=04, subset=9
+    resources: memory=200G
+
+Submitted job 149 with external jobid 'Submitted batch job 22872368'.
+
+[Tue Jun  8 18:14:14 2021]
+rule ImputeRP:
+    input: results/SplitVCF_Soy775_Chr19.9.vcf.gz
+    output: results/ImputeRP_Soy775_Chr19.9.vcf.gz
+    jobid: 449
+    wildcards: chr=19, subset=9
+    resources: memory=200G
+
+Submitted job 449 with external jobid 'Submitted batch job 22872369'.
+
+[Tue Jun  8 18:14:14 2021]
+rule ImputeNRP:
+    input: results/SplitVCF_NRP_Chr01.7.vcf.gz, results/ImputeRP_Soy775_Chr01.7.vcf.gz
+    output: results/ImputeNRP_NRP_Chr01.7.vcf.gz
+    jobid: 487
+    wildcards: chr=01, subset=7
+    resources: memory=150G
+
+Submitted job 487 with external jobid 'Submitted batch job 22872370'.
+
+[Tue Jun  8 18:14:14 2021]
+rule ImputeNRP:
+    input: results/SplitVCF_NRP_Chr01.15.vcf.gz, results/ImputeRP_Soy775_Chr01.15.vcf.gz
+    output: results/ImputeNRP_NRP_Chr01.15.vcf.gz
+    jobid: 495
+    wildcards: chr=01, subset=15
+    resources: memory=150G
+
+Submitted job 495 with external jobid 'Submitted batch job 22872371'.
+
+[Tue Jun  8 18:14:14 2021]
+rule ImputeRP:
+    input: results/SplitVCF_Soy775_Chr04.10.vcf.gz
+    output: results/ImputeRP_Soy775_Chr04.10.vcf.gz
+    jobid: 150
+    wildcards: chr=04, subset=10
+    resources: memory=200G
+
+Submitted job 150 with external jobid 'Submitted batch job 22872372'.
+
+[Tue Jun  8 18:14:14 2021]
+rule ImputeRP:
+    input: results/SplitVCF_Soy775_Chr19.10.vcf.gz
+    output: results/ImputeRP_Soy775_Chr19.10.vcf.gz
+    jobid: 450
+    wildcards: chr=19, subset=10
+    resources: memory=200G
+
+Submitted job 450 with external jobid 'Submitted batch job 22872373'.
+
+[Tue Jun  8 18:14:14 2021]
+rule ImputeNRP:
+    input: results/SplitVCF_NRP_Chr08.18.vcf.gz, results/ImputeRP_Soy775_Chr08.18.vcf.gz
+    output: results/ImputeNRP_NRP_Chr08.18.vcf.gz
+    jobid: 638
+    wildcards: chr=08, subset=18
+    resources: memory=150G
+
+Submitted job 638 with external jobid 'Submitted batch job 22872374'.
+
+[Tue Jun  8 18:14:14 2021]
+rule ImputeNRP:
+    input: results/SplitVCF_NRP_Chr01.8.vcf.gz, results/ImputeRP_Soy775_Chr01.8.vcf.gz
+    output: results/ImputeNRP_NRP_Chr01.8.vcf.gz
+    jobid: 488
+    wildcards: chr=01, subset=8
+    resources: memory=150G
+
+Submitted job 488 with external jobid 'Submitted batch job 22872375'.
+
+[Tue Jun  8 18:14:14 2021]
+rule ImputeNRP:
+    input: results/SplitVCF_NRP_Chr01.16.vcf.gz, results/ImputeRP_Soy775_Chr01.16.vcf.gz
+    output: results/ImputeNRP_NRP_Chr01.16.vcf.gz
+    jobid: 496
+    wildcards: chr=01, subset=16
+    resources: memory=150G
+
+Submitted job 496 with external jobid 'Submitted batch job 22872376'.
+
+[Tue Jun  8 18:14:14 2021]
+rule ImputeRP:
+    input: results/SplitVCF_Soy775_Chr19.11.vcf.gz
+    output: results/ImputeRP_Soy775_Chr19.11.vcf.gz
+    jobid: 451
+    wildcards: chr=19, subset=11
+    resources: memory=200G
+
+Submitted job 451 with external jobid 'Submitted batch job 22872377'.
+
+[Tue Jun  8 18:14:14 2021]
+rule ImputeRP:
+    input: results/SplitVCF_Soy775_Chr04.11.vcf.gz
+    output: results/ImputeRP_Soy775_Chr04.11.vcf.gz
+    jobid: 151
+    wildcards: chr=04, subset=11
+    resources: memory=200G
+
+Submitted job 151 with external jobid 'Submitted batch job 22872378'.
+
+[Tue Jun  8 18:14:14 2021]
+rule ImputeNRP:
+    input: results/SplitVCF_NRP_Chr01.9.vcf.gz, results/ImputeRP_Soy775_Chr01.9.vcf.gz
+    output: results/ImputeNRP_NRP_Chr01.9.vcf.gz
+    jobid: 489
+    wildcards: chr=01, subset=9
+    resources: memory=150G
+
+Submitted job 489 with external jobid 'Submitted batch job 22872379'.
+
+[Tue Jun  8 18:14:14 2021]
+rule ImputeRP:
+    input: results/SplitVCF_Soy775_Chr08.14.vcf.gz
+    output: results/ImputeRP_Soy775_Chr08.14.vcf.gz
+    jobid: 234
+    wildcards: chr=08, subset=14
+    resources: memory=200G
+
+Submitted job 234 with external jobid 'Submitted batch job 22872380'.
+
+[Tue Jun  8 18:14:14 2021]
+rule ImputeRP:
+    input: results/SplitVCF_Soy775_Chr15.9.vcf.gz
+    output: results/ImputeRP_Soy775_Chr15.9.vcf.gz
+    jobid: 369
+    wildcards: chr=15, subset=9
+    resources: memory=200G
+
+Submitted job 369 with external jobid 'Submitted batch job 22872381'.
+
+[Tue Jun  8 18:14:14 2021]
+rule ImputeRP:
+    input: results/SplitVCF_Soy775_Chr18.9.vcf.gz
+    output: results/ImputeRP_Soy775_Chr18.9.vcf.gz
+    jobid: 429
+    wildcards: chr=18, subset=9
+    resources: memory=200G
+
+Submitted job 429 with external jobid 'Submitted batch job 22872382'.
+
+[Tue Jun  8 18:14:14 2021]
+rule ImputeRP:
+    input: results/SplitVCF_Soy775_Chr19.19.vcf.gz
+    output: results/ImputeRP_Soy775_Chr19.19.vcf.gz
+    jobid: 459
+    wildcards: chr=19, subset=19
+    resources: memory=200G
+
+Submitted job 459 with external jobid 'Submitted batch job 22872383'.
+
+[Tue Jun  8 18:14:14 2021]
+rule ImputeNRP:
+    input: results/SplitVCF_NRP_Chr01.17.vcf.gz, results/ImputeRP_Soy775_Chr01.17.vcf.gz
+    output: results/ImputeNRP_NRP_Chr01.17.vcf.gz
+    jobid: 497
+    wildcards: chr=01, subset=17
+    resources: memory=150G
+
+Submitted job 497 with external jobid 'Submitted batch job 22872384'.
+
+[Tue Jun  8 18:14:14 2021]
+rule ImputeRP:
+    input: results/SplitVCF_Soy775_Chr04.12.vcf.gz
+    output: results/ImputeRP_Soy775_Chr04.12.vcf.gz
+    jobid: 152
+    wildcards: chr=04, subset=12
+    resources: memory=200G
+
+Submitted job 152 with external jobid 'Submitted batch job 22872385'.
+
+[Tue Jun  8 18:14:14 2021]
+rule ImputeNRP:
+    input: results/SplitVCF_NRP_Chr01.10.vcf.gz, results/ImputeRP_Soy775_Chr01.10.vcf.gz
+    output: results/ImputeNRP_NRP_Chr01.10.vcf.gz
+    jobid: 490
+    wildcards: chr=01, subset=10
+    resources: memory=150G
+
+Submitted job 490 with external jobid 'Submitted batch job 22872386'.
+
+[Tue Jun  8 18:14:14 2021]
+rule ImputeRP:
+    input: results/SplitVCF_Soy775_Chr13.20.vcf.gz
+    output: results/ImputeRP_Soy775_Chr13.20.vcf.gz
+    jobid: 340
+    wildcards: chr=13, subset=20
+    resources: memory=200G
+
+Submitted job 340 with external jobid 'Submitted batch job 22872387'.
+
+[Tue Jun  8 18:14:15 2021]
+rule ImputeRP:
+    input: results/SplitVCF_Soy775_Chr18.10.vcf.gz
+    output: results/ImputeRP_Soy775_Chr18.10.vcf.gz
+    jobid: 430
+    wildcards: chr=18, subset=10
+    resources: memory=200G
+
+Submitted job 430 with external jobid 'Submitted batch job 22872388'.
+
+[Tue Jun  8 18:14:15 2021]
+rule ImputeRP:
+    input: results/SplitVCF_Soy775_Chr04.20.vcf.gz
+    output: results/ImputeRP_Soy775_Chr04.20.vcf.gz
+    jobid: 160
+    wildcards: chr=04, subset=20
+    resources: memory=200G
+
+Submitted job 160 with external jobid 'Submitted batch job 22872389'.
+
+[Tue Jun  8 18:14:15 2021]
+rule ImputeRP:
+    input: results/SplitVCF_Soy775_Chr19.20.vcf.gz
+    output: results/ImputeRP_Soy775_Chr19.20.vcf.gz
+    jobid: 460
+    wildcards: chr=19, subset=20
+    resources: memory=200G
+
+Submitted job 460 with external jobid 'Submitted batch job 22872390'.
+
+[Tue Jun  8 18:14:15 2021]
+rule ImputeNRP:
+    input: results/SplitVCF_NRP_Chr01.3.vcf.gz, results/ImputeRP_Soy775_Chr01.3.vcf.gz
+    output: results/ImputeNRP_NRP_Chr01.3.vcf.gz
+    jobid: 483
+    wildcards: chr=01, subset=3
+    resources: memory=150G
+
+Submitted job 483 with external jobid 'Submitted batch job 22872391'.
+
+[Tue Jun  8 18:14:15 2021]
+rule ImputeNRP:
+    input: results/SplitVCF_NRP_Chr07.3.vcf.gz, results/ImputeRP_Soy775_Chr07.3.vcf.gz
+    output: results/ImputeNRP_NRP_Chr07.3.vcf.gz
+    jobid: 603
+    wildcards: chr=07, subset=3
+    resources: memory=150G
+
+Submitted job 603 with external jobid 'Submitted batch job 22872392'.
+
+[Tue Jun  8 18:14:15 2021]
+rule ImputeNRP:
+    input: results/SplitVCF_NRP_Chr01.18.vcf.gz, results/ImputeRP_Soy775_Chr01.18.vcf.gz
+    output: results/ImputeNRP_NRP_Chr01.18.vcf.gz
+    jobid: 498
+    wildcards: chr=01, subset=18
+    resources: memory=150G
+
+Submitted job 498 with external jobid 'Submitted batch job 22872393'.
+
+[Tue Jun  8 18:14:15 2021]
+rule ImputeNRP:
+    input: results/SplitVCF_NRP_Chr07.18.vcf.gz, results/ImputeRP_Soy775_Chr07.18.vcf.gz
+    output: results/ImputeNRP_NRP_Chr07.18.vcf.gz
+    jobid: 618
+    wildcards: chr=07, subset=18
+    resources: memory=150G
+
+Submitted job 618 with external jobid 'Submitted batch job 22872394'.
+
+[Tue Jun  8 18:14:15 2021]
+rule ImputeNRP:
+    input: results/SplitVCF_NRP_Chr01.11.vcf.gz, results/ImputeRP_Soy775_Chr01.11.vcf.gz
+    output: results/ImputeNRP_NRP_Chr01.11.vcf.gz
+    jobid: 491
+    wildcards: chr=01, subset=11
+    resources: memory=150G
+
+Submitted job 491 with external jobid 'Submitted batch job 22872395'.
+
+[Tue Jun  8 18:14:15 2021]
+rule ImputeRP:
+    input: results/SplitVCF_Soy775_Chr16.6.vcf.gz
+    output: results/ImputeRP_Soy775_Chr16.6.vcf.gz
+    jobid: 386
+    wildcards: chr=16, subset=6
+    resources: memory=200G
+
+Submitted job 386 with external jobid 'Submitted batch job 22872396'.
+
+[Tue Jun  8 18:14:15 2021]
+rule ImputeRP:
+    input: results/SplitVCF_Soy775_Chr14.1.vcf.gz
+    output: results/ImputeRP_Soy775_Chr14.1.vcf.gz
+    jobid: 341
+    wildcards: chr=14, subset=1
+    resources: memory=200G
+
+Submitted job 341 with external jobid 'Submitted batch job 22872397'.
+
+[Tue Jun  8 18:14:15 2021]
+rule ImputeRP:
+    input: results/SplitVCF_Soy775_Chr18.11.vcf.gz
+    output: results/ImputeRP_Soy775_Chr18.11.vcf.gz
+    jobid: 431
+    wildcards: chr=18, subset=11
+    resources: memory=200G
+
+Submitted job 431 with external jobid 'Submitted batch job 22872398'.
+
+[Tue Jun  8 18:14:15 2021]
+rule ImputeRP:
+    input: results/SplitVCF_Soy775_Chr05.1.vcf.gz
+    output: results/ImputeRP_Soy775_Chr05.1.vcf.gz
+    jobid: 161
+    wildcards: chr=05, subset=1
+    resources: memory=200G
+
+Submitted job 161 with external jobid 'Submitted batch job 22872399'.
+
+[Tue Jun  8 18:14:15 2021]
+rule ImputeRP:
+    input: results/SplitVCF_Soy775_Chr20.1.vcf.gz
+    output: results/ImputeRP_Soy775_Chr20.1.vcf.gz
+    jobid: 461
+    wildcards: chr=20, subset=1
+    resources: memory=200G
+
+Submitted job 461 with external jobid 'Submitted batch job 22872400'.
+
+[Tue Jun  8 18:14:15 2021]
+rule ImputeNRP:
+    input: results/SplitVCF_NRP_Chr01.4.vcf.gz, results/ImputeRP_Soy775_Chr01.4.vcf.gz
+    output: results/ImputeNRP_NRP_Chr01.4.vcf.gz
+    jobid: 484
+    wildcards: chr=01, subset=4
+    resources: memory=150G
+
+Submitted job 484 with external jobid 'Submitted batch job 22872401'.
+
+[Tue Jun  8 18:14:15 2021]
+rule ImputeNRP:
+    input: results/SplitVCF_NRP_Chr01.19.vcf.gz, results/ImputeRP_Soy775_Chr01.19.vcf.gz
+    output: results/ImputeNRP_NRP_Chr01.19.vcf.gz
+    jobid: 499
+    wildcards: chr=01, subset=19
+    resources: memory=150G
+
+Submitted job 499 with external jobid 'Submitted batch job 22872402'.
+
+[Tue Jun  8 18:14:15 2021]
+rule ImputeNRP:
+    input: results/SplitVCF_NRP_Chr16.4.vcf.gz, results/ImputeRP_Soy775_Chr16.4.vcf.gz
+    output: results/ImputeNRP_NRP_Chr16.4.vcf.gz
+    jobid: 784
+    wildcards: chr=16, subset=4
+    resources: memory=150G
+
+Submitted job 784 with external jobid 'Submitted batch job 22872403'.
+
+[Tue Jun  8 18:14:15 2021]
+rule ImputeNRP:
+    input: results/SplitVCF_NRP_Chr07.19.vcf.gz, results/ImputeRP_Soy775_Chr07.19.vcf.gz
+    output: results/ImputeNRP_NRP_Chr07.19.vcf.gz
+    jobid: 619
+    wildcards: chr=07, subset=19
+    resources: memory=150G
+
+Submitted job 619 with external jobid 'Submitted batch job 22872404'.
+
+[Tue Jun  8 18:14:15 2021]
+rule ImputeNRP:
+    input: results/SplitVCF_NRP_Chr13.12.vcf.gz, results/ImputeRP_Soy775_Chr13.12.vcf.gz
+    output: results/ImputeNRP_NRP_Chr13.12.vcf.gz
+    jobid: 732
+    wildcards: chr=13, subset=12
+    resources: memory=150G
+
+Submitted job 732 with external jobid 'Submitted batch job 22872405'.
+
+[Tue Jun  8 18:14:15 2021]
+rule ImputeNRP:
+    input: results/SplitVCF_NRP_Chr01.12.vcf.gz, results/ImputeRP_Soy775_Chr01.12.vcf.gz
+    output: results/ImputeNRP_NRP_Chr01.12.vcf.gz
+    jobid: 492
+    wildcards: chr=01, subset=12
+    resources: memory=150G
+
+Submitted job 492 with external jobid 'Submitted batch job 22872406'.
+
+[Tue Jun  8 18:14:15 2021]
+rule ImputeRP:
+    input: results/SplitVCF_Soy775_Chr18.12.vcf.gz
+    output: results/ImputeRP_Soy775_Chr18.12.vcf.gz
+    jobid: 432
+    wildcards: chr=18, subset=12
+    resources: memory=200G
+
+Submitted job 432 with external jobid 'Submitted batch job 22872407'.
+
+[Tue Jun  8 18:14:15 2021]
+rule ImputeRP:
+    input: results/SplitVCF_Soy775_Chr14.2.vcf.gz
+    output: results/ImputeRP_Soy775_Chr14.2.vcf.gz
+    jobid: 342
+    wildcards: chr=14, subset=2
+    resources: memory=200G
+
+Submitted job 342 with external jobid 'Submitted batch job 22872408'.
+
+[Tue Jun  8 18:14:16 2021]
+rule ImputeRP:
+    input: results/SplitVCF_Soy775_Chr05.2.vcf.gz
+    output: results/ImputeRP_Soy775_Chr05.2.vcf.gz
+    jobid: 162
+    wildcards: chr=05, subset=2
+    resources: memory=200G
+
+Submitted job 162 with external jobid 'Submitted batch job 22872409'.
+
+[Tue Jun  8 18:14:16 2021]
+rule ImputeNRP:
+    input: results/SplitVCF_NRP_Chr01.5.vcf.gz, results/ImputeRP_Soy775_Chr01.5.vcf.gz
+    output: results/ImputeNRP_NRP_Chr01.5.vcf.gz
+    jobid: 485
+    wildcards: chr=01, subset=5
+    resources: memory=150G
+
+Submitted job 485 with external jobid 'Submitted batch job 22872410'.
+[Tue Jun  8 18:14:38 2021]
+Error in rule ImputeNRP:
+    jobid: 493
+    output: results/ImputeNRP_NRP_Chr01.13.vcf.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/6862ade5
+    shell:
+        
+		java -Xmx150G 			-jar /scratch/nad7wf/miniconda/pkgs/beagle-5.1_24Aug19.3e8-hdfd78af_1/share/beagle-5.1_24Aug19.3e8-1/beagle.jar 			impute=true 			ref=results/ImputeRP_Soy775_Chr01.13.vcf.gz 			gt=results/SplitVCF_NRP_Chr01.13.vcf.gz 			out=results/ImputeNRP_NRP_Chr01.13
+
+		rm "results/ImputeNRP_NRP_Chr01.13.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22872361
+
+Error executing rule ImputeNRP on cluster (jobid: 493, external: Submitted batch job 22872361, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.76jte2md/snakejob.ImputeNRP.493.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue Jun  8 18:14:38 2021]
+Error in rule ImputeNRP:
+    jobid: 606
+    output: results/ImputeNRP_NRP_Chr07.6.vcf.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/6862ade5
+    shell:
+        
+		java -Xmx150G 			-jar /scratch/nad7wf/miniconda/pkgs/beagle-5.1_24Aug19.3e8-hdfd78af_1/share/beagle-5.1_24Aug19.3e8-1/beagle.jar 			impute=true 			ref=results/ImputeRP_Soy775_Chr07.6.vcf.gz 			gt=results/SplitVCF_NRP_Chr07.6.vcf.gz 			out=results/ImputeNRP_NRP_Chr07.6
+
+		rm "results/ImputeNRP_NRP_Chr07.6.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22872364
+
+Error executing rule ImputeNRP on cluster (jobid: 606, external: Submitted batch job 22872364, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.76jte2md/snakejob.ImputeNRP.606.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue Jun  8 18:14:38 2021]
+Error in rule ImputeNRP:
+    jobid: 486
+    output: results/ImputeNRP_NRP_Chr01.6.vcf.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/6862ade5
+    shell:
+        
+		java -Xmx150G 			-jar /scratch/nad7wf/miniconda/pkgs/beagle-5.1_24Aug19.3e8-hdfd78af_1/share/beagle-5.1_24Aug19.3e8-1/beagle.jar 			impute=true 			ref=results/ImputeRP_Soy775_Chr01.6.vcf.gz 			gt=results/SplitVCF_NRP_Chr01.6.vcf.gz 			out=results/ImputeNRP_NRP_Chr01.6
+
+		rm "results/ImputeNRP_NRP_Chr01.6.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22872365
+
+Error executing rule ImputeNRP on cluster (jobid: 486, external: Submitted batch job 22872365, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.76jte2md/snakejob.ImputeNRP.486.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue Jun  8 18:14:38 2021]
+Error in rule ImputeNRP:
+    jobid: 494
+    output: results/ImputeNRP_NRP_Chr01.14.vcf.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/6862ade5
+    shell:
+        
+		java -Xmx150G 			-jar /scratch/nad7wf/miniconda/pkgs/beagle-5.1_24Aug19.3e8-hdfd78af_1/share/beagle-5.1_24Aug19.3e8-1/beagle.jar 			impute=true 			ref=results/ImputeRP_Soy775_Chr01.14.vcf.gz 			gt=results/SplitVCF_NRP_Chr01.14.vcf.gz 			out=results/ImputeNRP_NRP_Chr01.14
+
+		rm "results/ImputeNRP_NRP_Chr01.14.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22872366
+
+Error executing rule ImputeNRP on cluster (jobid: 494, external: Submitted batch job 22872366, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.76jte2md/snakejob.ImputeNRP.494.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue Jun  8 18:14:38 2021]
+Error in rule ImputeNRP:
+    jobid: 614
+    output: results/ImputeNRP_NRP_Chr07.14.vcf.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/6862ade5
+    shell:
+        
+		java -Xmx150G 			-jar /scratch/nad7wf/miniconda/pkgs/beagle-5.1_24Aug19.3e8-hdfd78af_1/share/beagle-5.1_24Aug19.3e8-1/beagle.jar 			impute=true 			ref=results/ImputeRP_Soy775_Chr07.14.vcf.gz 			gt=results/SplitVCF_NRP_Chr07.14.vcf.gz 			out=results/ImputeNRP_NRP_Chr07.14
+
+		rm "results/ImputeNRP_NRP_Chr07.14.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22872367
+
+Error executing rule ImputeNRP on cluster (jobid: 614, external: Submitted batch job 22872367, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.76jte2md/snakejob.ImputeNRP.614.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue Jun  8 18:14:38 2021]
+Error in rule ImputeNRP:
+    jobid: 487
+    output: results/ImputeNRP_NRP_Chr01.7.vcf.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/6862ade5
+    shell:
+        
+		java -Xmx150G 			-jar /scratch/nad7wf/miniconda/pkgs/beagle-5.1_24Aug19.3e8-hdfd78af_1/share/beagle-5.1_24Aug19.3e8-1/beagle.jar 			impute=true 			ref=results/ImputeRP_Soy775_Chr01.7.vcf.gz 			gt=results/SplitVCF_NRP_Chr01.7.vcf.gz 			out=results/ImputeNRP_NRP_Chr01.7
+
+		rm "results/ImputeNRP_NRP_Chr01.7.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22872370
+
+Error executing rule ImputeNRP on cluster (jobid: 487, external: Submitted batch job 22872370, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.76jte2md/snakejob.ImputeNRP.487.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue Jun  8 18:14:39 2021]
+Error in rule ImputeNRP:
+    jobid: 495
+    output: results/ImputeNRP_NRP_Chr01.15.vcf.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/6862ade5
+    shell:
+        
+		java -Xmx150G 			-jar /scratch/nad7wf/miniconda/pkgs/beagle-5.1_24Aug19.3e8-hdfd78af_1/share/beagle-5.1_24Aug19.3e8-1/beagle.jar 			impute=true 			ref=results/ImputeRP_Soy775_Chr01.15.vcf.gz 			gt=results/SplitVCF_NRP_Chr01.15.vcf.gz 			out=results/ImputeNRP_NRP_Chr01.15
+
+		rm "results/ImputeNRP_NRP_Chr01.15.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22872371
+
+Error executing rule ImputeNRP on cluster (jobid: 495, external: Submitted batch job 22872371, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.76jte2md/snakejob.ImputeNRP.495.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue Jun  8 18:14:39 2021]
+Error in rule ImputeNRP:
+    jobid: 638
+    output: results/ImputeNRP_NRP_Chr08.18.vcf.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/6862ade5
+    shell:
+        
+		java -Xmx150G 			-jar /scratch/nad7wf/miniconda/pkgs/beagle-5.1_24Aug19.3e8-hdfd78af_1/share/beagle-5.1_24Aug19.3e8-1/beagle.jar 			impute=true 			ref=results/ImputeRP_Soy775_Chr08.18.vcf.gz 			gt=results/SplitVCF_NRP_Chr08.18.vcf.gz 			out=results/ImputeNRP_NRP_Chr08.18
+
+		rm "results/ImputeNRP_NRP_Chr08.18.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22872374
+
+Error executing rule ImputeNRP on cluster (jobid: 638, external: Submitted batch job 22872374, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.76jte2md/snakejob.ImputeNRP.638.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue Jun  8 18:14:39 2021]
+Error in rule ImputeNRP:
+    jobid: 488
+    output: results/ImputeNRP_NRP_Chr01.8.vcf.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/6862ade5
+    shell:
+        
+		java -Xmx150G 			-jar /scratch/nad7wf/miniconda/pkgs/beagle-5.1_24Aug19.3e8-hdfd78af_1/share/beagle-5.1_24Aug19.3e8-1/beagle.jar 			impute=true 			ref=results/ImputeRP_Soy775_Chr01.8.vcf.gz 			gt=results/SplitVCF_NRP_Chr01.8.vcf.gz 			out=results/ImputeNRP_NRP_Chr01.8
+
+		rm "results/ImputeNRP_NRP_Chr01.8.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22872375
+
+Error executing rule ImputeNRP on cluster (jobid: 488, external: Submitted batch job 22872375, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.76jte2md/snakejob.ImputeNRP.488.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue Jun  8 18:14:39 2021]
+Error in rule ImputeNRP:
+    jobid: 496
+    output: results/ImputeNRP_NRP_Chr01.16.vcf.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/6862ade5
+    shell:
+        
+		java -Xmx150G 			-jar /scratch/nad7wf/miniconda/pkgs/beagle-5.1_24Aug19.3e8-hdfd78af_1/share/beagle-5.1_24Aug19.3e8-1/beagle.jar 			impute=true 			ref=results/ImputeRP_Soy775_Chr01.16.vcf.gz 			gt=results/SplitVCF_NRP_Chr01.16.vcf.gz 			out=results/ImputeNRP_NRP_Chr01.16
+
+		rm "results/ImputeNRP_NRP_Chr01.16.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22872376
+
+Error executing rule ImputeNRP on cluster (jobid: 496, external: Submitted batch job 22872376, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.76jte2md/snakejob.ImputeNRP.496.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue Jun  8 18:14:39 2021]
+Error in rule ImputeNRP:
+    jobid: 489
+    output: results/ImputeNRP_NRP_Chr01.9.vcf.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/6862ade5
+    shell:
+        
+		java -Xmx150G 			-jar /scratch/nad7wf/miniconda/pkgs/beagle-5.1_24Aug19.3e8-hdfd78af_1/share/beagle-5.1_24Aug19.3e8-1/beagle.jar 			impute=true 			ref=results/ImputeRP_Soy775_Chr01.9.vcf.gz 			gt=results/SplitVCF_NRP_Chr01.9.vcf.gz 			out=results/ImputeNRP_NRP_Chr01.9
+
+		rm "results/ImputeNRP_NRP_Chr01.9.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22872379
+
+Error executing rule ImputeNRP on cluster (jobid: 489, external: Submitted batch job 22872379, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.76jte2md/snakejob.ImputeNRP.489.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue Jun  8 18:15:07 2021]
+Error in rule ImputeNRP:
+    jobid: 497
+    output: results/ImputeNRP_NRP_Chr01.17.vcf.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/6862ade5
+    shell:
+        
+		java -Xmx150G 			-jar /scratch/nad7wf/miniconda/pkgs/beagle-5.1_24Aug19.3e8-hdfd78af_1/share/beagle-5.1_24Aug19.3e8-1/beagle.jar 			impute=true 			ref=results/ImputeRP_Soy775_Chr01.17.vcf.gz 			gt=results/SplitVCF_NRP_Chr01.17.vcf.gz 			out=results/ImputeNRP_NRP_Chr01.17
+
+		rm "results/ImputeNRP_NRP_Chr01.17.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22872384
+
+Error executing rule ImputeNRP on cluster (jobid: 497, external: Submitted batch job 22872384, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.76jte2md/snakejob.ImputeNRP.497.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue Jun  8 18:15:07 2021]
+Error in rule ImputeNRP:
+    jobid: 490
+    output: results/ImputeNRP_NRP_Chr01.10.vcf.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/6862ade5
+    shell:
+        
+		java -Xmx150G 			-jar /scratch/nad7wf/miniconda/pkgs/beagle-5.1_24Aug19.3e8-hdfd78af_1/share/beagle-5.1_24Aug19.3e8-1/beagle.jar 			impute=true 			ref=results/ImputeRP_Soy775_Chr01.10.vcf.gz 			gt=results/SplitVCF_NRP_Chr01.10.vcf.gz 			out=results/ImputeNRP_NRP_Chr01.10
+
+		rm "results/ImputeNRP_NRP_Chr01.10.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22872386
+
+Error executing rule ImputeNRP on cluster (jobid: 490, external: Submitted batch job 22872386, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.76jte2md/snakejob.ImputeNRP.490.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue Jun  8 18:15:07 2021]
+Error in rule ImputeNRP:
+    jobid: 483
+    output: results/ImputeNRP_NRP_Chr01.3.vcf.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/6862ade5
+    shell:
+        
+		java -Xmx150G 			-jar /scratch/nad7wf/miniconda/pkgs/beagle-5.1_24Aug19.3e8-hdfd78af_1/share/beagle-5.1_24Aug19.3e8-1/beagle.jar 			impute=true 			ref=results/ImputeRP_Soy775_Chr01.3.vcf.gz 			gt=results/SplitVCF_NRP_Chr01.3.vcf.gz 			out=results/ImputeNRP_NRP_Chr01.3
+
+		rm "results/ImputeNRP_NRP_Chr01.3.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22872391
+
+Error executing rule ImputeNRP on cluster (jobid: 483, external: Submitted batch job 22872391, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.76jte2md/snakejob.ImputeNRP.483.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue Jun  8 18:15:08 2021]
+Error in rule ImputeNRP:
+    jobid: 603
+    output: results/ImputeNRP_NRP_Chr07.3.vcf.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/6862ade5
+    shell:
+        
+		java -Xmx150G 			-jar /scratch/nad7wf/miniconda/pkgs/beagle-5.1_24Aug19.3e8-hdfd78af_1/share/beagle-5.1_24Aug19.3e8-1/beagle.jar 			impute=true 			ref=results/ImputeRP_Soy775_Chr07.3.vcf.gz 			gt=results/SplitVCF_NRP_Chr07.3.vcf.gz 			out=results/ImputeNRP_NRP_Chr07.3
+
+		rm "results/ImputeNRP_NRP_Chr07.3.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22872392
+
+Error executing rule ImputeNRP on cluster (jobid: 603, external: Submitted batch job 22872392, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.76jte2md/snakejob.ImputeNRP.603.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue Jun  8 18:15:08 2021]
+Error in rule ImputeNRP:
+    jobid: 498
+    output: results/ImputeNRP_NRP_Chr01.18.vcf.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/6862ade5
+    shell:
+        
+		java -Xmx150G 			-jar /scratch/nad7wf/miniconda/pkgs/beagle-5.1_24Aug19.3e8-hdfd78af_1/share/beagle-5.1_24Aug19.3e8-1/beagle.jar 			impute=true 			ref=results/ImputeRP_Soy775_Chr01.18.vcf.gz 			gt=results/SplitVCF_NRP_Chr01.18.vcf.gz 			out=results/ImputeNRP_NRP_Chr01.18
+
+		rm "results/ImputeNRP_NRP_Chr01.18.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22872393
+
+Error executing rule ImputeNRP on cluster (jobid: 498, external: Submitted batch job 22872393, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.76jte2md/snakejob.ImputeNRP.498.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue Jun  8 18:15:08 2021]
+Error in rule ImputeNRP:
+    jobid: 618
+    output: results/ImputeNRP_NRP_Chr07.18.vcf.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/6862ade5
+    shell:
+        
+		java -Xmx150G 			-jar /scratch/nad7wf/miniconda/pkgs/beagle-5.1_24Aug19.3e8-hdfd78af_1/share/beagle-5.1_24Aug19.3e8-1/beagle.jar 			impute=true 			ref=results/ImputeRP_Soy775_Chr07.18.vcf.gz 			gt=results/SplitVCF_NRP_Chr07.18.vcf.gz 			out=results/ImputeNRP_NRP_Chr07.18
+
+		rm "results/ImputeNRP_NRP_Chr07.18.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22872394
+
+Error executing rule ImputeNRP on cluster (jobid: 618, external: Submitted batch job 22872394, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.76jte2md/snakejob.ImputeNRP.618.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue Jun  8 18:15:20 2021]
+Error in rule ImputeNRP:
+    jobid: 491
+    output: results/ImputeNRP_NRP_Chr01.11.vcf.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/6862ade5
+    shell:
+        
+		java -Xmx150G 			-jar /scratch/nad7wf/miniconda/pkgs/beagle-5.1_24Aug19.3e8-hdfd78af_1/share/beagle-5.1_24Aug19.3e8-1/beagle.jar 			impute=true 			ref=results/ImputeRP_Soy775_Chr01.11.vcf.gz 			gt=results/SplitVCF_NRP_Chr01.11.vcf.gz 			out=results/ImputeNRP_NRP_Chr01.11
+
+		rm "results/ImputeNRP_NRP_Chr01.11.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22872395
+
+Error executing rule ImputeNRP on cluster (jobid: 491, external: Submitted batch job 22872395, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.76jte2md/snakejob.ImputeNRP.491.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue Jun  8 18:15:34 2021]
+Error in rule ImputeNRP:
+    jobid: 484
+    output: results/ImputeNRP_NRP_Chr01.4.vcf.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/6862ade5
+    shell:
+        
+		java -Xmx150G 			-jar /scratch/nad7wf/miniconda/pkgs/beagle-5.1_24Aug19.3e8-hdfd78af_1/share/beagle-5.1_24Aug19.3e8-1/beagle.jar 			impute=true 			ref=results/ImputeRP_Soy775_Chr01.4.vcf.gz 			gt=results/SplitVCF_NRP_Chr01.4.vcf.gz 			out=results/ImputeNRP_NRP_Chr01.4
+
+		rm "results/ImputeNRP_NRP_Chr01.4.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22872401
+
+Error executing rule ImputeNRP on cluster (jobid: 484, external: Submitted batch job 22872401, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.76jte2md/snakejob.ImputeNRP.484.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue Jun  8 18:15:34 2021]
+Error in rule ImputeNRP:
+    jobid: 499
+    output: results/ImputeNRP_NRP_Chr01.19.vcf.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/6862ade5
+    shell:
+        
+		java -Xmx150G 			-jar /scratch/nad7wf/miniconda/pkgs/beagle-5.1_24Aug19.3e8-hdfd78af_1/share/beagle-5.1_24Aug19.3e8-1/beagle.jar 			impute=true 			ref=results/ImputeRP_Soy775_Chr01.19.vcf.gz 			gt=results/SplitVCF_NRP_Chr01.19.vcf.gz 			out=results/ImputeNRP_NRP_Chr01.19
+
+		rm "results/ImputeNRP_NRP_Chr01.19.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22872402
+
+Error executing rule ImputeNRP on cluster (jobid: 499, external: Submitted batch job 22872402, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.76jte2md/snakejob.ImputeNRP.499.sh). For error details see the cluster log and the log files of the involved rule(s).

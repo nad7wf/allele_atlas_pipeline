@@ -1,0 +1,4 @@
+NameError in line 6 of /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/rules/beagle/beagle_SplitVCF.smk:
+name 'SUBSET' is not defined
+  File "/storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/workflow/allele_atlas.smk", line 26, in <module>
+  File "/storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/rules/beagle/beagle_SplitVCF.smk", line 6, in <module>

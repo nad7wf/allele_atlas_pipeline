@@ -1,0 +1,19 @@
+Building DAG of jobs...
+Job counts:
+	count	jobs
+	1	ImputeNRP
+	1	ImputeRP
+	1	MergeVCFs
+	2	SplitVCF
+	2	SubAsterisk
+	1	all
+	8
+
+[Thu May 27 12:00:25 2021]
+rule SubAsterisk:
+    input: resources/Soy775/Soy775_Chr01.vcf.gz
+    output: results/SubAsterisk_Soy775_Chr01.vcf.gz
+    log: reports/SubAsterisk_Soy775_Chr01.log
+    jobid: 1
+    wildcards: id=Soy775, chr=01
+

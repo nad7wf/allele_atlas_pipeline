@@ -1,0 +1,14 @@
+ID:
+  RP: RP
+  NRP: NRP
+chr: 20
+ImputeRP:
+  mem: 48
+  cpus: 10
+ImputeNRP:
+  mem: 28
+  cpus: 1
+SNPEff:
+  mem: 30G
+SNPSift:
+  mem: 30G

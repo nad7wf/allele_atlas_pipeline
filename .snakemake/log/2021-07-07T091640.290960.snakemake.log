@@ -1,0 +1,239 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Job counts:
+	count	jobs
+	23	ImputeRP
+	1	all
+	24
+Select jobs to execute...
+
+[Wed Jul  7 09:16:40 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr06.22.vcf.gz
+    output: results/ImputeRP_RP_Chr06.22.vcf.gz, results/beagle/ImputeRP_RP_Chr06.22
+    jobid: 28
+    wildcards: chr=06, subset=22
+    resources: memory=190G, threads=15
+
+Submitted job 28 with external jobid 'Submitted batch job 22990054'.
+
+[Wed Jul  7 09:16:40 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr06.37.vcf.gz
+    output: results/ImputeRP_RP_Chr06.37.vcf.gz, results/beagle/ImputeRP_RP_Chr06.37
+    jobid: 43
+    wildcards: chr=06, subset=37
+    resources: memory=190G, threads=15
+
+Submitted job 43 with external jobid 'Submitted batch job 22990055'.
+
+[Wed Jul  7 09:16:40 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr06.15.vcf.gz
+    output: results/ImputeRP_RP_Chr06.15.vcf.gz, results/beagle/ImputeRP_RP_Chr06.15
+    jobid: 21
+    wildcards: chr=06, subset=15
+    resources: memory=190G, threads=15
+
+Submitted job 21 with external jobid 'Submitted batch job 22990056'.
+
+[Wed Jul  7 09:16:41 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr06.30.vcf.gz
+    output: results/ImputeRP_RP_Chr06.30.vcf.gz, results/beagle/ImputeRP_RP_Chr06.30
+    jobid: 36
+    wildcards: chr=06, subset=30
+    resources: memory=190G, threads=15
+
+Submitted job 36 with external jobid 'Submitted batch job 22990057'.
+
+[Wed Jul  7 09:16:41 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr06.23.vcf.gz
+    output: results/ImputeRP_RP_Chr06.23.vcf.gz, results/beagle/ImputeRP_RP_Chr06.23
+    jobid: 29
+    wildcards: chr=06, subset=23
+    resources: memory=190G, threads=15
+
+Submitted job 29 with external jobid 'Submitted batch job 22990058'.
+
+[Wed Jul  7 09:16:41 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr06.38.vcf.gz
+    output: results/ImputeRP_RP_Chr06.38.vcf.gz, results/beagle/ImputeRP_RP_Chr06.38
+    jobid: 44
+    wildcards: chr=06, subset=38
+    resources: memory=190G, threads=15
+
+Submitted job 44 with external jobid 'Submitted batch job 22990059'.
+
+[Wed Jul  7 09:16:41 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr06.31.vcf.gz
+    output: results/ImputeRP_RP_Chr06.31.vcf.gz, results/beagle/ImputeRP_RP_Chr06.31
+    jobid: 37
+    wildcards: chr=06, subset=31
+    resources: memory=190G, threads=15
+
+Submitted job 37 with external jobid 'Submitted batch job 22990060'.
+
+[Wed Jul  7 09:16:41 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr06.24.vcf.gz
+    output: results/ImputeRP_RP_Chr06.24.vcf.gz, results/beagle/ImputeRP_RP_Chr06.24
+    jobid: 30
+    wildcards: chr=06, subset=24
+    resources: memory=190G, threads=15
+
+Submitted job 30 with external jobid 'Submitted batch job 22990061'.
+
+[Wed Jul  7 09:16:41 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr06.39.vcf.gz
+    output: results/ImputeRP_RP_Chr06.39.vcf.gz, results/beagle/ImputeRP_RP_Chr06.39
+    jobid: 45
+    wildcards: chr=06, subset=39
+    resources: memory=190G, threads=15
+
+Submitted job 45 with external jobid 'Submitted batch job 22990062'.
+
+[Wed Jul  7 09:16:41 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr06.17.vcf.gz
+    output: results/ImputeRP_RP_Chr06.17.vcf.gz, results/beagle/ImputeRP_RP_Chr06.17
+    jobid: 23
+    wildcards: chr=06, subset=17
+    resources: memory=190G, threads=15
+
+Submitted job 23 with external jobid 'Submitted batch job 22990063'.
+
+[Wed Jul  7 09:16:41 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr06.32.vcf.gz
+    output: results/ImputeRP_RP_Chr06.32.vcf.gz, results/beagle/ImputeRP_RP_Chr06.32
+    jobid: 38
+    wildcards: chr=06, subset=32
+    resources: memory=190G, threads=15
+
+Submitted job 38 with external jobid 'Submitted batch job 22990064'.
+
+[Wed Jul  7 09:16:41 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr06.18.vcf.gz
+    output: results/ImputeRP_RP_Chr06.18.vcf.gz, results/beagle/ImputeRP_RP_Chr06.18
+    jobid: 24
+    wildcards: chr=06, subset=18
+    resources: memory=190G, threads=15
+
+Submitted job 24 with external jobid 'Submitted batch job 22990065'.
+
+[Wed Jul  7 09:16:41 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr06.33.vcf.gz
+    output: results/ImputeRP_RP_Chr06.33.vcf.gz, results/beagle/ImputeRP_RP_Chr06.33
+    jobid: 39
+    wildcards: chr=06, subset=33
+    resources: memory=190G, threads=15
+
+Submitted job 39 with external jobid 'Submitted batch job 22990066'.
+
+[Wed Jul  7 09:16:42 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr06.19.vcf.gz
+    output: results/ImputeRP_RP_Chr06.19.vcf.gz, results/beagle/ImputeRP_RP_Chr06.19
+    jobid: 25
+    wildcards: chr=06, subset=19
+    resources: memory=190G, threads=15
+
+Submitted job 25 with external jobid 'Submitted batch job 22990067'.
+
+[Wed Jul  7 09:16:42 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr06.34.vcf.gz
+    output: results/ImputeRP_RP_Chr06.34.vcf.gz, results/beagle/ImputeRP_RP_Chr06.34
+    jobid: 40
+    wildcards: chr=06, subset=34
+    resources: memory=190G, threads=15
+
+Submitted job 40 with external jobid 'Submitted batch job 22990068'.
+
+[Wed Jul  7 09:16:42 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr06.12.vcf.gz
+    output: results/ImputeRP_RP_Chr06.12.vcf.gz, results/beagle/ImputeRP_RP_Chr06.12
+    jobid: 18
+    wildcards: chr=06, subset=12
+    resources: memory=190G, threads=15
+
+Submitted job 18 with external jobid 'Submitted batch job 22990069'.
+
+[Wed Jul  7 09:16:42 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr06.27.vcf.gz
+    output: results/ImputeRP_RP_Chr06.27.vcf.gz, results/beagle/ImputeRP_RP_Chr06.27
+    jobid: 33
+    wildcards: chr=06, subset=27
+    resources: memory=190G, threads=15
+
+Submitted job 33 with external jobid 'Submitted batch job 22990070'.
+
+[Wed Jul  7 09:16:42 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr06.20.vcf.gz
+    output: results/ImputeRP_RP_Chr06.20.vcf.gz, results/beagle/ImputeRP_RP_Chr06.20
+    jobid: 26
+    wildcards: chr=06, subset=20
+    resources: memory=190G, threads=15
+
+Submitted job 26 with external jobid 'Submitted batch job 22990071'.
+
+[Wed Jul  7 09:16:42 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr06.35.vcf.gz
+    output: results/ImputeRP_RP_Chr06.35.vcf.gz, results/beagle/ImputeRP_RP_Chr06.35
+    jobid: 41
+    wildcards: chr=06, subset=35
+    resources: memory=190G, threads=15
+
+Submitted job 41 with external jobid 'Submitted batch job 22990072'.
+
+[Wed Jul  7 09:16:42 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr06.28.vcf.gz
+    output: results/ImputeRP_RP_Chr06.28.vcf.gz, results/beagle/ImputeRP_RP_Chr06.28
+    jobid: 34
+    wildcards: chr=06, subset=28
+    resources: memory=190G, threads=15
+
+Submitted job 34 with external jobid 'Submitted batch job 22990073'.
+
+[Wed Jul  7 09:16:42 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr06.21.vcf.gz
+    output: results/ImputeRP_RP_Chr06.21.vcf.gz, results/beagle/ImputeRP_RP_Chr06.21
+    jobid: 27
+    wildcards: chr=06, subset=21
+    resources: memory=190G, threads=15
+
+Submitted job 27 with external jobid 'Submitted batch job 22990074'.
+
+[Wed Jul  7 09:16:42 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr06.36.vcf.gz
+    output: results/ImputeRP_RP_Chr06.36.vcf.gz, results/beagle/ImputeRP_RP_Chr06.36
+    jobid: 42
+    wildcards: chr=06, subset=36
+    resources: memory=190G, threads=15
+
+Submitted job 42 with external jobid 'Submitted batch job 22990075'.
+
+[Wed Jul  7 09:16:42 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr06.29.vcf.gz
+    output: results/ImputeRP_RP_Chr06.29.vcf.gz, results/beagle/ImputeRP_RP_Chr06.29
+    jobid: 35
+    wildcards: chr=06, subset=29
+    resources: memory=190G, threads=15
+
+Submitted job 35 with external jobid 'Submitted batch job 22990076'.

@@ -1,0 +1,41 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 50
+Job counts:
+	count	jobs
+	1	PreformatNRP
+	1	all
+	2
+Select jobs to execute...
+
+[Wed Jun  9 14:13:44 2021]
+rule PreformatNRP:
+    input: resources/NRP/NRP_Chr01.vcf.gz, resources/Soy775/Soy775_Chr01.vcf.gz
+    output: results/PreformatNRP_NRP_Chr01.vcf.gz
+    jobid: 2
+    wildcards: chr=01
+
+Submitted job 2 with external jobid 'Submitted batch job 22873080'.
+[Wed Jun  9 14:23:34 2021]
+Error in rule PreformatNRP:
+    jobid: 2
+    output: results/PreformatNRP_NRP_Chr01.vcf.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/d383c473
+    shell:
+        
+		### Filter for positions present in RP. ###
+		bcftools view -R resources/Soy775/Soy775_Chr01.vcf.gz -Ou resources/NRP/NRP_Chr01.vcf.gz | 		### Recode hets as missing data. ###
+		bcftools filter -S . -e 'GT="het"' -Ou resources/NRP/NRP_Chr01.vcf.gz | 		### Remove "inf" from QUAL column and trailing genotype info in FORMAT column.###
+		bcftools annotate -x QUAL,FORMAT | 		### The asterisk throws an error in SNPEff - replacing with <DEL>. ###
+		awk 'BEGIN{OFS=FS="	"} {gsub("*", "<DEL>", $5); print}' | 		bgzip -l 9 > results/PreformatNRP_NRP_Chr01.vcf.gz
+
+		### Index vcf file. ###
+		bcftools index --tbi results/PreformatNRP_NRP_Chr01.vcf.gz
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22873080
+
+Error executing rule PreformatNRP on cluster (jobid: 2, external: Submitted batch job 22873080, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.0x8wzx8q/snakejob.PreformatNRP.2.sh). For error details see the cluster log and the log files of the involved rule(s).
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/log/2021-06-09T141344.282068.snakemake.log

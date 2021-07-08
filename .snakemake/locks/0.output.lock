@@ -1,0 +1,9 @@
+results/ImputeNRP_NRP_Chr06.vcf.gz
+results/beagle/ImputeNRP_NRP_Chr06
+results/MergeVCFs_RP_NRP_Chr06.vcf.gz
+results/ImputeRP_RP_Chr06.vcf.gz
+results/beagle/ImputeRP_RP_Chr06
+results/SNPEff_Ann_RP_NRP_Chr06.txt.gz
+results/AlleleAtlas_RP_NRP_Chr06.txt.gz
+results/Bottleneck_genes_RP_NRP_Chr06.txt.gz
+results/Housekeeping_genes_RP_NRP_Chr06.txt.gz

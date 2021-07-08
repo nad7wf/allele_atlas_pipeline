@@ -1,0 +1,67 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 50
+Job counts:
+	count	jobs
+	2	ImputeNRP
+	2	ImputeRP
+	1	MergeVCFs
+	1	PreformatNRP
+	1	PreformatRP
+	2	RenameSamples
+	1	SNPEff
+	2	SplitVCF
+	1	all
+	13
+Select jobs to execute...
+
+[Fri Jun 18 21:18:36 2021]
+rule RenameSamples:
+    input: resources/Soy775/Soy775_Chr01.vcf.gz, resources/Soy775/Soy775_sample_name_correspondence_file.txt
+    output: results/RenameSamples_Soy775_Chr01.vcf.gz
+    jobid: 1
+    wildcards: id=Soy775, chr=01
+
+Submitted job 1 with external jobid 'Submitted batch job 22900158'.
+
+[Fri Jun 18 21:18:36 2021]
+rule RenameSamples:
+    input: resources/NRP/NRP_Chr01.vcf.gz, resources/NRP/NRP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_NRP_Chr01.vcf.gz
+    jobid: 2
+    wildcards: id=NRP, chr=01
+
+Submitted job 2 with external jobid 'Submitted batch job 22900159'.
+[Fri Jun 18 21:19:16 2021]
+Error in rule RenameSamples:
+    jobid: 2
+    output: results/RenameSamples_NRP_Chr01.vcf.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/6e3b2aa0
+    shell:
+        
+		bcftools reheader  			-s resources/NRP/NRP_sample_name_correspondence_file.txt 			resources/NRP/NRP_Chr01.vcf.gz | 			bgzip -l 9 > results/RenameSamples_NRP_Chr01.vcf.gz
+
+		bcftools index --tbi results/RenameSamples_NRP_Chr01.vcf.gz
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22900159
+
+Error executing rule RenameSamples on cluster (jobid: 2, external: Submitted batch job 22900159, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.mn7yejev/snakejob.RenameSamples.2.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Jun 18 21:19:56 2021]
+Error in rule RenameSamples:
+    jobid: 1
+    output: results/RenameSamples_Soy775_Chr01.vcf.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/6e3b2aa0
+    shell:
+        
+		bcftools reheader  			-s resources/Soy775/Soy775_sample_name_correspondence_file.txt 			resources/Soy775/Soy775_Chr01.vcf.gz | 			bgzip -l 9 > results/RenameSamples_Soy775_Chr01.vcf.gz
+
+		bcftools index --tbi results/RenameSamples_Soy775_Chr01.vcf.gz
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22900158
+
+Error executing rule RenameSamples on cluster (jobid: 1, external: Submitted batch job 22900158, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.mn7yejev/snakejob.RenameSamples.1.sh). For error details see the cluster log and the log files of the involved rule(s).
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/log/2021-06-18T211836.479013.snakemake.log

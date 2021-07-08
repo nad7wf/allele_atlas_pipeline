@@ -1,0 +1,560 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 50
+Job counts:
+	count	jobs
+	398	ImputeNRP
+	373	ImputeRP
+	20	MergeVCFs
+	5	SplitVCF
+	1	all
+	797
+Select jobs to execute...
+
+[Tue Jun  8 15:27:10 2021]
+rule ImputeRP:
+    input: results/SplitVCF_Soy775_Chr10.8.vcf.gz
+    output: results/ImputeRP_Soy775_Chr10.8.vcf.gz
+    jobid: 268
+    wildcards: chr=10, subset=8
+    resources: memory=300G
+
+Error submitting jobscript (exit code 1):
+
+
+[Tue Jun  8 15:27:10 2021]
+rule ImputeRP:
+    input: results/SplitVCF_Soy775_Chr14.18.vcf.gz
+    output: results/ImputeRP_Soy775_Chr14.18.vcf.gz
+    jobid: 358
+    wildcards: chr=14, subset=18
+    resources: memory=300G
+
+Error submitting jobscript (exit code 1):
+
+
+[Tue Jun  8 15:27:10 2021]
+rule ImputeNRP:
+    input: results/SplitVCF_NRP_Chr01.13.vcf.gz, results/ImputeRP_Soy775_Chr01.13.vcf.gz
+    output: results/ImputeNRP_NRP_Chr01.13.vcf.gz
+    jobid: 493
+    wildcards: chr=01, subset=13
+    resources: memory=300G
+
+Error submitting jobscript (exit code 1):
+
+
+[Tue Jun  8 15:27:10 2021]
+rule ImputeNRP:
+    input: results/SplitVCF_NRP_Chr07.6.vcf.gz, results/ImputeRP_Soy775_Chr07.6.vcf.gz
+    output: results/ImputeNRP_NRP_Chr07.6.vcf.gz
+    jobid: 606
+    wildcards: chr=07, subset=6
+    resources: memory=300G
+
+Error submitting jobscript (exit code 1):
+
+
+[Tue Jun  8 15:27:10 2021]
+rule ImputeNRP:
+    input: results/SplitVCF_NRP_Chr01.6.vcf.gz, results/ImputeRP_Soy775_Chr01.6.vcf.gz
+    output: results/ImputeNRP_NRP_Chr01.6.vcf.gz
+    jobid: 486
+    wildcards: chr=01, subset=6
+    resources: memory=300G
+
+Error submitting jobscript (exit code 1):
+
+
+[Tue Jun  8 15:27:10 2021]
+rule ImputeRP:
+    input: results/SplitVCF_Soy775_Chr16.15.vcf.gz
+    output: results/ImputeRP_Soy775_Chr16.15.vcf.gz
+    jobid: 395
+    wildcards: chr=16, subset=15
+    resources: memory=300G
+
+Error submitting jobscript (exit code 1):
+
+
+[Tue Jun  8 15:27:10 2021]
+rule ImputeNRP:
+    input: results/SplitVCF_NRP_Chr07.14.vcf.gz, results/ImputeRP_Soy775_Chr07.14.vcf.gz
+    output: results/ImputeNRP_NRP_Chr07.14.vcf.gz
+    jobid: 614
+    wildcards: chr=07, subset=14
+    resources: memory=300G
+
+Error submitting jobscript (exit code 1):
+
+
+[Tue Jun  8 15:27:10 2021]
+rule ImputeRP:
+    input: results/SplitVCF_Soy775_Chr14.19.vcf.gz
+    output: results/ImputeRP_Soy775_Chr14.19.vcf.gz
+    jobid: 359
+    wildcards: chr=14, subset=19
+    resources: memory=300G
+
+Error submitting jobscript (exit code 1):
+
+
+[Tue Jun  8 15:27:10 2021]
+rule ImputeNRP:
+    input: results/SplitVCF_NRP_Chr01.14.vcf.gz, results/ImputeRP_Soy775_Chr01.14.vcf.gz
+    output: results/ImputeNRP_NRP_Chr01.14.vcf.gz
+    jobid: 494
+    wildcards: chr=01, subset=14
+    resources: memory=300G
+
+Error submitting jobscript (exit code 1):
+
+
+[Tue Jun  8 15:27:10 2021]
+rule ImputeNRP:
+    input: results/SplitVCF_NRP_Chr01.7.vcf.gz, results/ImputeRP_Soy775_Chr01.7.vcf.gz
+    output: results/ImputeNRP_NRP_Chr01.7.vcf.gz
+    jobid: 487
+    wildcards: chr=01, subset=7
+    resources: memory=300G
+
+Error submitting jobscript (exit code 1):
+
+
+[Tue Jun  8 15:27:10 2021]
+rule ImputeNRP:
+    input: results/SplitVCF_NRP_Chr01.15.vcf.gz, results/ImputeRP_Soy775_Chr01.15.vcf.gz
+    output: results/ImputeNRP_NRP_Chr01.15.vcf.gz
+    jobid: 495
+    wildcards: chr=01, subset=15
+    resources: memory=300G
+
+Error submitting jobscript (exit code 1):
+
+
+[Tue Jun  8 15:27:10 2021]
+rule ImputeRP:
+    input: results/SplitVCF_Soy775_Chr16.10.vcf.gz
+    output: results/ImputeRP_Soy775_Chr16.10.vcf.gz
+    jobid: 390
+    wildcards: chr=16, subset=10
+    resources: memory=300G
+
+Error submitting jobscript (exit code 1):
+
+
+[Tue Jun  8 15:27:10 2021]
+rule SplitVCF:
+    input: results/SubAsterisk_NRP_Chr15.vcf.gz, resources/beagle/splitvcf.jar
+    output: results/SplitVCF_NRP_Chr15.1.vcf.gz, results/SplitVCF_NRP_Chr15.2.vcf.gz, results/SplitVCF_NRP_Chr15.3.vcf.gz, results/SplitVCF_NRP_Chr15.4.vcf.gz, results/SplitVCF_NRP_Chr15.5.vcf.gz, results/SplitVCF_NRP_Chr15.6.vcf.gz, results/SplitVCF_NRP_Chr15.7.vcf.gz, results/SplitVCF_NRP_Chr15.8.vcf.gz, results/SplitVCF_NRP_Chr15.9.vcf.gz, results/SplitVCF_NRP_Chr15.10.vcf.gz, results/SplitVCF_NRP_Chr15.11.vcf.gz, results/SplitVCF_NRP_Chr15.12.vcf.gz, results/SplitVCF_NRP_Chr15.13.vcf.gz, results/SplitVCF_NRP_Chr15.14.vcf.gz, results/SplitVCF_NRP_Chr15.15.vcf.gz, results/SplitVCF_NRP_Chr15.16.vcf.gz, results/SplitVCF_NRP_Chr15.17.vcf.gz, results/SplitVCF_NRP_Chr15.18.vcf.gz, results/SplitVCF_NRP_Chr15.19.vcf.gz, results/SplitVCF_NRP_Chr15.20.vcf.gz
+    jobid: 75
+    wildcards: id=NRP, chr=15
+
+Submitted job 75 with external jobid 'Submitted batch job 22872018'.
+
+[Tue Jun  8 15:27:11 2021]
+rule ImputeNRP:
+    input: results/SplitVCF_NRP_Chr08.18.vcf.gz, results/ImputeRP_Soy775_Chr08.18.vcf.gz
+    output: results/ImputeNRP_NRP_Chr08.18.vcf.gz
+    jobid: 638
+    wildcards: chr=08, subset=18
+    resources: memory=300G
+
+Error submitting jobscript (exit code 1):
+
+
+[Tue Jun  8 15:27:11 2021]
+rule ImputeNRP:
+    input: results/SplitVCF_NRP_Chr01.8.vcf.gz, results/ImputeRP_Soy775_Chr01.8.vcf.gz
+    output: results/ImputeNRP_NRP_Chr01.8.vcf.gz
+    jobid: 488
+    wildcards: chr=01, subset=8
+    resources: memory=300G
+
+Error submitting jobscript (exit code 1):
+
+
+[Tue Jun  8 15:27:11 2021]
+rule ImputeNRP:
+    input: results/SplitVCF_NRP_Chr01.16.vcf.gz, results/ImputeRP_Soy775_Chr01.16.vcf.gz
+    output: results/ImputeNRP_NRP_Chr01.16.vcf.gz
+    jobid: 496
+    wildcards: chr=01, subset=16
+    resources: memory=300G
+
+Error submitting jobscript (exit code 1):
+
+
+[Tue Jun  8 15:27:11 2021]
+rule ImputeRP:
+    input: results/SplitVCF_Soy775_Chr18.1.vcf.gz
+    output: results/ImputeRP_Soy775_Chr18.1.vcf.gz
+    jobid: 421
+    wildcards: chr=18, subset=1
+    resources: memory=300G
+
+Error submitting jobscript (exit code 1):
+
+
+[Tue Jun  8 15:27:11 2021]
+rule ImputeRP:
+    input: results/SplitVCF_Soy775_Chr13.11.vcf.gz
+    output: results/ImputeRP_Soy775_Chr13.11.vcf.gz
+    jobid: 331
+    wildcards: chr=13, subset=11
+    resources: memory=300G
+
+Error submitting jobscript (exit code 1):
+
+
+[Tue Jun  8 15:27:11 2021]
+rule ImputeRP:
+    input: results/SplitVCF_Soy775_Chr16.11.vcf.gz
+    output: results/ImputeRP_Soy775_Chr16.11.vcf.gz
+    jobid: 391
+    wildcards: chr=16, subset=11
+    resources: memory=300G
+
+Error submitting jobscript (exit code 1):
+
+
+[Tue Jun  8 15:27:11 2021]
+rule ImputeRP:
+    input: results/SplitVCF_Soy775_Chr04.19.vcf.gz
+    output: results/ImputeRP_Soy775_Chr04.19.vcf.gz
+    jobid: 159
+    wildcards: chr=04, subset=19
+    resources: memory=300G
+
+Error submitting jobscript (exit code 1):
+
+
+[Tue Jun  8 15:27:11 2021]
+rule ImputeNRP:
+    input: results/SplitVCF_NRP_Chr01.9.vcf.gz, results/ImputeRP_Soy775_Chr01.9.vcf.gz
+    output: results/ImputeNRP_NRP_Chr01.9.vcf.gz
+    jobid: 489
+    wildcards: chr=01, subset=9
+    resources: memory=300G
+
+Error submitting jobscript (exit code 1):
+
+
+[Tue Jun  8 15:27:11 2021]
+rule ImputeRP:
+    input: results/SplitVCF_Soy775_Chr16.19.vcf.gz
+    output: results/ImputeRP_Soy775_Chr16.19.vcf.gz
+    jobid: 399
+    wildcards: chr=16, subset=19
+    resources: memory=300G
+
+Error submitting jobscript (exit code 1):
+
+
+[Tue Jun  8 15:27:11 2021]
+rule ImputeNRP:
+    input: results/SplitVCF_NRP_Chr01.17.vcf.gz, results/ImputeRP_Soy775_Chr01.17.vcf.gz
+    output: results/ImputeNRP_NRP_Chr01.17.vcf.gz
+    jobid: 497
+    wildcards: chr=01, subset=17
+    resources: memory=300G
+
+Error submitting jobscript (exit code 1):
+
+
+[Tue Jun  8 15:27:11 2021]
+rule ImputeRP:
+    input: results/SplitVCF_Soy775_Chr16.12.vcf.gz
+    output: results/ImputeRP_Soy775_Chr16.12.vcf.gz
+    jobid: 392
+    wildcards: chr=16, subset=12
+    resources: memory=300G
+
+Error submitting jobscript (exit code 1):
+
+
+[Tue Jun  8 15:27:11 2021]
+rule ImputeRP:
+    input: results/SplitVCF_Soy775_Chr18.2.vcf.gz
+    output: results/ImputeRP_Soy775_Chr18.2.vcf.gz
+    jobid: 422
+    wildcards: chr=18, subset=2
+    resources: memory=300G
+
+Error submitting jobscript (exit code 1):
+
+
+[Tue Jun  8 15:27:11 2021]
+rule ImputeNRP:
+    input: results/SplitVCF_NRP_Chr01.10.vcf.gz, results/ImputeRP_Soy775_Chr01.10.vcf.gz
+    output: results/ImputeNRP_NRP_Chr01.10.vcf.gz
+    jobid: 490
+    wildcards: chr=01, subset=10
+    resources: memory=300G
+
+Error submitting jobscript (exit code 1):
+
+
+[Tue Jun  8 15:27:11 2021]
+rule ImputeRP:
+    input: results/SplitVCF_Soy775_Chr18.10.vcf.gz
+    output: results/ImputeRP_Soy775_Chr18.10.vcf.gz
+    jobid: 430
+    wildcards: chr=18, subset=10
+    resources: memory=300G
+
+Error submitting jobscript (exit code 1):
+
+
+[Tue Jun  8 15:27:11 2021]
+rule ImputeRP:
+    input: results/SplitVCF_Soy775_Chr13.15.vcf.gz
+    output: results/ImputeRP_Soy775_Chr13.15.vcf.gz
+    jobid: 335
+    wildcards: chr=13, subset=15
+    resources: memory=300G
+
+Error submitting jobscript (exit code 1):
+
+
+[Tue Jun  8 15:27:11 2021]
+rule ImputeNRP:
+    input: results/SplitVCF_NRP_Chr01.18.vcf.gz, results/ImputeRP_Soy775_Chr01.18.vcf.gz
+    output: results/ImputeNRP_NRP_Chr01.18.vcf.gz
+    jobid: 498
+    wildcards: chr=01, subset=18
+    resources: memory=300G
+
+Error submitting jobscript (exit code 1):
+
+
+[Tue Jun  8 15:27:11 2021]
+rule ImputeNRP:
+    input: results/SplitVCF_NRP_Chr07.18.vcf.gz, results/ImputeRP_Soy775_Chr07.18.vcf.gz
+    output: results/ImputeNRP_NRP_Chr07.18.vcf.gz
+    jobid: 618
+    wildcards: chr=07, subset=18
+    resources: memory=300G
+
+Error submitting jobscript (exit code 1):
+
+
+[Tue Jun  8 15:27:11 2021]
+rule ImputeNRP:
+    input: results/SplitVCF_NRP_Chr07.3.vcf.gz, results/ImputeRP_Soy775_Chr07.3.vcf.gz
+    output: results/ImputeNRP_NRP_Chr07.3.vcf.gz
+    jobid: 603
+    wildcards: chr=07, subset=3
+    resources: memory=300G
+
+Error submitting jobscript (exit code 1):
+
+
+[Tue Jun  8 15:27:11 2021]
+rule ImputeNRP:
+    input: results/SplitVCF_NRP_Chr01.3.vcf.gz, results/ImputeRP_Soy775_Chr01.3.vcf.gz
+    output: results/ImputeNRP_NRP_Chr01.3.vcf.gz
+    jobid: 483
+    wildcards: chr=01, subset=3
+    resources: memory=300G
+
+Error submitting jobscript (exit code 1):
+
+
+[Tue Jun  8 15:27:11 2021]
+rule ImputeNRP:
+    input: results/SplitVCF_NRP_Chr01.11.vcf.gz, results/ImputeRP_Soy775_Chr01.11.vcf.gz
+    output: results/ImputeNRP_NRP_Chr01.11.vcf.gz
+    jobid: 491
+    wildcards: chr=01, subset=11
+    resources: memory=300G
+
+Error submitting jobscript (exit code 1):
+
+
+[Tue Jun  8 15:27:11 2021]
+rule ImputeRP:
+    input: results/SplitVCF_Soy775_Chr16.13.vcf.gz
+    output: results/ImputeRP_Soy775_Chr16.13.vcf.gz
+    jobid: 393
+    wildcards: chr=16, subset=13
+    resources: memory=300G
+
+Error submitting jobscript (exit code 1):
+
+
+[Tue Jun  8 15:27:11 2021]
+rule ImputeRP:
+    input: results/SplitVCF_Soy775_Chr18.3.vcf.gz
+    output: results/ImputeRP_Soy775_Chr18.3.vcf.gz
+    jobid: 423
+    wildcards: chr=18, subset=3
+    resources: memory=300G
+
+Error submitting jobscript (exit code 1):
+
+
+[Tue Jun  8 15:27:11 2021]
+rule ImputeRP:
+    input: results/SplitVCF_Soy775_Chr13.13.vcf.gz
+    output: results/ImputeRP_Soy775_Chr13.13.vcf.gz
+    jobid: 333
+    wildcards: chr=13, subset=13
+    resources: memory=300G
+
+Error submitting jobscript (exit code 1):
+
+
+[Tue Jun  8 15:27:11 2021]
+rule ImputeRP:
+    input: results/SplitVCF_Soy775_Chr14.1.vcf.gz
+    output: results/ImputeRP_Soy775_Chr14.1.vcf.gz
+    jobid: 341
+    wildcards: chr=14, subset=1
+    resources: memory=300G
+
+Error submitting jobscript (exit code 1):
+
+
+[Tue Jun  8 15:27:11 2021]
+rule ImputeRP:
+    input: results/SplitVCF_Soy775_Chr18.11.vcf.gz
+    output: results/ImputeRP_Soy775_Chr18.11.vcf.gz
+    jobid: 431
+    wildcards: chr=18, subset=11
+    resources: memory=300G
+
+Error submitting jobscript (exit code 1):
+
+
+[Tue Jun  8 15:27:12 2021]
+rule ImputeNRP:
+    input: results/SplitVCF_NRP_Chr07.19.vcf.gz, results/ImputeRP_Soy775_Chr07.19.vcf.gz
+    output: results/ImputeNRP_NRP_Chr07.19.vcf.gz
+    jobid: 619
+    wildcards: chr=07, subset=19
+    resources: memory=300G
+
+Error submitting jobscript (exit code 1):
+
+
+[Tue Jun  8 15:27:12 2021]
+rule ImputeNRP:
+    input: results/SplitVCF_NRP_Chr01.4.vcf.gz, results/ImputeRP_Soy775_Chr01.4.vcf.gz
+    output: results/ImputeNRP_NRP_Chr01.4.vcf.gz
+    jobid: 484
+    wildcards: chr=01, subset=4
+    resources: memory=300G
+
+Error submitting jobscript (exit code 1):
+
+
+[Tue Jun  8 15:27:12 2021]
+rule ImputeNRP:
+    input: results/SplitVCF_NRP_Chr01.19.vcf.gz, results/ImputeRP_Soy775_Chr01.19.vcf.gz
+    output: results/ImputeNRP_NRP_Chr01.19.vcf.gz
+    jobid: 499
+    wildcards: chr=01, subset=19
+    resources: memory=300G
+
+Error submitting jobscript (exit code 1):
+
+
+[Tue Jun  8 15:27:12 2021]
+rule ImputeNRP:
+    input: results/SplitVCF_NRP_Chr16.4.vcf.gz, results/ImputeRP_Soy775_Chr16.4.vcf.gz
+    output: results/ImputeNRP_NRP_Chr16.4.vcf.gz
+    jobid: 784
+    wildcards: chr=16, subset=4
+    resources: memory=300G
+
+Error submitting jobscript (exit code 1):
+
+
+[Tue Jun  8 15:27:12 2021]
+rule ImputeNRP:
+    input: results/SplitVCF_NRP_Chr13.12.vcf.gz, results/ImputeRP_Soy775_Chr13.12.vcf.gz
+    output: results/ImputeNRP_NRP_Chr13.12.vcf.gz
+    jobid: 732
+    wildcards: chr=13, subset=12
+    resources: memory=300G
+
+Error submitting jobscript (exit code 1):
+
+
+[Tue Jun  8 15:27:12 2021]
+rule ImputeNRP:
+    input: results/SplitVCF_NRP_Chr01.12.vcf.gz, results/ImputeRP_Soy775_Chr01.12.vcf.gz
+    output: results/ImputeNRP_NRP_Chr01.12.vcf.gz
+    jobid: 492
+    wildcards: chr=01, subset=12
+    resources: memory=300G
+
+Error submitting jobscript (exit code 1):
+
+
+[Tue Jun  8 15:27:12 2021]
+rule ImputeRP:
+    input: results/SplitVCF_Soy775_Chr16.14.vcf.gz
+    output: results/ImputeRP_Soy775_Chr16.14.vcf.gz
+    jobid: 394
+    wildcards: chr=16, subset=14
+    resources: memory=300G
+
+Error submitting jobscript (exit code 1):
+
+
+[Tue Jun  8 15:27:12 2021]
+rule ImputeRP:
+    input: results/SplitVCF_Soy775_Chr18.4.vcf.gz
+    output: results/ImputeRP_Soy775_Chr18.4.vcf.gz
+    jobid: 424
+    wildcards: chr=18, subset=4
+    resources: memory=300G
+
+Error submitting jobscript (exit code 1):
+
+
+[Tue Jun  8 15:27:12 2021]
+rule ImputeRP:
+    input: results/SplitVCF_Soy775_Chr13.14.vcf.gz
+    output: results/ImputeRP_Soy775_Chr13.14.vcf.gz
+    jobid: 334
+    wildcards: chr=13, subset=14
+    resources: memory=300G
+
+Error submitting jobscript (exit code 1):
+
+
+[Tue Jun  8 15:27:12 2021]
+rule ImputeRP:
+    input: results/SplitVCF_Soy775_Chr14.2.vcf.gz
+    output: results/ImputeRP_Soy775_Chr14.2.vcf.gz
+    jobid: 342
+    wildcards: chr=14, subset=2
+    resources: memory=300G
+
+Error submitting jobscript (exit code 1):
+
+
+[Tue Jun  8 15:27:12 2021]
+rule ImputeRP:
+    input: results/SplitVCF_Soy775_Chr18.12.vcf.gz
+    output: results/ImputeRP_Soy775_Chr18.12.vcf.gz
+    jobid: 432
+    wildcards: chr=18, subset=12
+    resources: memory=300G
+
+Error submitting jobscript (exit code 1):
+
+
+[Tue Jun  8 15:27:12 2021]
+rule ImputeNRP:
+    input: results/SplitVCF_NRP_Chr01.5.vcf.gz, results/ImputeRP_Soy775_Chr01.5.vcf.gz
+    output: results/ImputeNRP_NRP_Chr01.5.vcf.gz
+    jobid: 485
+    wildcards: chr=01, subset=5
+    resources: memory=300G
+
+Error submitting jobscript (exit code 1):
+

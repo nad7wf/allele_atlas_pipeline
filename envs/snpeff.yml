@@ -1,0 +1,8 @@
+name: snpeff
+channels:
+ - bioconda
+dependencies:
+ - snpeff
+ - snpsift
+ - bcftools
+ - htslib

@@ -1,0 +1,54 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 50
+Job counts:
+	count	jobs
+	1	PreformatNRP
+	1	PreformatRP
+	1	all
+	3
+Select jobs to execute...
+
+[Wed Jun  9 08:53:56 2021]
+rule PreformatRP:
+    input: resources/Soy775/Soy775_Chr01.vcf.gz
+    output: results/PreformatRP_Soy775_Chr01.vcf.gz
+    jobid: 1
+    wildcards: chr=01
+
+Submitted job 1 with external jobid 'Submitted batch job 22872807'.
+
+[Wed Jun  9 08:53:56 2021]
+rule PreformatNRP:
+    input: resources/NRP/NRP_Chr01.vcf.gz, resources/Soy775/Soy775_Chr01.vcf.gz
+    output: results/PreformatNRP_NRP_Chr01.vcf.gz
+    jobid: 2
+    wildcards: chr=01
+
+Submitted job 2 with external jobid 'Submitted batch job 22872808'.
+[Wed Jun  9 08:54:46 2021]
+Error in rule PreformatNRP:
+    jobid: 2
+    output: results/PreformatNRP_NRP_Chr01.vcf.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/d383c473
+    shell:
+        
+		### Recode hets as missing data. ###
+		bcftools filter -S . -e 'GT="het"' -Ou resources/NRP/NRP_Chr01.vcf.gz | 		### Filter for positions present in RP. ###
+		bcftools view -R resources/Soy775/Soy775_Chr01.vcf.gz -Ou | 		### Remove "inf" from QUAL column and trailing genotype info in FORMAT column.###
+		bcftools annotate -x QUAL,FORMAT | 		### The asterisk throws an error in SNPEff - replacing with <DEL>. ###
+		awk 'BEGIN{OFS=FS="	"} {gsub("*", "<DEL>", $5); print}' | 		bgzip -l 9 > results/PreformatNRP_NRP_Chr01.vcf.gz
+
+		### Index vcf file. ###
+		bcftools index --tbi results/PreformatNRP_NRP_Chr01.vcf.gz
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22872808
+
+Error executing rule PreformatNRP on cluster (jobid: 2, external: Submitted batch job 22872808, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.oga_y937/snakejob.PreformatNRP.2.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jun  9 09:04:16 2021]
+Finished job 1.
+1 of 3 steps (33%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/log/2021-06-09T085356.119059.snakemake.log

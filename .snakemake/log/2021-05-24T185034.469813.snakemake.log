@@ -1,0 +1,53 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 50
+Job counts:
+	count	jobs
+	1	SplitVCF
+	1	SubAsterisk
+	1	all
+	3
+Select jobs to execute...
+
+[Mon May 24 18:50:34 2021]
+rule SubAsterisk:
+    input: resources/remerged_datasets/KB100/KB100_Chr01.vcf.gz
+    output: results/SubAsterisk_KB100_Chr01.vcf.gz
+    log: reports/SubAsterisk_KB100_Chr01.log
+    jobid: 1
+    wildcards: sample=KB100, chr=Chr01
+
+Submitted job 1 with external jobid 'Submitted batch job 22843718'.
+[Mon May 24 18:54:34 2021]
+Finished job 1.
+1 of 3 steps (33%) done
+Select jobs to execute...
+
+[Mon May 24 18:54:34 2021]
+rule SplitVCF:
+    input: results/SubAsterisk_KB100_Chr01.vcf.gz
+    output: ../../results/KB100_Chr01.1.vcf.gz
+    log: reports/KB100_Chr01.log
+    jobid: 2
+    wildcards: sample=KB100, chr=Chr01
+
+Submitted job 2 with external jobid 'Submitted batch job 22843722'.
+[Mon May 24 18:54:44 2021]
+Error in rule SplitVCF:
+    jobid: 2
+    output: ../../results/KB100_Chr01.1.vcf.gz
+    log: reports/KB100_Chr01.log (check log file(s) for error message)
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/1990c300
+    shell:
+        
+		overlap=$(($(bcftools index -n results/SubAsterisk_KB100_Chr01.vcf.gz) / 20 + 5000))
+
+		zcat results/SubAsterisk_KB100_Chr01.vcf.gz | java -jar resources/beagle/splitvcf.jar Chr01 "$overlap" 5000 ../../results/KB100_Chr01 2> reports/KB100_Chr01.log
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22843722
+
+Error executing rule SplitVCF on cluster (jobid: 2, external: Submitted batch job 22843722, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.fkfg2blr/snakejob.SplitVCF.2.sh). For error details see the cluster log and the log files of the involved rule(s).
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/log/2021-05-24T185034.469813.snakemake.log

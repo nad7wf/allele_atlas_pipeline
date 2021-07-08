@@ -1,0 +1,25 @@
+Building DAG of jobs...
+Creating conda environment envs/beagle.yml...
+Downloading and installing remote packages.
+Environment for envs/beagle.yml created (location: .snakemake/conda/e283fd6b)
+Using shell: /usr/bin/bash
+Provided cluster nodes: 50
+Job counts:
+	count	jobs
+	20	SplitVCF
+	1	all
+	21
+Select jobs to execute...
+
+[Mon May 24 13:33:33 2021]
+rule SplitVCF:
+    input: resources/remerged_datasets/KB100/KB100_Chr13.vcf.gz
+    output: results/KB100_Chr13.1.vcf.gz, results/KB100_Chr13.2.vcf.gz, results/KB100_Chr13.3.vcf.gz, results/KB100_Chr13.4.vcf.gz, results/KB100_Chr13.5.vcf.gz, results/KB100_Chr13.6.vcf.gz, results/KB100_Chr13.7.vcf.gz, results/KB100_Chr13.8.vcf.gz, results/KB100_Chr13.9.vcf.gz, results/KB100_Chr13.10.vcf.gz, results/KB100_Chr13.11.vcf.gz, results/KB100_Chr13.12.vcf.gz, results/KB100_Chr13.13.vcf.gz, results/KB100_Chr13.14.vcf.gz, results/KB100_Chr13.15.vcf.gz, results/KB100_Chr13.16.vcf.gz, results/KB100_Chr13.17.vcf.gz, results/KB100_Chr13.18.vcf.gz, results/KB100_Chr13.19.vcf.gz, results/KB100_Chr13.20.vcf.gz
+    log: reports/KB100_Chr13.log
+    jobid: 13
+    wildcards: sample=KB100, chr=Chr13
+
+WorkflowError in line 1 of /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/rules/beagle/beagle_SplitVCF.smk:
+'Wildcards' object has no attribute 'cpus'
+  File "/cluster/software/conda-envs/envs/snakemake-5.3.0/lib/python3.6/site-packages/snakemake/executors/__init__.py", line 135, in run_jobs
+  File "/cluster/software/conda-envs/envs/snakemake-5.3.0/lib/python3.6/site-packages/snakemake/executors/__init__.py", line 966, in run

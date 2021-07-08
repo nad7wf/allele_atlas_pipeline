@@ -1,0 +1,13 @@
+Building DAG of jobs...
+Creating conda environment envs/beagle.yml...
+Downloading and installing remote packages.
+CreateCondaEnvironmentException:
+Could not create conda environment from /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/rules/beagle/../../envs/beagle.yml:
+Collecting package metadata (repodata.json): ...working... done
+Solving environment: ...working... failed
+
+ResolvePackageNotFound: 
+  - beagle=5.0
+
+
+  File "/cluster/software/conda-envs/envs/snakemake-5.3.0/lib/python3.6/site-packages/snakemake/deployment/conda.py", line 352, in create

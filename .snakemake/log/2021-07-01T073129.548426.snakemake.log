@@ -1,0 +1,1014 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Job counts:
+	count	jobs
+	20	AlleleAtlas
+	798	ImputeNRP
+	745	ImputeRP
+	20	MergeVCFs
+	5	PreformatNRP
+	2	PreformatRP
+	20	SNPEff
+	14	SplitVCF
+	1	all
+	1625
+Select jobs to execute...
+
+[Thu Jul  1 07:31:34 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr12.8.vcf.gz
+    output: results/ImputeRP_RP_Chr12.8.vcf.gz
+    jobid: 568
+    wildcards: chr=12, subset=8
+    resources: memory=300G, threads=15
+
+Submitted job 568 with external jobid 'Submitted batch job 22962942'.
+
+[Thu Jul  1 07:31:35 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr08.39.vcf.gz
+    output: results/ImputeRP_RP_Chr08.39.vcf.gz
+    jobid: 439
+    wildcards: chr=08, subset=39
+    resources: memory=300G, threads=15
+
+Submitted job 439 with external jobid 'Submitted batch job 22962943'.
+
+[Thu Jul  1 07:31:36 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr12.15.vcf.gz
+    output: results/ImputeRP_RP_Chr12.15.vcf.gz
+    jobid: 575
+    wildcards: chr=12, subset=15
+    resources: memory=300G, threads=15
+
+Submitted job 575 with external jobid 'Submitted batch job 22962944'.
+
+[Thu Jul  1 07:31:38 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr08.40.vcf.gz
+    output: results/ImputeRP_RP_Chr08.40.vcf.gz
+    jobid: 440
+    wildcards: chr=08, subset=40
+    resources: memory=300G, threads=15
+
+Submitted job 440 with external jobid 'Submitted batch job 22962945'.
+
+[Thu Jul  1 07:31:39 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr19.5.vcf.gz
+    output: results/ImputeRP_RP_Chr19.5.vcf.gz
+    jobid: 845
+    wildcards: chr=19, subset=5
+    resources: memory=300G, threads=15
+
+Submitted job 845 with external jobid 'Submitted batch job 22962946'.
+
+[Thu Jul  1 07:31:40 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr20.10.vcf.gz
+    output: results/ImputeRP_RP_Chr20.10.vcf.gz
+    jobid: 890
+    wildcards: chr=20, subset=10
+    resources: memory=300G, threads=15
+
+Submitted job 890 with external jobid 'Submitted batch job 22962947'.
+
+[Thu Jul  1 07:31:41 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr19.35.vcf.gz
+    output: results/ImputeRP_RP_Chr19.35.vcf.gz
+    jobid: 875
+    wildcards: chr=19, subset=35
+    resources: memory=300G, threads=15
+
+Submitted job 875 with external jobid 'Submitted batch job 22962948'.
+
+[Thu Jul  1 07:31:43 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr20.40.vcf.gz
+    output: results/ImputeRP_RP_Chr20.40.vcf.gz
+    jobid: 920
+    wildcards: chr=20, subset=40
+    resources: memory=300G, threads=15
+
+Submitted job 920 with external jobid 'Submitted batch job 22962949'.
+
+[Thu Jul  1 07:31:44 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr19.36.vcf.gz
+    output: results/ImputeRP_RP_Chr19.36.vcf.gz
+    jobid: 876
+    wildcards: chr=19, subset=36
+    resources: memory=300G, threads=15
+
+Submitted job 876 with external jobid 'Submitted batch job 22962950'.
+
+[Thu Jul  1 07:31:45 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr06.31.vcf.gz
+    output: results/ImputeRP_RP_Chr06.31.vcf.gz
+    jobid: 351
+    wildcards: chr=06, subset=31
+    resources: memory=300G, threads=15
+
+Submitted job 351 with external jobid 'Submitted batch job 22962951'.
+
+[Thu Jul  1 07:31:46 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr16.37.vcf.gz
+    output: results/ImputeRP_RP_Chr16.37.vcf.gz
+    jobid: 757
+    wildcards: chr=16, subset=37
+    resources: memory=300G, threads=15
+
+Submitted job 757 with external jobid 'Submitted batch job 22962952'.
+
+[Thu Jul  1 07:31:48 2021]
+rule ImputeNRP:
+    input: results/SplitVCF_NRP_Chr11.37.vcf.gz, results/ImputeRP_RP_Chr11.37.vcf.gz
+    output: results/ImputeNRP_NRP_Chr11.37.vcf.gz
+    jobid: 1357
+    wildcards: chr=11, subset=37
+    resources: memory=200G, threads=1
+
+Submitted job 1357 with external jobid 'Submitted batch job 22962953'.
+
+[Thu Jul  1 07:31:49 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr06.2.vcf.gz
+    output: results/ImputeRP_RP_Chr06.2.vcf.gz
+    jobid: 322
+    wildcards: chr=06, subset=2
+    resources: memory=300G, threads=15
+
+Submitted job 322 with external jobid 'Submitted batch job 22962954'.
+
+[Thu Jul  1 07:31:50 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr15.2.vcf.gz
+    output: results/ImputeRP_RP_Chr15.2.vcf.gz
+    jobid: 682
+    wildcards: chr=15, subset=2
+    resources: memory=300G, threads=15
+
+Submitted job 682 with external jobid 'Submitted batch job 22962955'.
+
+[Thu Jul  1 07:31:50 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr20.27.vcf.gz
+    output: results/ImputeRP_RP_Chr20.27.vcf.gz
+    jobid: 907
+    wildcards: chr=20, subset=27
+    resources: memory=300G, threads=15
+
+Submitted job 907 with external jobid 'Submitted batch job 22962956'.
+
+[Thu Jul  1 07:31:51 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr01.8.vcf.gz
+    output: results/ImputeRP_RP_Chr01.8.vcf.gz
+    jobid: 128
+    wildcards: chr=01, subset=8
+    resources: memory=300G, threads=15
+
+Submitted job 128 with external jobid 'Submitted batch job 22962957'.
+
+[Thu Jul  1 07:31:52 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr20.28.vcf.gz
+    output: results/ImputeRP_RP_Chr20.28.vcf.gz
+    jobid: 908
+    wildcards: chr=20, subset=28
+    resources: memory=300G, threads=15
+
+Submitted job 908 with external jobid 'Submitted batch job 22962958'.
+
+[Thu Jul  1 07:31:53 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr16.38.vcf.gz
+    output: results/ImputeRP_RP_Chr16.38.vcf.gz
+    jobid: 758
+    wildcards: chr=16, subset=38
+    resources: memory=300G, threads=15
+
+Submitted job 758 with external jobid 'Submitted batch job 22962959'.
+
+[Thu Jul  1 07:31:54 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr06.3.vcf.gz
+    output: results/ImputeRP_RP_Chr06.3.vcf.gz
+    jobid: 323
+    wildcards: chr=06, subset=3
+    resources: memory=300G, threads=15
+
+Submitted job 323 with external jobid 'Submitted batch job 22962960'.
+
+[Thu Jul  1 07:31:54 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr15.3.vcf.gz
+    output: results/ImputeRP_RP_Chr15.3.vcf.gz
+    jobid: 683
+    wildcards: chr=15, subset=3
+    resources: memory=300G, threads=15
+
+Submitted job 683 with external jobid 'Submitted batch job 22962961'.
+
+[Thu Jul  1 07:31:55 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr20.29.vcf.gz
+    output: results/ImputeRP_RP_Chr20.29.vcf.gz
+    jobid: 909
+    wildcards: chr=20, subset=29
+    resources: memory=300G, threads=15
+
+Submitted job 909 with external jobid 'Submitted batch job 22962962'.
+
+[Thu Jul  1 07:31:56 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr01.9.vcf.gz
+    output: results/ImputeRP_RP_Chr01.9.vcf.gz
+    jobid: 129
+    wildcards: chr=01, subset=9
+    resources: memory=300G, threads=15
+
+Submitted job 129 with external jobid 'Submitted batch job 22962963'.
+
+[Thu Jul  1 07:31:57 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr03.26.vcf.gz
+    output: results/ImputeRP_RP_Chr03.26.vcf.gz
+    jobid: 226
+    wildcards: chr=03, subset=26
+    resources: memory=300G, threads=15
+
+Submitted job 226 with external jobid 'Submitted batch job 22962964'.
+
+[Thu Jul  1 07:31:57 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr08.6.vcf.gz
+    output: results/ImputeRP_RP_Chr08.6.vcf.gz
+    jobid: 406
+    wildcards: chr=08, subset=6
+    resources: memory=300G, threads=15
+
+Submitted job 406 with external jobid 'Submitted batch job 22962965'.
+
+[Thu Jul  1 07:31:58 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr10.16.vcf.gz
+    output: results/ImputeRP_RP_Chr10.16.vcf.gz
+    jobid: 496
+    wildcards: chr=10, subset=16
+    resources: memory=300G, threads=15
+
+Submitted job 496 with external jobid 'Submitted batch job 22962966'.
+
+[Thu Jul  1 07:31:59 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr07.2.vcf.gz
+    output: results/ImputeRP_RP_Chr07.2.vcf.gz
+    jobid: 362
+    wildcards: chr=07, subset=2
+    resources: memory=300G, threads=15
+
+Submitted job 362 with external jobid 'Submitted batch job 22962967'.
+
+[Thu Jul  1 07:31:59 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr16.2.vcf.gz
+    output: results/ImputeRP_RP_Chr16.2.vcf.gz
+    jobid: 722
+    wildcards: chr=16, subset=2
+    resources: memory=300G, threads=15
+
+Submitted job 722 with external jobid 'Submitted batch job 22962968'.
+
+[Thu Jul  1 07:32:00 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr07.17.vcf.gz
+    output: results/ImputeRP_RP_Chr07.17.vcf.gz
+    jobid: 377
+    wildcards: chr=07, subset=17
+    resources: memory=300G, threads=15
+
+Submitted job 377 with external jobid 'Submitted batch job 22962969'.
+
+[Thu Jul  1 07:32:01 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr08.7.vcf.gz
+    output: results/ImputeRP_RP_Chr08.7.vcf.gz
+    jobid: 407
+    wildcards: chr=08, subset=7
+    resources: memory=300G, threads=15
+
+Submitted job 407 with external jobid 'Submitted batch job 22962970'.
+
+[Thu Jul  1 07:32:02 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr03.27.vcf.gz
+    output: results/ImputeRP_RP_Chr03.27.vcf.gz
+    jobid: 227
+    wildcards: chr=03, subset=27
+    resources: memory=300G, threads=15
+
+Submitted job 227 with external jobid 'Submitted batch job 22962971'.
+
+[Thu Jul  1 07:32:02 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr10.17.vcf.gz
+    output: results/ImputeRP_RP_Chr10.17.vcf.gz
+    jobid: 497
+    wildcards: chr=10, subset=17
+    resources: memory=300G, threads=15
+
+Submitted job 497 with external jobid 'Submitted batch job 22962972'.
+
+[Thu Jul  1 07:32:03 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr07.3.vcf.gz
+    output: results/ImputeRP_RP_Chr07.3.vcf.gz
+    jobid: 363
+    wildcards: chr=07, subset=3
+    resources: memory=300G, threads=15
+
+Submitted job 363 with external jobid 'Submitted batch job 22962973'.
+
+[Thu Jul  1 07:32:04 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr16.3.vcf.gz
+    output: results/ImputeRP_RP_Chr16.3.vcf.gz
+    jobid: 723
+    wildcards: chr=16, subset=3
+    resources: memory=300G, threads=15
+
+Submitted job 723 with external jobid 'Submitted batch job 22962974'.
+
+[Thu Jul  1 07:32:04 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr09.13.vcf.gz
+    output: results/ImputeRP_RP_Chr09.13.vcf.gz
+    jobid: 453
+    wildcards: chr=09, subset=13
+    resources: memory=300G, threads=15
+
+Submitted job 453 with external jobid 'Submitted batch job 22962975'.
+
+[Thu Jul  1 07:32:06 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr07.18.vcf.gz
+    output: results/ImputeRP_RP_Chr07.18.vcf.gz
+    jobid: 378
+    wildcards: chr=07, subset=18
+    resources: memory=300G, threads=15
+
+Submitted job 378 with external jobid 'Submitted batch job 22962976'.
+
+[Thu Jul  1 07:32:06 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr08.8.vcf.gz
+    output: results/ImputeRP_RP_Chr08.8.vcf.gz
+    jobid: 408
+    wildcards: chr=08, subset=8
+    resources: memory=300G, threads=15
+
+Submitted job 408 with external jobid 'Submitted batch job 22962977'.
+
+[Thu Jul  1 07:32:07 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr03.28.vcf.gz
+    output: results/ImputeRP_RP_Chr03.28.vcf.gz
+    jobid: 228
+    wildcards: chr=03, subset=28
+    resources: memory=300G, threads=15
+
+Submitted job 228 with external jobid 'Submitted batch job 22962978'.
+
+[Thu Jul  1 07:32:08 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr10.18.vcf.gz
+    output: results/ImputeRP_RP_Chr10.18.vcf.gz
+    jobid: 498
+    wildcards: chr=10, subset=18
+    resources: memory=300G, threads=15
+
+Submitted job 498 with external jobid 'Submitted batch job 22962979'.
+
+[Thu Jul  1 07:32:10 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr09.14.vcf.gz
+    output: results/ImputeRP_RP_Chr09.14.vcf.gz
+    jobid: 454
+    wildcards: chr=09, subset=14
+    resources: memory=300G, threads=15
+
+Submitted job 454 with external jobid 'Submitted batch job 22962980'.
+
+[Thu Jul  1 07:32:10 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr07.4.vcf.gz
+    output: results/ImputeRP_RP_Chr07.4.vcf.gz
+    jobid: 364
+    wildcards: chr=07, subset=4
+    resources: memory=300G, threads=15
+
+Submitted job 364 with external jobid 'Submitted batch job 22962981'.
+
+[Thu Jul  1 07:32:11 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr16.4.vcf.gz
+    output: results/ImputeRP_RP_Chr16.4.vcf.gz
+    jobid: 724
+    wildcards: chr=16, subset=4
+    resources: memory=300G, threads=15
+
+Submitted job 724 with external jobid 'Submitted batch job 22962982'.
+
+[Thu Jul  1 07:32:12 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr07.19.vcf.gz
+    output: results/ImputeRP_RP_Chr07.19.vcf.gz
+    jobid: 379
+    wildcards: chr=07, subset=19
+    resources: memory=300G, threads=15
+
+Submitted job 379 with external jobid 'Submitted batch job 22962983'.
+
+[Thu Jul  1 07:32:13 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr08.9.vcf.gz
+    output: results/ImputeRP_RP_Chr08.9.vcf.gz
+    jobid: 409
+    wildcards: chr=08, subset=9
+    resources: memory=300G, threads=15
+
+Submitted job 409 with external jobid 'Submitted batch job 22962984'.
+
+[Thu Jul  1 07:32:14 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr03.29.vcf.gz
+    output: results/ImputeRP_RP_Chr03.29.vcf.gz
+    jobid: 229
+    wildcards: chr=03, subset=29
+    resources: memory=300G, threads=15
+
+Submitted job 229 with external jobid 'Submitted batch job 22962985'.
+
+[Thu Jul  1 07:32:15 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr10.19.vcf.gz
+    output: results/ImputeRP_RP_Chr10.19.vcf.gz
+    jobid: 499
+    wildcards: chr=10, subset=19
+    resources: memory=300G, threads=15
+
+Submitted job 499 with external jobid 'Submitted batch job 22962986'.
+
+[Thu Jul  1 07:32:16 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr07.20.vcf.gz
+    output: results/ImputeRP_RP_Chr07.20.vcf.gz
+    jobid: 380
+    wildcards: chr=07, subset=20
+    resources: memory=300G, threads=15
+
+Submitted job 380 with external jobid 'Submitted batch job 22962987'.
+
+[Thu Jul  1 07:32:16 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr03.30.vcf.gz
+    output: results/ImputeRP_RP_Chr03.30.vcf.gz
+    jobid: 230
+    wildcards: chr=03, subset=30
+    resources: memory=300G, threads=15
+
+Submitted job 230 with external jobid 'Submitted batch job 22962988'.
+
+[Thu Jul  1 07:32:17 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr09.15.vcf.gz
+    output: results/ImputeRP_RP_Chr09.15.vcf.gz
+    jobid: 455
+    wildcards: chr=09, subset=15
+    resources: memory=300G, threads=15
+
+Submitted job 455 with external jobid 'Submitted batch job 22962989'.
+
+[Thu Jul  1 07:32:19 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr07.5.vcf.gz
+    output: results/ImputeRP_RP_Chr07.5.vcf.gz
+    jobid: 365
+    wildcards: chr=07, subset=5
+    resources: memory=300G, threads=15
+
+Submitted job 365 with external jobid 'Submitted batch job 22962990'.
+
+[Thu Jul  1 07:32:20 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr16.5.vcf.gz
+    output: results/ImputeRP_RP_Chr16.5.vcf.gz
+    jobid: 725
+    wildcards: chr=16, subset=5
+    resources: memory=300G, threads=15
+
+Submitted job 725 with external jobid 'Submitted batch job 22962991'.
+
+[Thu Jul  1 07:32:21 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr08.10.vcf.gz
+    output: results/ImputeRP_RP_Chr08.10.vcf.gz
+    jobid: 410
+    wildcards: chr=08, subset=10
+    resources: memory=300G, threads=15
+
+Submitted job 410 with external jobid 'Submitted batch job 22962992'.
+
+[Thu Jul  1 07:32:21 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr10.20.vcf.gz
+    output: results/ImputeRP_RP_Chr10.20.vcf.gz
+    jobid: 500
+    wildcards: chr=10, subset=20
+    resources: memory=300G, threads=15
+
+Submitted job 500 with external jobid 'Submitted batch job 22962993'.
+
+[Thu Jul  1 07:32:22 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr07.6.vcf.gz
+    output: results/ImputeRP_RP_Chr07.6.vcf.gz
+    jobid: 366
+    wildcards: chr=07, subset=6
+    resources: memory=300G, threads=15
+
+Submitted job 366 with external jobid 'Submitted batch job 22962994'.
+
+[Thu Jul  1 07:32:23 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr16.6.vcf.gz
+    output: results/ImputeRP_RP_Chr16.6.vcf.gz
+    jobid: 726
+    wildcards: chr=16, subset=6
+    resources: memory=300G, threads=15
+
+Submitted job 726 with external jobid 'Submitted batch job 22962995'.
+
+[Thu Jul  1 07:32:24 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr09.16.vcf.gz
+    output: results/ImputeRP_RP_Chr09.16.vcf.gz
+    jobid: 456
+    wildcards: chr=09, subset=16
+    resources: memory=300G, threads=15
+
+Submitted job 456 with external jobid 'Submitted batch job 22962996'.
+
+[Thu Jul  1 07:32:25 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr07.21.vcf.gz
+    output: results/ImputeRP_RP_Chr07.21.vcf.gz
+    jobid: 381
+    wildcards: chr=07, subset=21
+    resources: memory=300G, threads=15
+
+Submitted job 381 with external jobid 'Submitted batch job 22962997'.
+
+[Thu Jul  1 07:32:26 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr03.31.vcf.gz
+    output: results/ImputeRP_RP_Chr03.31.vcf.gz
+    jobid: 231
+    wildcards: chr=03, subset=31
+    resources: memory=300G, threads=15
+
+Submitted job 231 with external jobid 'Submitted batch job 22962998'.
+
+[Thu Jul  1 07:32:26 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr08.11.vcf.gz
+    output: results/ImputeRP_RP_Chr08.11.vcf.gz
+    jobid: 411
+    wildcards: chr=08, subset=11
+    resources: memory=300G, threads=15
+
+Submitted job 411 with external jobid 'Submitted batch job 22962999'.
+
+[Thu Jul  1 07:32:27 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr10.21.vcf.gz
+    output: results/ImputeRP_RP_Chr10.21.vcf.gz
+    jobid: 501
+    wildcards: chr=10, subset=21
+    resources: memory=300G, threads=15
+
+Submitted job 501 with external jobid 'Submitted batch job 22963000'.
+
+[Thu Jul  1 07:32:28 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr07.7.vcf.gz
+    output: results/ImputeRP_RP_Chr07.7.vcf.gz
+    jobid: 367
+    wildcards: chr=07, subset=7
+    resources: memory=300G, threads=15
+
+Submitted job 367 with external jobid 'Submitted batch job 22963001'.
+
+[Thu Jul  1 07:32:29 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr07.22.vcf.gz
+    output: results/ImputeRP_RP_Chr07.22.vcf.gz
+    jobid: 382
+    wildcards: chr=07, subset=22
+    resources: memory=300G, threads=15
+
+Submitted job 382 with external jobid 'Submitted batch job 22963002'.
+
+[Thu Jul  1 07:32:30 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr16.7.vcf.gz
+    output: results/ImputeRP_RP_Chr16.7.vcf.gz
+    jobid: 727
+    wildcards: chr=16, subset=7
+    resources: memory=300G, threads=15
+
+Submitted job 727 with external jobid 'Submitted batch job 22963003'.
+
+[Thu Jul  1 07:32:30 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr09.17.vcf.gz
+    output: results/ImputeRP_RP_Chr09.17.vcf.gz
+    jobid: 457
+    wildcards: chr=09, subset=17
+    resources: memory=300G, threads=15
+
+Submitted job 457 with external jobid 'Submitted batch job 22963004'.
+
+[Thu Jul  1 07:32:31 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr03.32.vcf.gz
+    output: results/ImputeRP_RP_Chr03.32.vcf.gz
+    jobid: 232
+    wildcards: chr=03, subset=32
+    resources: memory=300G, threads=15
+
+Submitted job 232 with external jobid 'Submitted batch job 22963005'.
+
+[Thu Jul  1 07:32:32 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr08.12.vcf.gz
+    output: results/ImputeRP_RP_Chr08.12.vcf.gz
+    jobid: 412
+    wildcards: chr=08, subset=12
+    resources: memory=300G, threads=15
+
+Submitted job 412 with external jobid 'Submitted batch job 22963006'.
+
+[Thu Jul  1 07:32:33 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr10.22.vcf.gz
+    output: results/ImputeRP_RP_Chr10.22.vcf.gz
+    jobid: 502
+    wildcards: chr=10, subset=22
+    resources: memory=300G, threads=15
+
+Submitted job 502 with external jobid 'Submitted batch job 22963007'.
+
+[Thu Jul  1 07:32:34 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr07.8.vcf.gz
+    output: results/ImputeRP_RP_Chr07.8.vcf.gz
+    jobid: 368
+    wildcards: chr=07, subset=8
+    resources: memory=300G, threads=15
+
+Submitted job 368 with external jobid 'Submitted batch job 22963008'.
+
+[Thu Jul  1 07:32:35 2021]
+rule SplitVCF:
+    input: results/Preformat_RP_Chr18.vcf.gz, resources/beagle/splitvcf.jar
+    output: results/SplitVCF_RP_Chr18.1.vcf.gz, results/SplitVCF_RP_Chr18.2.vcf.gz, results/SplitVCF_RP_Chr18.3.vcf.gz, results/SplitVCF_RP_Chr18.4.vcf.gz, results/SplitVCF_RP_Chr18.5.vcf.gz, results/SplitVCF_RP_Chr18.6.vcf.gz, results/SplitVCF_RP_Chr18.7.vcf.gz, results/SplitVCF_RP_Chr18.8.vcf.gz, results/SplitVCF_RP_Chr18.9.vcf.gz, results/SplitVCF_RP_Chr18.10.vcf.gz, results/SplitVCF_RP_Chr18.11.vcf.gz, results/SplitVCF_RP_Chr18.12.vcf.gz, results/SplitVCF_RP_Chr18.13.vcf.gz, results/SplitVCF_RP_Chr18.14.vcf.gz, results/SplitVCF_RP_Chr18.15.vcf.gz, results/SplitVCF_RP_Chr18.16.vcf.gz, results/SplitVCF_RP_Chr18.17.vcf.gz, results/SplitVCF_RP_Chr18.18.vcf.gz, results/SplitVCF_RP_Chr18.19.vcf.gz, results/SplitVCF_RP_Chr18.20.vcf.gz, results/SplitVCF_RP_Chr18.21.vcf.gz, results/SplitVCF_RP_Chr18.22.vcf.gz, results/SplitVCF_RP_Chr18.23.vcf.gz, results/SplitVCF_RP_Chr18.24.vcf.gz, results/SplitVCF_RP_Chr18.25.vcf.gz, results/SplitVCF_RP_Chr18.26.vcf.gz, results/SplitVCF_RP_Chr18.27.vcf.gz, results/SplitVCF_RP_Chr18.28.vcf.gz, results/SplitVCF_RP_Chr18.29.vcf.gz, results/SplitVCF_RP_Chr18.30.vcf.gz, results/SplitVCF_RP_Chr18.31.vcf.gz, results/SplitVCF_RP_Chr18.32.vcf.gz, results/SplitVCF_RP_Chr18.33.vcf.gz, results/SplitVCF_RP_Chr18.34.vcf.gz, results/SplitVCF_RP_Chr18.35.vcf.gz, results/SplitVCF_RP_Chr18.36.vcf.gz, results/SplitVCF_RP_Chr18.37.vcf.gz, results/SplitVCF_RP_Chr18.38.vcf.gz, results/SplitVCF_RP_Chr18.39.vcf.gz, results/SplitVCF_RP_Chr18.40.vcf.gz
+    jobid: 98
+    wildcards: id=RP, chr=18
+
+Submitted job 98 with external jobid 'Submitted batch job 22963009'.
+
+[Thu Jul  1 07:32:38 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr09.18.vcf.gz
+    output: results/ImputeRP_RP_Chr09.18.vcf.gz
+    jobid: 458
+    wildcards: chr=09, subset=18
+    resources: memory=300G, threads=15
+
+Submitted job 458 with external jobid 'Submitted batch job 22963010'.
+
+[Thu Jul  1 07:32:38 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr16.8.vcf.gz
+    output: results/ImputeRP_RP_Chr16.8.vcf.gz
+    jobid: 728
+    wildcards: chr=16, subset=8
+    resources: memory=300G, threads=15
+
+Submitted job 728 with external jobid 'Submitted batch job 22963011'.
+
+[Thu Jul  1 07:32:40 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr08.13.vcf.gz
+    output: results/ImputeRP_RP_Chr08.13.vcf.gz
+    jobid: 413
+    wildcards: chr=08, subset=13
+    resources: memory=300G, threads=15
+
+Submitted job 413 with external jobid 'Submitted batch job 22963012'.
+
+[Thu Jul  1 07:32:40 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr03.33.vcf.gz
+    output: results/ImputeRP_RP_Chr03.33.vcf.gz
+    jobid: 233
+    wildcards: chr=03, subset=33
+    resources: memory=300G, threads=15
+
+Submitted job 233 with external jobid 'Submitted batch job 22963013'.
+
+[Thu Jul  1 07:32:41 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr10.23.vcf.gz
+    output: results/ImputeRP_RP_Chr10.23.vcf.gz
+    jobid: 503
+    wildcards: chr=10, subset=23
+    resources: memory=300G, threads=15
+
+Submitted job 503 with external jobid 'Submitted batch job 22963014'.
+
+[Thu Jul  1 07:32:42 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr07.23.vcf.gz
+    output: results/ImputeRP_RP_Chr07.23.vcf.gz
+    jobid: 383
+    wildcards: chr=07, subset=23
+    resources: memory=300G, threads=15
+
+Submitted job 383 with external jobid 'Submitted batch job 22963015'.
+
+[Thu Jul  1 07:32:44 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr08.14.vcf.gz
+    output: results/ImputeRP_RP_Chr08.14.vcf.gz
+    jobid: 414
+    wildcards: chr=08, subset=14
+    resources: memory=300G, threads=15
+
+Submitted job 414 with external jobid 'Submitted batch job 22963016'.
+
+[Thu Jul  1 07:32:45 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr03.34.vcf.gz
+    output: results/ImputeRP_RP_Chr03.34.vcf.gz
+    jobid: 234
+    wildcards: chr=03, subset=34
+    resources: memory=300G, threads=15
+
+Submitted job 234 with external jobid 'Submitted batch job 22963017'.
+
+[Thu Jul  1 07:32:46 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr10.24.vcf.gz
+    output: results/ImputeRP_RP_Chr10.24.vcf.gz
+    jobid: 504
+    wildcards: chr=10, subset=24
+    resources: memory=300G, threads=15
+
+Submitted job 504 with external jobid 'Submitted batch job 22963018'.
+
+[Thu Jul  1 07:32:47 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr09.19.vcf.gz
+    output: results/ImputeRP_RP_Chr09.19.vcf.gz
+    jobid: 459
+    wildcards: chr=09, subset=19
+    resources: memory=300G, threads=15
+
+Submitted job 459 with external jobid 'Submitted batch job 22963019'.
+
+[Thu Jul  1 07:32:48 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr07.9.vcf.gz
+    output: results/ImputeRP_RP_Chr07.9.vcf.gz
+    jobid: 369
+    wildcards: chr=07, subset=9
+    resources: memory=300G, threads=15
+
+Submitted job 369 with external jobid 'Submitted batch job 22963020'.
+
+[Thu Jul  1 07:32:51 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr16.9.vcf.gz
+    output: results/ImputeRP_RP_Chr16.9.vcf.gz
+    jobid: 729
+    wildcards: chr=16, subset=9
+    resources: memory=300G, threads=15
+
+Submitted job 729 with external jobid 'Submitted batch job 22963021'.
+
+[Thu Jul  1 07:32:52 2021]
+rule ImputeNRP:
+    input: results/SplitVCF_NRP_Chr02.9.vcf.gz, results/ImputeRP_RP_Chr02.9.vcf.gz
+    output: results/ImputeNRP_NRP_Chr02.9.vcf.gz
+    jobid: 969
+    wildcards: chr=02, subset=9
+    resources: memory=200G, threads=1
+
+Submitted job 969 with external jobid 'Submitted batch job 22963022'.
+
+[Thu Jul  1 07:32:52 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr07.24.vcf.gz
+    output: results/ImputeRP_RP_Chr07.24.vcf.gz
+    jobid: 384
+    wildcards: chr=07, subset=24
+    resources: memory=300G, threads=15
+
+Submitted job 384 with external jobid 'Submitted batch job 22963023'.
+
+[Thu Jul  1 07:32:53 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr09.20.vcf.gz
+    output: results/ImputeRP_RP_Chr09.20.vcf.gz
+    jobid: 460
+    wildcards: chr=09, subset=20
+    resources: memory=300G, threads=15
+
+Submitted job 460 with external jobid 'Submitted batch job 22963024'.
+
+[Thu Jul  1 07:32:54 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr07.10.vcf.gz
+    output: results/ImputeRP_RP_Chr07.10.vcf.gz
+    jobid: 370
+    wildcards: chr=07, subset=10
+    resources: memory=300G, threads=15
+
+Submitted job 370 with external jobid 'Submitted batch job 22963025'.
+
+[Thu Jul  1 07:32:54 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr16.10.vcf.gz
+    output: results/ImputeRP_RP_Chr16.10.vcf.gz
+    jobid: 730
+    wildcards: chr=16, subset=10
+    resources: memory=300G, threads=15
+
+Submitted job 730 with external jobid 'Submitted batch job 22963026'.
+
+[Thu Jul  1 07:32:55 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr07.25.vcf.gz
+    output: results/ImputeRP_RP_Chr07.25.vcf.gz
+    jobid: 385
+    wildcards: chr=07, subset=25
+    resources: memory=300G, threads=15
+
+Submitted job 385 with external jobid 'Submitted batch job 22963027'.
+
+[Thu Jul  1 07:32:56 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr08.15.vcf.gz
+    output: results/ImputeRP_RP_Chr08.15.vcf.gz
+    jobid: 415
+    wildcards: chr=08, subset=15
+    resources: memory=300G, threads=15
+
+Submitted job 415 with external jobid 'Submitted batch job 22963028'.
+
+[Thu Jul  1 07:32:57 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr03.35.vcf.gz
+    output: results/ImputeRP_RP_Chr03.35.vcf.gz
+    jobid: 235
+    wildcards: chr=03, subset=35
+    resources: memory=300G, threads=15
+
+Submitted job 235 with external jobid 'Submitted batch job 22963029'.
+
+[Thu Jul  1 07:32:58 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr10.25.vcf.gz
+    output: results/ImputeRP_RP_Chr10.25.vcf.gz
+    jobid: 505
+    wildcards: chr=10, subset=25
+    resources: memory=300G, threads=15
+
+Submitted job 505 with external jobid 'Submitted batch job 22963030'.
+
+[Thu Jul  1 07:32:59 2021]
+rule SplitVCF:
+    input: results/Preformat_NRP_Chr01.vcf.gz, resources/beagle/splitvcf.jar
+    output: results/SplitVCF_NRP_Chr01.1.vcf.gz, results/SplitVCF_NRP_Chr01.2.vcf.gz, results/SplitVCF_NRP_Chr01.3.vcf.gz, results/SplitVCF_NRP_Chr01.4.vcf.gz, results/SplitVCF_NRP_Chr01.5.vcf.gz, results/SplitVCF_NRP_Chr01.6.vcf.gz, results/SplitVCF_NRP_Chr01.7.vcf.gz, results/SplitVCF_NRP_Chr01.8.vcf.gz, results/SplitVCF_NRP_Chr01.9.vcf.gz, results/SplitVCF_NRP_Chr01.10.vcf.gz, results/SplitVCF_NRP_Chr01.11.vcf.gz, results/SplitVCF_NRP_Chr01.12.vcf.gz, results/SplitVCF_NRP_Chr01.13.vcf.gz, results/SplitVCF_NRP_Chr01.14.vcf.gz, results/SplitVCF_NRP_Chr01.15.vcf.gz, results/SplitVCF_NRP_Chr01.16.vcf.gz, results/SplitVCF_NRP_Chr01.17.vcf.gz, results/SplitVCF_NRP_Chr01.18.vcf.gz, results/SplitVCF_NRP_Chr01.19.vcf.gz, results/SplitVCF_NRP_Chr01.20.vcf.gz, results/SplitVCF_NRP_Chr01.21.vcf.gz, results/SplitVCF_NRP_Chr01.22.vcf.gz, results/SplitVCF_NRP_Chr01.23.vcf.gz, results/SplitVCF_NRP_Chr01.24.vcf.gz, results/SplitVCF_NRP_Chr01.25.vcf.gz, results/SplitVCF_NRP_Chr01.26.vcf.gz, results/SplitVCF_NRP_Chr01.27.vcf.gz, results/SplitVCF_NRP_Chr01.28.vcf.gz, results/SplitVCF_NRP_Chr01.29.vcf.gz, results/SplitVCF_NRP_Chr01.30.vcf.gz, results/SplitVCF_NRP_Chr01.31.vcf.gz, results/SplitVCF_NRP_Chr01.32.vcf.gz, results/SplitVCF_NRP_Chr01.33.vcf.gz, results/SplitVCF_NRP_Chr01.34.vcf.gz, results/SplitVCF_NRP_Chr01.35.vcf.gz, results/SplitVCF_NRP_Chr01.36.vcf.gz, results/SplitVCF_NRP_Chr01.37.vcf.gz, results/SplitVCF_NRP_Chr01.38.vcf.gz, results/SplitVCF_NRP_Chr01.39.vcf.gz, results/SplitVCF_NRP_Chr01.40.vcf.gz
+    jobid: 101
+    wildcards: id=NRP, chr=01
+
+Submitted job 101 with external jobid 'Submitted batch job 22963031'.
+
+[Thu Jul  1 07:33:01 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr07.11.vcf.gz
+    output: results/ImputeRP_RP_Chr07.11.vcf.gz
+    jobid: 371
+    wildcards: chr=07, subset=11
+    resources: memory=300G, threads=15
+
+Submitted job 371 with external jobid 'Submitted batch job 22963032'.
+
+[Thu Jul  1 07:33:02 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr16.11.vcf.gz
+    output: results/ImputeRP_RP_Chr16.11.vcf.gz
+    jobid: 731
+    wildcards: chr=16, subset=11
+    resources: memory=300G, threads=15
+
+Submitted job 731 with external jobid 'Submitted batch job 22963033'.
+
+[Thu Jul  1 07:33:03 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr09.21.vcf.gz
+    output: results/ImputeRP_RP_Chr09.21.vcf.gz
+    jobid: 461
+    wildcards: chr=09, subset=21
+    resources: memory=300G, threads=15
+
+Submitted job 461 with external jobid 'Submitted batch job 22963034'.
+
+[Thu Jul  1 07:33:03 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr07.26.vcf.gz
+    output: results/ImputeRP_RP_Chr07.26.vcf.gz
+    jobid: 386
+    wildcards: chr=07, subset=26
+    resources: memory=300G, threads=15
+
+Submitted job 386 with external jobid 'Submitted batch job 22963035'.
+
+[Thu Jul  1 07:33:04 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr08.16.vcf.gz
+    output: results/ImputeRP_RP_Chr08.16.vcf.gz
+    jobid: 416
+    wildcards: chr=08, subset=16
+    resources: memory=300G, threads=15
+
+Submitted job 416 with external jobid 'Submitted batch job 22963036'.
+
+[Thu Jul  1 07:33:04 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr03.36.vcf.gz
+    output: results/ImputeRP_RP_Chr03.36.vcf.gz
+    jobid: 236
+    wildcards: chr=03, subset=36
+    resources: memory=300G, threads=15
+
+Submitted job 236 with external jobid 'Submitted batch job 22963037'.
+
+[Thu Jul  1 07:33:05 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr10.26.vcf.gz
+    output: results/ImputeRP_RP_Chr10.26.vcf.gz
+    jobid: 506
+    wildcards: chr=10, subset=26
+    resources: memory=300G, threads=15
+
+Submitted job 506 with external jobid 'Submitted batch job 22963038'.
+
+[Thu Jul  1 07:33:06 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr16.12.vcf.gz
+    output: results/ImputeRP_RP_Chr16.12.vcf.gz
+    jobid: 732
+    wildcards: chr=16, subset=12
+    resources: memory=300G, threads=15
+
+Submitted job 732 with external jobid 'Submitted batch job 22963039'.
+
+[Thu Jul  1 07:33:06 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr07.12.vcf.gz
+    output: results/ImputeRP_RP_Chr07.12.vcf.gz
+    jobid: 372
+    wildcards: chr=07, subset=12
+    resources: memory=300G, threads=15
+
+Submitted job 372 with external jobid 'Submitted batch job 22963040'.
+
+[Thu Jul  1 07:33:07 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr09.22.vcf.gz
+    output: results/ImputeRP_RP_Chr09.22.vcf.gz
+    jobid: 462
+    wildcards: chr=09, subset=22
+    resources: memory=300G, threads=15
+
+Submitted job 462 with external jobid 'Submitted batch job 22963041'.

@@ -1,0 +1,4 @@
+KeyError in line 11 of /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/rules/beagle/beagle_ImputeRP.smk:
+'ImputeRP'
+  File "/storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/workflow/allele_atlas.smk", line 19, in <module>
+  File "/storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/rules/beagle/beagle_ImputeRP.smk", line 11, in <module>

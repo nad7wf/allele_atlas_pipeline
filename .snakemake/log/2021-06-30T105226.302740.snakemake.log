@@ -1,0 +1,58 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Job counts:
+	count	jobs
+	1	AlleleAtlas
+	3	ImputeNRP
+	1	ImputeRP
+	1	MergeVCFs
+	1	SNPEff
+	1	all
+	8
+Select jobs to execute...
+
+[Wed Jun 30 10:52:26 2021]
+rule ImputeRP:
+    input: results/SplitVCF_RP_Chr02.6.vcf.gz
+    output: results/ImputeRP_RP_Chr02.6.vcf.gz
+    jobid: 9
+    wildcards: chr=02, subset=6
+    resources: memory=200G, threads=15
+
+Submitted job 9 with external jobid 'Submitted batch job 22959321'.
+
+[Wed Jun 30 10:52:26 2021]
+rule ImputeNRP:
+    input: results/SplitVCF_NRP_Chr02.4.vcf.gz, results/ImputeRP_RP_Chr02.4.vcf.gz
+    output: results/ImputeNRP_NRP_Chr02.4.vcf.gz
+    jobid: 10
+    wildcards: chr=02, subset=4
+    resources: memory=200G, threads=1
+
+Submitted job 10 with external jobid 'Submitted batch job 22959322'.
+
+[Wed Jun 30 10:52:27 2021]
+rule ImputeNRP:
+    input: results/SplitVCF_NRP_Chr02.5.vcf.gz, results/ImputeRP_RP_Chr02.5.vcf.gz
+    output: results/ImputeNRP_NRP_Chr02.5.vcf.gz
+    jobid: 11
+    wildcards: chr=02, subset=5
+    resources: memory=200G, threads=1
+
+Submitted job 11 with external jobid 'Submitted batch job 22959323'.
+[Wed Jun 30 10:53:26 2021]
+Error in rule ImputeRP:
+    jobid: 9
+    output: results/ImputeRP_RP_Chr02.6.vcf.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/d5dcf93c
+    shell:
+        
+		java -Xmx200G 			-jar /scratch/nad7wf/miniconda/pkgs/beagle-5.1_24Aug19.3e8-hdfd78af_1/share/beagle-5.1_24Aug19.3e8-1/beagle.jar 			nthreads=15 			gt=results/SplitVCF_RP_Chr02.6.vcf.gz 			out=results/ImputeRP_RP_Chr02.6
+
+		rm "results/ImputeRP_RP_Chr02.6.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22959321
+
+Error executing rule ImputeRP on cluster (jobid: 9, external: Submitted batch job 22959321, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.ls1tz1lc/snakejob.ImputeRP.9.sh). For error details see the cluster log and the log files of the involved rule(s).

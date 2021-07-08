@@ -1,0 +1,2 @@
+SyntaxError in line 18 of /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/workflow/allele_atlas.smk:
+EOF in multi-line statement (allele_atlas.smk, line 18)

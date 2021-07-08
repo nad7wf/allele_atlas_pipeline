@@ -1,0 +1,4 @@
+Building DAG of jobs...
+MissingInputException in line 1 of /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/rules/beagle/beagle_ImputeNRP.smk:
+Missing input files for rule ImputeNRP:
+results/ImputeRP_Soy775_Chr01.1.vcf

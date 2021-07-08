@@ -1,0 +1,35 @@
+Building DAG of jobs...
+Job counts:
+	count	jobs
+	1	AlleleAtlas
+	1	ImputeNRP
+	1	ImputeRP
+	1	MergeVCFs
+	1	SNPEff
+	1	all
+	6
+
+[Thu Jul  8 13:56:29 2021]
+rule ImputeRP:
+    input: results/Preformat_RP_Chr06.vcf.gz
+    output: results/ImputeRP_RP_Chr06.vcf.gz, results/beagle/ImputeRP_RP_Chr06
+    jobid: 5
+    wildcards: chr=06
+    resources: memory=28, threads=10
+
+
+[Thu Jul  8 13:56:29 2021]
+rule ImputeNRP:
+    input: results/Preformat_NRP_Chr06.vcf.gz, results/ImputeRP_RP_Chr06.vcf.gz
+    output: results/ImputeNRP_NRP_Chr06.vcf.gz, results/beagle/ImputeNRP_NRP_Chr06
+    jobid: 6
+    wildcards: chr=06
+    resources: memory=100, threads=1
+
+RuleException in line 1 of /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/rules/beagle/ImputeNRP.smk:
+'OutputFiles' object has no attribute 'out_file'
+  File "/cluster/software/conda-envs/envs/snakemake-5.3.0/lib/python3.6/site-packages/snakemake/executors/__init__.py", line 135, in run_jobs
+  File "/cluster/software/conda-envs/envs/snakemake-5.3.0/lib/python3.6/site-packages/snakemake/executors/__init__.py", line 140, in run
+  File "/cluster/software/conda-envs/envs/snakemake-5.3.0/lib/python3.6/site-packages/snakemake/executors/__init__.py", line 151, in _run
+  File "/cluster/software/conda-envs/envs/snakemake-5.3.0/lib/python3.6/site-packages/snakemake/executors/__init__.py", line 171, in printjob
+  File "/cluster/software/conda-envs/envs/snakemake-5.3.0/lib/python3.6/site-packages/snakemake/executors/__init__.py", line 157, in printjob

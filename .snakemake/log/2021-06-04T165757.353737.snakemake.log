@@ -1,0 +1,47 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 50
+Job counts:
+	count	jobs
+	1	MergeVCFs
+	1	all
+	2
+Select jobs to execute...
+
+[Fri Jun  4 16:58:11 2021]
+rule MergeVCFs:
+    input: results/ImputeRP_Soy775_Chr01.1.vcf.gz, results/ImputeRP_Soy775_Chr01.2.vcf.gz, results/ImputeNRP_NRP_Chr01.1.vcf.gz, results/ImputeNRP_NRP_Chr01.2.vcf.gz, resources/beagle/mergevcf.jar
+    output: results/MergeVCFs_Soy775_Chr01.vcf, results/MergeVCFs_NRP_Chr01.vcf, results/MergeVCFs_Soy775_NRP_Chr01.vcf.gz
+    jobid: 9
+    wildcards: chr=01
+
+Submitted job 9 with external jobid 'Submitted batch job 22867116'.
+[Fri Jun  4 17:04:07 2021]
+Error in rule MergeVCFs:
+    jobid: 9
+    output: results/MergeVCFs_Soy775_Chr01.vcf, results/MergeVCFs_NRP_Chr01.vcf, results/MergeVCFs_Soy775_NRP_Chr01.vcf.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/6862ade5
+    shell:
+        
+		### Merge Ref Panel split VCF files for each Chr. ###
+		java -jar resources/beagle/mergevcf.jar 			"Chr01" 			results/ImputeRP_Soy775_Chr01.1.vcf.gz results/ImputeRP_Soy775_Chr01.2.vcf.gz 			> results/MergeVCFs_Soy775_Chr01.vcf
+
+		### Merge Non-ref Panel split VCF files for each Chr. ###
+		java -jar resources/beagle/mergevcf.jar 			"Chr01" 			results/ImputeNRP_NRP_Chr01.1.vcf.gz results/ImputeNRP_NRP_Chr01.2.vcf.gz 			> results/MergeVCFs_NRP_Chr01.vcf
+
+		### Bgzip and index merged VCF files. ###
+		bgzip -l 9 results/MergeVCFs_Soy775_Chr01.vcf
+		bgzip -l 9 results/MergeVCFs_NRP_Chr01.vcf
+		bcftools index --tbi "results/MergeVCFs_Soy775_Chr01.vcf.gz"
+		bcftools index --tbi "results/MergeVCFs_NRP_Chr01.vcf.gz"
+
+		### Horizontal merge of Ref Panel and Non-ref Panel. ###
+		bcftools merge 			-m all 			"results/MergeVCFs_Soy775_Chr01.vcf.gz" 			"results/MergeVCFs_NRP_Chr01.vcf.gz" | 			bgzip -l 9 			> results/MergeVCFs_Soy775_NRP_Chr01.vcf.gz
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22867116
+
+Error executing rule MergeVCFs on cluster (jobid: 9, external: Submitted batch job 22867116, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.tbjk4mf2/snakejob.MergeVCFs.9.sh). For error details see the cluster log and the log files of the involved rule(s).
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/log/2021-06-04T165757.353737.snakemake.log

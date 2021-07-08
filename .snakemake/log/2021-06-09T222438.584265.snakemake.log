@@ -1,0 +1,44 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 50
+Job counts:
+	count	jobs
+	2	SplitVCF
+	1	all
+	3
+Select jobs to execute...
+
+[Wed Jun  9 22:24:38 2021]
+rule SplitVCF:
+    input: results/Preformat_Soy775_Chr01.vcf.gz, resources/beagle/splitvcf.jar
+    output: results/SplitVCF_Soy775_Chr01.1.vcf.gz, results/SplitVCF_Soy775_Chr01.2.vcf.gz
+    jobid: 3
+    wildcards: id=Soy775, chr=01
+
+Submitted job 3 with external jobid 'Submitted batch job 22873617'.
+
+[Wed Jun  9 22:24:38 2021]
+rule SplitVCF:
+    input: results/Preformat_NRP_Chr01.vcf.gz, resources/beagle/splitvcf.jar
+    output: results/SplitVCF_NRP_Chr01.1.vcf.gz, results/SplitVCF_NRP_Chr01.2.vcf.gz
+    jobid: 4
+    wildcards: id=NRP, chr=01
+
+Submitted job 4 with external jobid 'Submitted batch job 22873618'.
+[Wed Jun  9 22:33:49 2021]
+Finished job 4.
+1 of 3 steps (33%) done
+[Wed Jun  9 22:40:29 2021]
+Finished job 3.
+2 of 3 steps (67%) done
+Select jobs to execute...
+
+[Wed Jun  9 22:40:29 2021]
+localrule all:
+    input: results/Preformat_Soy775_Chr01.vcf.gz, results/Preformat_NRP_Chr01.vcf.gz, results/SplitVCF_Soy775_Chr01.1.vcf.gz, results/SplitVCF_Soy775_Chr01.2.vcf.gz, results/SplitVCF_NRP_Chr01.1.vcf.gz, results/SplitVCF_NRP_Chr01.2.vcf.gz
+    jobid: 0
+
+[Wed Jun  9 22:40:29 2021]
+Finished job 0.
+3 of 3 steps (100%) done
+Complete log: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/log/2021-06-09T222438.584265.snakemake.log

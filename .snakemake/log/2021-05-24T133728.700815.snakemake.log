@@ -1,0 +1,532 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 50
+Job counts:
+	count	jobs
+	20	SplitVCF
+	1	all
+	21
+Select jobs to execute...
+
+[Mon May 24 13:37:29 2021]
+rule SplitVCF:
+    input: resources/remerged_datasets/KB100/KB100_Chr13.vcf.gz
+    output: results/KB100_Chr13.1.vcf.gz, results/KB100_Chr13.2.vcf.gz, results/KB100_Chr13.3.vcf.gz, results/KB100_Chr13.4.vcf.gz, results/KB100_Chr13.5.vcf.gz, results/KB100_Chr13.6.vcf.gz, results/KB100_Chr13.7.vcf.gz, results/KB100_Chr13.8.vcf.gz, results/KB100_Chr13.9.vcf.gz, results/KB100_Chr13.10.vcf.gz, results/KB100_Chr13.11.vcf.gz, results/KB100_Chr13.12.vcf.gz, results/KB100_Chr13.13.vcf.gz, results/KB100_Chr13.14.vcf.gz, results/KB100_Chr13.15.vcf.gz, results/KB100_Chr13.16.vcf.gz, results/KB100_Chr13.17.vcf.gz, results/KB100_Chr13.18.vcf.gz, results/KB100_Chr13.19.vcf.gz, results/KB100_Chr13.20.vcf.gz
+    log: reports/KB100_Chr13.log
+    jobid: 13
+    wildcards: sample=KB100, chr=Chr13
+
+Submitted job 13 with external jobid 'Submitted batch job 22843314'.
+
+[Mon May 24 13:37:30 2021]
+rule SplitVCF:
+    input: resources/remerged_datasets/KB100/KB100_Chr15.vcf.gz
+    output: results/KB100_Chr15.1.vcf.gz, results/KB100_Chr15.2.vcf.gz, results/KB100_Chr15.3.vcf.gz, results/KB100_Chr15.4.vcf.gz, results/KB100_Chr15.5.vcf.gz, results/KB100_Chr15.6.vcf.gz, results/KB100_Chr15.7.vcf.gz, results/KB100_Chr15.8.vcf.gz, results/KB100_Chr15.9.vcf.gz, results/KB100_Chr15.10.vcf.gz, results/KB100_Chr15.11.vcf.gz, results/KB100_Chr15.12.vcf.gz, results/KB100_Chr15.13.vcf.gz, results/KB100_Chr15.14.vcf.gz, results/KB100_Chr15.15.vcf.gz, results/KB100_Chr15.16.vcf.gz, results/KB100_Chr15.17.vcf.gz, results/KB100_Chr15.18.vcf.gz, results/KB100_Chr15.19.vcf.gz, results/KB100_Chr15.20.vcf.gz
+    log: reports/KB100_Chr15.log
+    jobid: 15
+    wildcards: sample=KB100, chr=Chr15
+
+Submitted job 15 with external jobid 'Submitted batch job 22843315'.
+
+[Mon May 24 13:37:30 2021]
+rule SplitVCF:
+    input: resources/remerged_datasets/KB100/KB100_Chr02.vcf.gz
+    output: results/KB100_Chr02.1.vcf.gz, results/KB100_Chr02.2.vcf.gz, results/KB100_Chr02.3.vcf.gz, results/KB100_Chr02.4.vcf.gz, results/KB100_Chr02.5.vcf.gz, results/KB100_Chr02.6.vcf.gz, results/KB100_Chr02.7.vcf.gz, results/KB100_Chr02.8.vcf.gz, results/KB100_Chr02.9.vcf.gz, results/KB100_Chr02.10.vcf.gz, results/KB100_Chr02.11.vcf.gz, results/KB100_Chr02.12.vcf.gz, results/KB100_Chr02.13.vcf.gz, results/KB100_Chr02.14.vcf.gz, results/KB100_Chr02.15.vcf.gz, results/KB100_Chr02.16.vcf.gz, results/KB100_Chr02.17.vcf.gz, results/KB100_Chr02.18.vcf.gz, results/KB100_Chr02.19.vcf.gz, results/KB100_Chr02.20.vcf.gz
+    log: reports/KB100_Chr02.log
+    jobid: 2
+    wildcards: sample=KB100, chr=Chr02
+
+Submitted job 2 with external jobid 'Submitted batch job 22843316'.
+
+[Mon May 24 13:37:30 2021]
+rule SplitVCF:
+    input: resources/remerged_datasets/KB100/KB100_Chr17.vcf.gz
+    output: results/KB100_Chr17.1.vcf.gz, results/KB100_Chr17.2.vcf.gz, results/KB100_Chr17.3.vcf.gz, results/KB100_Chr17.4.vcf.gz, results/KB100_Chr17.5.vcf.gz, results/KB100_Chr17.6.vcf.gz, results/KB100_Chr17.7.vcf.gz, results/KB100_Chr17.8.vcf.gz, results/KB100_Chr17.9.vcf.gz, results/KB100_Chr17.10.vcf.gz, results/KB100_Chr17.11.vcf.gz, results/KB100_Chr17.12.vcf.gz, results/KB100_Chr17.13.vcf.gz, results/KB100_Chr17.14.vcf.gz, results/KB100_Chr17.15.vcf.gz, results/KB100_Chr17.16.vcf.gz, results/KB100_Chr17.17.vcf.gz, results/KB100_Chr17.18.vcf.gz, results/KB100_Chr17.19.vcf.gz, results/KB100_Chr17.20.vcf.gz
+    log: reports/KB100_Chr17.log
+    jobid: 17
+    wildcards: sample=KB100, chr=Chr17
+
+Submitted job 17 with external jobid 'Submitted batch job 22843317'.
+
+[Mon May 24 13:37:30 2021]
+rule SplitVCF:
+    input: resources/remerged_datasets/KB100/KB100_Chr06.vcf.gz
+    output: results/KB100_Chr06.1.vcf.gz, results/KB100_Chr06.2.vcf.gz, results/KB100_Chr06.3.vcf.gz, results/KB100_Chr06.4.vcf.gz, results/KB100_Chr06.5.vcf.gz, results/KB100_Chr06.6.vcf.gz, results/KB100_Chr06.7.vcf.gz, results/KB100_Chr06.8.vcf.gz, results/KB100_Chr06.9.vcf.gz, results/KB100_Chr06.10.vcf.gz, results/KB100_Chr06.11.vcf.gz, results/KB100_Chr06.12.vcf.gz, results/KB100_Chr06.13.vcf.gz, results/KB100_Chr06.14.vcf.gz, results/KB100_Chr06.15.vcf.gz, results/KB100_Chr06.16.vcf.gz, results/KB100_Chr06.17.vcf.gz, results/KB100_Chr06.18.vcf.gz, results/KB100_Chr06.19.vcf.gz, results/KB100_Chr06.20.vcf.gz
+    log: reports/KB100_Chr06.log
+    jobid: 6
+    wildcards: sample=KB100, chr=Chr06
+
+Submitted job 6 with external jobid 'Submitted batch job 22843318'.
+
+[Mon May 24 13:37:30 2021]
+rule SplitVCF:
+    input: resources/remerged_datasets/KB100/KB100_Chr08.vcf.gz
+    output: results/KB100_Chr08.1.vcf.gz, results/KB100_Chr08.2.vcf.gz, results/KB100_Chr08.3.vcf.gz, results/KB100_Chr08.4.vcf.gz, results/KB100_Chr08.5.vcf.gz, results/KB100_Chr08.6.vcf.gz, results/KB100_Chr08.7.vcf.gz, results/KB100_Chr08.8.vcf.gz, results/KB100_Chr08.9.vcf.gz, results/KB100_Chr08.10.vcf.gz, results/KB100_Chr08.11.vcf.gz, results/KB100_Chr08.12.vcf.gz, results/KB100_Chr08.13.vcf.gz, results/KB100_Chr08.14.vcf.gz, results/KB100_Chr08.15.vcf.gz, results/KB100_Chr08.16.vcf.gz, results/KB100_Chr08.17.vcf.gz, results/KB100_Chr08.18.vcf.gz, results/KB100_Chr08.19.vcf.gz, results/KB100_Chr08.20.vcf.gz
+    log: reports/KB100_Chr08.log
+    jobid: 8
+    wildcards: sample=KB100, chr=Chr08
+
+Submitted job 8 with external jobid 'Submitted batch job 22843319'.
+
+[Mon May 24 13:37:30 2021]
+rule SplitVCF:
+    input: resources/remerged_datasets/KB100/KB100_Chr10.vcf.gz
+    output: results/KB100_Chr10.1.vcf.gz, results/KB100_Chr10.2.vcf.gz, results/KB100_Chr10.3.vcf.gz, results/KB100_Chr10.4.vcf.gz, results/KB100_Chr10.5.vcf.gz, results/KB100_Chr10.6.vcf.gz, results/KB100_Chr10.7.vcf.gz, results/KB100_Chr10.8.vcf.gz, results/KB100_Chr10.9.vcf.gz, results/KB100_Chr10.10.vcf.gz, results/KB100_Chr10.11.vcf.gz, results/KB100_Chr10.12.vcf.gz, results/KB100_Chr10.13.vcf.gz, results/KB100_Chr10.14.vcf.gz, results/KB100_Chr10.15.vcf.gz, results/KB100_Chr10.16.vcf.gz, results/KB100_Chr10.17.vcf.gz, results/KB100_Chr10.18.vcf.gz, results/KB100_Chr10.19.vcf.gz, results/KB100_Chr10.20.vcf.gz
+    log: reports/KB100_Chr10.log
+    jobid: 10
+    wildcards: sample=KB100, chr=Chr10
+
+Submitted job 10 with external jobid 'Submitted batch job 22843320'.
+
+[Mon May 24 13:37:30 2021]
+rule SplitVCF:
+    input: resources/remerged_datasets/KB100/KB100_Chr04.vcf.gz
+    output: results/KB100_Chr04.1.vcf.gz, results/KB100_Chr04.2.vcf.gz, results/KB100_Chr04.3.vcf.gz, results/KB100_Chr04.4.vcf.gz, results/KB100_Chr04.5.vcf.gz, results/KB100_Chr04.6.vcf.gz, results/KB100_Chr04.7.vcf.gz, results/KB100_Chr04.8.vcf.gz, results/KB100_Chr04.9.vcf.gz, results/KB100_Chr04.10.vcf.gz, results/KB100_Chr04.11.vcf.gz, results/KB100_Chr04.12.vcf.gz, results/KB100_Chr04.13.vcf.gz, results/KB100_Chr04.14.vcf.gz, results/KB100_Chr04.15.vcf.gz, results/KB100_Chr04.16.vcf.gz, results/KB100_Chr04.17.vcf.gz, results/KB100_Chr04.18.vcf.gz, results/KB100_Chr04.19.vcf.gz, results/KB100_Chr04.20.vcf.gz
+    log: reports/KB100_Chr04.log
+    jobid: 4
+    wildcards: sample=KB100, chr=Chr04
+
+Submitted job 4 with external jobid 'Submitted batch job 22843321'.
+
+[Mon May 24 13:37:30 2021]
+rule SplitVCF:
+    input: resources/remerged_datasets/KB100/KB100_Chr19.vcf.gz
+    output: results/KB100_Chr19.1.vcf.gz, results/KB100_Chr19.2.vcf.gz, results/KB100_Chr19.3.vcf.gz, results/KB100_Chr19.4.vcf.gz, results/KB100_Chr19.5.vcf.gz, results/KB100_Chr19.6.vcf.gz, results/KB100_Chr19.7.vcf.gz, results/KB100_Chr19.8.vcf.gz, results/KB100_Chr19.9.vcf.gz, results/KB100_Chr19.10.vcf.gz, results/KB100_Chr19.11.vcf.gz, results/KB100_Chr19.12.vcf.gz, results/KB100_Chr19.13.vcf.gz, results/KB100_Chr19.14.vcf.gz, results/KB100_Chr19.15.vcf.gz, results/KB100_Chr19.16.vcf.gz, results/KB100_Chr19.17.vcf.gz, results/KB100_Chr19.18.vcf.gz, results/KB100_Chr19.19.vcf.gz, results/KB100_Chr19.20.vcf.gz
+    log: reports/KB100_Chr19.log
+    jobid: 19
+    wildcards: sample=KB100, chr=Chr19
+
+Submitted job 19 with external jobid 'Submitted batch job 22843322'.
+
+[Mon May 24 13:37:30 2021]
+rule SplitVCF:
+    input: resources/remerged_datasets/KB100/KB100_Chr12.vcf.gz
+    output: results/KB100_Chr12.1.vcf.gz, results/KB100_Chr12.2.vcf.gz, results/KB100_Chr12.3.vcf.gz, results/KB100_Chr12.4.vcf.gz, results/KB100_Chr12.5.vcf.gz, results/KB100_Chr12.6.vcf.gz, results/KB100_Chr12.7.vcf.gz, results/KB100_Chr12.8.vcf.gz, results/KB100_Chr12.9.vcf.gz, results/KB100_Chr12.10.vcf.gz, results/KB100_Chr12.11.vcf.gz, results/KB100_Chr12.12.vcf.gz, results/KB100_Chr12.13.vcf.gz, results/KB100_Chr12.14.vcf.gz, results/KB100_Chr12.15.vcf.gz, results/KB100_Chr12.16.vcf.gz, results/KB100_Chr12.17.vcf.gz, results/KB100_Chr12.18.vcf.gz, results/KB100_Chr12.19.vcf.gz, results/KB100_Chr12.20.vcf.gz
+    log: reports/KB100_Chr12.log
+    jobid: 12
+    wildcards: sample=KB100, chr=Chr12
+
+Submitted job 12 with external jobid 'Submitted batch job 22843323'.
+
+[Mon May 24 13:37:30 2021]
+rule SplitVCF:
+    input: resources/remerged_datasets/KB100/KB100_Chr14.vcf.gz
+    output: results/KB100_Chr14.1.vcf.gz, results/KB100_Chr14.2.vcf.gz, results/KB100_Chr14.3.vcf.gz, results/KB100_Chr14.4.vcf.gz, results/KB100_Chr14.5.vcf.gz, results/KB100_Chr14.6.vcf.gz, results/KB100_Chr14.7.vcf.gz, results/KB100_Chr14.8.vcf.gz, results/KB100_Chr14.9.vcf.gz, results/KB100_Chr14.10.vcf.gz, results/KB100_Chr14.11.vcf.gz, results/KB100_Chr14.12.vcf.gz, results/KB100_Chr14.13.vcf.gz, results/KB100_Chr14.14.vcf.gz, results/KB100_Chr14.15.vcf.gz, results/KB100_Chr14.16.vcf.gz, results/KB100_Chr14.17.vcf.gz, results/KB100_Chr14.18.vcf.gz, results/KB100_Chr14.19.vcf.gz, results/KB100_Chr14.20.vcf.gz
+    log: reports/KB100_Chr14.log
+    jobid: 14
+    wildcards: sample=KB100, chr=Chr14
+
+Submitted job 14 with external jobid 'Submitted batch job 22843324'.
+
+[Mon May 24 13:37:30 2021]
+rule SplitVCF:
+    input: resources/remerged_datasets/KB100/KB100_Chr01.vcf.gz
+    output: results/KB100_Chr01.1.vcf.gz, results/KB100_Chr01.2.vcf.gz, results/KB100_Chr01.3.vcf.gz, results/KB100_Chr01.4.vcf.gz, results/KB100_Chr01.5.vcf.gz, results/KB100_Chr01.6.vcf.gz, results/KB100_Chr01.7.vcf.gz, results/KB100_Chr01.8.vcf.gz, results/KB100_Chr01.9.vcf.gz, results/KB100_Chr01.10.vcf.gz, results/KB100_Chr01.11.vcf.gz, results/KB100_Chr01.12.vcf.gz, results/KB100_Chr01.13.vcf.gz, results/KB100_Chr01.14.vcf.gz, results/KB100_Chr01.15.vcf.gz, results/KB100_Chr01.16.vcf.gz, results/KB100_Chr01.17.vcf.gz, results/KB100_Chr01.18.vcf.gz, results/KB100_Chr01.19.vcf.gz, results/KB100_Chr01.20.vcf.gz
+    log: reports/KB100_Chr01.log
+    jobid: 1
+    wildcards: sample=KB100, chr=Chr01
+
+Submitted job 1 with external jobid 'Submitted batch job 22843325'.
+
+[Mon May 24 13:37:31 2021]
+rule SplitVCF:
+    input: resources/remerged_datasets/KB100/KB100_Chr16.vcf.gz
+    output: results/KB100_Chr16.1.vcf.gz, results/KB100_Chr16.2.vcf.gz, results/KB100_Chr16.3.vcf.gz, results/KB100_Chr16.4.vcf.gz, results/KB100_Chr16.5.vcf.gz, results/KB100_Chr16.6.vcf.gz, results/KB100_Chr16.7.vcf.gz, results/KB100_Chr16.8.vcf.gz, results/KB100_Chr16.9.vcf.gz, results/KB100_Chr16.10.vcf.gz, results/KB100_Chr16.11.vcf.gz, results/KB100_Chr16.12.vcf.gz, results/KB100_Chr16.13.vcf.gz, results/KB100_Chr16.14.vcf.gz, results/KB100_Chr16.15.vcf.gz, results/KB100_Chr16.16.vcf.gz, results/KB100_Chr16.17.vcf.gz, results/KB100_Chr16.18.vcf.gz, results/KB100_Chr16.19.vcf.gz, results/KB100_Chr16.20.vcf.gz
+    log: reports/KB100_Chr16.log
+    jobid: 16
+    wildcards: sample=KB100, chr=Chr16
+
+Submitted job 16 with external jobid 'Submitted batch job 22843326'.
+
+[Mon May 24 13:37:31 2021]
+rule SplitVCF:
+    input: resources/remerged_datasets/KB100/KB100_Chr20.vcf.gz
+    output: results/KB100_Chr20.1.vcf.gz, results/KB100_Chr20.2.vcf.gz, results/KB100_Chr20.3.vcf.gz, results/KB100_Chr20.4.vcf.gz, results/KB100_Chr20.5.vcf.gz, results/KB100_Chr20.6.vcf.gz, results/KB100_Chr20.7.vcf.gz, results/KB100_Chr20.8.vcf.gz, results/KB100_Chr20.9.vcf.gz, results/KB100_Chr20.10.vcf.gz, results/KB100_Chr20.11.vcf.gz, results/KB100_Chr20.12.vcf.gz, results/KB100_Chr20.13.vcf.gz, results/KB100_Chr20.14.vcf.gz, results/KB100_Chr20.15.vcf.gz, results/KB100_Chr20.16.vcf.gz, results/KB100_Chr20.17.vcf.gz, results/KB100_Chr20.18.vcf.gz, results/KB100_Chr20.19.vcf.gz, results/KB100_Chr20.20.vcf.gz
+    log: reports/KB100_Chr20.log
+    jobid: 20
+    wildcards: sample=KB100, chr=Chr20
+
+Submitted job 20 with external jobid 'Submitted batch job 22843327'.
+
+[Mon May 24 13:37:31 2021]
+rule SplitVCF:
+    input: resources/remerged_datasets/KB100/KB100_Chr07.vcf.gz
+    output: results/KB100_Chr07.1.vcf.gz, results/KB100_Chr07.2.vcf.gz, results/KB100_Chr07.3.vcf.gz, results/KB100_Chr07.4.vcf.gz, results/KB100_Chr07.5.vcf.gz, results/KB100_Chr07.6.vcf.gz, results/KB100_Chr07.7.vcf.gz, results/KB100_Chr07.8.vcf.gz, results/KB100_Chr07.9.vcf.gz, results/KB100_Chr07.10.vcf.gz, results/KB100_Chr07.11.vcf.gz, results/KB100_Chr07.12.vcf.gz, results/KB100_Chr07.13.vcf.gz, results/KB100_Chr07.14.vcf.gz, results/KB100_Chr07.15.vcf.gz, results/KB100_Chr07.16.vcf.gz, results/KB100_Chr07.17.vcf.gz, results/KB100_Chr07.18.vcf.gz, results/KB100_Chr07.19.vcf.gz, results/KB100_Chr07.20.vcf.gz
+    log: reports/KB100_Chr07.log
+    jobid: 7
+    wildcards: sample=KB100, chr=Chr07
+
+Submitted job 7 with external jobid 'Submitted batch job 22843328'.
+
+[Mon May 24 13:37:31 2021]
+rule SplitVCF:
+    input: resources/remerged_datasets/KB100/KB100_Chr09.vcf.gz
+    output: results/KB100_Chr09.1.vcf.gz, results/KB100_Chr09.2.vcf.gz, results/KB100_Chr09.3.vcf.gz, results/KB100_Chr09.4.vcf.gz, results/KB100_Chr09.5.vcf.gz, results/KB100_Chr09.6.vcf.gz, results/KB100_Chr09.7.vcf.gz, results/KB100_Chr09.8.vcf.gz, results/KB100_Chr09.9.vcf.gz, results/KB100_Chr09.10.vcf.gz, results/KB100_Chr09.11.vcf.gz, results/KB100_Chr09.12.vcf.gz, results/KB100_Chr09.13.vcf.gz, results/KB100_Chr09.14.vcf.gz, results/KB100_Chr09.15.vcf.gz, results/KB100_Chr09.16.vcf.gz, results/KB100_Chr09.17.vcf.gz, results/KB100_Chr09.18.vcf.gz, results/KB100_Chr09.19.vcf.gz, results/KB100_Chr09.20.vcf.gz
+    log: reports/KB100_Chr09.log
+    jobid: 9
+    wildcards: sample=KB100, chr=Chr09
+
+Submitted job 9 with external jobid 'Submitted batch job 22843329'.
+
+[Mon May 24 13:37:31 2021]
+rule SplitVCF:
+    input: resources/remerged_datasets/KB100/KB100_Chr11.vcf.gz
+    output: results/KB100_Chr11.1.vcf.gz, results/KB100_Chr11.2.vcf.gz, results/KB100_Chr11.3.vcf.gz, results/KB100_Chr11.4.vcf.gz, results/KB100_Chr11.5.vcf.gz, results/KB100_Chr11.6.vcf.gz, results/KB100_Chr11.7.vcf.gz, results/KB100_Chr11.8.vcf.gz, results/KB100_Chr11.9.vcf.gz, results/KB100_Chr11.10.vcf.gz, results/KB100_Chr11.11.vcf.gz, results/KB100_Chr11.12.vcf.gz, results/KB100_Chr11.13.vcf.gz, results/KB100_Chr11.14.vcf.gz, results/KB100_Chr11.15.vcf.gz, results/KB100_Chr11.16.vcf.gz, results/KB100_Chr11.17.vcf.gz, results/KB100_Chr11.18.vcf.gz, results/KB100_Chr11.19.vcf.gz, results/KB100_Chr11.20.vcf.gz
+    log: reports/KB100_Chr11.log
+    jobid: 11
+    wildcards: sample=KB100, chr=Chr11
+
+Submitted job 11 with external jobid 'Submitted batch job 22843330'.
+
+[Mon May 24 13:37:31 2021]
+rule SplitVCF:
+    input: resources/remerged_datasets/KB100/KB100_Chr05.vcf.gz
+    output: results/KB100_Chr05.1.vcf.gz, results/KB100_Chr05.2.vcf.gz, results/KB100_Chr05.3.vcf.gz, results/KB100_Chr05.4.vcf.gz, results/KB100_Chr05.5.vcf.gz, results/KB100_Chr05.6.vcf.gz, results/KB100_Chr05.7.vcf.gz, results/KB100_Chr05.8.vcf.gz, results/KB100_Chr05.9.vcf.gz, results/KB100_Chr05.10.vcf.gz, results/KB100_Chr05.11.vcf.gz, results/KB100_Chr05.12.vcf.gz, results/KB100_Chr05.13.vcf.gz, results/KB100_Chr05.14.vcf.gz, results/KB100_Chr05.15.vcf.gz, results/KB100_Chr05.16.vcf.gz, results/KB100_Chr05.17.vcf.gz, results/KB100_Chr05.18.vcf.gz, results/KB100_Chr05.19.vcf.gz, results/KB100_Chr05.20.vcf.gz
+    log: reports/KB100_Chr05.log
+    jobid: 5
+    wildcards: sample=KB100, chr=Chr05
+
+Submitted job 5 with external jobid 'Submitted batch job 22843331'.
+
+[Mon May 24 13:37:31 2021]
+rule SplitVCF:
+    input: resources/remerged_datasets/KB100/KB100_Chr03.vcf.gz
+    output: results/KB100_Chr03.1.vcf.gz, results/KB100_Chr03.2.vcf.gz, results/KB100_Chr03.3.vcf.gz, results/KB100_Chr03.4.vcf.gz, results/KB100_Chr03.5.vcf.gz, results/KB100_Chr03.6.vcf.gz, results/KB100_Chr03.7.vcf.gz, results/KB100_Chr03.8.vcf.gz, results/KB100_Chr03.9.vcf.gz, results/KB100_Chr03.10.vcf.gz, results/KB100_Chr03.11.vcf.gz, results/KB100_Chr03.12.vcf.gz, results/KB100_Chr03.13.vcf.gz, results/KB100_Chr03.14.vcf.gz, results/KB100_Chr03.15.vcf.gz, results/KB100_Chr03.16.vcf.gz, results/KB100_Chr03.17.vcf.gz, results/KB100_Chr03.18.vcf.gz, results/KB100_Chr03.19.vcf.gz, results/KB100_Chr03.20.vcf.gz
+    log: reports/KB100_Chr03.log
+    jobid: 3
+    wildcards: sample=KB100, chr=Chr03
+
+Submitted job 3 with external jobid 'Submitted batch job 22843332'.
+
+[Mon May 24 13:37:31 2021]
+rule SplitVCF:
+    input: resources/remerged_datasets/KB100/KB100_Chr18.vcf.gz
+    output: results/KB100_Chr18.1.vcf.gz, results/KB100_Chr18.2.vcf.gz, results/KB100_Chr18.3.vcf.gz, results/KB100_Chr18.4.vcf.gz, results/KB100_Chr18.5.vcf.gz, results/KB100_Chr18.6.vcf.gz, results/KB100_Chr18.7.vcf.gz, results/KB100_Chr18.8.vcf.gz, results/KB100_Chr18.9.vcf.gz, results/KB100_Chr18.10.vcf.gz, results/KB100_Chr18.11.vcf.gz, results/KB100_Chr18.12.vcf.gz, results/KB100_Chr18.13.vcf.gz, results/KB100_Chr18.14.vcf.gz, results/KB100_Chr18.15.vcf.gz, results/KB100_Chr18.16.vcf.gz, results/KB100_Chr18.17.vcf.gz, results/KB100_Chr18.18.vcf.gz, results/KB100_Chr18.19.vcf.gz, results/KB100_Chr18.20.vcf.gz
+    log: reports/KB100_Chr18.log
+    jobid: 18
+    wildcards: sample=KB100, chr=Chr18
+
+Submitted job 18 with external jobid 'Submitted batch job 22843333'.
+[Mon May 24 13:37:38 2021]
+Error in rule SplitVCF:
+    jobid: 2
+    output: results/KB100_Chr02.1.vcf.gz, results/KB100_Chr02.2.vcf.gz, results/KB100_Chr02.3.vcf.gz, results/KB100_Chr02.4.vcf.gz, results/KB100_Chr02.5.vcf.gz, results/KB100_Chr02.6.vcf.gz, results/KB100_Chr02.7.vcf.gz, results/KB100_Chr02.8.vcf.gz, results/KB100_Chr02.9.vcf.gz, results/KB100_Chr02.10.vcf.gz, results/KB100_Chr02.11.vcf.gz, results/KB100_Chr02.12.vcf.gz, results/KB100_Chr02.13.vcf.gz, results/KB100_Chr02.14.vcf.gz, results/KB100_Chr02.15.vcf.gz, results/KB100_Chr02.16.vcf.gz, results/KB100_Chr02.17.vcf.gz, results/KB100_Chr02.18.vcf.gz, results/KB100_Chr02.19.vcf.gz, results/KB100_Chr02.20.vcf.gz
+    log: reports/KB100_Chr02.log (check log file(s) for error message)
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/e283fd6b
+    shell:
+        
+		overlap=$(($(bcftools index -n resources/remerged_datasets/KB100/KB100_Chr02.vcf.gz) / 20 + 5000))
+
+		bcftools view --no-header resources/remerged_datasets/KB100/KB100_Chr02.vcf.gz | 			java -jar splitvcf.jar 			Chr02 			"$overlap" 			5000 			../../results/KB100_Chr02
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22843316
+
+Error executing rule SplitVCF on cluster (jobid: 2, external: Submitted batch job 22843316, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.x0end_n5/snakejob.SplitVCF.2.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Mon May 24 13:37:38 2021]
+Error in rule SplitVCF:
+    jobid: 17
+    output: results/KB100_Chr17.1.vcf.gz, results/KB100_Chr17.2.vcf.gz, results/KB100_Chr17.3.vcf.gz, results/KB100_Chr17.4.vcf.gz, results/KB100_Chr17.5.vcf.gz, results/KB100_Chr17.6.vcf.gz, results/KB100_Chr17.7.vcf.gz, results/KB100_Chr17.8.vcf.gz, results/KB100_Chr17.9.vcf.gz, results/KB100_Chr17.10.vcf.gz, results/KB100_Chr17.11.vcf.gz, results/KB100_Chr17.12.vcf.gz, results/KB100_Chr17.13.vcf.gz, results/KB100_Chr17.14.vcf.gz, results/KB100_Chr17.15.vcf.gz, results/KB100_Chr17.16.vcf.gz, results/KB100_Chr17.17.vcf.gz, results/KB100_Chr17.18.vcf.gz, results/KB100_Chr17.19.vcf.gz, results/KB100_Chr17.20.vcf.gz
+    log: reports/KB100_Chr17.log (check log file(s) for error message)
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/e283fd6b
+    shell:
+        
+		overlap=$(($(bcftools index -n resources/remerged_datasets/KB100/KB100_Chr17.vcf.gz) / 20 + 5000))
+
+		bcftools view --no-header resources/remerged_datasets/KB100/KB100_Chr17.vcf.gz | 			java -jar splitvcf.jar 			Chr17 			"$overlap" 			5000 			../../results/KB100_Chr17
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22843317
+
+Error executing rule SplitVCF on cluster (jobid: 17, external: Submitted batch job 22843317, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.x0end_n5/snakejob.SplitVCF.17.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Mon May 24 13:37:38 2021]
+Error in rule SplitVCF:
+    jobid: 6
+    output: results/KB100_Chr06.1.vcf.gz, results/KB100_Chr06.2.vcf.gz, results/KB100_Chr06.3.vcf.gz, results/KB100_Chr06.4.vcf.gz, results/KB100_Chr06.5.vcf.gz, results/KB100_Chr06.6.vcf.gz, results/KB100_Chr06.7.vcf.gz, results/KB100_Chr06.8.vcf.gz, results/KB100_Chr06.9.vcf.gz, results/KB100_Chr06.10.vcf.gz, results/KB100_Chr06.11.vcf.gz, results/KB100_Chr06.12.vcf.gz, results/KB100_Chr06.13.vcf.gz, results/KB100_Chr06.14.vcf.gz, results/KB100_Chr06.15.vcf.gz, results/KB100_Chr06.16.vcf.gz, results/KB100_Chr06.17.vcf.gz, results/KB100_Chr06.18.vcf.gz, results/KB100_Chr06.19.vcf.gz, results/KB100_Chr06.20.vcf.gz
+    log: reports/KB100_Chr06.log (check log file(s) for error message)
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/e283fd6b
+    shell:
+        
+		overlap=$(($(bcftools index -n resources/remerged_datasets/KB100/KB100_Chr06.vcf.gz) / 20 + 5000))
+
+		bcftools view --no-header resources/remerged_datasets/KB100/KB100_Chr06.vcf.gz | 			java -jar splitvcf.jar 			Chr06 			"$overlap" 			5000 			../../results/KB100_Chr06
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22843318
+
+Error executing rule SplitVCF on cluster (jobid: 6, external: Submitted batch job 22843318, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.x0end_n5/snakejob.SplitVCF.6.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Mon May 24 13:37:38 2021]
+Error in rule SplitVCF:
+    jobid: 8
+    output: results/KB100_Chr08.1.vcf.gz, results/KB100_Chr08.2.vcf.gz, results/KB100_Chr08.3.vcf.gz, results/KB100_Chr08.4.vcf.gz, results/KB100_Chr08.5.vcf.gz, results/KB100_Chr08.6.vcf.gz, results/KB100_Chr08.7.vcf.gz, results/KB100_Chr08.8.vcf.gz, results/KB100_Chr08.9.vcf.gz, results/KB100_Chr08.10.vcf.gz, results/KB100_Chr08.11.vcf.gz, results/KB100_Chr08.12.vcf.gz, results/KB100_Chr08.13.vcf.gz, results/KB100_Chr08.14.vcf.gz, results/KB100_Chr08.15.vcf.gz, results/KB100_Chr08.16.vcf.gz, results/KB100_Chr08.17.vcf.gz, results/KB100_Chr08.18.vcf.gz, results/KB100_Chr08.19.vcf.gz, results/KB100_Chr08.20.vcf.gz
+    log: reports/KB100_Chr08.log (check log file(s) for error message)
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/e283fd6b
+    shell:
+        
+		overlap=$(($(bcftools index -n resources/remerged_datasets/KB100/KB100_Chr08.vcf.gz) / 20 + 5000))
+
+		bcftools view --no-header resources/remerged_datasets/KB100/KB100_Chr08.vcf.gz | 			java -jar splitvcf.jar 			Chr08 			"$overlap" 			5000 			../../results/KB100_Chr08
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22843319
+
+Error executing rule SplitVCF on cluster (jobid: 8, external: Submitted batch job 22843319, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.x0end_n5/snakejob.SplitVCF.8.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Mon May 24 13:37:38 2021]
+Error in rule SplitVCF:
+    jobid: 10
+    output: results/KB100_Chr10.1.vcf.gz, results/KB100_Chr10.2.vcf.gz, results/KB100_Chr10.3.vcf.gz, results/KB100_Chr10.4.vcf.gz, results/KB100_Chr10.5.vcf.gz, results/KB100_Chr10.6.vcf.gz, results/KB100_Chr10.7.vcf.gz, results/KB100_Chr10.8.vcf.gz, results/KB100_Chr10.9.vcf.gz, results/KB100_Chr10.10.vcf.gz, results/KB100_Chr10.11.vcf.gz, results/KB100_Chr10.12.vcf.gz, results/KB100_Chr10.13.vcf.gz, results/KB100_Chr10.14.vcf.gz, results/KB100_Chr10.15.vcf.gz, results/KB100_Chr10.16.vcf.gz, results/KB100_Chr10.17.vcf.gz, results/KB100_Chr10.18.vcf.gz, results/KB100_Chr10.19.vcf.gz, results/KB100_Chr10.20.vcf.gz
+    log: reports/KB100_Chr10.log (check log file(s) for error message)
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/e283fd6b
+    shell:
+        
+		overlap=$(($(bcftools index -n resources/remerged_datasets/KB100/KB100_Chr10.vcf.gz) / 20 + 5000))
+
+		bcftools view --no-header resources/remerged_datasets/KB100/KB100_Chr10.vcf.gz | 			java -jar splitvcf.jar 			Chr10 			"$overlap" 			5000 			../../results/KB100_Chr10
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22843320
+
+Error executing rule SplitVCF on cluster (jobid: 10, external: Submitted batch job 22843320, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.x0end_n5/snakejob.SplitVCF.10.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Mon May 24 13:37:38 2021]
+Error in rule SplitVCF:
+    jobid: 4
+    output: results/KB100_Chr04.1.vcf.gz, results/KB100_Chr04.2.vcf.gz, results/KB100_Chr04.3.vcf.gz, results/KB100_Chr04.4.vcf.gz, results/KB100_Chr04.5.vcf.gz, results/KB100_Chr04.6.vcf.gz, results/KB100_Chr04.7.vcf.gz, results/KB100_Chr04.8.vcf.gz, results/KB100_Chr04.9.vcf.gz, results/KB100_Chr04.10.vcf.gz, results/KB100_Chr04.11.vcf.gz, results/KB100_Chr04.12.vcf.gz, results/KB100_Chr04.13.vcf.gz, results/KB100_Chr04.14.vcf.gz, results/KB100_Chr04.15.vcf.gz, results/KB100_Chr04.16.vcf.gz, results/KB100_Chr04.17.vcf.gz, results/KB100_Chr04.18.vcf.gz, results/KB100_Chr04.19.vcf.gz, results/KB100_Chr04.20.vcf.gz
+    log: reports/KB100_Chr04.log (check log file(s) for error message)
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/e283fd6b
+    shell:
+        
+		overlap=$(($(bcftools index -n resources/remerged_datasets/KB100/KB100_Chr04.vcf.gz) / 20 + 5000))
+
+		bcftools view --no-header resources/remerged_datasets/KB100/KB100_Chr04.vcf.gz | 			java -jar splitvcf.jar 			Chr04 			"$overlap" 			5000 			../../results/KB100_Chr04
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22843321
+
+Error executing rule SplitVCF on cluster (jobid: 4, external: Submitted batch job 22843321, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.x0end_n5/snakejob.SplitVCF.4.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Mon May 24 13:37:38 2021]
+Error in rule SplitVCF:
+    jobid: 19
+    output: results/KB100_Chr19.1.vcf.gz, results/KB100_Chr19.2.vcf.gz, results/KB100_Chr19.3.vcf.gz, results/KB100_Chr19.4.vcf.gz, results/KB100_Chr19.5.vcf.gz, results/KB100_Chr19.6.vcf.gz, results/KB100_Chr19.7.vcf.gz, results/KB100_Chr19.8.vcf.gz, results/KB100_Chr19.9.vcf.gz, results/KB100_Chr19.10.vcf.gz, results/KB100_Chr19.11.vcf.gz, results/KB100_Chr19.12.vcf.gz, results/KB100_Chr19.13.vcf.gz, results/KB100_Chr19.14.vcf.gz, results/KB100_Chr19.15.vcf.gz, results/KB100_Chr19.16.vcf.gz, results/KB100_Chr19.17.vcf.gz, results/KB100_Chr19.18.vcf.gz, results/KB100_Chr19.19.vcf.gz, results/KB100_Chr19.20.vcf.gz
+    log: reports/KB100_Chr19.log (check log file(s) for error message)
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/e283fd6b
+    shell:
+        
+		overlap=$(($(bcftools index -n resources/remerged_datasets/KB100/KB100_Chr19.vcf.gz) / 20 + 5000))
+
+		bcftools view --no-header resources/remerged_datasets/KB100/KB100_Chr19.vcf.gz | 			java -jar splitvcf.jar 			Chr19 			"$overlap" 			5000 			../../results/KB100_Chr19
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22843322
+
+Error executing rule SplitVCF on cluster (jobid: 19, external: Submitted batch job 22843322, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.x0end_n5/snakejob.SplitVCF.19.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Mon May 24 13:37:38 2021]
+Error in rule SplitVCF:
+    jobid: 12
+    output: results/KB100_Chr12.1.vcf.gz, results/KB100_Chr12.2.vcf.gz, results/KB100_Chr12.3.vcf.gz, results/KB100_Chr12.4.vcf.gz, results/KB100_Chr12.5.vcf.gz, results/KB100_Chr12.6.vcf.gz, results/KB100_Chr12.7.vcf.gz, results/KB100_Chr12.8.vcf.gz, results/KB100_Chr12.9.vcf.gz, results/KB100_Chr12.10.vcf.gz, results/KB100_Chr12.11.vcf.gz, results/KB100_Chr12.12.vcf.gz, results/KB100_Chr12.13.vcf.gz, results/KB100_Chr12.14.vcf.gz, results/KB100_Chr12.15.vcf.gz, results/KB100_Chr12.16.vcf.gz, results/KB100_Chr12.17.vcf.gz, results/KB100_Chr12.18.vcf.gz, results/KB100_Chr12.19.vcf.gz, results/KB100_Chr12.20.vcf.gz
+    log: reports/KB100_Chr12.log (check log file(s) for error message)
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/e283fd6b
+    shell:
+        
+		overlap=$(($(bcftools index -n resources/remerged_datasets/KB100/KB100_Chr12.vcf.gz) / 20 + 5000))
+
+		bcftools view --no-header resources/remerged_datasets/KB100/KB100_Chr12.vcf.gz | 			java -jar splitvcf.jar 			Chr12 			"$overlap" 			5000 			../../results/KB100_Chr12
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22843323
+
+Error executing rule SplitVCF on cluster (jobid: 12, external: Submitted batch job 22843323, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.x0end_n5/snakejob.SplitVCF.12.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Mon May 24 13:37:39 2021]
+Error in rule SplitVCF:
+    jobid: 14
+    output: results/KB100_Chr14.1.vcf.gz, results/KB100_Chr14.2.vcf.gz, results/KB100_Chr14.3.vcf.gz, results/KB100_Chr14.4.vcf.gz, results/KB100_Chr14.5.vcf.gz, results/KB100_Chr14.6.vcf.gz, results/KB100_Chr14.7.vcf.gz, results/KB100_Chr14.8.vcf.gz, results/KB100_Chr14.9.vcf.gz, results/KB100_Chr14.10.vcf.gz, results/KB100_Chr14.11.vcf.gz, results/KB100_Chr14.12.vcf.gz, results/KB100_Chr14.13.vcf.gz, results/KB100_Chr14.14.vcf.gz, results/KB100_Chr14.15.vcf.gz, results/KB100_Chr14.16.vcf.gz, results/KB100_Chr14.17.vcf.gz, results/KB100_Chr14.18.vcf.gz, results/KB100_Chr14.19.vcf.gz, results/KB100_Chr14.20.vcf.gz
+    log: reports/KB100_Chr14.log (check log file(s) for error message)
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/e283fd6b
+    shell:
+        
+		overlap=$(($(bcftools index -n resources/remerged_datasets/KB100/KB100_Chr14.vcf.gz) / 20 + 5000))
+
+		bcftools view --no-header resources/remerged_datasets/KB100/KB100_Chr14.vcf.gz | 			java -jar splitvcf.jar 			Chr14 			"$overlap" 			5000 			../../results/KB100_Chr14
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22843324
+
+Error executing rule SplitVCF on cluster (jobid: 14, external: Submitted batch job 22843324, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.x0end_n5/snakejob.SplitVCF.14.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Mon May 24 13:37:39 2021]
+Error in rule SplitVCF:
+    jobid: 1
+    output: results/KB100_Chr01.1.vcf.gz, results/KB100_Chr01.2.vcf.gz, results/KB100_Chr01.3.vcf.gz, results/KB100_Chr01.4.vcf.gz, results/KB100_Chr01.5.vcf.gz, results/KB100_Chr01.6.vcf.gz, results/KB100_Chr01.7.vcf.gz, results/KB100_Chr01.8.vcf.gz, results/KB100_Chr01.9.vcf.gz, results/KB100_Chr01.10.vcf.gz, results/KB100_Chr01.11.vcf.gz, results/KB100_Chr01.12.vcf.gz, results/KB100_Chr01.13.vcf.gz, results/KB100_Chr01.14.vcf.gz, results/KB100_Chr01.15.vcf.gz, results/KB100_Chr01.16.vcf.gz, results/KB100_Chr01.17.vcf.gz, results/KB100_Chr01.18.vcf.gz, results/KB100_Chr01.19.vcf.gz, results/KB100_Chr01.20.vcf.gz
+    log: reports/KB100_Chr01.log (check log file(s) for error message)
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/e283fd6b
+    shell:
+        
+		overlap=$(($(bcftools index -n resources/remerged_datasets/KB100/KB100_Chr01.vcf.gz) / 20 + 5000))
+
+		bcftools view --no-header resources/remerged_datasets/KB100/KB100_Chr01.vcf.gz | 			java -jar splitvcf.jar 			Chr01 			"$overlap" 			5000 			../../results/KB100_Chr01
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22843325
+
+Error executing rule SplitVCF on cluster (jobid: 1, external: Submitted batch job 22843325, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.x0end_n5/snakejob.SplitVCF.1.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Mon May 24 13:37:39 2021]
+Error in rule SplitVCF:
+    jobid: 20
+    output: results/KB100_Chr20.1.vcf.gz, results/KB100_Chr20.2.vcf.gz, results/KB100_Chr20.3.vcf.gz, results/KB100_Chr20.4.vcf.gz, results/KB100_Chr20.5.vcf.gz, results/KB100_Chr20.6.vcf.gz, results/KB100_Chr20.7.vcf.gz, results/KB100_Chr20.8.vcf.gz, results/KB100_Chr20.9.vcf.gz, results/KB100_Chr20.10.vcf.gz, results/KB100_Chr20.11.vcf.gz, results/KB100_Chr20.12.vcf.gz, results/KB100_Chr20.13.vcf.gz, results/KB100_Chr20.14.vcf.gz, results/KB100_Chr20.15.vcf.gz, results/KB100_Chr20.16.vcf.gz, results/KB100_Chr20.17.vcf.gz, results/KB100_Chr20.18.vcf.gz, results/KB100_Chr20.19.vcf.gz, results/KB100_Chr20.20.vcf.gz
+    log: reports/KB100_Chr20.log (check log file(s) for error message)
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/e283fd6b
+    shell:
+        
+		overlap=$(($(bcftools index -n resources/remerged_datasets/KB100/KB100_Chr20.vcf.gz) / 20 + 5000))
+
+		bcftools view --no-header resources/remerged_datasets/KB100/KB100_Chr20.vcf.gz | 			java -jar splitvcf.jar 			Chr20 			"$overlap" 			5000 			../../results/KB100_Chr20
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22843327
+
+Error executing rule SplitVCF on cluster (jobid: 20, external: Submitted batch job 22843327, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.x0end_n5/snakejob.SplitVCF.20.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Mon May 24 13:37:39 2021]
+Error in rule SplitVCF:
+    jobid: 7
+    output: results/KB100_Chr07.1.vcf.gz, results/KB100_Chr07.2.vcf.gz, results/KB100_Chr07.3.vcf.gz, results/KB100_Chr07.4.vcf.gz, results/KB100_Chr07.5.vcf.gz, results/KB100_Chr07.6.vcf.gz, results/KB100_Chr07.7.vcf.gz, results/KB100_Chr07.8.vcf.gz, results/KB100_Chr07.9.vcf.gz, results/KB100_Chr07.10.vcf.gz, results/KB100_Chr07.11.vcf.gz, results/KB100_Chr07.12.vcf.gz, results/KB100_Chr07.13.vcf.gz, results/KB100_Chr07.14.vcf.gz, results/KB100_Chr07.15.vcf.gz, results/KB100_Chr07.16.vcf.gz, results/KB100_Chr07.17.vcf.gz, results/KB100_Chr07.18.vcf.gz, results/KB100_Chr07.19.vcf.gz, results/KB100_Chr07.20.vcf.gz
+    log: reports/KB100_Chr07.log (check log file(s) for error message)
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/e283fd6b
+    shell:
+        
+		overlap=$(($(bcftools index -n resources/remerged_datasets/KB100/KB100_Chr07.vcf.gz) / 20 + 5000))
+
+		bcftools view --no-header resources/remerged_datasets/KB100/KB100_Chr07.vcf.gz | 			java -jar splitvcf.jar 			Chr07 			"$overlap" 			5000 			../../results/KB100_Chr07
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22843328
+
+Error executing rule SplitVCF on cluster (jobid: 7, external: Submitted batch job 22843328, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.x0end_n5/snakejob.SplitVCF.7.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Mon May 24 13:37:39 2021]
+Error in rule SplitVCF:
+    jobid: 9
+    output: results/KB100_Chr09.1.vcf.gz, results/KB100_Chr09.2.vcf.gz, results/KB100_Chr09.3.vcf.gz, results/KB100_Chr09.4.vcf.gz, results/KB100_Chr09.5.vcf.gz, results/KB100_Chr09.6.vcf.gz, results/KB100_Chr09.7.vcf.gz, results/KB100_Chr09.8.vcf.gz, results/KB100_Chr09.9.vcf.gz, results/KB100_Chr09.10.vcf.gz, results/KB100_Chr09.11.vcf.gz, results/KB100_Chr09.12.vcf.gz, results/KB100_Chr09.13.vcf.gz, results/KB100_Chr09.14.vcf.gz, results/KB100_Chr09.15.vcf.gz, results/KB100_Chr09.16.vcf.gz, results/KB100_Chr09.17.vcf.gz, results/KB100_Chr09.18.vcf.gz, results/KB100_Chr09.19.vcf.gz, results/KB100_Chr09.20.vcf.gz
+    log: reports/KB100_Chr09.log (check log file(s) for error message)
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/e283fd6b
+    shell:
+        
+		overlap=$(($(bcftools index -n resources/remerged_datasets/KB100/KB100_Chr09.vcf.gz) / 20 + 5000))
+
+		bcftools view --no-header resources/remerged_datasets/KB100/KB100_Chr09.vcf.gz | 			java -jar splitvcf.jar 			Chr09 			"$overlap" 			5000 			../../results/KB100_Chr09
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22843329
+
+Error executing rule SplitVCF on cluster (jobid: 9, external: Submitted batch job 22843329, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.x0end_n5/snakejob.SplitVCF.9.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Mon May 24 13:37:39 2021]
+Error in rule SplitVCF:
+    jobid: 11
+    output: results/KB100_Chr11.1.vcf.gz, results/KB100_Chr11.2.vcf.gz, results/KB100_Chr11.3.vcf.gz, results/KB100_Chr11.4.vcf.gz, results/KB100_Chr11.5.vcf.gz, results/KB100_Chr11.6.vcf.gz, results/KB100_Chr11.7.vcf.gz, results/KB100_Chr11.8.vcf.gz, results/KB100_Chr11.9.vcf.gz, results/KB100_Chr11.10.vcf.gz, results/KB100_Chr11.11.vcf.gz, results/KB100_Chr11.12.vcf.gz, results/KB100_Chr11.13.vcf.gz, results/KB100_Chr11.14.vcf.gz, results/KB100_Chr11.15.vcf.gz, results/KB100_Chr11.16.vcf.gz, results/KB100_Chr11.17.vcf.gz, results/KB100_Chr11.18.vcf.gz, results/KB100_Chr11.19.vcf.gz, results/KB100_Chr11.20.vcf.gz
+    log: reports/KB100_Chr11.log (check log file(s) for error message)
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/e283fd6b
+    shell:
+        
+		overlap=$(($(bcftools index -n resources/remerged_datasets/KB100/KB100_Chr11.vcf.gz) / 20 + 5000))
+
+		bcftools view --no-header resources/remerged_datasets/KB100/KB100_Chr11.vcf.gz | 			java -jar splitvcf.jar 			Chr11 			"$overlap" 			5000 			../../results/KB100_Chr11
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22843330
+
+Error executing rule SplitVCF on cluster (jobid: 11, external: Submitted batch job 22843330, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.x0end_n5/snakejob.SplitVCF.11.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Mon May 24 13:37:39 2021]
+Error in rule SplitVCF:
+    jobid: 5
+    output: results/KB100_Chr05.1.vcf.gz, results/KB100_Chr05.2.vcf.gz, results/KB100_Chr05.3.vcf.gz, results/KB100_Chr05.4.vcf.gz, results/KB100_Chr05.5.vcf.gz, results/KB100_Chr05.6.vcf.gz, results/KB100_Chr05.7.vcf.gz, results/KB100_Chr05.8.vcf.gz, results/KB100_Chr05.9.vcf.gz, results/KB100_Chr05.10.vcf.gz, results/KB100_Chr05.11.vcf.gz, results/KB100_Chr05.12.vcf.gz, results/KB100_Chr05.13.vcf.gz, results/KB100_Chr05.14.vcf.gz, results/KB100_Chr05.15.vcf.gz, results/KB100_Chr05.16.vcf.gz, results/KB100_Chr05.17.vcf.gz, results/KB100_Chr05.18.vcf.gz, results/KB100_Chr05.19.vcf.gz, results/KB100_Chr05.20.vcf.gz
+    log: reports/KB100_Chr05.log (check log file(s) for error message)
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/e283fd6b
+    shell:
+        
+		overlap=$(($(bcftools index -n resources/remerged_datasets/KB100/KB100_Chr05.vcf.gz) / 20 + 5000))
+
+		bcftools view --no-header resources/remerged_datasets/KB100/KB100_Chr05.vcf.gz | 			java -jar splitvcf.jar 			Chr05 			"$overlap" 			5000 			../../results/KB100_Chr05
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22843331
+
+Error executing rule SplitVCF on cluster (jobid: 5, external: Submitted batch job 22843331, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.x0end_n5/snakejob.SplitVCF.5.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Mon May 24 13:37:39 2021]
+Error in rule SplitVCF:
+    jobid: 3
+    output: results/KB100_Chr03.1.vcf.gz, results/KB100_Chr03.2.vcf.gz, results/KB100_Chr03.3.vcf.gz, results/KB100_Chr03.4.vcf.gz, results/KB100_Chr03.5.vcf.gz, results/KB100_Chr03.6.vcf.gz, results/KB100_Chr03.7.vcf.gz, results/KB100_Chr03.8.vcf.gz, results/KB100_Chr03.9.vcf.gz, results/KB100_Chr03.10.vcf.gz, results/KB100_Chr03.11.vcf.gz, results/KB100_Chr03.12.vcf.gz, results/KB100_Chr03.13.vcf.gz, results/KB100_Chr03.14.vcf.gz, results/KB100_Chr03.15.vcf.gz, results/KB100_Chr03.16.vcf.gz, results/KB100_Chr03.17.vcf.gz, results/KB100_Chr03.18.vcf.gz, results/KB100_Chr03.19.vcf.gz, results/KB100_Chr03.20.vcf.gz
+    log: reports/KB100_Chr03.log (check log file(s) for error message)
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/e283fd6b
+    shell:
+        
+		overlap=$(($(bcftools index -n resources/remerged_datasets/KB100/KB100_Chr03.vcf.gz) / 20 + 5000))
+
+		bcftools view --no-header resources/remerged_datasets/KB100/KB100_Chr03.vcf.gz | 			java -jar splitvcf.jar 			Chr03 			"$overlap" 			5000 			../../results/KB100_Chr03
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22843332
+
+Error executing rule SplitVCF on cluster (jobid: 3, external: Submitted batch job 22843332, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.x0end_n5/snakejob.SplitVCF.3.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Mon May 24 13:37:39 2021]
+Error in rule SplitVCF:
+    jobid: 18
+    output: results/KB100_Chr18.1.vcf.gz, results/KB100_Chr18.2.vcf.gz, results/KB100_Chr18.3.vcf.gz, results/KB100_Chr18.4.vcf.gz, results/KB100_Chr18.5.vcf.gz, results/KB100_Chr18.6.vcf.gz, results/KB100_Chr18.7.vcf.gz, results/KB100_Chr18.8.vcf.gz, results/KB100_Chr18.9.vcf.gz, results/KB100_Chr18.10.vcf.gz, results/KB100_Chr18.11.vcf.gz, results/KB100_Chr18.12.vcf.gz, results/KB100_Chr18.13.vcf.gz, results/KB100_Chr18.14.vcf.gz, results/KB100_Chr18.15.vcf.gz, results/KB100_Chr18.16.vcf.gz, results/KB100_Chr18.17.vcf.gz, results/KB100_Chr18.18.vcf.gz, results/KB100_Chr18.19.vcf.gz, results/KB100_Chr18.20.vcf.gz
+    log: reports/KB100_Chr18.log (check log file(s) for error message)
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/e283fd6b
+    shell:
+        
+		overlap=$(($(bcftools index -n resources/remerged_datasets/KB100/KB100_Chr18.vcf.gz) / 20 + 5000))
+
+		bcftools view --no-header resources/remerged_datasets/KB100/KB100_Chr18.vcf.gz | 			java -jar splitvcf.jar 			Chr18 			"$overlap" 			5000 			../../results/KB100_Chr18
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22843333
+
+Error executing rule SplitVCF on cluster (jobid: 18, external: Submitted batch job 22843333, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.x0end_n5/snakejob.SplitVCF.18.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Mon May 24 13:38:00 2021]
+Error in rule SplitVCF:
+    jobid: 13
+    output: results/KB100_Chr13.1.vcf.gz, results/KB100_Chr13.2.vcf.gz, results/KB100_Chr13.3.vcf.gz, results/KB100_Chr13.4.vcf.gz, results/KB100_Chr13.5.vcf.gz, results/KB100_Chr13.6.vcf.gz, results/KB100_Chr13.7.vcf.gz, results/KB100_Chr13.8.vcf.gz, results/KB100_Chr13.9.vcf.gz, results/KB100_Chr13.10.vcf.gz, results/KB100_Chr13.11.vcf.gz, results/KB100_Chr13.12.vcf.gz, results/KB100_Chr13.13.vcf.gz, results/KB100_Chr13.14.vcf.gz, results/KB100_Chr13.15.vcf.gz, results/KB100_Chr13.16.vcf.gz, results/KB100_Chr13.17.vcf.gz, results/KB100_Chr13.18.vcf.gz, results/KB100_Chr13.19.vcf.gz, results/KB100_Chr13.20.vcf.gz
+    log: reports/KB100_Chr13.log (check log file(s) for error message)
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/e283fd6b
+    shell:
+        
+		overlap=$(($(bcftools index -n resources/remerged_datasets/KB100/KB100_Chr13.vcf.gz) / 20 + 5000))
+
+		bcftools view --no-header resources/remerged_datasets/KB100/KB100_Chr13.vcf.gz | 			java -jar splitvcf.jar 			Chr13 			"$overlap" 			5000 			../../results/KB100_Chr13
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22843314
+
+Error executing rule SplitVCF on cluster (jobid: 13, external: Submitted batch job 22843314, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.x0end_n5/snakejob.SplitVCF.13.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Mon May 24 13:38:00 2021]
+Error in rule SplitVCF:
+    jobid: 15
+    output: results/KB100_Chr15.1.vcf.gz, results/KB100_Chr15.2.vcf.gz, results/KB100_Chr15.3.vcf.gz, results/KB100_Chr15.4.vcf.gz, results/KB100_Chr15.5.vcf.gz, results/KB100_Chr15.6.vcf.gz, results/KB100_Chr15.7.vcf.gz, results/KB100_Chr15.8.vcf.gz, results/KB100_Chr15.9.vcf.gz, results/KB100_Chr15.10.vcf.gz, results/KB100_Chr15.11.vcf.gz, results/KB100_Chr15.12.vcf.gz, results/KB100_Chr15.13.vcf.gz, results/KB100_Chr15.14.vcf.gz, results/KB100_Chr15.15.vcf.gz, results/KB100_Chr15.16.vcf.gz, results/KB100_Chr15.17.vcf.gz, results/KB100_Chr15.18.vcf.gz, results/KB100_Chr15.19.vcf.gz, results/KB100_Chr15.20.vcf.gz
+    log: reports/KB100_Chr15.log (check log file(s) for error message)
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/e283fd6b
+    shell:
+        
+		overlap=$(($(bcftools index -n resources/remerged_datasets/KB100/KB100_Chr15.vcf.gz) / 20 + 5000))
+
+		bcftools view --no-header resources/remerged_datasets/KB100/KB100_Chr15.vcf.gz | 			java -jar splitvcf.jar 			Chr15 			"$overlap" 			5000 			../../results/KB100_Chr15
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22843315
+
+Error executing rule SplitVCF on cluster (jobid: 15, external: Submitted batch job 22843315, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.x0end_n5/snakejob.SplitVCF.15.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Mon May 24 13:38:10 2021]
+Error in rule SplitVCF:
+    jobid: 16
+    output: results/KB100_Chr16.1.vcf.gz, results/KB100_Chr16.2.vcf.gz, results/KB100_Chr16.3.vcf.gz, results/KB100_Chr16.4.vcf.gz, results/KB100_Chr16.5.vcf.gz, results/KB100_Chr16.6.vcf.gz, results/KB100_Chr16.7.vcf.gz, results/KB100_Chr16.8.vcf.gz, results/KB100_Chr16.9.vcf.gz, results/KB100_Chr16.10.vcf.gz, results/KB100_Chr16.11.vcf.gz, results/KB100_Chr16.12.vcf.gz, results/KB100_Chr16.13.vcf.gz, results/KB100_Chr16.14.vcf.gz, results/KB100_Chr16.15.vcf.gz, results/KB100_Chr16.16.vcf.gz, results/KB100_Chr16.17.vcf.gz, results/KB100_Chr16.18.vcf.gz, results/KB100_Chr16.19.vcf.gz, results/KB100_Chr16.20.vcf.gz
+    log: reports/KB100_Chr16.log (check log file(s) for error message)
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/e283fd6b
+    shell:
+        
+		overlap=$(($(bcftools index -n resources/remerged_datasets/KB100/KB100_Chr16.vcf.gz) / 20 + 5000))
+
+		bcftools view --no-header resources/remerged_datasets/KB100/KB100_Chr16.vcf.gz | 			java -jar splitvcf.jar 			Chr16 			"$overlap" 			5000 			../../results/KB100_Chr16
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 22843326
+
+Error executing rule SplitVCF on cluster (jobid: 16, external: Submitted batch job 22843326, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.x0end_n5/snakejob.SplitVCF.16.sh). For error details see the cluster log and the log files of the involved rule(s).
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/log/2021-05-24T133728.700815.snakemake.log
