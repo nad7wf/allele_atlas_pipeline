@@ -1,0 +1,33 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Job counts:
+	count	jobs
+	1	Fst
+	5
+Select jobs to execute...
+
+[Thu Feb 24 08:29:27 2022]
+rule Fst:
+    input: results/SNPsOnly_RP_NRP_EliteUSOnly_Chr04.vcf.gz, resources/ancestor_only_population_file.txt, resources/elite_only_population_file.txt
+    output: results/Fst_RP_NRP_EliteUSOnly_Chr04.weir.fst
+    jobid: 11
+    wildcards: chr=04
+
+Submitted job 11 with external jobid 'Submitted batch job 24269641'.
+[Thu Feb 24 08:33:27 2022]
+Error in rule Fst:
+    jobid: 11
+    output: results/Fst_RP_NRP_EliteUSOnly_Chr04.weir.fst
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/42a69896
+    shell:
+        
+		vcftools 			--weir-fst-pop resources/ancestor_only_population_file.txt 			--weir-fst-pop resources/elite_only_population_file.txt 			--fst-window-size 100000 			--fst-window-step 0 			--gzvcf results/SNPsOnly_RP_NRP_EliteUSOnly_Chr04.vcf.gz 			--out results/Fst_RP_NRP_EliteUSOnly_Chr04.weir.fst
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 24269641
+
+Error executing rule Fst on cluster (jobid: 11, external: Submitted batch job 24269641, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp._zk24iqb/snakejob.Fst.11.sh). For error details see the cluster log and the log files of the involved rule(s).
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/log/2022-02-24T082927.242324.snakemake.log

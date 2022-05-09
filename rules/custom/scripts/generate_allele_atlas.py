@@ -56,7 +56,7 @@ def prep_ann_file(dat):
 		axis = 1
 	)
 	
-	### Add Ref datotation to ANN column. ###
+	### Add Ref anotation to ANN column. ###
 	dat['ANN'] = dat[['REF', 'ANN']].apply(
 		lambda row: ','.join(['|'.join([row['REF'], 'Ref']), row['ANN']]),
 		axis = 1
@@ -99,7 +99,7 @@ import argparse as ap
 import pandas as pd
 import numpy as np
 import re
-
+import sys
 
 ### Parse command line arguments. ###
 parser = ap.ArgumentParser()
@@ -144,7 +144,7 @@ vcf = pd.read_csv(
 comb = pd.merge(
 	ann, 
 	vcf, 
-	how = 'left', 
+	how = 'inner', 
 	on = ['CHROM', 'POS', 'REF', 'ALT']
 )
 
@@ -181,7 +181,7 @@ comb = aggregate_by_gene(comb) \
 
 
 ### Extract North American ancestors from dataframe. ###
-ancestor_list = ['PI_548362','PI_548379','PI_548445','PI_548406','PI_548488','PI_548298','PI_548348','PI_548391','HN071_PI548657','PI_548603','PI_548485','PI_548311','USB-002_FC033243','PI_548456','PI_548382']
+ancestor_list = ['PI_548362','PI_548379','PI_548445','PI_548406','PI_548488','PI_548298','PI_548348','PI_548477','PI_548391','HN071_PI548657','PI_548603','PI_548485','PI_548311','USB-002_FC033243','PI_548456','PI_548382']
 ancestor_df = comb.query('ACCESSION in @ancestor_list').copy()
 
 
@@ -189,6 +189,17 @@ ancestor_df = comb.query('ACCESSION in @ancestor_list').copy()
 ancestor_df['idx'] = ancestor_df['ACCESSION'].map(dict(zip(ancestor_list, range(len(ancestor_list)))))
 ancestor_df.sort_values('idx', inplace = True)
 ancestor_df.drop('idx', axis = 1, inplace = True)
+
+### Find genes where all 16 ancestors have the same allele (bottleneck genes) and print them to file.
+allele_count = ancestor_df.groupby(['GENE', 'EFFECT'])['ACCESSION'].count().reset_index().query('ACCESSION == 16')
+allele_count.to_csv(
+	args.bottleneck,
+	sep = '\t',
+	columns = ['GENE'],
+	header = False,
+	index = False,
+	compression = 'gzip'
+)
 
 
 ### For each allele, determine which of the ancestors it matches. ###
@@ -218,24 +229,24 @@ comb = comb.merge(
 
 
 ### Write list of bottleneck genes to file. ###
-comb.loc[(comb['ACCESSION'] == 'PI_548362') & (comb['ANC_CODE'] == '111111111111111')] \
-.to_csv(
-	args.bottleneck,
-	sep = '\t',
-	columns = ['GENE'],
-	header = False,
-	index = False,
-	compression = 'gzip'
-)
+#comb.loc[(comb['ACCESSION'] == 'PI_548362') & (comb['ANC_CODE'] == '111111111111111')] \
+#.to_csv(
+#	args.bottleneck,
+#	sep = '\t',
+#	columns = ['GENE'],
+#	header = False,
+#	index = False,
+#	compression = 'gzip'
+#)
 
 
 
 
 
 
-###############################################################################################################################
-### Any gene where there is not modify variation is considered a housekeeping gene and needs to be added from the GFF file. ###
-###############################################################################################################################
+##################################################################################################################################
+### Any gene where there is not modifying variation is considered a housekeeping gene and needs to be added from the GFF file. ###
+##################################################################################################################################
 
 ### Read in genes from GFF file. ###
 gff = pd.read_csv(

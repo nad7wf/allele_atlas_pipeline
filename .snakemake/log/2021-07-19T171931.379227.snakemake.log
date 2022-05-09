@@ -1,0 +1,505 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Job counts:
+	count	jobs
+	19	AlleleAtlas
+	19	ImputeNRP
+	19	ImputeRP
+	19	MergeVCFs
+	5	PreformatNRP
+	2	PreformatRP
+	19	SNPEff
+	1	all
+	103
+Select jobs to execute...
+
+[Mon Jul 19 17:19:32 2021]
+rule ImputeRP:
+    input: results/Preformat_RP_Chr08.vcf.gz
+    output: results/ImputeRP_RP_Chr08.vcf.gz, results/beagle/ImputeRP_RP_Chr08
+    jobid: 88
+    wildcards: chr=08
+    resources: memory=48, threads=15
+
+Submitted job 88 with external jobid 'Submitted batch job 23078924'.
+
+[Mon Jul 19 17:19:32 2021]
+rule ImputeRP:
+    input: results/Preformat_RP_Chr01.vcf.gz
+    output: results/ImputeRP_RP_Chr01.vcf.gz, results/beagle/ImputeRP_RP_Chr01
+    jobid: 81
+    wildcards: chr=01
+    resources: memory=48, threads=15
+
+Submitted job 81 with external jobid 'Submitted batch job 23078925'.
+
+[Mon Jul 19 17:19:32 2021]
+rule ImputeRP:
+    input: results/Preformat_RP_Chr16.vcf.gz
+    output: results/ImputeRP_RP_Chr16.vcf.gz, results/beagle/ImputeRP_RP_Chr16
+    jobid: 96
+    wildcards: chr=16
+    resources: memory=48, threads=15
+
+Submitted job 96 with external jobid 'Submitted batch job 23078926'.
+
+[Mon Jul 19 17:19:32 2021]
+rule ImputeRP:
+    input: results/Preformat_RP_Chr15.vcf.gz
+    output: results/ImputeRP_RP_Chr15.vcf.gz, results/beagle/ImputeRP_RP_Chr15
+    jobid: 95
+    wildcards: chr=15
+    resources: memory=48, threads=15
+
+Submitted job 95 with external jobid 'Submitted batch job 23078927'.
+
+[Mon Jul 19 17:19:32 2021]
+rule ImputeRP:
+    input: results/Preformat_RP_Chr09.vcf.gz
+    output: results/ImputeRP_RP_Chr09.vcf.gz, results/beagle/ImputeRP_RP_Chr09
+    jobid: 89
+    wildcards: chr=09
+    resources: memory=48, threads=15
+
+Submitted job 89 with external jobid 'Submitted batch job 23078928'.
+
+[Mon Jul 19 17:19:32 2021]
+rule PreformatRP:
+    input: results/RenameSamples_RP_Chr04.vcf.gz
+    output: results/Preformat_RP_Chr04.vcf.gz
+    jobid: 44
+    wildcards: chr=04
+
+Submitted job 44 with external jobid 'Submitted batch job 23078929'.
+
+[Mon Jul 19 17:19:32 2021]
+rule ImputeRP:
+    input: results/Preformat_RP_Chr02.vcf.gz
+    output: results/ImputeRP_RP_Chr02.vcf.gz, results/beagle/ImputeRP_RP_Chr02
+    jobid: 82
+    wildcards: chr=02
+    resources: memory=48, threads=15
+
+Submitted job 82 with external jobid 'Submitted batch job 23078930'.
+
+[Mon Jul 19 17:19:32 2021]
+rule ImputeRP:
+    input: results/Preformat_RP_Chr17.vcf.gz
+    output: results/ImputeRP_RP_Chr17.vcf.gz, results/beagle/ImputeRP_RP_Chr17
+    jobid: 97
+    wildcards: chr=17
+    resources: memory=48, threads=15
+
+Submitted job 97 with external jobid 'Submitted batch job 23078931'.
+
+[Mon Jul 19 17:19:32 2021]
+rule ImputeRP:
+    input: results/Preformat_RP_Chr10.vcf.gz
+    output: results/ImputeRP_RP_Chr10.vcf.gz, results/beagle/ImputeRP_RP_Chr10
+    jobid: 90
+    wildcards: chr=10
+    resources: memory=48, threads=15
+
+Submitted job 90 with external jobid 'Submitted batch job 23078932'.
+
+[Mon Jul 19 17:19:32 2021]
+rule PreformatRP:
+    input: results/RenameSamples_RP_Chr05.vcf.gz
+    output: results/Preformat_RP_Chr05.vcf.gz
+    jobid: 45
+    wildcards: chr=05
+
+Submitted job 45 with external jobid 'Submitted batch job 23078933'.
+
+[Mon Jul 19 17:19:32 2021]
+rule ImputeRP:
+    input: results/Preformat_RP_Chr03.vcf.gz
+    output: results/ImputeRP_RP_Chr03.vcf.gz, results/beagle/ImputeRP_RP_Chr03
+    jobid: 83
+    wildcards: chr=03
+    resources: memory=48, threads=15
+
+Submitted job 83 with external jobid 'Submitted batch job 23078934'.
+
+[Mon Jul 19 17:19:33 2021]
+rule ImputeRP:
+    input: results/Preformat_RP_Chr18.vcf.gz
+    output: results/ImputeRP_RP_Chr18.vcf.gz, results/beagle/ImputeRP_RP_Chr18
+    jobid: 98
+    wildcards: chr=18
+    resources: memory=48, threads=15
+
+Submitted job 98 with external jobid 'Submitted batch job 23078935'.
+
+[Mon Jul 19 17:19:33 2021]
+rule ImputeRP:
+    input: results/Preformat_RP_Chr11.vcf.gz
+    output: results/ImputeRP_RP_Chr11.vcf.gz, results/beagle/ImputeRP_RP_Chr11
+    jobid: 91
+    wildcards: chr=11
+    resources: memory=48, threads=15
+
+Submitted job 91 with external jobid 'Submitted batch job 23078936'.
+
+[Mon Jul 19 17:19:33 2021]
+rule ImputeRP:
+    input: results/Preformat_RP_Chr19.vcf.gz
+    output: results/ImputeRP_RP_Chr19.vcf.gz, results/beagle/ImputeRP_RP_Chr19
+    jobid: 99
+    wildcards: chr=19
+    resources: memory=48, threads=15
+
+Submitted job 99 with external jobid 'Submitted batch job 23078937'.
+
+[Mon Jul 19 17:19:33 2021]
+rule ImputeRP:
+    input: results/Preformat_RP_Chr12.vcf.gz
+    output: results/ImputeRP_RP_Chr12.vcf.gz, results/beagle/ImputeRP_RP_Chr12
+    jobid: 92
+    wildcards: chr=12
+    resources: memory=48, threads=15
+
+Submitted job 92 with external jobid 'Submitted batch job 23078938'.
+
+[Mon Jul 19 17:19:33 2021]
+rule ImputeRP:
+    input: results/Preformat_RP_Chr20.vcf.gz
+    output: results/ImputeRP_RP_Chr20.vcf.gz, results/beagle/ImputeRP_RP_Chr20
+    jobid: 100
+    wildcards: chr=20
+    resources: memory=48, threads=15
+
+Submitted job 100 with external jobid 'Submitted batch job 23078939'.
+
+[Mon Jul 19 17:19:33 2021]
+rule PreformatNRP:
+    input: results/RenameSamples_NRP_Chr18.vcf.gz, results/Preformat_RP_Chr18.vcf.gz
+    output: results/Preformat_NRP_Chr18.vcf.gz
+    jobid: 78
+    wildcards: chr=18
+
+Submitted job 78 with external jobid 'Submitted batch job 23078940'.
+
+[Mon Jul 19 17:19:33 2021]
+rule ImputeRP:
+    input: results/Preformat_RP_Chr13.vcf.gz
+    output: results/ImputeRP_RP_Chr13.vcf.gz, results/beagle/ImputeRP_RP_Chr13
+    jobid: 93
+    wildcards: chr=13
+    resources: memory=48, threads=15
+
+Submitted job 93 with external jobid 'Submitted batch job 23078941'.
+
+[Mon Jul 19 17:19:33 2021]
+rule PreformatNRP:
+    input: results/RenameSamples_NRP_Chr03.vcf.gz, results/Preformat_RP_Chr03.vcf.gz
+    output: results/Preformat_NRP_Chr03.vcf.gz
+    jobid: 63
+    wildcards: chr=03
+
+Submitted job 63 with external jobid 'Submitted batch job 23078942'.
+
+[Mon Jul 19 17:19:33 2021]
+rule ImputeRP:
+    input: results/Preformat_RP_Chr14.vcf.gz
+    output: results/ImputeRP_RP_Chr14.vcf.gz, results/beagle/ImputeRP_RP_Chr14
+    jobid: 94
+    wildcards: chr=14
+    resources: memory=48, threads=15
+
+Submitted job 94 with external jobid 'Submitted batch job 23078943'.
+
+[Mon Jul 19 17:19:33 2021]
+rule ImputeRP:
+    input: results/Preformat_RP_Chr07.vcf.gz
+    output: results/ImputeRP_RP_Chr07.vcf.gz, results/beagle/ImputeRP_RP_Chr07
+    jobid: 87
+    wildcards: chr=07
+    resources: memory=48, threads=15
+
+Submitted job 87 with external jobid 'Submitted batch job 23078944'.
+
+[Mon Jul 19 17:19:33 2021]
+rule PreformatNRP:
+    input: results/RenameSamples_NRP_Chr20.vcf.gz, results/Preformat_RP_Chr20.vcf.gz
+    output: results/Preformat_NRP_Chr20.vcf.gz
+    jobid: 80
+    wildcards: chr=20
+
+Submitted job 80 with external jobid 'Submitted batch job 23078945'.
+[Mon Jul 19 17:26:20 2021]
+Finished job 80.
+1 of 103 steps (0.97%) done
+[Mon Jul 19 17:27:19 2021]
+Finished job 63.
+2 of 103 steps (2%) done
+[Mon Jul 19 17:29:43 2021]
+Finished job 78.
+3 of 103 steps (3%) done
+[Mon Jul 19 17:33:02 2021]
+Finished job 45.
+4 of 103 steps (4%) done
+Select jobs to execute...
+
+[Mon Jul 19 17:33:02 2021]
+rule PreformatNRP:
+    input: results/RenameSamples_NRP_Chr05.vcf.gz, results/Preformat_RP_Chr05.vcf.gz
+    output: results/Preformat_NRP_Chr05.vcf.gz
+    jobid: 65
+    wildcards: chr=05
+
+Submitted job 65 with external jobid 'Submitted batch job 23078952'.
+
+[Mon Jul 19 17:33:02 2021]
+rule ImputeRP:
+    input: results/Preformat_RP_Chr05.vcf.gz
+    output: results/ImputeRP_RP_Chr05.vcf.gz, results/beagle/ImputeRP_RP_Chr05
+    jobid: 85
+    wildcards: chr=05
+    resources: memory=48, threads=15
+
+Submitted job 85 with external jobid 'Submitted batch job 23078953'.
+[Mon Jul 19 17:35:37 2021]
+Finished job 44.
+5 of 103 steps (5%) done
+Select jobs to execute...
+
+[Mon Jul 19 17:35:37 2021]
+rule ImputeRP:
+    input: results/Preformat_RP_Chr04.vcf.gz
+    output: results/ImputeRP_RP_Chr04.vcf.gz, results/beagle/ImputeRP_RP_Chr04
+    jobid: 84
+    wildcards: chr=04
+    resources: memory=48, threads=15
+
+Submitted job 84 with external jobid 'Submitted batch job 23078954'.
+
+[Mon Jul 19 17:35:37 2021]
+rule PreformatNRP:
+    input: results/RenameSamples_NRP_Chr04.vcf.gz, results/Preformat_RP_Chr04.vcf.gz
+    output: results/Preformat_NRP_Chr04.vcf.gz
+    jobid: 64
+    wildcards: chr=04
+
+Submitted job 64 with external jobid 'Submitted batch job 23078955'.
+[Mon Jul 19 17:39:37 2021]
+Finished job 65.
+6 of 103 steps (6%) done
+[Mon Jul 19 17:43:25 2021]
+Finished job 64.
+7 of 103 steps (7%) done
+[Mon Jul 19 17:57:01 2021]
+Error in rule ImputeRP:
+    jobid: 95
+    output: results/ImputeRP_RP_Chr15.vcf.gz, results/beagle/ImputeRP_RP_Chr15
+    shell:
+        
+		module load bcftools
+		mkdir -p results/beagle/ImputeRP_RP_Chr15
+
+		java -Xmx48G 			-Djava.io.tmpdir=results/beagle/ImputeRP_RP_Chr15 			-jar resources/beagle/beagle.28Jun21.220.jar 			nthreads=15 			gt=results/Preformat_RP_Chr15.vcf.gz 			out=results/ImputeRP_RP_Chr15
+
+		bcftools index --tbi results/ImputeRP_RP_Chr15.vcf.gz
+
+		rm "results/ImputeRP_RP_Chr15.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 23078927
+
+Error executing rule ImputeRP on cluster (jobid: 95, external: Submitted batch job 23078927, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.bw24x6ok/snakejob.ImputeRP.95.sh). For error details see the cluster log and the log files of the involved rule(s).
+Removing temporary output file results/beagle/ImputeRP_RP_Chr02.
+[Mon Jul 19 17:59:36 2021]
+Finished job 82.
+8 of 103 steps (8%) done
+[Mon Jul 19 18:02:54 2021]
+Error in rule ImputeRP:
+    jobid: 96
+    output: results/ImputeRP_RP_Chr16.vcf.gz, results/beagle/ImputeRP_RP_Chr16
+    shell:
+        
+		module load bcftools
+		mkdir -p results/beagle/ImputeRP_RP_Chr16
+
+		java -Xmx48G 			-Djava.io.tmpdir=results/beagle/ImputeRP_RP_Chr16 			-jar resources/beagle/beagle.28Jun21.220.jar 			nthreads=15 			gt=results/Preformat_RP_Chr16.vcf.gz 			out=results/ImputeRP_RP_Chr16
+
+		bcftools index --tbi results/ImputeRP_RP_Chr16.vcf.gz
+
+		rm "results/ImputeRP_RP_Chr16.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 23078926
+
+Error executing rule ImputeRP on cluster (jobid: 96, external: Submitted batch job 23078926, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.bw24x6ok/snakejob.ImputeRP.96.sh). For error details see the cluster log and the log files of the involved rule(s).
+Removing temporary output file results/beagle/ImputeRP_RP_Chr11.
+[Mon Jul 19 18:03:16 2021]
+Finished job 91.
+9 of 103 steps (9%) done
+Removing temporary output file results/beagle/ImputeRP_RP_Chr01.
+[Mon Jul 19 18:04:00 2021]
+Finished job 81.
+10 of 103 steps (10%) done
+Removing temporary output file results/beagle/ImputeRP_RP_Chr09.
+[Mon Jul 19 18:04:22 2021]
+Finished job 89.
+11 of 103 steps (11%) done
+[Mon Jul 19 18:05:28 2021]
+Error in rule ImputeRP:
+    jobid: 90
+    output: results/ImputeRP_RP_Chr10.vcf.gz, results/beagle/ImputeRP_RP_Chr10
+    shell:
+        
+		module load bcftools
+		mkdir -p results/beagle/ImputeRP_RP_Chr10
+
+		java -Xmx48G 			-Djava.io.tmpdir=results/beagle/ImputeRP_RP_Chr10 			-jar resources/beagle/beagle.28Jun21.220.jar 			nthreads=15 			gt=results/Preformat_RP_Chr10.vcf.gz 			out=results/ImputeRP_RP_Chr10
+
+		bcftools index --tbi results/ImputeRP_RP_Chr10.vcf.gz
+
+		rm "results/ImputeRP_RP_Chr10.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 23078932
+
+Error executing rule ImputeRP on cluster (jobid: 90, external: Submitted batch job 23078932, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.bw24x6ok/snakejob.ImputeRP.90.sh). For error details see the cluster log and the log files of the involved rule(s).
+Removing temporary output file results/beagle/ImputeRP_RP_Chr08.
+[Mon Jul 19 18:06:45 2021]
+Finished job 88.
+12 of 103 steps (12%) done
+[Mon Jul 19 18:08:25 2021]
+Error in rule ImputeRP:
+    jobid: 98
+    output: results/ImputeRP_RP_Chr18.vcf.gz, results/beagle/ImputeRP_RP_Chr18
+    shell:
+        
+		module load bcftools
+		mkdir -p results/beagle/ImputeRP_RP_Chr18
+
+		java -Xmx48G 			-Djava.io.tmpdir=results/beagle/ImputeRP_RP_Chr18 			-jar resources/beagle/beagle.28Jun21.220.jar 			nthreads=15 			gt=results/Preformat_RP_Chr18.vcf.gz 			out=results/ImputeRP_RP_Chr18
+
+		bcftools index --tbi results/ImputeRP_RP_Chr18.vcf.gz
+
+		rm "results/ImputeRP_RP_Chr18.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 23078935
+
+Error executing rule ImputeRP on cluster (jobid: 98, external: Submitted batch job 23078935, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.bw24x6ok/snakejob.ImputeRP.98.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Mon Jul 19 18:09:08 2021]
+Error in rule ImputeRP:
+    jobid: 93
+    output: results/ImputeRP_RP_Chr13.vcf.gz, results/beagle/ImputeRP_RP_Chr13
+    shell:
+        
+		module load bcftools
+		mkdir -p results/beagle/ImputeRP_RP_Chr13
+
+		java -Xmx48G 			-Djava.io.tmpdir=results/beagle/ImputeRP_RP_Chr13 			-jar resources/beagle/beagle.28Jun21.220.jar 			nthreads=15 			gt=results/Preformat_RP_Chr13.vcf.gz 			out=results/ImputeRP_RP_Chr13
+
+		bcftools index --tbi results/ImputeRP_RP_Chr13.vcf.gz
+
+		rm "results/ImputeRP_RP_Chr13.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 23078941
+
+Error executing rule ImputeRP on cluster (jobid: 93, external: Submitted batch job 23078941, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.bw24x6ok/snakejob.ImputeRP.93.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Mon Jul 19 18:10:18 2021]
+Error in rule ImputeRP:
+    jobid: 100
+    output: results/ImputeRP_RP_Chr20.vcf.gz, results/beagle/ImputeRP_RP_Chr20
+    shell:
+        
+		module load bcftools
+		mkdir -p results/beagle/ImputeRP_RP_Chr20
+
+		java -Xmx48G 			-Djava.io.tmpdir=results/beagle/ImputeRP_RP_Chr20 			-jar resources/beagle/beagle.28Jun21.220.jar 			nthreads=15 			gt=results/Preformat_RP_Chr20.vcf.gz 			out=results/ImputeRP_RP_Chr20
+
+		bcftools index --tbi results/ImputeRP_RP_Chr20.vcf.gz
+
+		rm "results/ImputeRP_RP_Chr20.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 23078939
+
+Error executing rule ImputeRP on cluster (jobid: 100, external: Submitted batch job 23078939, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.bw24x6ok/snakejob.ImputeRP.100.sh). For error details see the cluster log and the log files of the involved rule(s).
+Removing temporary output file results/beagle/ImputeRP_RP_Chr17.
+[Mon Jul 19 18:11:28 2021]
+Finished job 97.
+13 of 103 steps (13%) done
+[Mon Jul 19 18:15:58 2021]
+Error in rule ImputeRP:
+    jobid: 83
+    output: results/ImputeRP_RP_Chr03.vcf.gz, results/beagle/ImputeRP_RP_Chr03
+    shell:
+        
+		module load bcftools
+		mkdir -p results/beagle/ImputeRP_RP_Chr03
+
+		java -Xmx48G 			-Djava.io.tmpdir=results/beagle/ImputeRP_RP_Chr03 			-jar resources/beagle/beagle.28Jun21.220.jar 			nthreads=15 			gt=results/Preformat_RP_Chr03.vcf.gz 			out=results/ImputeRP_RP_Chr03
+
+		bcftools index --tbi results/ImputeRP_RP_Chr03.vcf.gz
+
+		rm "results/ImputeRP_RP_Chr03.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 23078934
+
+Error executing rule ImputeRP on cluster (jobid: 83, external: Submitted batch job 23078934, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.bw24x6ok/snakejob.ImputeRP.83.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Mon Jul 19 18:16:58 2021]
+Error in rule ImputeRP:
+    jobid: 99
+    output: results/ImputeRP_RP_Chr19.vcf.gz, results/beagle/ImputeRP_RP_Chr19
+    shell:
+        
+		module load bcftools
+		mkdir -p results/beagle/ImputeRP_RP_Chr19
+
+		java -Xmx48G 			-Djava.io.tmpdir=results/beagle/ImputeRP_RP_Chr19 			-jar resources/beagle/beagle.28Jun21.220.jar 			nthreads=15 			gt=results/Preformat_RP_Chr19.vcf.gz 			out=results/ImputeRP_RP_Chr19
+
+		bcftools index --tbi results/ImputeRP_RP_Chr19.vcf.gz
+
+		rm "results/ImputeRP_RP_Chr19.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 23078937
+
+Error executing rule ImputeRP on cluster (jobid: 99, external: Submitted batch job 23078937, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.bw24x6ok/snakejob.ImputeRP.99.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Mon Jul 19 18:20:59 2021]
+Error in rule ImputeRP:
+    jobid: 94
+    output: results/ImputeRP_RP_Chr14.vcf.gz, results/beagle/ImputeRP_RP_Chr14
+    shell:
+        
+		module load bcftools
+		mkdir -p results/beagle/ImputeRP_RP_Chr14
+
+		java -Xmx48G 			-Djava.io.tmpdir=results/beagle/ImputeRP_RP_Chr14 			-jar resources/beagle/beagle.28Jun21.220.jar 			nthreads=15 			gt=results/Preformat_RP_Chr14.vcf.gz 			out=results/ImputeRP_RP_Chr14
+
+		bcftools index --tbi results/ImputeRP_RP_Chr14.vcf.gz
+
+		rm "results/ImputeRP_RP_Chr14.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 23078943
+
+Error executing rule ImputeRP on cluster (jobid: 94, external: Submitted batch job 23078943, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.bw24x6ok/snakejob.ImputeRP.94.sh). For error details see the cluster log and the log files of the involved rule(s).
+Removing temporary output file results/beagle/ImputeRP_RP_Chr12.
+[Mon Jul 19 18:22:59 2021]
+Finished job 92.
+14 of 103 steps (14%) done
+Removing temporary output file results/beagle/ImputeRP_RP_Chr04.
+[Mon Jul 19 18:52:50 2021]
+Finished job 84.
+15 of 103 steps (15%) done
+Removing temporary output file results/beagle/ImputeRP_RP_Chr05.
+[Mon Jul 19 19:50:24 2021]
+Finished job 85.
+16 of 103 steps (16%) done
+Removing temporary output file results/beagle/ImputeRP_RP_Chr07.
+[Mon Jul 19 20:02:25 2021]
+Finished job 87.
+17 of 103 steps (17%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/log/2021-07-19T171931.379227.snakemake.log

@@ -1,0 +1,574 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Job counts:
+	count	jobs
+	16	Fst
+	2	ImputeNRP
+	1	ImputeRP
+	4	MergeVCFs
+	16	SNPsOnly
+	5	Subset
+	120
+Select jobs to execute...
+
+[Wed Mar  2 13:50:29 2022]
+rule ImputeNRP:
+    input: results/Preformat_NRP_Chr15.vcf.gz, results/ImputeRP_RP_Chr15.vcf.gz
+    output: results/ImputeNRP_NRP_Chr15.vcf.gz, results/beagle/ImputeNRP_NRP_Chr15
+    jobid: 148
+    wildcards: chr=15
+    resources: memory=100G, threads=15
+
+Submitted job 148 with external jobid 'Submitted batch job 24291023'.
+
+[Wed Mar  2 13:50:29 2022]
+rule SNPsOnly:
+    input: results/MergeVCFs_RP_NRP_EliteUSOnly_Chr07.vcf.gz
+    output: results/SNPsOnly_RP_NRP_EliteUSOnly_Chr07.vcf.gz
+    jobid: 62
+    wildcards: chr=07
+
+Submitted job 62 with external jobid 'Submitted batch job 24291024'.
+
+[Wed Mar  2 13:50:29 2022]
+rule SNPsOnly:
+    input: results/MergeVCFs_RP_NRP_EliteUSOnly_Chr13.vcf.gz
+    output: results/SNPsOnly_RP_NRP_EliteUSOnly_Chr13.vcf.gz
+    jobid: 122
+    wildcards: chr=13
+
+Submitted job 122 with external jobid 'Submitted batch job 24291025'.
+
+[Wed Mar  2 13:50:29 2022]
+rule MergeVCFs:
+    input: results/ImputeRP_RP_Chr01.vcf.gz, results/ImputeNRP_NRP_Chr01.vcf.gz
+    output: results/MergeVCFs_RP_NRP_AllAccessions_Chr01.vcf.gz
+    jobid: 4
+    wildcards: chr=01
+
+Submitted job 4 with external jobid 'Submitted batch job 24291026'.
+
+[Wed Mar  2 13:50:29 2022]
+rule MergeVCFs:
+    input: results/ImputeRP_RP_Chr16.vcf.gz, results/ImputeNRP_NRP_Chr16.vcf.gz
+    output: results/MergeVCFs_RP_NRP_AllAccessions_Chr16.vcf.gz
+    jobid: 154
+    wildcards: chr=16
+
+Submitted job 154 with external jobid 'Submitted batch job 24291027'.
+
+[Wed Mar  2 13:50:29 2022]
+rule ImputeRP:
+    input: results/Preformat_RP_Chr18.vcf.gz
+    output: results/ImputeRP_RP_Chr18.vcf.gz, results/beagle/ImputeRP_RP_Chr18
+    jobid: 175
+    wildcards: chr=18
+    resources: memory=120G, threads=15
+
+Submitted job 175 with external jobid 'Submitted batch job 24291028'.
+
+[Wed Mar  2 13:50:29 2022]
+rule SNPsOnly:
+    input: results/MergeVCFs_RP_NRP_EliteUSOnly_Chr02.vcf.gz
+    output: results/SNPsOnly_RP_NRP_EliteUSOnly_Chr02.vcf.gz
+    jobid: 12
+    wildcards: chr=02
+
+Submitted job 12 with external jobid 'Submitted batch job 24291029'.
+
+[Wed Mar  2 13:50:29 2022]
+rule SNPsOnly:
+    input: results/MergeVCFs_RP_NRP_EliteUSOnly_Chr05.vcf.gz
+    output: results/SNPsOnly_RP_NRP_EliteUSOnly_Chr05.vcf.gz
+    jobid: 42
+    wildcards: chr=05
+
+Submitted job 42 with external jobid 'Submitted batch job 24291030'.
+
+[Wed Mar  2 13:50:29 2022]
+rule SNPsOnly:
+    input: results/MergeVCFs_RP_NRP_EliteUSOnly_Chr11.vcf.gz
+    output: results/SNPsOnly_RP_NRP_EliteUSOnly_Chr11.vcf.gz
+    jobid: 102
+    wildcards: chr=11
+
+Submitted job 102 with external jobid 'Submitted batch job 24291031'.
+
+[Wed Mar  2 13:50:29 2022]
+rule SNPsOnly:
+    input: results/MergeVCFs_RP_NRP_EliteUSOnly_Chr17.vcf.gz
+    output: results/SNPsOnly_RP_NRP_EliteUSOnly_Chr17.vcf.gz
+    jobid: 162
+    wildcards: chr=17
+
+Submitted job 162 with external jobid 'Submitted batch job 24291032'.
+
+[Wed Mar  2 13:50:29 2022]
+rule Subset:
+    input: results/MergeVCFs_RP_NRP_AllAccessions_Chr03.vcf.gz, resources/EliteUSOnly.txt
+    output: results/MergeVCFs_RP_NRP_EliteUSOnly_Chr03.vcf.gz
+    jobid: 23
+    wildcards: chr=03
+
+Submitted job 23 with external jobid 'Submitted batch job 24291033'.
+
+[Wed Mar  2 13:50:29 2022]
+rule SNPsOnly:
+    input: results/MergeVCFs_RP_NRP_EliteUSOnly_Chr08.vcf.gz
+    output: results/SNPsOnly_RP_NRP_EliteUSOnly_Chr08.vcf.gz
+    jobid: 72
+    wildcards: chr=08
+
+Submitted job 72 with external jobid 'Submitted batch job 24291034'.
+
+[Wed Mar  2 13:50:29 2022]
+rule SNPsOnly:
+    input: results/MergeVCFs_RP_NRP_EliteUSOnly_Chr14.vcf.gz
+    output: results/SNPsOnly_RP_NRP_EliteUSOnly_Chr14.vcf.gz
+    jobid: 132
+    wildcards: chr=14
+
+Submitted job 132 with external jobid 'Submitted batch job 24291035'.
+
+[Wed Mar  2 13:50:30 2022]
+rule SNPsOnly:
+    input: results/MergeVCFs_RP_NRP_EliteUSOnly_Chr20.vcf.gz
+    output: results/SNPsOnly_RP_NRP_EliteUSOnly_Chr20.vcf.gz
+    jobid: 192
+    wildcards: chr=20
+
+Submitted job 192 with external jobid 'Submitted batch job 24291036'.
+
+[Wed Mar  2 13:50:30 2022]
+rule SNPsOnly:
+    input: results/MergeVCFs_RP_NRP_EliteUSOnly_Chr12.vcf.gz
+    output: results/SNPsOnly_RP_NRP_EliteUSOnly_Chr12.vcf.gz
+    jobid: 112
+    wildcards: chr=12
+
+Submitted job 112 with external jobid 'Submitted batch job 24291037'.
+
+[Wed Mar  2 13:50:30 2022]
+rule SNPsOnly:
+    input: results/MergeVCFs_RP_NRP_EliteUSOnly_Chr09.vcf.gz
+    output: results/SNPsOnly_RP_NRP_EliteUSOnly_Chr09.vcf.gz
+    jobid: 82
+    wildcards: chr=09
+
+Submitted job 82 with external jobid 'Submitted batch job 24291038'.
+[Wed Mar  2 13:51:12 2022]
+Finished job 102.
+1 of 120 steps (0.83%) done
+Select jobs to execute...
+
+[Wed Mar  2 13:51:12 2022]
+rule Fst:
+    input: results/SNPsOnly_RP_NRP_EliteUSOnly_Chr11.vcf.gz, resources/ancestor_only_population_file.txt, resources/elite_only_population_file.txt
+    output: results/Fst_RP_NRP_EliteUSOnly_Chr11.windowed.weir.fst
+    jobid: 211
+    wildcards: chr=11
+
+Submitted job 211 with external jobid 'Submitted batch job 24291039'.
+[Wed Mar  2 13:51:23 2022]
+Finished job 42.
+2 of 120 steps (2%) done
+Select jobs to execute...
+
+[Wed Mar  2 13:51:23 2022]
+rule Fst:
+    input: results/SNPsOnly_RP_NRP_EliteUSOnly_Chr05.vcf.gz, resources/ancestor_only_population_file.txt, resources/elite_only_population_file.txt
+    output: results/Fst_RP_NRP_EliteUSOnly_Chr05.windowed.weir.fst
+    jobid: 205
+    wildcards: chr=05
+
+Submitted job 205 with external jobid 'Submitted batch job 24291041'.
+[Wed Mar  2 13:51:24 2022]
+Finished job 112.
+3 of 120 steps (2%) done
+Select jobs to execute...
+
+[Wed Mar  2 13:51:24 2022]
+rule Fst:
+    input: results/SNPsOnly_RP_NRP_EliteUSOnly_Chr12.vcf.gz, resources/ancestor_only_population_file.txt, resources/elite_only_population_file.txt
+    output: results/Fst_RP_NRP_EliteUSOnly_Chr12.windowed.weir.fst
+    jobid: 212
+    wildcards: chr=12
+
+Submitted job 212 with external jobid 'Submitted batch job 24291042'.
+[Wed Mar  2 13:51:34 2022]
+Finished job 62.
+4 of 120 steps (3%) done
+Select jobs to execute...
+[Wed Mar  2 13:51:34 2022]
+Finished job 12.
+5 of 120 steps (4%) done
+[Wed Mar  2 13:51:34 2022]
+Finished job 162.
+6 of 120 steps (5%) done
+
+[Wed Mar  2 13:51:34 2022]
+rule Fst:
+    input: results/SNPsOnly_RP_NRP_EliteUSOnly_Chr07.vcf.gz, resources/ancestor_only_population_file.txt, resources/elite_only_population_file.txt
+    output: results/Fst_RP_NRP_EliteUSOnly_Chr07.windowed.weir.fst
+    jobid: 207
+    wildcards: chr=07
+
+Submitted job 207 with external jobid 'Submitted batch job 24291043'.
+Select jobs to execute...
+
+[Wed Mar  2 13:51:34 2022]
+rule Fst:
+    input: results/SNPsOnly_RP_NRP_EliteUSOnly_Chr02.vcf.gz, resources/ancestor_only_population_file.txt, resources/elite_only_population_file.txt
+    output: results/Fst_RP_NRP_EliteUSOnly_Chr02.windowed.weir.fst
+    jobid: 202
+    wildcards: chr=02
+
+Submitted job 202 with external jobid 'Submitted batch job 24291044'.
+
+[Wed Mar  2 13:51:34 2022]
+rule Fst:
+    input: results/SNPsOnly_RP_NRP_EliteUSOnly_Chr17.vcf.gz, resources/ancestor_only_population_file.txt, resources/elite_only_population_file.txt
+    output: results/Fst_RP_NRP_EliteUSOnly_Chr17.windowed.weir.fst
+    jobid: 217
+    wildcards: chr=17
+
+Submitted job 217 with external jobid 'Submitted batch job 24291045'.
+[Wed Mar  2 13:51:35 2022]
+Finished job 72.
+7 of 120 steps (6%) done
+Select jobs to execute...
+[Wed Mar  2 13:51:35 2022]
+Finished job 132.
+8 of 120 steps (7%) done
+[Wed Mar  2 13:51:35 2022]
+Finished job 192.
+9 of 120 steps (8%) done
+
+[Wed Mar  2 13:51:35 2022]
+rule Fst:
+    input: results/SNPsOnly_RP_NRP_EliteUSOnly_Chr08.vcf.gz, resources/ancestor_only_population_file.txt, resources/elite_only_population_file.txt
+    output: results/Fst_RP_NRP_EliteUSOnly_Chr08.windowed.weir.fst
+    jobid: 208
+    wildcards: chr=08
+
+Submitted job 208 with external jobid 'Submitted batch job 24291046'.
+Select jobs to execute...
+
+[Wed Mar  2 13:51:35 2022]
+rule Fst:
+    input: results/SNPsOnly_RP_NRP_EliteUSOnly_Chr20.vcf.gz, resources/ancestor_only_population_file.txt, resources/elite_only_population_file.txt
+    output: results/Fst_RP_NRP_EliteUSOnly_Chr20.windowed.weir.fst
+    jobid: 220
+    wildcards: chr=20
+
+Submitted job 220 with external jobid 'Submitted batch job 24291047'.
+
+[Wed Mar  2 13:51:35 2022]
+rule Fst:
+    input: results/SNPsOnly_RP_NRP_EliteUSOnly_Chr14.vcf.gz, resources/ancestor_only_population_file.txt, resources/elite_only_population_file.txt
+    output: results/Fst_RP_NRP_EliteUSOnly_Chr14.windowed.weir.fst
+    jobid: 214
+    wildcards: chr=14
+
+Submitted job 214 with external jobid 'Submitted batch job 24291048'.
+[Wed Mar  2 13:51:45 2022]
+Finished job 205.
+10 of 120 steps (8%) done
+[Wed Mar  2 13:51:45 2022]
+Finished job 211.
+11 of 120 steps (9%) done
+[Wed Mar  2 13:51:46 2022]
+Finished job 82.
+12 of 120 steps (10%) done
+Select jobs to execute...
+[Wed Mar  2 13:51:46 2022]
+Finished job 212.
+13 of 120 steps (11%) done
+
+[Wed Mar  2 13:51:46 2022]
+rule Fst:
+    input: results/SNPsOnly_RP_NRP_EliteUSOnly_Chr09.vcf.gz, resources/ancestor_only_population_file.txt, resources/elite_only_population_file.txt
+    output: results/Fst_RP_NRP_EliteUSOnly_Chr09.windowed.weir.fst
+    jobid: 209
+    wildcards: chr=09
+
+Submitted job 209 with external jobid 'Submitted batch job 24291049'.
+[Wed Mar  2 13:52:07 2022]
+Finished job 207.
+14 of 120 steps (12%) done
+[Wed Mar  2 13:52:07 2022]
+Finished job 202.
+15 of 120 steps (12%) done
+[Wed Mar  2 13:52:07 2022]
+Finished job 217.
+16 of 120 steps (13%) done
+[Wed Mar  2 13:52:07 2022]
+Finished job 122.
+17 of 120 steps (14%) done
+Select jobs to execute...
+[Wed Mar  2 13:52:07 2022]
+Finished job 208.
+18 of 120 steps (15%) done
+
+[Wed Mar  2 13:52:07 2022]
+rule Fst:
+    input: results/SNPsOnly_RP_NRP_EliteUSOnly_Chr13.vcf.gz, resources/ancestor_only_population_file.txt, resources/elite_only_population_file.txt
+    output: results/Fst_RP_NRP_EliteUSOnly_Chr13.windowed.weir.fst
+    jobid: 213
+    wildcards: chr=13
+
+Submitted job 213 with external jobid 'Submitted batch job 24291050'.
+[Wed Mar  2 13:52:18 2022]
+Finished job 220.
+19 of 120 steps (16%) done
+[Wed Mar  2 13:52:18 2022]
+Finished job 214.
+20 of 120 steps (17%) done
+[Wed Mar  2 13:52:18 2022]
+Finished job 209.
+21 of 120 steps (18%) done
+[Wed Mar  2 13:52:58 2022]
+Finished job 213.
+22 of 120 steps (18%) done
+[Wed Mar  2 13:54:38 2022]
+Finished job 23.
+23 of 120 steps (19%) done
+Select jobs to execute...
+
+[Wed Mar  2 13:54:38 2022]
+rule SNPsOnly:
+    input: results/MergeVCFs_RP_NRP_EliteUSOnly_Chr03.vcf.gz
+    output: results/SNPsOnly_RP_NRP_EliteUSOnly_Chr03.vcf.gz
+    jobid: 22
+    wildcards: chr=03
+
+Submitted job 22 with external jobid 'Submitted batch job 24291054'.
+[Wed Mar  2 13:55:48 2022]
+Finished job 22.
+24 of 120 steps (20%) done
+Select jobs to execute...
+
+[Wed Mar  2 13:55:48 2022]
+rule Fst:
+    input: results/SNPsOnly_RP_NRP_EliteUSOnly_Chr03.vcf.gz, resources/ancestor_only_population_file.txt, resources/elite_only_population_file.txt
+    output: results/Fst_RP_NRP_EliteUSOnly_Chr03.windowed.weir.fst
+    jobid: 203
+    wildcards: chr=03
+
+Submitted job 203 with external jobid 'Submitted batch job 24291056'.
+[Wed Mar  2 13:56:18 2022]
+Finished job 203.
+25 of 120 steps (21%) done
+[Wed Mar  2 13:58:38 2022]
+Finished job 154.
+26 of 120 steps (22%) done
+Select jobs to execute...
+
+[Wed Mar  2 13:58:38 2022]
+rule Subset:
+    input: results/MergeVCFs_RP_NRP_AllAccessions_Chr16.vcf.gz, resources/EliteUSOnly.txt
+    output: results/MergeVCFs_RP_NRP_EliteUSOnly_Chr16.vcf.gz
+    jobid: 153
+    wildcards: chr=16
+
+Submitted job 153 with external jobid 'Submitted batch job 24291058'.
+[Wed Mar  2 14:01:19 2022]
+Finished job 4.
+27 of 120 steps (22%) done
+Select jobs to execute...
+
+[Wed Mar  2 14:01:19 2022]
+rule Subset:
+    input: results/MergeVCFs_RP_NRP_AllAccessions_Chr01.vcf.gz, resources/EliteUSOnly.txt
+    output: results/MergeVCFs_RP_NRP_EliteUSOnly_Chr01.vcf.gz
+    jobid: 3
+    wildcards: chr=01
+
+Submitted job 3 with external jobid 'Submitted batch job 24291060'.
+[Wed Mar  2 14:02:39 2022]
+Finished job 153.
+28 of 120 steps (23%) done
+Select jobs to execute...
+
+[Wed Mar  2 14:02:39 2022]
+rule SNPsOnly:
+    input: results/MergeVCFs_RP_NRP_EliteUSOnly_Chr16.vcf.gz
+    output: results/SNPsOnly_RP_NRP_EliteUSOnly_Chr16.vcf.gz
+    jobid: 152
+    wildcards: chr=16
+
+Submitted job 152 with external jobid 'Submitted batch job 24291062'.
+[Wed Mar  2 14:03:39 2022]
+Finished job 152.
+29 of 120 steps (24%) done
+Select jobs to execute...
+
+[Wed Mar  2 14:03:39 2022]
+rule Fst:
+    input: results/SNPsOnly_RP_NRP_EliteUSOnly_Chr16.vcf.gz, resources/ancestor_only_population_file.txt, resources/elite_only_population_file.txt
+    output: results/Fst_RP_NRP_EliteUSOnly_Chr16.windowed.weir.fst
+    jobid: 216
+    wildcards: chr=16
+
+Submitted job 216 with external jobid 'Submitted batch job 24291063'.
+[Wed Mar  2 14:04:49 2022]
+Finished job 216.
+30 of 120 steps (25%) done
+[Wed Mar  2 14:06:39 2022]
+Finished job 3.
+31 of 120 steps (26%) done
+Select jobs to execute...
+
+[Wed Mar  2 14:06:39 2022]
+rule SNPsOnly:
+    input: results/MergeVCFs_RP_NRP_EliteUSOnly_Chr01.vcf.gz
+    output: results/SNPsOnly_RP_NRP_EliteUSOnly_Chr01.vcf.gz
+    jobid: 2
+    wildcards: chr=01
+
+Submitted job 2 with external jobid 'Submitted batch job 24291064'.
+[Wed Mar  2 14:07:29 2022]
+Finished job 2.
+32 of 120 steps (27%) done
+Select jobs to execute...
+
+[Wed Mar  2 14:07:29 2022]
+rule Fst:
+    input: results/SNPsOnly_RP_NRP_EliteUSOnly_Chr01.vcf.gz, resources/ancestor_only_population_file.txt, resources/elite_only_population_file.txt
+    output: results/Fst_RP_NRP_EliteUSOnly_Chr01.windowed.weir.fst
+    jobid: 201
+    wildcards: chr=01
+
+Submitted job 201 with external jobid 'Submitted batch job 24291066'.
+[Wed Mar  2 14:08:09 2022]
+Finished job 201.
+33 of 120 steps (28%) done
+Removing temporary output file results/beagle/ImputeNRP_NRP_Chr15.
+[Wed Mar  2 14:38:31 2022]
+Finished job 148.
+34 of 120 steps (28%) done
+Select jobs to execute...
+
+[Wed Mar  2 14:38:31 2022]
+rule MergeVCFs:
+    input: results/ImputeRP_RP_Chr15.vcf.gz, results/ImputeNRP_NRP_Chr15.vcf.gz
+    output: results/MergeVCFs_RP_NRP_AllAccessions_Chr15.vcf.gz
+    jobid: 144
+    wildcards: chr=15
+
+Submitted job 144 with external jobid 'Submitted batch job 24292479'.
+[Wed Mar  2 14:52:02 2022]
+Finished job 144.
+35 of 120 steps (29%) done
+Select jobs to execute...
+
+[Wed Mar  2 14:52:02 2022]
+rule Subset:
+    input: results/MergeVCFs_RP_NRP_AllAccessions_Chr15.vcf.gz, resources/EliteUSOnly.txt
+    output: results/MergeVCFs_RP_NRP_EliteUSOnly_Chr15.vcf.gz
+    jobid: 143
+    wildcards: chr=15
+
+Submitted job 143 with external jobid 'Submitted batch job 24293879'.
+[Wed Mar  2 14:58:13 2022]
+Finished job 143.
+36 of 120 steps (30%) done
+Select jobs to execute...
+
+[Wed Mar  2 14:58:13 2022]
+rule SNPsOnly:
+    input: results/MergeVCFs_RP_NRP_EliteUSOnly_Chr15.vcf.gz
+    output: results/SNPsOnly_RP_NRP_EliteUSOnly_Chr15.vcf.gz
+    jobid: 142
+    wildcards: chr=15
+
+Submitted job 142 with external jobid 'Submitted batch job 24295277'.
+[Wed Mar  2 14:59:53 2022]
+Finished job 142.
+37 of 120 steps (31%) done
+Select jobs to execute...
+
+[Wed Mar  2 14:59:53 2022]
+rule Fst:
+    input: results/SNPsOnly_RP_NRP_EliteUSOnly_Chr15.vcf.gz, resources/ancestor_only_population_file.txt, resources/elite_only_population_file.txt
+    output: results/Fst_RP_NRP_EliteUSOnly_Chr15.windowed.weir.fst
+    jobid: 215
+    wildcards: chr=15
+
+Submitted job 215 with external jobid 'Submitted batch job 24295278'.
+[Wed Mar  2 15:00:33 2022]
+Finished job 215.
+38 of 120 steps (32%) done
+Removing temporary output file results/beagle/ImputeRP_RP_Chr18.
+[Wed Mar  2 15:07:13 2022]
+Finished job 175.
+39 of 120 steps (32%) done
+Select jobs to execute...
+
+[Wed Mar  2 15:07:13 2022]
+rule ImputeNRP:
+    input: results/Preformat_NRP_Chr18.vcf.gz, results/ImputeRP_RP_Chr18.vcf.gz
+    output: results/ImputeNRP_NRP_Chr18.vcf.gz, results/beagle/ImputeNRP_NRP_Chr18
+    jobid: 178
+    wildcards: chr=18
+    resources: memory=100G, threads=15
+
+Submitted job 178 with external jobid 'Submitted batch job 24296672'.
+Removing temporary output file results/beagle/ImputeNRP_NRP_Chr18.
+[Wed Mar  2 16:02:27 2022]
+Finished job 178.
+40 of 120 steps (33%) done
+Select jobs to execute...
+
+[Wed Mar  2 16:02:27 2022]
+rule MergeVCFs:
+    input: results/ImputeRP_RP_Chr18.vcf.gz, results/ImputeNRP_NRP_Chr18.vcf.gz
+    output: results/MergeVCFs_RP_NRP_AllAccessions_Chr18.vcf.gz
+    jobid: 174
+    wildcards: chr=18
+
+Submitted job 174 with external jobid 'Submitted batch job 24298121'.
+[Wed Mar  2 16:18:38 2022]
+Finished job 174.
+41 of 120 steps (34%) done
+Select jobs to execute...
+
+[Wed Mar  2 16:18:38 2022]
+rule Subset:
+    input: results/MergeVCFs_RP_NRP_AllAccessions_Chr18.vcf.gz, resources/EliteUSOnly.txt
+    output: results/MergeVCFs_RP_NRP_EliteUSOnly_Chr18.vcf.gz
+    jobid: 173
+    wildcards: chr=18
+
+Submitted job 173 with external jobid 'Submitted batch job 24298125'.
+[Wed Mar  2 16:25:18 2022]
+Finished job 173.
+42 of 120 steps (35%) done
+Select jobs to execute...
+
+[Wed Mar  2 16:25:18 2022]
+rule SNPsOnly:
+    input: results/MergeVCFs_RP_NRP_EliteUSOnly_Chr18.vcf.gz
+    output: results/SNPsOnly_RP_NRP_EliteUSOnly_Chr18.vcf.gz
+    jobid: 172
+    wildcards: chr=18
+
+Submitted job 172 with external jobid 'Submitted batch job 24298126'.
+[Wed Mar  2 16:27:08 2022]
+Finished job 172.
+43 of 120 steps (36%) done
+Select jobs to execute...
+
+[Wed Mar  2 16:27:08 2022]
+rule Fst:
+    input: results/SNPsOnly_RP_NRP_EliteUSOnly_Chr18.vcf.gz, resources/ancestor_only_population_file.txt, resources/elite_only_population_file.txt
+    output: results/Fst_RP_NRP_EliteUSOnly_Chr18.windowed.weir.fst
+    jobid: 218
+    wildcards: chr=18
+
+Submitted job 218 with external jobid 'Submitted batch job 24298128'.
+[Wed Mar  2 16:27:58 2022]
+Finished job 218.
+44 of 120 steps (37%) done
+Complete log: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/log/2022-03-02T135028.080308.snakemake.log

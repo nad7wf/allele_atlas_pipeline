@@ -1,0 +1,124 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Job counts:
+	count	jobs
+	2	AlleleAtlas
+	1	ImputeNRP
+	1	ImputeRP
+	1	MergeVCFs
+	1	PreformatNRP
+	1	PreformatRP
+	1	SNPEff
+	1	Subset
+	1	all
+	10
+Select jobs to execute...
+
+[Sun Feb 13 08:56:36 2022]
+rule PreformatRP:
+    input: results/RenameSamples_RP_Chr04.vcf.gz
+    output: results/Preformat_RP_Chr04.vcf.gz
+    jobid: 4
+    wildcards: chr=04
+
+Submitted job 4 with external jobid 'Submitted batch job 24196103'.
+[Sun Feb 13 09:20:08 2022]
+Finished job 4.
+1 of 10 steps (10%) done
+Select jobs to execute...
+
+[Sun Feb 13 09:20:08 2022]
+rule ImputeRP:
+    input: results/Preformat_RP_Chr04.vcf.gz
+    output: results/ImputeRP_RP_Chr04.vcf.gz, results/beagle/ImputeRP_RP_Chr04
+    jobid: 3
+    wildcards: chr=04
+    resources: memory=100G, threads=15
+
+Submitted job 3 with external jobid 'Submitted batch job 24196107'.
+
+[Sun Feb 13 09:20:08 2022]
+rule PreformatNRP:
+    input: results/RenameSamples_NRP_Chr04.vcf.gz, results/Preformat_RP_Chr04.vcf.gz
+    output: results/Preformat_NRP_Chr04.vcf.gz
+    jobid: 7
+    wildcards: chr=04
+
+Submitted job 7 with external jobid 'Submitted batch job 24196108'.
+[Sun Feb 13 09:24:38 2022]
+Finished job 7.
+2 of 10 steps (20%) done
+Removing temporary output file results/beagle/ImputeRP_RP_Chr04.
+[Sun Feb 13 10:01:00 2022]
+Finished job 3.
+3 of 10 steps (30%) done
+Select jobs to execute...
+
+[Sun Feb 13 10:01:00 2022]
+rule ImputeNRP:
+    input: results/Preformat_NRP_Chr04.vcf.gz, results/ImputeRP_RP_Chr04.vcf.gz
+    output: results/ImputeNRP_NRP_Chr04.vcf.gz, results/beagle/ImputeNRP_NRP_Chr04
+    jobid: 6
+    wildcards: chr=04
+    resources: memory=100G, threads=15
+
+Submitted job 6 with external jobid 'Submitted batch job 24196124'.
+Removing temporary output file results/beagle/ImputeNRP_NRP_Chr04.
+[Sun Feb 13 10:33:32 2022]
+Finished job 6.
+4 of 10 steps (40%) done
+Select jobs to execute...
+
+[Sun Feb 13 10:33:32 2022]
+rule MergeVCFs:
+    input: results/ImputeRP_RP_Chr04.vcf.gz, results/ImputeNRP_NRP_Chr04.vcf.gz
+    output: results/MergeVCFs_RP_NRP_AllAccessions_Chr04.vcf.gz
+    jobid: 2
+    wildcards: chr=04
+
+Submitted job 2 with external jobid 'Submitted batch job 24196133'.
+[Sun Feb 13 10:44:03 2022]
+Finished job 2.
+5 of 10 steps (50%) done
+Select jobs to execute...
+
+[Sun Feb 13 10:44:03 2022]
+rule SNPEff:
+    input: results/MergeVCFs_RP_NRP_AllAccessions_Chr04.vcf.gz, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.config, /scratch/nad7wf/miniconda/pkgs/snpsift-4.3.1t-hdfd78af_3/share/snpsift-4.3.1t-3/SnpSift.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/scripts/vcfEffOnePerLine.pl
+    output: results/SNPEff_Ann_RP_NRP_Chr04.txt.gz
+    jobid: 9
+    wildcards: chr=04
+    resources: memory=30G
+
+Submitted job 9 with external jobid 'Submitted batch job 24196136'.
+
+[Sun Feb 13 10:44:03 2022]
+rule Subset:
+    input: results/MergeVCFs_RP_NRP_AllAccessions_Chr04.vcf.gz, resources/EliteUSOnly.txt
+    output: results/MergeVCFs_RP_NRP_EliteUSOnly_Chr04.vcf.gz
+    jobid: 11
+    wildcards: chr=04
+
+Submitted job 11 with external jobid 'Submitted batch job 24196137'.
+[Sun Feb 13 10:44:43 2022]
+Error in rule Subset:
+    jobid: 11
+    output: results/MergeVCFs_RP_NRP_EliteUSOnly_Chr04.vcf.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/b21b0d43
+    shell:
+        
+		### Subset VCF file by accession list. ###
+		bcftools view 			-S resources/EliteUSOnly.txt 			results/MergeVCFs_RP_NRP_AllAccessions_Chr04.vcf.gz | 			### Recode hets as missing data. ###
+                	bcftools filter -S . -e 'GT="het"' -Ou results/MergeVCFs_RP_NRP_AllAccessions_Chr04.vcf.gz resources/EliteUSOnly.txt |                 	### Calculte allele frequency for Alt alleles. ###
+                	bcftools +fill-tags -Ou -- -t AF |                 	### Remove alleles/positions with AF=0 or where there were no Ref allele calls. ###
+                	bcftools view -Q 0.99999 -a -c1 |
+			bgzip -l 9 > results/MergeVCFs_RP_NRP_EliteUSOnly_Chr04.vcf.gz
+
+		### Index VCF file. ###
+		bcftools index --tbi results/MergeVCFs_RP_NRP_EliteUSOnly_Chr04.vcf.gz
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 24196137
+
+Error executing rule Subset on cluster (jobid: 11, external: Submitted batch job 24196137, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.ek5d2d99/snakejob.Subset.11.sh). For error details see the cluster log and the log files of the involved rule(s).

@@ -1,0 +1,4 @@
+Building DAG of jobs...
+WildcardError in line 9 of /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/workflow/allele_atlas.smk:
+Wildcards in input files cannot be determined from output files:
+'chr'

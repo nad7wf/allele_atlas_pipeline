@@ -1,0 +1,22 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Job counts:
+	count	jobs
+	1	Fst
+	4
+Select jobs to execute...
+
+[Wed Feb 23 15:45:10 2022]
+rule Fst:
+    input: results/SNPsOnly_RP_NRP_EliteUSOnly_Chr04.vcf.gz, resources/ancestor_vs_elite_population_file.txt
+    output: results/Fst_RP_NRP_EliteUSOnly_Chr04.fst
+    jobid: 11
+    wildcards: chr=04
+    resources: mem=1000
+
+Submitted job 11 with external jobid 'Submitted batch job 24253550'.
+[Wed Feb 23 15:45:40 2022]
+Finished job 11.
+1 of 4 steps (25%) done
+Complete log: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/log/2022-02-23T154510.296137.snakemake.log

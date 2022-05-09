@@ -1,0 +1,44 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Job counts:
+	count	jobs
+	1	AlleleAtlas
+	1	ImputeNRP
+	1	MergeVCFs
+	1	SNPEff
+	1	all
+	5
+Select jobs to execute...
+
+[Fri Jul  9 09:00:36 2021]
+rule ImputeNRP:
+    input: results/Preformat_NRP_Chr06.vcf.gz, results/ImputeRP_RP_Chr06.vcf.gz
+    output: results/ImputeNRP_NRP_Chr06.vcf.gz, results/beagle/ImputeNRP_NRP_Chr06
+    jobid: 6
+    wildcards: chr=06
+    resources: memory=48, threads=15
+
+Submitted job 6 with external jobid 'Submitted batch job 23007735'.
+[Fri Jul  9 09:08:56 2021]
+Error in rule ImputeNRP:
+    jobid: 6
+    output: results/ImputeNRP_NRP_Chr06.vcf.gz, results/beagle/ImputeNRP_NRP_Chr06
+    shell:
+        
+		module load bcftools
+		mkdir -p results/beagle/ImputeNRP_NRP_Chr06
+
+		java -Xmx48G 			-Djava.io.tmpdir=results/beagle/ImputeNRP_NRP_Chr06 			-jar resources/beagle/beagle.28Jun21.220.jar 			nthreads=15 			impute=true 			ref=results/ImputeRP_RP_Chr06.vcf.gz 			gt=results/Preformat_NRP_Chr06.vcf.gz 			out=results/ImputeNRP_NRP_Chr06
+
+                bcftools index --tbi results/ImputeNRP_NRP_Chr06.vcf.gz
+
+		rm "results/ImputeNRP_NRP_Chr06.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 23007735
+
+Error executing rule ImputeNRP on cluster (jobid: 6, external: Submitted batch job 23007735, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.w5ffp3q0/snakejob.ImputeNRP.6.sh). For error details see the cluster log and the log files of the involved rule(s).
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/log/2021-07-09T090035.905072.snakemake.log

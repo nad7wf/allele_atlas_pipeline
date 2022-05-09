@@ -1,0 +1,56 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Job counts:
+	count	jobs
+	1	EstimateBlocks
+	1	Fst
+	1	SNPsOnly
+	6
+Select jobs to execute...
+
+[Wed Feb 23 14:48:55 2022]
+rule SNPsOnly:
+    input: results/MergeVCFs_RP_NRP_EliteUSOnly_Chr04.vcf.gz
+    output: results/SNPsOnly_RP_NRP_EliteUSOnly_Chr04.vcf.gz
+    jobid: 2
+    wildcards: chr=04
+
+Submitted job 2 with external jobid 'Submitted batch job 24253449'.
+[Wed Feb 23 14:50:25 2022]
+Finished job 2.
+1 of 6 steps (17%) done
+Select jobs to execute...
+
+[Wed Feb 23 14:50:25 2022]
+rule Fst:
+    input: results/SNPsOnly_RP_NRP_EliteUSOnly_Chr04.vcf.gz, resources/ancestor_vs_elite_population_file.txt
+    output: results/Fst_RP_NRP_EliteUSOnly_Chr04.fst
+    jobid: 11
+    wildcards: chr=04
+    resources: threads=10
+
+Submitted job 11 with external jobid 'Submitted batch job 24253450'.
+
+[Wed Feb 23 14:50:25 2022]
+rule EstimateBlocks:
+    input: results/SNPsOnly_RP_NRP_EliteUSOnly_Chr04.vcf.gz
+    output: results/EstimateBlocks_RP_NRP_EliteUSOnly_Chr04.blocks
+    jobid: 1
+    wildcards: chr=04
+    resources: threads=10
+
+Submitted job 1 with external jobid 'Submitted batch job 24253451'.
+[Wed Feb 23 14:51:05 2022]
+Error in rule Fst:
+    jobid: 11
+    output: results/Fst_RP_NRP_EliteUSOnly_Chr04.fst
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/739b9591
+    shell:
+        
+		plink --fst 			--within resources/ancestor_vs_elite_population_file.txt 			--threads 10 			--vcf results/SNPsOnly_RP_NRP_EliteUSOnly_Chr04.vcf.gz 			--out results/Fst_RP_NRP_EliteUSOnly_Chr04
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 24253450
+
+Error executing rule Fst on cluster (jobid: 11, external: Submitted batch job 24253450, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.q46b621s/snakejob.Fst.11.sh). For error details see the cluster log and the log files of the involved rule(s).

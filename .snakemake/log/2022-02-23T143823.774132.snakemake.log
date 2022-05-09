@@ -1,0 +1,26 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Job counts:
+	count	jobs
+	1	EstimateBlocks
+	1	Fst
+	1	SNPsOnly
+	6
+Select jobs to execute...
+
+[Wed Feb 23 14:38:24 2022]
+rule SNPsOnly:
+    input: results/MergeVCFs_RP_NRP_EliteUSOnly_Chr04.vcf.gz
+    output: results/SNPsOnly_RP_NRP_EliteUSOnly_Chr04.vcf.gz
+    jobid: 2
+    wildcards: chr=04
+
+RuleException in line 1 of /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/rules/custom/SNPsOnly.smk:
+NameError: The name 'intput' is unknown in this context. Please make sure that you defined that variable. Also note that braces not used for variable access have to be escaped by repeating them, i.e. {{print $1}}
+  File "/cluster/software/conda-envs/envs/snakemake-5.3.0/lib/python3.6/site-packages/snakemake/executors/__init__.py", line 135, in run_jobs
+  File "/cluster/software/conda-envs/envs/snakemake-5.3.0/lib/python3.6/site-packages/snakemake/executors/__init__.py", line 922, in run
+  File "/cluster/software/conda-envs/envs/snakemake-5.3.0/lib/python3.6/site-packages/snakemake/executors/__init__.py", line 713, in _run
+  File "/cluster/software/conda-envs/envs/snakemake-5.3.0/lib/python3.6/site-packages/snakemake/executors/__init__.py", line 225, in _run
+  File "/cluster/software/conda-envs/envs/snakemake-5.3.0/lib/python3.6/site-packages/snakemake/executors/__init__.py", line 151, in _run
+  File "/cluster/software/conda-envs/envs/snakemake-5.3.0/lib/python3.6/site-packages/snakemake/executors/__init__.py", line 157, in printjob

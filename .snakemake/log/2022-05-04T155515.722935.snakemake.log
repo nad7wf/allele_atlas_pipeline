@@ -1,0 +1,729 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Job counts:
+	count	jobs
+	38	AlleleAtlas
+	18	SNPEff
+	1	all
+	57
+Select jobs to execute...
+
+[Wed May  4 15:55:20 2022]
+rule SNPEff:
+    input: results/MergeVCFs_RP_NRP_AllAccessions_Chr14.vcf.gz, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.config, /scratch/nad7wf/miniconda/pkgs/snpsift-4.3.1t-hdfd78af_3/share/snpsift-4.3.1t-3/SnpSift.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/scripts/vcfEffOnePerLine.pl
+    output: results/SNPEff_Ann_RP_NRP_Chr14.txt.gz
+    jobid: 208
+    wildcards: chr=14
+    resources: memory=30G
+
+Submitted job 208 with external jobid 'Submitted batch job 24550760'.
+
+[Wed May  4 15:55:20 2022]
+rule SNPEff:
+    input: results/MergeVCFs_RP_NRP_AllAccessions_Chr15.vcf.gz, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.config, /scratch/nad7wf/miniconda/pkgs/snpsift-4.3.1t-hdfd78af_3/share/snpsift-4.3.1t-3/SnpSift.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/scripts/vcfEffOnePerLine.pl
+    output: results/SNPEff_Ann_RP_NRP_Chr15.txt.gz
+    jobid: 210
+    wildcards: chr=15
+    resources: memory=30G
+
+Submitted job 210 with external jobid 'Submitted batch job 24550762'.
+
+[Wed May  4 15:55:21 2022]
+rule SNPEff:
+    input: results/MergeVCFs_RP_NRP_AllAccessions_Chr16.vcf.gz, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.config, /scratch/nad7wf/miniconda/pkgs/snpsift-4.3.1t-hdfd78af_3/share/snpsift-4.3.1t-3/SnpSift.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/scripts/vcfEffOnePerLine.pl
+    output: results/SNPEff_Ann_RP_NRP_Chr16.txt.gz
+    jobid: 212
+    wildcards: chr=16
+    resources: memory=30G
+
+Submitted job 212 with external jobid 'Submitted batch job 24550763'.
+
+[Wed May  4 15:55:21 2022]
+rule SNPEff:
+    input: results/MergeVCFs_RP_NRP_AllAccessions_Chr17.vcf.gz, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.config, /scratch/nad7wf/miniconda/pkgs/snpsift-4.3.1t-hdfd78af_3/share/snpsift-4.3.1t-3/SnpSift.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/scripts/vcfEffOnePerLine.pl
+    output: results/SNPEff_Ann_RP_NRP_Chr17.txt.gz
+    jobid: 214
+    wildcards: chr=17
+    resources: memory=30G
+
+Submitted job 214 with external jobid 'Submitted batch job 24550764'.
+
+[Wed May  4 15:55:21 2022]
+rule SNPEff:
+    input: results/MergeVCFs_RP_NRP_AllAccessions_Chr03.vcf.gz, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.config, /scratch/nad7wf/miniconda/pkgs/snpsift-4.3.1t-hdfd78af_3/share/snpsift-4.3.1t-3/SnpSift.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/scripts/vcfEffOnePerLine.pl
+    output: results/SNPEff_Ann_RP_NRP_Chr03.txt.gz
+    jobid: 186
+    wildcards: chr=03
+    resources: memory=30G
+
+Submitted job 186 with external jobid 'Submitted batch job 24550766'.
+
+[Wed May  4 15:55:21 2022]
+rule SNPEff:
+    input: results/MergeVCFs_RP_NRP_AllAccessions_Chr18.vcf.gz, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.config, /scratch/nad7wf/miniconda/pkgs/snpsift-4.3.1t-hdfd78af_3/share/snpsift-4.3.1t-3/SnpSift.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/scripts/vcfEffOnePerLine.pl
+    output: results/SNPEff_Ann_RP_NRP_Chr18.txt.gz
+    jobid: 216
+    wildcards: chr=18
+    resources: memory=30G
+
+Submitted job 216 with external jobid 'Submitted batch job 24550767'.
+
+[Wed May  4 15:55:21 2022]
+rule SNPEff:
+    input: results/MergeVCFs_RP_NRP_AllAccessions_Chr04.vcf.gz, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.config, /scratch/nad7wf/miniconda/pkgs/snpsift-4.3.1t-hdfd78af_3/share/snpsift-4.3.1t-3/SnpSift.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/scripts/vcfEffOnePerLine.pl
+    output: results/SNPEff_Ann_RP_NRP_Chr04.txt.gz
+    jobid: 188
+    wildcards: chr=04
+    resources: memory=30G
+
+Submitted job 188 with external jobid 'Submitted batch job 24550768'.
+
+[Wed May  4 15:55:21 2022]
+rule SNPEff:
+    input: results/MergeVCFs_RP_NRP_AllAccessions_Chr19.vcf.gz, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.config, /scratch/nad7wf/miniconda/pkgs/snpsift-4.3.1t-hdfd78af_3/share/snpsift-4.3.1t-3/SnpSift.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/scripts/vcfEffOnePerLine.pl
+    output: results/SNPEff_Ann_RP_NRP_Chr19.txt.gz
+    jobid: 218
+    wildcards: chr=19
+    resources: memory=30G
+
+Submitted job 218 with external jobid 'Submitted batch job 24550769'.
+
+[Wed May  4 15:55:21 2022]
+rule SNPEff:
+    input: results/MergeVCFs_RP_NRP_AllAccessions_Chr05.vcf.gz, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.config, /scratch/nad7wf/miniconda/pkgs/snpsift-4.3.1t-hdfd78af_3/share/snpsift-4.3.1t-3/SnpSift.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/scripts/vcfEffOnePerLine.pl
+    output: results/SNPEff_Ann_RP_NRP_Chr05.txt.gz
+    jobid: 190
+    wildcards: chr=05
+    resources: memory=30G
+
+Submitted job 190 with external jobid 'Submitted batch job 24550770'.
+
+[Wed May  4 15:55:22 2022]
+rule SNPEff:
+    input: results/MergeVCFs_RP_NRP_AllAccessions_Chr20.vcf.gz, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.config, /scratch/nad7wf/miniconda/pkgs/snpsift-4.3.1t-hdfd78af_3/share/snpsift-4.3.1t-3/SnpSift.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/scripts/vcfEffOnePerLine.pl
+    output: results/SNPEff_Ann_RP_NRP_Chr20.txt.gz
+    jobid: 220
+    wildcards: chr=20
+    resources: memory=30G
+
+Submitted job 220 with external jobid 'Submitted batch job 24550771'.
+
+[Wed May  4 15:55:22 2022]
+rule SNPEff:
+    input: results/MergeVCFs_RP_NRP_AllAccessions_Chr06.vcf.gz, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.config, /scratch/nad7wf/miniconda/pkgs/snpsift-4.3.1t-hdfd78af_3/share/snpsift-4.3.1t-3/SnpSift.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/scripts/vcfEffOnePerLine.pl
+    output: results/SNPEff_Ann_RP_NRP_Chr06.txt.gz
+    jobid: 192
+    wildcards: chr=06
+    resources: memory=30G
+
+Submitted job 192 with external jobid 'Submitted batch job 24550772'.
+
+[Wed May  4 15:55:22 2022]
+rule SNPEff:
+    input: results/MergeVCFs_RP_NRP_AllAccessions_Chr11.vcf.gz, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.config, /scratch/nad7wf/miniconda/pkgs/snpsift-4.3.1t-hdfd78af_3/share/snpsift-4.3.1t-3/SnpSift.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/scripts/vcfEffOnePerLine.pl
+    output: results/SNPEff_Ann_RP_NRP_Chr11.txt.gz
+    jobid: 202
+    wildcards: chr=11
+    resources: memory=30G
+
+Submitted job 202 with external jobid 'Submitted batch job 24550773'.
+
+[Wed May  4 15:55:22 2022]
+rule SNPEff:
+    input: results/MergeVCFs_RP_NRP_AllAccessions_Chr07.vcf.gz, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.config, /scratch/nad7wf/miniconda/pkgs/snpsift-4.3.1t-hdfd78af_3/share/snpsift-4.3.1t-3/SnpSift.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/scripts/vcfEffOnePerLine.pl
+    output: results/SNPEff_Ann_RP_NRP_Chr07.txt.gz
+    jobid: 194
+    wildcards: chr=07
+    resources: memory=30G
+
+Submitted job 194 with external jobid 'Submitted batch job 24550774'.
+
+[Wed May  4 15:55:22 2022]
+rule AlleleAtlas:
+    input: results/MergeVCFs_RP_NRP_AllAccessions_Chr01.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr01.txt.gz, resources/gff/Chr01.gff.gz, rules/custom/scripts/generate_allele_atlas.py
+    output: results/AlleleAtlas_RP_NRP_AllAccessions_Chr01.txt.gz, results/Bottleneck_genes_RP_NRP_AllAccessions_Chr01.txt.gz, results/Housekeeping_genes_RP_NRP_AllAccessions_Chr01.txt.gz
+    jobid: 181
+    wildcards: RP_id=RP, NRP_id=NRP, subset=AllAccessions, chr=01
+
+Submitted job 181 with external jobid 'Submitted batch job 24550775'.
+
+[Wed May  4 15:55:22 2022]
+rule SNPEff:
+    input: results/MergeVCFs_RP_NRP_AllAccessions_Chr09.vcf.gz, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.config, /scratch/nad7wf/miniconda/pkgs/snpsift-4.3.1t-hdfd78af_3/share/snpsift-4.3.1t-3/SnpSift.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/scripts/vcfEffOnePerLine.pl
+    output: results/SNPEff_Ann_RP_NRP_Chr09.txt.gz
+    jobid: 198
+    wildcards: chr=09
+    resources: memory=30G
+
+Submitted job 198 with external jobid 'Submitted batch job 24550776'.
+
+[Wed May  4 15:55:22 2022]
+rule SNPEff:
+    input: results/MergeVCFs_RP_NRP_AllAccessions_Chr10.vcf.gz, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.config, /scratch/nad7wf/miniconda/pkgs/snpsift-4.3.1t-hdfd78af_3/share/snpsift-4.3.1t-3/SnpSift.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/scripts/vcfEffOnePerLine.pl
+    output: results/SNPEff_Ann_RP_NRP_Chr10.txt.gz
+    jobid: 200
+    wildcards: chr=10
+    resources: memory=30G
+
+Submitted job 200 with external jobid 'Submitted batch job 24550777'.
+
+[Wed May  4 15:55:22 2022]
+rule SNPEff:
+    input: results/MergeVCFs_RP_NRP_AllAccessions_Chr08.vcf.gz, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.config, /scratch/nad7wf/miniconda/pkgs/snpsift-4.3.1t-hdfd78af_3/share/snpsift-4.3.1t-3/SnpSift.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/scripts/vcfEffOnePerLine.pl
+    output: results/SNPEff_Ann_RP_NRP_Chr08.txt.gz
+    jobid: 196
+    wildcards: chr=08
+    resources: memory=30G
+
+Submitted job 196 with external jobid 'Submitted batch job 24550778'.
+
+[Wed May  4 15:55:22 2022]
+rule SNPEff:
+    input: results/MergeVCFs_RP_NRP_AllAccessions_Chr12.vcf.gz, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.config, /scratch/nad7wf/miniconda/pkgs/snpsift-4.3.1t-hdfd78af_3/share/snpsift-4.3.1t-3/SnpSift.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/scripts/vcfEffOnePerLine.pl
+    output: results/SNPEff_Ann_RP_NRP_Chr12.txt.gz
+    jobid: 204
+    wildcards: chr=12
+    resources: memory=30G
+
+Submitted job 204 with external jobid 'Submitted batch job 24550779'.
+
+[Wed May  4 15:55:23 2022]
+rule AlleleAtlas:
+    input: results/MergeVCFs_RP_NRP_EliteUSOnly_Chr01.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr01.txt.gz, resources/gff/Chr01.gff.gz, rules/custom/scripts/generate_allele_atlas.py
+    output: results/AlleleAtlas_RP_NRP_EliteUSOnly_Chr01.txt.gz, results/Bottleneck_genes_RP_NRP_EliteUSOnly_Chr01.txt.gz, results/Housekeeping_genes_RP_NRP_EliteUSOnly_Chr01.txt.gz
+    jobid: 221
+    wildcards: RP_id=RP, NRP_id=NRP, subset=EliteUSOnly, chr=01
+
+Submitted job 221 with external jobid 'Submitted batch job 24550780'.
+
+[Wed May  4 15:55:23 2022]
+rule SNPEff:
+    input: results/MergeVCFs_RP_NRP_AllAccessions_Chr13.vcf.gz, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.config, /scratch/nad7wf/miniconda/pkgs/snpsift-4.3.1t-hdfd78af_3/share/snpsift-4.3.1t-3/SnpSift.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/scripts/vcfEffOnePerLine.pl
+    output: results/SNPEff_Ann_RP_NRP_Chr13.txt.gz
+    jobid: 206
+    wildcards: chr=13
+    resources: memory=30G
+
+Submitted job 206 with external jobid 'Submitted batch job 24550781'.
+[Wed May  4 15:57:27 2022]
+Finished job 221.
+1 of 57 steps (2%) done
+[Wed May  4 16:13:27 2022]
+Finished job 202.
+2 of 57 steps (4%) done
+Select jobs to execute...
+
+[Wed May  4 16:13:27 2022]
+rule AlleleAtlas:
+    input: results/MergeVCFs_RP_NRP_AllAccessions_Chr11.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr11.txt.gz, resources/gff/Chr11.gff.gz, rules/custom/scripts/generate_allele_atlas.py
+    output: results/AlleleAtlas_RP_NRP_AllAccessions_Chr11.txt.gz, results/Bottleneck_genes_RP_NRP_AllAccessions_Chr11.txt.gz, results/Housekeeping_genes_RP_NRP_AllAccessions_Chr11.txt.gz
+    jobid: 201
+    wildcards: RP_id=RP, NRP_id=NRP, subset=AllAccessions, chr=11
+
+Submitted job 201 with external jobid 'Submitted batch job 24550791'.
+
+[Wed May  4 16:13:27 2022]
+rule AlleleAtlas:
+    input: results/MergeVCFs_RP_NRP_EliteUSOnly_Chr11.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr11.txt.gz, resources/gff/Chr11.gff.gz, rules/custom/scripts/generate_allele_atlas.py
+    output: results/AlleleAtlas_RP_NRP_EliteUSOnly_Chr11.txt.gz, results/Bottleneck_genes_RP_NRP_EliteUSOnly_Chr11.txt.gz, results/Housekeeping_genes_RP_NRP_EliteUSOnly_Chr11.txt.gz
+    jobid: 231
+    wildcards: RP_id=RP, NRP_id=NRP, subset=EliteUSOnly, chr=11
+
+Submitted job 231 with external jobid 'Submitted batch job 24550792'.
+[Wed May  4 16:15:14 2022]
+Finished job 231.
+3 of 57 steps (5%) done
+[Wed May  4 16:17:48 2022]
+Finished job 214.
+4 of 57 steps (7%) done
+Select jobs to execute...
+
+[Wed May  4 16:17:48 2022]
+rule AlleleAtlas:
+    input: results/MergeVCFs_RP_NRP_EliteUSOnly_Chr17.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr17.txt.gz, resources/gff/Chr17.gff.gz, rules/custom/scripts/generate_allele_atlas.py
+    output: results/AlleleAtlas_RP_NRP_EliteUSOnly_Chr17.txt.gz, results/Bottleneck_genes_RP_NRP_EliteUSOnly_Chr17.txt.gz, results/Housekeeping_genes_RP_NRP_EliteUSOnly_Chr17.txt.gz
+    jobid: 237
+    wildcards: RP_id=RP, NRP_id=NRP, subset=EliteUSOnly, chr=17
+
+Submitted job 237 with external jobid 'Submitted batch job 24550803'.
+
+[Wed May  4 16:17:48 2022]
+rule AlleleAtlas:
+    input: results/MergeVCFs_RP_NRP_AllAccessions_Chr17.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr17.txt.gz, resources/gff/Chr17.gff.gz, rules/custom/scripts/generate_allele_atlas.py
+    output: results/AlleleAtlas_RP_NRP_AllAccessions_Chr17.txt.gz, results/Bottleneck_genes_RP_NRP_AllAccessions_Chr17.txt.gz, results/Housekeeping_genes_RP_NRP_AllAccessions_Chr17.txt.gz
+    jobid: 213
+    wildcards: RP_id=RP, NRP_id=NRP, subset=AllAccessions, chr=17
+
+Submitted job 213 with external jobid 'Submitted batch job 24550804'.
+[Wed May  4 16:18:12 2022]
+Finished job 204.
+5 of 57 steps (9%) done
+Select jobs to execute...
+
+[Wed May  4 16:18:12 2022]
+rule AlleleAtlas:
+    input: results/MergeVCFs_RP_NRP_AllAccessions_Chr12.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr12.txt.gz, resources/gff/Chr12.gff.gz, rules/custom/scripts/generate_allele_atlas.py
+    output: results/AlleleAtlas_RP_NRP_AllAccessions_Chr12.txt.gz, results/Bottleneck_genes_RP_NRP_AllAccessions_Chr12.txt.gz, results/Housekeeping_genes_RP_NRP_AllAccessions_Chr12.txt.gz
+    jobid: 203
+    wildcards: RP_id=RP, NRP_id=NRP, subset=AllAccessions, chr=12
+
+Submitted job 203 with external jobid 'Submitted batch job 24550805'.
+
+[Wed May  4 16:18:13 2022]
+rule AlleleAtlas:
+    input: results/MergeVCFs_RP_NRP_EliteUSOnly_Chr12.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr12.txt.gz, resources/gff/Chr12.gff.gz, rules/custom/scripts/generate_allele_atlas.py
+    output: results/AlleleAtlas_RP_NRP_EliteUSOnly_Chr12.txt.gz, results/Bottleneck_genes_RP_NRP_EliteUSOnly_Chr12.txt.gz, results/Housekeeping_genes_RP_NRP_EliteUSOnly_Chr12.txt.gz
+    jobid: 232
+    wildcards: RP_id=RP, NRP_id=NRP, subset=EliteUSOnly, chr=12
+
+Submitted job 232 with external jobid 'Submitted batch job 24550806'.
+[Wed May  4 16:19:37 2022]
+Finished job 194.
+6 of 57 steps (11%) done
+Select jobs to execute...
+
+[Wed May  4 16:19:37 2022]
+rule AlleleAtlas:
+    input: results/MergeVCFs_RP_NRP_AllAccessions_Chr07.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr07.txt.gz, resources/gff/Chr07.gff.gz, rules/custom/scripts/generate_allele_atlas.py
+    output: results/AlleleAtlas_RP_NRP_AllAccessions_Chr07.txt.gz, results/Bottleneck_genes_RP_NRP_AllAccessions_Chr07.txt.gz, results/Housekeeping_genes_RP_NRP_AllAccessions_Chr07.txt.gz
+    jobid: 193
+    wildcards: RP_id=RP, NRP_id=NRP, subset=AllAccessions, chr=07
+
+Submitted job 193 with external jobid 'Submitted batch job 24550808'.
+
+[Wed May  4 16:19:37 2022]
+rule AlleleAtlas:
+    input: results/MergeVCFs_RP_NRP_EliteUSOnly_Chr07.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr07.txt.gz, resources/gff/Chr07.gff.gz, rules/custom/scripts/generate_allele_atlas.py
+    output: results/AlleleAtlas_RP_NRP_EliteUSOnly_Chr07.txt.gz, results/Bottleneck_genes_RP_NRP_EliteUSOnly_Chr07.txt.gz, results/Housekeeping_genes_RP_NRP_EliteUSOnly_Chr07.txt.gz
+    jobid: 227
+    wildcards: RP_id=RP, NRP_id=NRP, subset=EliteUSOnly, chr=07
+
+Submitted job 227 with external jobid 'Submitted batch job 24550809'.
+[Wed May  4 16:19:48 2022]
+Finished job 237.
+7 of 57 steps (12%) done
+[Wed May  4 16:20:01 2022]
+Finished job 190.
+8 of 57 steps (14%) done
+Select jobs to execute...
+
+[Wed May  4 16:20:01 2022]
+rule AlleleAtlas:
+    input: results/MergeVCFs_RP_NRP_AllAccessions_Chr05.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr05.txt.gz, resources/gff/Chr05.gff.gz, rules/custom/scripts/generate_allele_atlas.py
+    output: results/AlleleAtlas_RP_NRP_AllAccessions_Chr05.txt.gz, results/Bottleneck_genes_RP_NRP_AllAccessions_Chr05.txt.gz, results/Housekeeping_genes_RP_NRP_AllAccessions_Chr05.txt.gz
+    jobid: 189
+    wildcards: RP_id=RP, NRP_id=NRP, subset=AllAccessions, chr=05
+
+Submitted job 189 with external jobid 'Submitted batch job 24550810'.
+
+[Wed May  4 16:20:01 2022]
+rule AlleleAtlas:
+    input: results/MergeVCFs_RP_NRP_EliteUSOnly_Chr05.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr05.txt.gz, resources/gff/Chr05.gff.gz, rules/custom/scripts/generate_allele_atlas.py
+    output: results/AlleleAtlas_RP_NRP_EliteUSOnly_Chr05.txt.gz, results/Bottleneck_genes_RP_NRP_EliteUSOnly_Chr05.txt.gz, results/Housekeeping_genes_RP_NRP_EliteUSOnly_Chr05.txt.gz
+    jobid: 225
+    wildcards: RP_id=RP, NRP_id=NRP, subset=EliteUSOnly, chr=05
+
+Submitted job 225 with external jobid 'Submitted batch job 24550811'.
+[Wed May  4 16:20:02 2022]
+Finished job 232.
+9 of 57 steps (16%) done
+[Wed May  4 16:20:25 2022]
+Finished job 181.
+10 of 57 steps (18%) done
+[Wed May  4 16:20:37 2022]
+Finished job 196.
+11 of 57 steps (19%) done
+Select jobs to execute...
+
+[Wed May  4 16:20:37 2022]
+rule AlleleAtlas:
+    input: results/MergeVCFs_RP_NRP_AllAccessions_Chr08.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr08.txt.gz, resources/gff/Chr08.gff.gz, rules/custom/scripts/generate_allele_atlas.py
+    output: results/AlleleAtlas_RP_NRP_AllAccessions_Chr08.txt.gz, results/Bottleneck_genes_RP_NRP_AllAccessions_Chr08.txt.gz, results/Housekeeping_genes_RP_NRP_AllAccessions_Chr08.txt.gz
+    jobid: 195
+    wildcards: RP_id=RP, NRP_id=NRP, subset=AllAccessions, chr=08
+
+Submitted job 195 with external jobid 'Submitted batch job 24550813'.
+
+[Wed May  4 16:20:37 2022]
+rule AlleleAtlas:
+    input: results/MergeVCFs_RP_NRP_EliteUSOnly_Chr08.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr08.txt.gz, resources/gff/Chr08.gff.gz, rules/custom/scripts/generate_allele_atlas.py
+    output: results/AlleleAtlas_RP_NRP_EliteUSOnly_Chr08.txt.gz, results/Bottleneck_genes_RP_NRP_EliteUSOnly_Chr08.txt.gz, results/Housekeeping_genes_RP_NRP_EliteUSOnly_Chr08.txt.gz
+    jobid: 228
+    wildcards: RP_id=RP, NRP_id=NRP, subset=EliteUSOnly, chr=08
+
+Submitted job 228 with external jobid 'Submitted batch job 24550814'.
+[Wed May  4 16:21:24 2022]
+Finished job 225.
+12 of 57 steps (21%) done
+[Wed May  4 16:21:25 2022]
+Finished job 206.
+13 of 57 steps (23%) done
+Select jobs to execute...
+
+[Wed May  4 16:21:25 2022]
+rule AlleleAtlas:
+    input: results/MergeVCFs_RP_NRP_EliteUSOnly_Chr13.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr13.txt.gz, resources/gff/Chr13.gff.gz, rules/custom/scripts/generate_allele_atlas.py
+    output: results/AlleleAtlas_RP_NRP_EliteUSOnly_Chr13.txt.gz, results/Bottleneck_genes_RP_NRP_EliteUSOnly_Chr13.txt.gz, results/Housekeeping_genes_RP_NRP_EliteUSOnly_Chr13.txt.gz
+    jobid: 233
+    wildcards: RP_id=RP, NRP_id=NRP, subset=EliteUSOnly, chr=13
+
+Submitted job 233 with external jobid 'Submitted batch job 24550815'.
+
+[Wed May  4 16:21:25 2022]
+rule AlleleAtlas:
+    input: results/MergeVCFs_RP_NRP_AllAccessions_Chr13.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr13.txt.gz, resources/gff/Chr13.gff.gz, rules/custom/scripts/generate_allele_atlas.py
+    output: results/AlleleAtlas_RP_NRP_AllAccessions_Chr13.txt.gz, results/Bottleneck_genes_RP_NRP_AllAccessions_Chr13.txt.gz, results/Housekeeping_genes_RP_NRP_AllAccessions_Chr13.txt.gz
+    jobid: 205
+    wildcards: RP_id=RP, NRP_id=NRP, subset=AllAccessions, chr=13
+
+Submitted job 205 with external jobid 'Submitted batch job 24550816'.
+[Wed May  4 16:21:48 2022]
+Finished job 227.
+14 of 57 steps (25%) done
+[Wed May  4 16:21:48 2022]
+Finished job 212.
+15 of 57 steps (26%) done
+Select jobs to execute...
+
+[Wed May  4 16:21:48 2022]
+rule AlleleAtlas:
+    input: results/MergeVCFs_RP_NRP_EliteUSOnly_Chr16.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr16.txt.gz, resources/gff/Chr16.gff.gz, rules/custom/scripts/generate_allele_atlas.py
+    output: results/AlleleAtlas_RP_NRP_EliteUSOnly_Chr16.txt.gz, results/Bottleneck_genes_RP_NRP_EliteUSOnly_Chr16.txt.gz, results/Housekeeping_genes_RP_NRP_EliteUSOnly_Chr16.txt.gz
+    jobid: 236
+    wildcards: RP_id=RP, NRP_id=NRP, subset=EliteUSOnly, chr=16
+
+Submitted job 236 with external jobid 'Submitted batch job 24550817'.
+
+[Wed May  4 16:21:48 2022]
+rule AlleleAtlas:
+    input: results/MergeVCFs_RP_NRP_AllAccessions_Chr16.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr16.txt.gz, resources/gff/Chr16.gff.gz, rules/custom/scripts/generate_allele_atlas.py
+    output: results/AlleleAtlas_RP_NRP_AllAccessions_Chr16.txt.gz, results/Bottleneck_genes_RP_NRP_AllAccessions_Chr16.txt.gz, results/Housekeeping_genes_RP_NRP_AllAccessions_Chr16.txt.gz
+    jobid: 211
+    wildcards: RP_id=RP, NRP_id=NRP, subset=AllAccessions, chr=16
+
+Submitted job 211 with external jobid 'Submitted batch job 24550818'.
+[Wed May  4 16:23:01 2022]
+Finished job 220.
+16 of 57 steps (28%) done
+Select jobs to execute...
+
+[Wed May  4 16:23:01 2022]
+rule AlleleAtlas:
+    input: results/MergeVCFs_RP_NRP_AllAccessions_Chr20.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr20.txt.gz, resources/gff/Chr20.gff.gz, rules/custom/scripts/generate_allele_atlas.py
+    output: results/AlleleAtlas_RP_NRP_AllAccessions_Chr20.txt.gz, results/Bottleneck_genes_RP_NRP_AllAccessions_Chr20.txt.gz, results/Housekeeping_genes_RP_NRP_AllAccessions_Chr20.txt.gz
+    jobid: 219
+    wildcards: RP_id=RP, NRP_id=NRP, subset=AllAccessions, chr=20
+
+Submitted job 219 with external jobid 'Submitted batch job 24550820'.
+
+[Wed May  4 16:23:01 2022]
+rule AlleleAtlas:
+    input: results/MergeVCFs_RP_NRP_EliteUSOnly_Chr20.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr20.txt.gz, resources/gff/Chr20.gff.gz, rules/custom/scripts/generate_allele_atlas.py
+    output: results/AlleleAtlas_RP_NRP_EliteUSOnly_Chr20.txt.gz, results/Bottleneck_genes_RP_NRP_EliteUSOnly_Chr20.txt.gz, results/Housekeeping_genes_RP_NRP_EliteUSOnly_Chr20.txt.gz
+    jobid: 240
+    wildcards: RP_id=RP, NRP_id=NRP, subset=EliteUSOnly, chr=20
+
+Submitted job 240 with external jobid 'Submitted batch job 24550821'.
+[Wed May  4 16:23:25 2022]
+Finished job 198.
+17 of 57 steps (30%) done
+Select jobs to execute...
+[Wed May  4 16:23:25 2022]
+Finished job 200.
+18 of 57 steps (32%) done
+
+[Wed May  4 16:23:25 2022]
+rule AlleleAtlas:
+    input: results/MergeVCFs_RP_NRP_AllAccessions_Chr09.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr09.txt.gz, resources/gff/Chr09.gff.gz, rules/custom/scripts/generate_allele_atlas.py
+    output: results/AlleleAtlas_RP_NRP_AllAccessions_Chr09.txt.gz, results/Bottleneck_genes_RP_NRP_AllAccessions_Chr09.txt.gz, results/Housekeeping_genes_RP_NRP_AllAccessions_Chr09.txt.gz
+    jobid: 197
+    wildcards: RP_id=RP, NRP_id=NRP, subset=AllAccessions, chr=09
+
+Submitted job 197 with external jobid 'Submitted batch job 24550822'.
+
+[Wed May  4 16:23:25 2022]
+rule AlleleAtlas:
+    input: results/MergeVCFs_RP_NRP_EliteUSOnly_Chr09.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr09.txt.gz, resources/gff/Chr09.gff.gz, rules/custom/scripts/generate_allele_atlas.py
+    output: results/AlleleAtlas_RP_NRP_EliteUSOnly_Chr09.txt.gz, results/Bottleneck_genes_RP_NRP_EliteUSOnly_Chr09.txt.gz, results/Housekeeping_genes_RP_NRP_EliteUSOnly_Chr09.txt.gz
+    jobid: 229
+    wildcards: RP_id=RP, NRP_id=NRP, subset=EliteUSOnly, chr=09
+
+Submitted job 229 with external jobid 'Submitted batch job 24550823'.
+Select jobs to execute...
+
+[Wed May  4 16:23:25 2022]
+rule AlleleAtlas:
+    input: results/MergeVCFs_RP_NRP_EliteUSOnly_Chr10.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr10.txt.gz, resources/gff/Chr10.gff.gz, rules/custom/scripts/generate_allele_atlas.py
+    output: results/AlleleAtlas_RP_NRP_EliteUSOnly_Chr10.txt.gz, results/Bottleneck_genes_RP_NRP_EliteUSOnly_Chr10.txt.gz, results/Housekeeping_genes_RP_NRP_EliteUSOnly_Chr10.txt.gz
+    jobid: 230
+    wildcards: RP_id=RP, NRP_id=NRP, subset=EliteUSOnly, chr=10
+
+Submitted job 230 with external jobid 'Submitted batch job 24550824'.
+
+[Wed May  4 16:23:25 2022]
+rule AlleleAtlas:
+    input: results/MergeVCFs_RP_NRP_AllAccessions_Chr10.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr10.txt.gz, resources/gff/Chr10.gff.gz, rules/custom/scripts/generate_allele_atlas.py
+    output: results/AlleleAtlas_RP_NRP_AllAccessions_Chr10.txt.gz, results/Bottleneck_genes_RP_NRP_AllAccessions_Chr10.txt.gz, results/Housekeeping_genes_RP_NRP_AllAccessions_Chr10.txt.gz
+    jobid: 199
+    wildcards: RP_id=RP, NRP_id=NRP, subset=AllAccessions, chr=10
+
+Submitted job 199 with external jobid 'Submitted batch job 24550825'.
+[Wed May  4 16:23:26 2022]
+Finished job 228.
+19 of 57 steps (33%) done
+[Wed May  4 16:23:49 2022]
+Finished job 208.
+20 of 57 steps (35%) done
+Select jobs to execute...
+
+[Wed May  4 16:23:49 2022]
+rule AlleleAtlas:
+    input: results/MergeVCFs_RP_NRP_EliteUSOnly_Chr14.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr14.txt.gz, resources/gff/Chr14.gff.gz, rules/custom/scripts/generate_allele_atlas.py
+    output: results/AlleleAtlas_RP_NRP_EliteUSOnly_Chr14.txt.gz, results/Bottleneck_genes_RP_NRP_EliteUSOnly_Chr14.txt.gz, results/Housekeeping_genes_RP_NRP_EliteUSOnly_Chr14.txt.gz
+    jobid: 234
+    wildcards: RP_id=RP, NRP_id=NRP, subset=EliteUSOnly, chr=14
+
+Submitted job 234 with external jobid 'Submitted batch job 24550826'.
+
+[Wed May  4 16:23:49 2022]
+rule AlleleAtlas:
+    input: results/MergeVCFs_RP_NRP_AllAccessions_Chr14.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr14.txt.gz, resources/gff/Chr14.gff.gz, rules/custom/scripts/generate_allele_atlas.py
+    output: results/AlleleAtlas_RP_NRP_AllAccessions_Chr14.txt.gz, results/Bottleneck_genes_RP_NRP_AllAccessions_Chr14.txt.gz, results/Housekeeping_genes_RP_NRP_AllAccessions_Chr14.txt.gz
+    jobid: 207
+    wildcards: RP_id=RP, NRP_id=NRP, subset=AllAccessions, chr=14
+
+Submitted job 207 with external jobid 'Submitted batch job 24550827'.
+[Wed May  4 16:24:36 2022]
+Finished job 236.
+21 of 57 steps (37%) done
+[Wed May  4 16:24:37 2022]
+Finished job 233.
+22 of 57 steps (39%) done
+[Wed May  4 16:25:01 2022]
+Finished job 192.
+23 of 57 steps (40%) done
+Select jobs to execute...
+
+[Wed May  4 16:25:01 2022]
+rule AlleleAtlas:
+    input: results/MergeVCFs_RP_NRP_AllAccessions_Chr06.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr06.txt.gz, resources/gff/Chr06.gff.gz, rules/custom/scripts/generate_allele_atlas.py
+    output: results/AlleleAtlas_RP_NRP_AllAccessions_Chr06.txt.gz, results/Bottleneck_genes_RP_NRP_AllAccessions_Chr06.txt.gz, results/Housekeeping_genes_RP_NRP_AllAccessions_Chr06.txt.gz
+    jobid: 191
+    wildcards: RP_id=RP, NRP_id=NRP, subset=AllAccessions, chr=06
+
+Submitted job 191 with external jobid 'Submitted batch job 24550828'.
+
+[Wed May  4 16:25:02 2022]
+rule AlleleAtlas:
+    input: results/MergeVCFs_RP_NRP_EliteUSOnly_Chr06.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr06.txt.gz, resources/gff/Chr06.gff.gz, rules/custom/scripts/generate_allele_atlas.py
+    output: results/AlleleAtlas_RP_NRP_EliteUSOnly_Chr06.txt.gz, results/Bottleneck_genes_RP_NRP_EliteUSOnly_Chr06.txt.gz, results/Housekeeping_genes_RP_NRP_EliteUSOnly_Chr06.txt.gz
+    jobid: 226
+    wildcards: RP_id=RP, NRP_id=NRP, subset=EliteUSOnly, chr=06
+
+Submitted job 226 with external jobid 'Submitted batch job 24550829'.
+[Wed May  4 16:25:24 2022]
+Finished job 240.
+24 of 57 steps (42%) done
+[Wed May  4 16:25:37 2022]
+Finished job 188.
+25 of 57 steps (44%) done
+Select jobs to execute...
+[Wed May  4 16:25:38 2022]
+Finished job 218.
+26 of 57 steps (46%) done
+
+[Wed May  4 16:25:38 2022]
+rule AlleleAtlas:
+    input: results/MergeVCFs_RP_NRP_AllAccessions_Chr04.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr04.txt.gz, resources/gff/Chr04.gff.gz, rules/custom/scripts/generate_allele_atlas.py
+    output: results/AlleleAtlas_RP_NRP_AllAccessions_Chr04.txt.gz, results/Bottleneck_genes_RP_NRP_AllAccessions_Chr04.txt.gz, results/Housekeeping_genes_RP_NRP_AllAccessions_Chr04.txt.gz
+    jobid: 187
+    wildcards: RP_id=RP, NRP_id=NRP, subset=AllAccessions, chr=04
+
+Submitted job 187 with external jobid 'Submitted batch job 24550830'.
+
+[Wed May  4 16:25:38 2022]
+rule AlleleAtlas:
+    input: results/MergeVCFs_RP_NRP_EliteUSOnly_Chr04.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr04.txt.gz, resources/gff/Chr04.gff.gz, rules/custom/scripts/generate_allele_atlas.py
+    output: results/AlleleAtlas_RP_NRP_EliteUSOnly_Chr04.txt.gz, results/Bottleneck_genes_RP_NRP_EliteUSOnly_Chr04.txt.gz, results/Housekeeping_genes_RP_NRP_EliteUSOnly_Chr04.txt.gz
+    jobid: 224
+    wildcards: RP_id=RP, NRP_id=NRP, subset=EliteUSOnly, chr=04
+
+Submitted job 224 with external jobid 'Submitted batch job 24550831'.
+Select jobs to execute...
+
+[Wed May  4 16:25:38 2022]
+rule AlleleAtlas:
+    input: results/MergeVCFs_RP_NRP_AllAccessions_Chr19.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr19.txt.gz, resources/gff/Chr19.gff.gz, rules/custom/scripts/generate_allele_atlas.py
+    output: results/AlleleAtlas_RP_NRP_AllAccessions_Chr19.txt.gz, results/Bottleneck_genes_RP_NRP_AllAccessions_Chr19.txt.gz, results/Housekeeping_genes_RP_NRP_AllAccessions_Chr19.txt.gz
+    jobid: 217
+    wildcards: RP_id=RP, NRP_id=NRP, subset=AllAccessions, chr=19
+
+Submitted job 217 with external jobid 'Submitted batch job 24550832'.
+
+[Wed May  4 16:25:38 2022]
+rule AlleleAtlas:
+    input: results/MergeVCFs_RP_NRP_EliteUSOnly_Chr19.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr19.txt.gz, resources/gff/Chr19.gff.gz, rules/custom/scripts/generate_allele_atlas.py
+    output: results/AlleleAtlas_RP_NRP_EliteUSOnly_Chr19.txt.gz, results/Bottleneck_genes_RP_NRP_EliteUSOnly_Chr19.txt.gz, results/Housekeeping_genes_RP_NRP_EliteUSOnly_Chr19.txt.gz
+    jobid: 239
+    wildcards: RP_id=RP, NRP_id=NRP, subset=EliteUSOnly, chr=19
+
+Submitted job 239 with external jobid 'Submitted batch job 24550833'.
+[Wed May  4 16:26:01 2022]
+Finished job 229.
+27 of 57 steps (47%) done
+[Wed May  4 16:26:25 2022]
+Finished job 230.
+28 of 57 steps (49%) done
+[Wed May  4 16:26:37 2022]
+Finished job 234.
+29 of 57 steps (51%) done
+[Wed May  4 16:27:26 2022]
+Finished job 210.
+30 of 57 steps (53%) done
+Select jobs to execute...
+
+[Wed May  4 16:27:26 2022]
+rule AlleleAtlas:
+    input: results/MergeVCFs_RP_NRP_EliteUSOnly_Chr15.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr15.txt.gz, resources/gff/Chr15.gff.gz, rules/custom/scripts/generate_allele_atlas.py
+    output: results/AlleleAtlas_RP_NRP_EliteUSOnly_Chr15.txt.gz, results/Bottleneck_genes_RP_NRP_EliteUSOnly_Chr15.txt.gz, results/Housekeeping_genes_RP_NRP_EliteUSOnly_Chr15.txt.gz
+    jobid: 235
+    wildcards: RP_id=RP, NRP_id=NRP, subset=EliteUSOnly, chr=15
+
+Submitted job 235 with external jobid 'Submitted batch job 24550835'.
+
+[Wed May  4 16:27:26 2022]
+rule AlleleAtlas:
+    input: results/MergeVCFs_RP_NRP_AllAccessions_Chr15.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr15.txt.gz, resources/gff/Chr15.gff.gz, rules/custom/scripts/generate_allele_atlas.py
+    output: results/AlleleAtlas_RP_NRP_AllAccessions_Chr15.txt.gz, results/Bottleneck_genes_RP_NRP_AllAccessions_Chr15.txt.gz, results/Housekeeping_genes_RP_NRP_AllAccessions_Chr15.txt.gz
+    jobid: 209
+    wildcards: RP_id=RP, NRP_id=NRP, subset=AllAccessions, chr=15
+
+Submitted job 209 with external jobid 'Submitted batch job 24550836'.
+[Wed May  4 16:27:38 2022]
+Finished job 186.
+31 of 57 steps (54%) done
+Select jobs to execute...
+
+[Wed May  4 16:27:38 2022]
+rule AlleleAtlas:
+    input: results/MergeVCFs_RP_NRP_AllAccessions_Chr03.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr03.txt.gz, resources/gff/Chr03.gff.gz, rules/custom/scripts/generate_allele_atlas.py
+    output: results/AlleleAtlas_RP_NRP_AllAccessions_Chr03.txt.gz, results/Bottleneck_genes_RP_NRP_AllAccessions_Chr03.txt.gz, results/Housekeeping_genes_RP_NRP_AllAccessions_Chr03.txt.gz
+    jobid: 185
+    wildcards: RP_id=RP, NRP_id=NRP, subset=AllAccessions, chr=03
+
+Submitted job 185 with external jobid 'Submitted batch job 24550837'.
+
+[Wed May  4 16:27:38 2022]
+rule AlleleAtlas:
+    input: results/MergeVCFs_RP_NRP_EliteUSOnly_Chr03.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr03.txt.gz, resources/gff/Chr03.gff.gz, rules/custom/scripts/generate_allele_atlas.py
+    output: results/AlleleAtlas_RP_NRP_EliteUSOnly_Chr03.txt.gz, results/Bottleneck_genes_RP_NRP_EliteUSOnly_Chr03.txt.gz, results/Housekeeping_genes_RP_NRP_EliteUSOnly_Chr03.txt.gz
+    jobid: 223
+    wildcards: RP_id=RP, NRP_id=NRP, subset=EliteUSOnly, chr=03
+
+Submitted job 223 with external jobid 'Submitted batch job 24550838'.
+[Wed May  4 16:28:13 2022]
+Finished job 224.
+32 of 57 steps (56%) done
+[Wed May  4 16:28:37 2022]
+Finished job 226.
+33 of 57 steps (58%) done
+[Wed May  4 16:28:49 2022]
+Finished job 239.
+34 of 57 steps (60%) done
+[Wed May  4 16:30:25 2022]
+Finished job 235.
+35 of 57 steps (61%) done
+[Wed May  4 16:30:59 2022]
+Finished job 223.
+36 of 57 steps (63%) done
+[Wed May  4 16:31:55 2022]
+Finished job 201.
+37 of 57 steps (65%) done
+[Wed May  4 16:36:31 2022]
+Finished job 216.
+38 of 57 steps (67%) done
+Select jobs to execute...
+
+[Wed May  4 16:36:31 2022]
+rule AlleleAtlas:
+    input: results/MergeVCFs_RP_NRP_AllAccessions_Chr18.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr18.txt.gz, resources/gff/Chr18.gff.gz, rules/custom/scripts/generate_allele_atlas.py
+    output: results/AlleleAtlas_RP_NRP_AllAccessions_Chr18.txt.gz, results/Bottleneck_genes_RP_NRP_AllAccessions_Chr18.txt.gz, results/Housekeeping_genes_RP_NRP_AllAccessions_Chr18.txt.gz
+    jobid: 215
+    wildcards: RP_id=RP, NRP_id=NRP, subset=AllAccessions, chr=18
+
+Submitted job 215 with external jobid 'Submitted batch job 24550844'.
+
+[Wed May  4 16:36:31 2022]
+rule AlleleAtlas:
+    input: results/MergeVCFs_RP_NRP_EliteUSOnly_Chr18.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr18.txt.gz, resources/gff/Chr18.gff.gz, rules/custom/scripts/generate_allele_atlas.py
+    output: results/AlleleAtlas_RP_NRP_EliteUSOnly_Chr18.txt.gz, results/Bottleneck_genes_RP_NRP_EliteUSOnly_Chr18.txt.gz, results/Housekeeping_genes_RP_NRP_EliteUSOnly_Chr18.txt.gz
+    jobid: 238
+    wildcards: RP_id=RP, NRP_id=NRP, subset=EliteUSOnly, chr=18
+
+Submitted job 238 with external jobid 'Submitted batch job 24550845'.
+[Wed May  4 16:38:10 2022]
+Finished job 203.
+39 of 57 steps (68%) done
+[Wed May  4 16:38:21 2022]
+Finished job 213.
+40 of 57 steps (70%) done
+[Wed May  4 16:40:22 2022]
+Finished job 189.
+41 of 57 steps (72%) done
+[Wed May  4 16:40:22 2022]
+Finished job 238.
+42 of 57 steps (74%) done
+[Wed May  4 16:44:58 2022]
+Finished job 193.
+43 of 57 steps (75%) done
+[Wed May  4 16:45:19 2022]
+Finished job 219.
+44 of 57 steps (77%) done
+[Wed May  4 16:46:03 2022]
+Finished job 187.
+45 of 57 steps (79%) done
+[Wed May  4 16:46:03 2022]
+Finished job 217.
+46 of 57 steps (81%) done
+[Wed May  4 16:46:03 2022]
+Finished job 197.
+47 of 57 steps (82%) done
+[Wed May  4 16:47:04 2022]
+Finished job 207.
+48 of 57 steps (84%) done
+[Wed May  4 16:47:14 2022]
+Finished job 205.
+49 of 57 steps (86%) done
+[Wed May  4 16:49:14 2022]
+Finished job 199.
+50 of 57 steps (88%) done
+[Wed May  4 16:49:44 2022]
+Finished job 185.
+51 of 57 steps (89%) done
+[Wed May  4 16:50:44 2022]
+Finished job 195.
+52 of 57 steps (91%) done
+[Wed May  4 16:54:55 2022]
+Finished job 191.
+53 of 57 steps (93%) done
+[Wed May  4 16:57:15 2022]
+Finished job 211.
+54 of 57 steps (95%) done
+[Wed May  4 17:06:06 2022]
+Finished job 209.
+55 of 57 steps (96%) done
+[Wed May  4 17:15:16 2022]
+Finished job 215.
+56 of 57 steps (98%) done
+Select jobs to execute...
+
+[Wed May  4 17:15:16 2022]
+localrule all:
+    input: results/SNPsOnly_RP_NRP_EliteUSOnly_Chr01.vcf.gz, results/SNPsOnly_RP_NRP_EliteUSOnly_Chr02.vcf.gz, results/SNPsOnly_RP_NRP_EliteUSOnly_Chr03.vcf.gz, results/SNPsOnly_RP_NRP_EliteUSOnly_Chr04.vcf.gz, results/SNPsOnly_RP_NRP_EliteUSOnly_Chr05.vcf.gz, results/SNPsOnly_RP_NRP_EliteUSOnly_Chr06.vcf.gz, results/SNPsOnly_RP_NRP_EliteUSOnly_Chr07.vcf.gz, results/SNPsOnly_RP_NRP_EliteUSOnly_Chr08.vcf.gz, results/SNPsOnly_RP_NRP_EliteUSOnly_Chr09.vcf.gz, results/SNPsOnly_RP_NRP_EliteUSOnly_Chr10.vcf.gz, results/SNPsOnly_RP_NRP_EliteUSOnly_Chr11.vcf.gz, results/SNPsOnly_RP_NRP_EliteUSOnly_Chr12.vcf.gz, results/SNPsOnly_RP_NRP_EliteUSOnly_Chr13.vcf.gz, results/SNPsOnly_RP_NRP_EliteUSOnly_Chr14.vcf.gz, results/SNPsOnly_RP_NRP_EliteUSOnly_Chr15.vcf.gz, results/SNPsOnly_RP_NRP_EliteUSOnly_Chr16.vcf.gz, results/SNPsOnly_RP_NRP_EliteUSOnly_Chr17.vcf.gz, results/SNPsOnly_RP_NRP_EliteUSOnly_Chr18.vcf.gz, results/SNPsOnly_RP_NRP_EliteUSOnly_Chr19.vcf.gz, results/SNPsOnly_RP_NRP_EliteUSOnly_Chr20.vcf.gz, results/AlleleAtlas_RP_NRP_AllAccessions_Chr01.txt.gz, results/AlleleAtlas_RP_NRP_AllAccessions_Chr02.txt.gz, results/AlleleAtlas_RP_NRP_AllAccessions_Chr03.txt.gz, results/AlleleAtlas_RP_NRP_AllAccessions_Chr04.txt.gz, results/AlleleAtlas_RP_NRP_AllAccessions_Chr05.txt.gz, results/AlleleAtlas_RP_NRP_AllAccessions_Chr06.txt.gz, results/AlleleAtlas_RP_NRP_AllAccessions_Chr07.txt.gz, results/AlleleAtlas_RP_NRP_AllAccessions_Chr08.txt.gz, results/AlleleAtlas_RP_NRP_AllAccessions_Chr09.txt.gz, results/AlleleAtlas_RP_NRP_AllAccessions_Chr10.txt.gz, results/AlleleAtlas_RP_NRP_AllAccessions_Chr11.txt.gz, results/AlleleAtlas_RP_NRP_AllAccessions_Chr12.txt.gz, results/AlleleAtlas_RP_NRP_AllAccessions_Chr13.txt.gz, results/AlleleAtlas_RP_NRP_AllAccessions_Chr14.txt.gz, results/AlleleAtlas_RP_NRP_AllAccessions_Chr15.txt.gz, results/AlleleAtlas_RP_NRP_AllAccessions_Chr16.txt.gz, results/AlleleAtlas_RP_NRP_AllAccessions_Chr17.txt.gz, results/AlleleAtlas_RP_NRP_AllAccessions_Chr18.txt.gz, results/AlleleAtlas_RP_NRP_AllAccessions_Chr19.txt.gz, results/AlleleAtlas_RP_NRP_AllAccessions_Chr20.txt.gz, results/AlleleAtlas_RP_NRP_EliteUSOnly_Chr01.txt.gz, results/AlleleAtlas_RP_NRP_EliteUSOnly_Chr02.txt.gz, results/AlleleAtlas_RP_NRP_EliteUSOnly_Chr03.txt.gz, results/AlleleAtlas_RP_NRP_EliteUSOnly_Chr04.txt.gz, results/AlleleAtlas_RP_NRP_EliteUSOnly_Chr05.txt.gz, results/AlleleAtlas_RP_NRP_EliteUSOnly_Chr06.txt.gz, results/AlleleAtlas_RP_NRP_EliteUSOnly_Chr07.txt.gz, results/AlleleAtlas_RP_NRP_EliteUSOnly_Chr08.txt.gz, results/AlleleAtlas_RP_NRP_EliteUSOnly_Chr09.txt.gz, results/AlleleAtlas_RP_NRP_EliteUSOnly_Chr10.txt.gz, results/AlleleAtlas_RP_NRP_EliteUSOnly_Chr11.txt.gz, results/AlleleAtlas_RP_NRP_EliteUSOnly_Chr12.txt.gz, results/AlleleAtlas_RP_NRP_EliteUSOnly_Chr13.txt.gz, results/AlleleAtlas_RP_NRP_EliteUSOnly_Chr14.txt.gz, results/AlleleAtlas_RP_NRP_EliteUSOnly_Chr15.txt.gz, results/AlleleAtlas_RP_NRP_EliteUSOnly_Chr16.txt.gz, results/AlleleAtlas_RP_NRP_EliteUSOnly_Chr17.txt.gz, results/AlleleAtlas_RP_NRP_EliteUSOnly_Chr18.txt.gz, results/AlleleAtlas_RP_NRP_EliteUSOnly_Chr19.txt.gz, results/AlleleAtlas_RP_NRP_EliteUSOnly_Chr20.txt.gz
+    jobid: 0
+
+[Wed May  4 17:15:16 2022]
+Finished job 0.
+57 of 57 steps (100%) done
+Complete log: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/log/2022-05-04T155515.722935.snakemake.log

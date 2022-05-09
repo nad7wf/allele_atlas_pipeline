@@ -1,0 +1,437 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Job counts:
+	count	jobs
+	20	AlleleAtlas
+	20	ImputeNRP
+	20	ImputeRP
+	20	MergeVCFs
+	20	PreformatNRP
+	20	PreformatRP
+	40	RenameSamples
+	20	SNPEff
+	20	SubsetUS
+	1	all
+	201
+Select jobs to execute...
+
+[Mon Jan 17 13:39:28 2022]
+rule RenameSamples:
+    input: resources/RP/RP_Chr13.vcf.gz, resources/RP/RP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_RP_Chr13.vcf.gz
+    jobid: 13
+    wildcards: id=RP, chr=13
+
+Submitted job 13 with external jobid 'Submitted batch job 24077447'.
+
+[Mon Jan 17 13:39:28 2022]
+rule RenameSamples:
+    input: resources/NRP/NRP_Chr08.vcf.gz, resources/NRP/NRP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_NRP_Chr08.vcf.gz
+    jobid: 28
+    wildcards: id=NRP, chr=08
+
+Submitted job 28 with external jobid 'Submitted batch job 24077448'.
+
+[Mon Jan 17 13:39:28 2022]
+rule RenameSamples:
+    input: resources/RP/RP_Chr06.vcf.gz, resources/RP/RP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_RP_Chr06.vcf.gz
+    jobid: 6
+    wildcards: id=RP, chr=06
+
+Submitted job 6 with external jobid 'Submitted batch job 24077449'.
+
+[Mon Jan 17 13:39:28 2022]
+rule RenameSamples:
+    input: resources/NRP/NRP_Chr01.vcf.gz, resources/NRP/NRP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_NRP_Chr01.vcf.gz
+    jobid: 21
+    wildcards: id=NRP, chr=01
+
+Submitted job 21 with external jobid 'Submitted batch job 24077450'.
+
+[Mon Jan 17 13:39:28 2022]
+rule RenameSamples:
+    input: resources/NRP/NRP_Chr16.vcf.gz, resources/NRP/NRP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_NRP_Chr16.vcf.gz
+    jobid: 36
+    wildcards: id=NRP, chr=16
+
+Submitted job 36 with external jobid 'Submitted batch job 24077451'.
+
+[Mon Jan 17 13:39:28 2022]
+rule RenameSamples:
+    input: resources/RP/RP_Chr14.vcf.gz, resources/RP/RP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_RP_Chr14.vcf.gz
+    jobid: 14
+    wildcards: id=RP, chr=14
+
+Submitted job 14 with external jobid 'Submitted batch job 24077452'.
+
+[Mon Jan 17 13:39:28 2022]
+rule RenameSamples:
+    input: resources/NRP/NRP_Chr09.vcf.gz, resources/NRP/NRP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_NRP_Chr09.vcf.gz
+    jobid: 29
+    wildcards: id=NRP, chr=09
+
+Submitted job 29 with external jobid 'Submitted batch job 24077453'.
+
+[Mon Jan 17 13:39:28 2022]
+rule RenameSamples:
+    input: resources/RP/RP_Chr07.vcf.gz, resources/RP/RP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_RP_Chr07.vcf.gz
+    jobid: 7
+    wildcards: id=RP, chr=07
+
+Submitted job 7 with external jobid 'Submitted batch job 24077454'.
+
+[Mon Jan 17 13:39:28 2022]
+rule RenameSamples:
+    input: resources/NRP/NRP_Chr02.vcf.gz, resources/NRP/NRP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_NRP_Chr02.vcf.gz
+    jobid: 22
+    wildcards: id=NRP, chr=02
+
+Submitted job 22 with external jobid 'Submitted batch job 24077455'.
+
+[Mon Jan 17 13:39:28 2022]
+rule RenameSamples:
+    input: resources/NRP/NRP_Chr17.vcf.gz, resources/NRP/NRP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_NRP_Chr17.vcf.gz
+    jobid: 37
+    wildcards: id=NRP, chr=17
+
+Submitted job 37 with external jobid 'Submitted batch job 24077456'.
+
+[Mon Jan 17 13:39:28 2022]
+rule RenameSamples:
+    input: resources/RP/RP_Chr01.vcf.gz, resources/RP/RP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_RP_Chr01.vcf.gz
+    jobid: 1
+    wildcards: id=RP, chr=01
+
+Submitted job 1 with external jobid 'Submitted batch job 24077457'.
+
+[Mon Jan 17 13:39:28 2022]
+rule RenameSamples:
+    input: resources/RP/RP_Chr15.vcf.gz, resources/RP/RP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_RP_Chr15.vcf.gz
+    jobid: 15
+    wildcards: id=RP, chr=15
+
+Submitted job 15 with external jobid 'Submitted batch job 24077458'.
+
+[Mon Jan 17 13:39:28 2022]
+rule RenameSamples:
+    input: resources/NRP/NRP_Chr10.vcf.gz, resources/NRP/NRP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_NRP_Chr10.vcf.gz
+    jobid: 30
+    wildcards: id=NRP, chr=10
+
+Submitted job 30 with external jobid 'Submitted batch job 24077459'.
+
+[Mon Jan 17 13:39:28 2022]
+rule RenameSamples:
+    input: resources/RP/RP_Chr08.vcf.gz, resources/RP/RP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_RP_Chr08.vcf.gz
+    jobid: 8
+    wildcards: id=RP, chr=08
+
+Submitted job 8 with external jobid 'Submitted batch job 24077460'.
+
+[Mon Jan 17 13:39:28 2022]
+rule RenameSamples:
+    input: resources/NRP/NRP_Chr03.vcf.gz, resources/NRP/NRP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_NRP_Chr03.vcf.gz
+    jobid: 23
+    wildcards: id=NRP, chr=03
+
+Submitted job 23 with external jobid 'Submitted batch job 24077461'.
+
+[Mon Jan 17 13:39:28 2022]
+rule RenameSamples:
+    input: resources/NRP/NRP_Chr18.vcf.gz, resources/NRP/NRP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_NRP_Chr18.vcf.gz
+    jobid: 38
+    wildcards: id=NRP, chr=18
+
+Submitted job 38 with external jobid 'Submitted batch job 24077462'.
+
+[Mon Jan 17 13:39:28 2022]
+rule RenameSamples:
+    input: resources/RP/RP_Chr16.vcf.gz, resources/RP/RP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_RP_Chr16.vcf.gz
+    jobid: 16
+    wildcards: id=RP, chr=16
+
+Submitted job 16 with external jobid 'Submitted batch job 24077463'.
+
+[Mon Jan 17 13:39:29 2022]
+rule RenameSamples:
+    input: resources/NRP/NRP_Chr11.vcf.gz, resources/NRP/NRP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_NRP_Chr11.vcf.gz
+    jobid: 31
+    wildcards: id=NRP, chr=11
+
+Submitted job 31 with external jobid 'Submitted batch job 24077464'.
+
+[Mon Jan 17 13:39:29 2022]
+rule RenameSamples:
+    input: resources/NRP/NRP_Chr19.vcf.gz, resources/NRP/NRP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_NRP_Chr19.vcf.gz
+    jobid: 39
+    wildcards: id=NRP, chr=19
+
+Submitted job 39 with external jobid 'Submitted batch job 24077465'.
+
+[Mon Jan 17 13:39:29 2022]
+rule RenameSamples:
+    input: resources/RP/RP_Chr09.vcf.gz, resources/RP/RP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_RP_Chr09.vcf.gz
+    jobid: 9
+    wildcards: id=RP, chr=09
+
+Submitted job 9 with external jobid 'Submitted batch job 24077466'.
+
+[Mon Jan 17 13:39:29 2022]
+rule RenameSamples:
+    input: resources/NRP/NRP_Chr04.vcf.gz, resources/NRP/NRP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_NRP_Chr04.vcf.gz
+    jobid: 24
+    wildcards: id=NRP, chr=04
+
+Submitted job 24 with external jobid 'Submitted batch job 24077467'.
+
+[Mon Jan 17 13:39:29 2022]
+rule RenameSamples:
+    input: resources/RP/RP_Chr02.vcf.gz, resources/RP/RP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_RP_Chr02.vcf.gz
+    jobid: 2
+    wildcards: id=RP, chr=02
+
+Submitted job 2 with external jobid 'Submitted batch job 24077468'.
+
+[Mon Jan 17 13:39:29 2022]
+rule RenameSamples:
+    input: resources/RP/RP_Chr17.vcf.gz, resources/RP/RP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_RP_Chr17.vcf.gz
+    jobid: 17
+    wildcards: id=RP, chr=17
+
+Submitted job 17 with external jobid 'Submitted batch job 24077469'.
+
+[Mon Jan 17 13:39:29 2022]
+rule RenameSamples:
+    input: resources/NRP/NRP_Chr12.vcf.gz, resources/NRP/NRP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_NRP_Chr12.vcf.gz
+    jobid: 32
+    wildcards: id=NRP, chr=12
+
+Submitted job 32 with external jobid 'Submitted batch job 24077470'.
+
+[Mon Jan 17 13:39:29 2022]
+rule RenameSamples:
+    input: resources/RP/RP_Chr10.vcf.gz, resources/RP/RP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_RP_Chr10.vcf.gz
+    jobid: 10
+    wildcards: id=RP, chr=10
+
+Submitted job 10 with external jobid 'Submitted batch job 24077471'.
+
+[Mon Jan 17 13:39:29 2022]
+rule RenameSamples:
+    input: resources/NRP/NRP_Chr05.vcf.gz, resources/NRP/NRP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_NRP_Chr05.vcf.gz
+    jobid: 25
+    wildcards: id=NRP, chr=05
+
+Submitted job 25 with external jobid 'Submitted batch job 24077472'.
+
+[Mon Jan 17 13:39:29 2022]
+rule RenameSamples:
+    input: resources/NRP/NRP_Chr20.vcf.gz, resources/NRP/NRP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_NRP_Chr20.vcf.gz
+    jobid: 40
+    wildcards: id=NRP, chr=20
+
+Submitted job 40 with external jobid 'Submitted batch job 24077473'.
+
+[Mon Jan 17 13:39:29 2022]
+rule RenameSamples:
+    input: resources/RP/RP_Chr03.vcf.gz, resources/RP/RP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_RP_Chr03.vcf.gz
+    jobid: 3
+    wildcards: id=RP, chr=03
+
+Submitted job 3 with external jobid 'Submitted batch job 24077474'.
+
+[Mon Jan 17 13:39:29 2022]
+rule RenameSamples:
+    input: resources/RP/RP_Chr18.vcf.gz, resources/RP/RP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_RP_Chr18.vcf.gz
+    jobid: 18
+    wildcards: id=RP, chr=18
+
+Submitted job 18 with external jobid 'Submitted batch job 24077475'.
+
+[Mon Jan 17 13:39:29 2022]
+rule RenameSamples:
+    input: resources/NRP/NRP_Chr13.vcf.gz, resources/NRP/NRP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_NRP_Chr13.vcf.gz
+    jobid: 33
+    wildcards: id=NRP, chr=13
+
+Submitted job 33 with external jobid 'Submitted batch job 24077476'.
+
+[Mon Jan 17 13:39:29 2022]
+rule RenameSamples:
+    input: resources/RP/RP_Chr11.vcf.gz, resources/RP/RP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_RP_Chr11.vcf.gz
+    jobid: 11
+    wildcards: id=RP, chr=11
+
+Submitted job 11 with external jobid 'Submitted batch job 24077477'.
+
+[Mon Jan 17 13:39:29 2022]
+rule RenameSamples:
+    input: resources/NRP/NRP_Chr06.vcf.gz, resources/NRP/NRP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_NRP_Chr06.vcf.gz
+    jobid: 26
+    wildcards: id=NRP, chr=06
+
+Submitted job 26 with external jobid 'Submitted batch job 24077478'.
+
+[Mon Jan 17 13:39:29 2022]
+rule RenameSamples:
+    input: resources/NRP/NRP_Chr15.vcf.gz, resources/NRP/NRP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_NRP_Chr15.vcf.gz
+    jobid: 35
+    wildcards: id=NRP, chr=15
+
+Submitted job 35 with external jobid 'Submitted batch job 24077479'.
+
+[Mon Jan 17 13:39:29 2022]
+rule RenameSamples:
+    input: resources/RP/RP_Chr04.vcf.gz, resources/RP/RP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_RP_Chr04.vcf.gz
+    jobid: 4
+    wildcards: id=RP, chr=04
+
+Submitted job 4 with external jobid 'Submitted batch job 24077480'.
+
+[Mon Jan 17 13:39:29 2022]
+rule RenameSamples:
+    input: resources/RP/RP_Chr19.vcf.gz, resources/RP/RP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_RP_Chr19.vcf.gz
+    jobid: 19
+    wildcards: id=RP, chr=19
+
+Submitted job 19 with external jobid 'Submitted batch job 24077481'.
+
+[Mon Jan 17 13:39:29 2022]
+rule RenameSamples:
+    input: resources/NRP/NRP_Chr14.vcf.gz, resources/NRP/NRP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_NRP_Chr14.vcf.gz
+    jobid: 34
+    wildcards: id=NRP, chr=14
+
+Submitted job 34 with external jobid 'Submitted batch job 24077482'.
+
+[Mon Jan 17 13:39:30 2022]
+rule RenameSamples:
+    input: resources/RP/RP_Chr12.vcf.gz, resources/RP/RP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_RP_Chr12.vcf.gz
+    jobid: 12
+    wildcards: id=RP, chr=12
+
+Submitted job 12 with external jobid 'Submitted batch job 24077483'.
+
+[Mon Jan 17 13:39:30 2022]
+rule RenameSamples:
+    input: resources/RP/RP_Chr05.vcf.gz, resources/RP/RP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_RP_Chr05.vcf.gz
+    jobid: 5
+    wildcards: id=RP, chr=05
+
+Submitted job 5 with external jobid 'Submitted batch job 24077484'.
+
+[Mon Jan 17 13:39:30 2022]
+rule RenameSamples:
+    input: resources/NRP/NRP_Chr07.vcf.gz, resources/NRP/NRP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_NRP_Chr07.vcf.gz
+    jobid: 27
+    wildcards: id=NRP, chr=07
+
+Submitted job 27 with external jobid 'Submitted batch job 24077485'.
+
+[Mon Jan 17 13:39:30 2022]
+rule RenameSamples:
+    input: resources/RP/RP_Chr20.vcf.gz, resources/RP/RP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_RP_Chr20.vcf.gz
+    jobid: 20
+    wildcards: id=RP, chr=20
+
+Submitted job 20 with external jobid 'Submitted batch job 24077486'.
+[Mon Jan 17 13:41:45 2022]
+Finished job 31.
+1 of 201 steps (0.50%) done
+[Mon Jan 17 13:42:11 2022]
+Finished job 37.
+2 of 201 steps (1.00%) done
+[Mon Jan 17 13:42:37 2022]
+Finished job 28.
+3 of 201 steps (1%) done
+[Mon Jan 17 13:42:37 2022]
+Finished job 36.
+4 of 201 steps (2%) done
+[Mon Jan 17 13:42:37 2022]
+Finished job 22.
+5 of 201 steps (2%) done
+[Mon Jan 17 13:42:38 2022]
+Finished job 30.
+6 of 201 steps (3%) done
+[Mon Jan 17 13:42:50 2022]
+Finished job 29.
+7 of 201 steps (3%) done
+[Mon Jan 17 13:42:50 2022]
+Finished job 23.
+8 of 201 steps (4%) done
+[Mon Jan 17 13:42:51 2022]
+Finished job 39.
+9 of 201 steps (4%) done
+[Mon Jan 17 13:42:51 2022]
+Finished job 24.
+10 of 201 steps (5%) done
+[Mon Jan 17 13:43:29 2022]
+Finished job 21.
+11 of 201 steps (5%) done
+[Mon Jan 17 13:44:06 2022]
+Finished job 38.
+12 of 201 steps (6%) done
+[Mon Jan 17 13:44:07 2022]
+Finished job 32.
+13 of 201 steps (6%) done
+[Mon Jan 17 13:45:07 2022]
+Finished job 25.
+14 of 201 steps (7%) done
+[Mon Jan 17 13:45:43 2022]
+Finished job 40.
+15 of 201 steps (7%) done
+[Mon Jan 17 13:45:43 2022]
+Finished job 33.
+16 of 201 steps (8%) done
+[Mon Jan 17 13:46:19 2022]
+Finished job 26.
+17 of 201 steps (8%) done
+[Mon Jan 17 13:46:55 2022]
+Finished job 35.
+18 of 201 steps (9%) done
+[Mon Jan 17 13:47:31 2022]
+Finished job 34.
+19 of 201 steps (9%) done
+[Mon Jan 17 13:48:55 2022]
+Finished job 27.
+20 of 201 steps (10%) done

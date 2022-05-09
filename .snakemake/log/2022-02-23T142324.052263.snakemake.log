@@ -1,0 +1,4 @@
+AttributeError in line 12 of /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/rules/plink/Fst.smk:
+invalid name for input, output, wildcard, params or log: pop is reserved for internal use
+  File "/storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/workflow/allele_atlas.smk", line 35, in <module>
+  File "/storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/rules/plink/Fst.smk", line 12, in <module>

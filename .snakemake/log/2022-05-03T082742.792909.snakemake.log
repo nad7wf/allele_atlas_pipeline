@@ -1,0 +1,59 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Job counts:
+	count	jobs
+	2	AlleleAtlas
+	1	SNPEff
+	1	all
+	4
+Select jobs to execute...
+
+[Tue May  3 08:27:43 2022]
+rule SNPEff:
+    input: results/MergeVCFs_RP_NRP_AllAccessions_Chr01.vcf.gz, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.config, /scratch/nad7wf/miniconda/pkgs/snpsift-4.3.1t-hdfd78af_3/share/snpsift-4.3.1t-3/SnpSift.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/scripts/vcfEffOnePerLine.pl
+    output: results/SNPEff_Ann_RP_NRP_Chr01.txt.gz
+    jobid: 1
+    wildcards: chr=01
+    resources: memory=30G
+
+Submitted job 1 with external jobid 'Submitted batch job 24543764'.
+[Tue May  3 08:57:44 2022]
+Finished job 1.
+1 of 4 steps (25%) done
+Select jobs to execute...
+
+[Tue May  3 08:57:44 2022]
+rule AlleleAtlas:
+    input: results/MergeVCFs_RP_NRP_EliteUSOnly_Chr01.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr01.txt.gz, resources/gff/Chr01.gff.gz, rules/custom/scripts/generate_allele_atlas.py
+    output: results/AlleleAtlas_RP_NRP_EliteUSOnly_Chr01.txt.gz, results/Bottleneck_genes_RP_NRP_EliteUSOnly_Chr01.txt.gz, results/Housekeeping_genes_RP_NRP_EliteUSOnly_Chr01.txt.gz
+    jobid: 10
+    wildcards: RP_id=RP, NRP_id=NRP, subset=EliteUSOnly, chr=01
+
+Submitted job 10 with external jobid 'Submitted batch job 24543874'.
+
+[Tue May  3 08:57:44 2022]
+rule AlleleAtlas:
+    input: results/MergeVCFs_RP_NRP_AllAccessions_Chr01.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr01.txt.gz, resources/gff/Chr01.gff.gz, rules/custom/scripts/generate_allele_atlas.py
+    output: results/AlleleAtlas_RP_NRP_AllAccessions_Chr01.txt.gz, results/Bottleneck_genes_RP_NRP_AllAccessions_Chr01.txt.gz, results/Housekeeping_genes_RP_NRP_AllAccessions_Chr01.txt.gz
+    jobid: 9
+    wildcards: RP_id=RP, NRP_id=NRP, subset=AllAccessions, chr=01
+
+Submitted job 9 with external jobid 'Submitted batch job 24543875'.
+[Tue May  3 08:59:34 2022]
+Finished job 10.
+2 of 4 steps (50%) done
+[Tue May  3 09:22:46 2022]
+Finished job 9.
+3 of 4 steps (75%) done
+Select jobs to execute...
+
+[Tue May  3 09:22:46 2022]
+localrule all:
+    input: results/SNPEff_Ann_RP_NRP_Chr01.txt.gz, results/AlleleAtlas_RP_NRP_AllAccessions_Chr01.txt.gz, results/AlleleAtlas_RP_NRP_EliteUSOnly_Chr01.txt.gz
+    jobid: 0
+
+[Tue May  3 09:22:46 2022]
+Finished job 0.
+4 of 4 steps (100%) done
+Complete log: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/log/2022-05-03T082742.792909.snakemake.log

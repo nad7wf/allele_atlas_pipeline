@@ -1,0 +1,9 @@
+name: pop_analysis
+channels:
+ - conda-forge
+ - bioconda
+ - defaults
+dependencies:
+ - plink
+ - vcftools
+ - htslib

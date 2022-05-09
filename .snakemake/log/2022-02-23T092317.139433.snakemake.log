@@ -1,0 +1,47 @@
+Building DAG of jobs...
+Job counts:
+	count	jobs
+	2	AlleleAtlas
+	1	EstimateBlocks
+	1	SNPsOnly
+	1	all
+	5
+
+[Wed Feb 23 09:23:17 2022]
+rule AlleleAtlas:
+    input: results/MergeVCFs_RP_NRP_AllAccessions_Chr04.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr04.txt.gz, resources/gff/Chr04.gff.gz, rules/custom/scripts/generate_allele_atlas.py
+    output: results/AlleleAtlas_RP_NRP_AllAccessions_Chr04.txt.gz, results/Bottleneck_genes_RP_NRP_AllAccessions_Chr04.txt.gz, results/Housekeeping_genes_RP_NRP_AllAccessions_Chr04.txt.gz
+    jobid: 11
+    wildcards: RP_id=RP, NRP_id=NRP, subset=AllAccessions, chr=04
+
+
+[Wed Feb 23 09:23:17 2022]
+rule AlleleAtlas:
+    input: results/MergeVCFs_RP_NRP_EliteUSOnly_Chr04.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr04.txt.gz, resources/gff/Chr04.gff.gz, rules/custom/scripts/generate_allele_atlas.py
+    output: results/AlleleAtlas_RP_NRP_EliteUSOnly_Chr04.txt.gz, results/Bottleneck_genes_RP_NRP_EliteUSOnly_Chr04.txt.gz, results/Housekeeping_genes_RP_NRP_EliteUSOnly_Chr04.txt.gz
+    jobid: 13
+    wildcards: RP_id=RP, NRP_id=NRP, subset=EliteUSOnly, chr=04
+
+
+[Wed Feb 23 09:23:17 2022]
+rule SNPsOnly:
+    input: results/MergeVCFs_RP_NRP_EliteUSOnly_Chr04.vcf.gz
+    output: results/SNPsOnly_RP_NRP_EliteUSOnly_Chr04.vcf.gz
+    jobid: 2
+    wildcards: chr=04
+
+
+[Wed Feb 23 09:23:17 2022]
+rule EstimateBlocks:
+    input: results/SNPsOnly_RP_NRP_EliteUSOnly_Chr04.vcf.gz
+    output: results/EstimateBlocks_RP_NRP_EliteUSOnly_Chr04.vcf.gz
+    jobid: 1
+    wildcards: chr=04
+
+RuleException in line 1 of /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/rules/plink/EstimateBlocks.smk:
+NameError: The name 'intput' is unknown in this context. Please make sure that you defined that variable. Also note that braces not used for variable access have to be escaped by repeating them, i.e. {{print $1}}
+  File "/cluster/software/conda-envs/envs/snakemake-5.3.0/lib/python3.6/site-packages/snakemake/executors/__init__.py", line 135, in run_jobs
+  File "/cluster/software/conda-envs/envs/snakemake-5.3.0/lib/python3.6/site-packages/snakemake/executors/__init__.py", line 140, in run
+  File "/cluster/software/conda-envs/envs/snakemake-5.3.0/lib/python3.6/site-packages/snakemake/executors/__init__.py", line 151, in _run
+  File "/cluster/software/conda-envs/envs/snakemake-5.3.0/lib/python3.6/site-packages/snakemake/executors/__init__.py", line 171, in printjob
+  File "/cluster/software/conda-envs/envs/snakemake-5.3.0/lib/python3.6/site-packages/snakemake/executors/__init__.py", line 157, in printjob

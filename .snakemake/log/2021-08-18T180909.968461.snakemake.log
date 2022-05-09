@@ -1,0 +1,33 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Job counts:
+	count	jobs
+	1	SNPEff
+	1	all
+	2
+Select jobs to execute...
+
+[Wed Aug 18 18:09:11 2021]
+rule SNPEff:
+    input: results/MergeVCFs_RP_NRP_Chr04.vcf.gz, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.config, /scratch/nad7wf/miniconda/pkgs/snpsift-4.3.1t-hdfd78af_3/share/snpsift-4.3.1t-3/SnpSift.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/scripts/vcfEffOnePerLine.pl
+    output: results/SNPEff_Ann_RP_NRP_Chr04.txt.gz
+    jobid: 8
+    wildcards: chr=04
+    resources: memory=30G
+
+Submitted job 8 with external jobid 'Submitted batch job 23205763'.
+[Wed Aug 18 18:47:31 2021]
+Finished job 8.
+1 of 2 steps (50%) done
+Select jobs to execute...
+
+[Wed Aug 18 18:47:31 2021]
+localrule all:
+    input: results/RenameSamples_RP_Chr04.vcf.gz, results/RenameSamples_NRP_Chr04.vcf.gz, results/Preformat_RP_Chr04.vcf.gz, results/Preformat_NRP_Chr04.vcf.gz, results/ImputeRP_RP_Chr04.vcf.gz, results/ImputeNRP_NRP_Chr04.vcf.gz, results/MergeVCFs_RP_NRP_Chr04.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr04.txt.gz
+    jobid: 0
+
+[Wed Aug 18 18:47:31 2021]
+Finished job 0.
+2 of 2 steps (100%) done
+Complete log: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/log/2021-08-18T180909.968461.snakemake.log

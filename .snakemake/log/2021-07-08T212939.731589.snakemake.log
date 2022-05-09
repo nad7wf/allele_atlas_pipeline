@@ -1,0 +1,38 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Job counts:
+	count	jobs
+	1	AlleleAtlas
+	1	ImputeNRP
+	1	ImputeRP
+	1	MergeVCFs
+	1	SNPEff
+	1	all
+	6
+Select jobs to execute...
+
+[Thu Jul  8 21:29:40 2021]
+rule ImputeRP:
+    input: results/Preformat_RP_Chr06.vcf.gz
+    output: results/ImputeRP_RP_Chr06.vcf.gz, results/beagle/ImputeRP_RP_Chr06
+    jobid: 5
+    wildcards: chr=06
+    resources: memory=48, threads=15
+
+Submitted job 5 with external jobid 'Submitted batch job 23006317'.
+Removing temporary output file results/beagle/ImputeRP_RP_Chr06.
+[Thu Jul  8 22:28:43 2021]
+Finished job 5.
+1 of 6 steps (17%) done
+Select jobs to execute...
+
+[Thu Jul  8 22:28:43 2021]
+rule ImputeNRP:
+    input: results/Preformat_NRP_Chr06.vcf.gz, results/ImputeRP_RP_Chr06.vcf.gz
+    output: results/ImputeNRP_NRP_Chr06.vcf.gz, results/beagle/ImputeNRP_NRP_Chr06
+    jobid: 6
+    wildcards: chr=06
+    resources: memory=28, threads=1
+
+Submitted job 6 with external jobid 'Submitted batch job 23006347'.

@@ -4,43 +4,63 @@ __default__:
   cpus: 1
   mem: 1G
 RenameSamples:
-  mem: 30G
+  time: 0-04:00
+  mem: 1G
   job-name: RenameSamples
   output: reports/RenameSamples-%j.slurm.out
 PreformatRP:
-  mem: 30G
-  time: 0-02:00
+  time: 0-01:00
+  mem: 1G
   job-name: PreformatRP
   output: reports/PreformatRP-%j.slurm.out
 PreformatNRP:
-  mem: 30G
   time: 0-01:00
+  mem: 1G
   job-name: PreformatNRP
   output: reports/PreformatNRP-%j.slurm.out
-SplitVCF:
-  mem: 20G
-  job-name: SplitVCF
-  output: reports/SplitVCF-%j.slurm.out
 ImputeRP:
-  time: 0-05:00
-  mem: 50G
-  cpus: 10
+  time: 0-08:00
+  mem: 120G
+  cpus: 15
   job-name: ImputeRP
   output: reports/ImputeRP-%j.slurm.out
 ImputeNRP:
-  mem: 30G
+  time: 0-04:00
+  mem: 100G
+  cpus: 15
   job-name: ImputeNRP
   output: reports/ImputeNRP-%j.slurm.out
 MergeVCFs:
-  mem: 30G
+  time: 0-01:00
+  mem: 2G
   job-name: MergeVCFs
   output: reports/MergeVCFs-%j.slurm.out
+Subset:
+  time: 0-01:00
+  mem: 500M
+  job-name: Subset
+  output: reports/Subset-%j.slurm.out
+SNPsOnly:
+  time: 0-01:00
+  mem: 500M
+  job-name: SNPsOnly
+  output: reports/SNPsOnly-%j.slurm.out
+EstimateBlocks:
+  time: 0-12:00
+  mem: 20G
+  job-name: EstimateBlocks
+  output: reports/EstimateBlocks-%j.slurm.out
+Fst:
+  time: 0-01:00
+  mem: 200M
+  job-name: Fst
+  output: reports/Fst-%j.slurm.out
 SNPEff:
+  time: 0-05:00
   mem: 30G
   job-name: SNPEff
   output: reports/SNPEff-%j.slurm.out
 AlleleAtlas:
-  mem: 30G
-  time: 0-04:00
+  mem: 110G
   job-name: AlleleAtlas
   output: reports/AlleleAtlas-%j.slurm.out

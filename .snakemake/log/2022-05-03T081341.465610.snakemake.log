@@ -1,0 +1,56 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Job counts:
+	count	jobs
+	2	AlleleAtlas
+	1	all
+	3
+Select jobs to execute...
+
+[Tue May  3 08:13:42 2022]
+rule AlleleAtlas:
+    input: results/MergeVCFs_RP_NRP_EliteUSOnly_Chr01.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr01.txt.gz, resources/gff/Chr01.gff.gz, rules/custom/scripts/generate_allele_atlas.py
+    output: results/AlleleAtlas_RP_NRP_EliteUSOnly_Chr01.txt.gz, results/Bottleneck_genes_RP_NRP_EliteUSOnly_Chr01.txt.gz, results/Housekeeping_genes_RP_NRP_EliteUSOnly_Chr01.txt.gz
+    jobid: 10
+    wildcards: RP_id=RP, NRP_id=NRP, subset=EliteUSOnly, chr=01
+
+Submitted job 10 with external jobid 'Submitted batch job 24543711'.
+
+[Tue May  3 08:13:43 2022]
+rule AlleleAtlas:
+    input: results/MergeVCFs_RP_NRP_AllAccessions_Chr01.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr01.txt.gz, resources/gff/Chr01.gff.gz, rules/custom/scripts/generate_allele_atlas.py
+    output: results/AlleleAtlas_RP_NRP_AllAccessions_Chr01.txt.gz, results/Bottleneck_genes_RP_NRP_AllAccessions_Chr01.txt.gz, results/Housekeeping_genes_RP_NRP_AllAccessions_Chr01.txt.gz
+    jobid: 1
+    wildcards: RP_id=RP, NRP_id=NRP, subset=AllAccessions, chr=01
+
+Submitted job 1 with external jobid 'Submitted batch job 24543712'.
+[Tue May  3 08:14:41 2022]
+Error in rule AlleleAtlas:
+    jobid: 10
+    output: results/AlleleAtlas_RP_NRP_EliteUSOnly_Chr01.txt.gz, results/Bottleneck_genes_RP_NRP_EliteUSOnly_Chr01.txt.gz, results/Housekeeping_genes_RP_NRP_EliteUSOnly_Chr01.txt.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/b21b0d43
+    shell:
+        
+		zgrep -v "^##" results/MergeVCFs_RP_NRP_EliteUSOnly_Chr01.vcf.gz | 			python3 rules/custom/scripts/generate_allele_atlas.py 			--vcf - 			--ann results/SNPEff_Ann_RP_NRP_Chr01.txt.gz 			--gff resources/gff/Chr01.gff.gz 			--bottleneck results/Bottleneck_genes_RP_NRP_EliteUSOnly_Chr01.txt.gz 			--housekeeping results/Housekeeping_genes_RP_NRP_EliteUSOnly_Chr01.txt.gz 			--out results/AlleleAtlas_RP_NRP_EliteUSOnly_Chr01.txt.gz
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 24543711
+
+Error executing rule AlleleAtlas on cluster (jobid: 10, external: Submitted batch job 24543711, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.su2lkqia/snakejob.AlleleAtlas.10.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue May  3 08:14:41 2022]
+Error in rule AlleleAtlas:
+    jobid: 1
+    output: results/AlleleAtlas_RP_NRP_AllAccessions_Chr01.txt.gz, results/Bottleneck_genes_RP_NRP_AllAccessions_Chr01.txt.gz, results/Housekeeping_genes_RP_NRP_AllAccessions_Chr01.txt.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/b21b0d43
+    shell:
+        
+		zgrep -v "^##" results/MergeVCFs_RP_NRP_AllAccessions_Chr01.vcf.gz | 			python3 rules/custom/scripts/generate_allele_atlas.py 			--vcf - 			--ann results/SNPEff_Ann_RP_NRP_Chr01.txt.gz 			--gff resources/gff/Chr01.gff.gz 			--bottleneck results/Bottleneck_genes_RP_NRP_AllAccessions_Chr01.txt.gz 			--housekeeping results/Housekeeping_genes_RP_NRP_AllAccessions_Chr01.txt.gz 			--out results/AlleleAtlas_RP_NRP_AllAccessions_Chr01.txt.gz
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 24543712
+
+Error executing rule AlleleAtlas on cluster (jobid: 1, external: Submitted batch job 24543712, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.su2lkqia/snakejob.AlleleAtlas.1.sh). For error details see the cluster log and the log files of the involved rule(s).
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/log/2022-05-03T081341.465610.snakemake.log

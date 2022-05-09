@@ -1,0 +1,40 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Job counts:
+	count	jobs
+	1	ImputeRP
+	22
+Select jobs to execute...
+
+[Mon Jan 24 15:06:46 2022]
+rule ImputeRP:
+    input: results/Preformat_RP_Chr03.vcf.gz
+    output: results/ImputeRP_RP_Chr03.vcf.gz, results/beagle/ImputeRP_RP_Chr03
+    jobid: 83
+    wildcards: chr=03
+    resources: memory=65, threads=15
+
+Submitted job 83 with external jobid 'Submitted batch job 24099866'.
+[Mon Jan 24 15:52:08 2022]
+Error in rule ImputeRP:
+    jobid: 83
+    output: results/ImputeRP_RP_Chr03.vcf.gz, results/beagle/ImputeRP_RP_Chr03
+    shell:
+        
+		module load bcftools
+		mkdir -p results/beagle/ImputeRP_RP_Chr03
+
+		java -Xmx65G 			-Djava.io.tmpdir=results/beagle/ImputeRP_RP_Chr03 			-jar resources/beagle/beagle.28Jun21.220.jar 			nthreads=15 			gt=results/Preformat_RP_Chr03.vcf.gz 			out=results/ImputeRP_RP_Chr03
+
+		bcftools index --tbi results/ImputeRP_RP_Chr03.vcf.gz
+
+		rm "results/ImputeRP_RP_Chr03.log"
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 24099866
+
+Error executing rule ImputeRP on cluster (jobid: 83, external: Submitted batch job 24099866, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.xfmouo2d/snakejob.ImputeRP.83.sh). For error details see the cluster log and the log files of the involved rule(s).
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/log/2022-01-24T150645.167301.snakemake.log

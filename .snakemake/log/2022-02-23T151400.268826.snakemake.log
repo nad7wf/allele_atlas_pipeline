@@ -1,0 +1,4 @@
+KeyError in line 8 of /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/rules/plink/Fst.smk:
+'cpus'
+  File "/storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/workflow/allele_atlas.smk", line 35, in <module>
+  File "/storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/rules/plink/Fst.smk", line 8, in <module>

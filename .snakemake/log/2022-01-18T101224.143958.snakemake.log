@@ -1,0 +1,1163 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Job counts:
+	count	jobs
+	20	AlleleAtlas
+	20	ImputeNRP
+	20	ImputeRP
+	20	MergeVCFs
+	20	PreformatNRP
+	20	PreformatRP
+	20	RenameSamples
+	20	SNPEff
+	20	SubsetUS
+	1	all
+	181
+Select jobs to execute...
+
+[Tue Jan 18 10:12:24 2022]
+rule RenameSamples:
+    input: resources/RP/RP_Chr13.vcf.gz, resources/RP/RP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_RP_Chr13.vcf.gz
+    jobid: 13
+    wildcards: id=RP, chr=13
+
+Submitted job 13 with external jobid 'Submitted batch job 24079778'.
+
+[Tue Jan 18 10:12:24 2022]
+rule RenameSamples:
+    input: resources/RP/RP_Chr01.vcf.gz, resources/RP/RP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_RP_Chr01.vcf.gz
+    jobid: 1
+    wildcards: id=RP, chr=01
+
+Submitted job 1 with external jobid 'Submitted batch job 24079779'.
+
+[Tue Jan 18 10:12:24 2022]
+rule RenameSamples:
+    input: resources/RP/RP_Chr15.vcf.gz, resources/RP/RP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_RP_Chr15.vcf.gz
+    jobid: 15
+    wildcards: id=RP, chr=15
+
+Submitted job 15 with external jobid 'Submitted batch job 24079780'.
+
+[Tue Jan 18 10:12:24 2022]
+rule RenameSamples:
+    input: resources/RP/RP_Chr17.vcf.gz, resources/RP/RP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_RP_Chr17.vcf.gz
+    jobid: 17
+    wildcards: id=RP, chr=17
+
+Submitted job 17 with external jobid 'Submitted batch job 24079781'.
+
+[Tue Jan 18 10:12:25 2022]
+rule RenameSamples:
+    input: resources/RP/RP_Chr02.vcf.gz, resources/RP/RP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_RP_Chr02.vcf.gz
+    jobid: 2
+    wildcards: id=RP, chr=02
+
+Submitted job 2 with external jobid 'Submitted batch job 24079782'.
+
+[Tue Jan 18 10:12:25 2022]
+rule RenameSamples:
+    input: resources/RP/RP_Chr04.vcf.gz, resources/RP/RP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_RP_Chr04.vcf.gz
+    jobid: 4
+    wildcards: id=RP, chr=04
+
+Submitted job 4 with external jobid 'Submitted batch job 24079783'.
+
+[Tue Jan 18 10:12:25 2022]
+rule RenameSamples:
+    input: resources/RP/RP_Chr19.vcf.gz, resources/RP/RP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_RP_Chr19.vcf.gz
+    jobid: 19
+    wildcards: id=RP, chr=19
+
+Submitted job 19 with external jobid 'Submitted batch job 24079784'.
+
+[Tue Jan 18 10:12:25 2022]
+rule RenameSamples:
+    input: resources/RP/RP_Chr06.vcf.gz, resources/RP/RP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_RP_Chr06.vcf.gz
+    jobid: 6
+    wildcards: id=RP, chr=06
+
+Submitted job 6 with external jobid 'Submitted batch job 24079785'.
+
+[Tue Jan 18 10:12:25 2022]
+rule RenameSamples:
+    input: resources/RP/RP_Chr08.vcf.gz, resources/RP/RP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_RP_Chr08.vcf.gz
+    jobid: 8
+    wildcards: id=RP, chr=08
+
+Submitted job 8 with external jobid 'Submitted batch job 24079786'.
+
+[Tue Jan 18 10:12:25 2022]
+rule RenameSamples:
+    input: resources/RP/RP_Chr10.vcf.gz, resources/RP/RP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_RP_Chr10.vcf.gz
+    jobid: 10
+    wildcards: id=RP, chr=10
+
+Submitted job 10 with external jobid 'Submitted batch job 24079787'.
+
+[Tue Jan 18 10:12:26 2022]
+rule RenameSamples:
+    input: resources/RP/RP_Chr12.vcf.gz, resources/RP/RP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_RP_Chr12.vcf.gz
+    jobid: 12
+    wildcards: id=RP, chr=12
+
+Submitted job 12 with external jobid 'Submitted batch job 24079788'.
+
+[Tue Jan 18 10:12:26 2022]
+rule RenameSamples:
+    input: resources/RP/RP_Chr09.vcf.gz, resources/RP/RP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_RP_Chr09.vcf.gz
+    jobid: 9
+    wildcards: id=RP, chr=09
+
+Submitted job 9 with external jobid 'Submitted batch job 24079789'.
+
+[Tue Jan 18 10:12:26 2022]
+rule RenameSamples:
+    input: resources/RP/RP_Chr14.vcf.gz, resources/RP/RP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_RP_Chr14.vcf.gz
+    jobid: 14
+    wildcards: id=RP, chr=14
+
+Submitted job 14 with external jobid 'Submitted batch job 24079790'.
+
+[Tue Jan 18 10:12:26 2022]
+rule RenameSamples:
+    input: resources/RP/RP_Chr16.vcf.gz, resources/RP/RP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_RP_Chr16.vcf.gz
+    jobid: 16
+    wildcards: id=RP, chr=16
+
+Submitted job 16 with external jobid 'Submitted batch job 24079791'.
+
+[Tue Jan 18 10:12:26 2022]
+rule RenameSamples:
+    input: resources/RP/RP_Chr18.vcf.gz, resources/RP/RP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_RP_Chr18.vcf.gz
+    jobid: 18
+    wildcards: id=RP, chr=18
+
+Submitted job 18 with external jobid 'Submitted batch job 24079792'.
+
+[Tue Jan 18 10:12:26 2022]
+rule RenameSamples:
+    input: resources/RP/RP_Chr20.vcf.gz, resources/RP/RP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_RP_Chr20.vcf.gz
+    jobid: 20
+    wildcards: id=RP, chr=20
+
+Submitted job 20 with external jobid 'Submitted batch job 24079793'.
+
+[Tue Jan 18 10:12:27 2022]
+rule RenameSamples:
+    input: resources/RP/RP_Chr07.vcf.gz, resources/RP/RP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_RP_Chr07.vcf.gz
+    jobid: 7
+    wildcards: id=RP, chr=07
+
+Submitted job 7 with external jobid 'Submitted batch job 24079794'.
+
+[Tue Jan 18 10:12:27 2022]
+rule RenameSamples:
+    input: resources/RP/RP_Chr03.vcf.gz, resources/RP/RP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_RP_Chr03.vcf.gz
+    jobid: 3
+    wildcards: id=RP, chr=03
+
+Submitted job 3 with external jobid 'Submitted batch job 24079795'.
+
+[Tue Jan 18 10:12:27 2022]
+rule RenameSamples:
+    input: resources/RP/RP_Chr11.vcf.gz, resources/RP/RP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_RP_Chr11.vcf.gz
+    jobid: 11
+    wildcards: id=RP, chr=11
+
+Submitted job 11 with external jobid 'Submitted batch job 24079796'.
+
+[Tue Jan 18 10:12:27 2022]
+rule RenameSamples:
+    input: resources/RP/RP_Chr05.vcf.gz, resources/RP/RP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_RP_Chr05.vcf.gz
+    jobid: 5
+    wildcards: id=RP, chr=05
+
+Submitted job 5 with external jobid 'Submitted batch job 24079797'.
+[Tue Jan 18 11:31:41 2022]
+Finished job 11.
+1 of 181 steps (0.55%) done
+Select jobs to execute...
+
+[Tue Jan 18 11:31:41 2022]
+rule PreformatRP:
+    input: results/RenameSamples_RP_Chr11.vcf.gz
+    output: results/Preformat_RP_Chr11.vcf.gz
+    jobid: 51
+    wildcards: chr=11
+
+Submitted job 51 with external jobid 'Submitted batch job 24079904'.
+[Tue Jan 18 11:45:06 2022]
+Finished job 51.
+2 of 181 steps (1%) done
+Select jobs to execute...
+
+[Tue Jan 18 11:45:06 2022]
+rule PreformatNRP:
+    input: results/RenameSamples_NRP_Chr11.vcf.gz, results/Preformat_RP_Chr11.vcf.gz
+    output: results/Preformat_NRP_Chr11.vcf.gz
+    jobid: 71
+    wildcards: chr=11
+
+Submitted job 71 with external jobid 'Submitted batch job 24079926'.
+
+[Tue Jan 18 11:45:06 2022]
+rule ImputeRP:
+    input: results/Preformat_RP_Chr11.vcf.gz
+    output: results/ImputeRP_RP_Chr11.vcf.gz, results/beagle/ImputeRP_RP_Chr11
+    jobid: 91
+    wildcards: chr=11
+    resources: memory=65, threads=15
+
+Submitted job 91 with external jobid 'Submitted batch job 24079927'.
+[Tue Jan 18 11:47:54 2022]
+Finished job 71.
+3 of 181 steps (2%) done
+[Tue Jan 18 11:52:31 2022]
+Finished job 12.
+4 of 181 steps (2%) done
+Select jobs to execute...
+
+[Tue Jan 18 11:52:31 2022]
+rule PreformatRP:
+    input: results/RenameSamples_RP_Chr12.vcf.gz
+    output: results/Preformat_RP_Chr12.vcf.gz
+    jobid: 52
+    wildcards: chr=12
+
+Submitted job 52 with external jobid 'Submitted batch job 24079932'.
+[Tue Jan 18 11:54:18 2022]
+Finished job 17.
+5 of 181 steps (3%) done
+Select jobs to execute...
+
+[Tue Jan 18 11:54:18 2022]
+rule PreformatRP:
+    input: results/RenameSamples_RP_Chr17.vcf.gz
+    output: results/Preformat_RP_Chr17.vcf.gz
+    jobid: 57
+    wildcards: chr=17
+
+Submitted job 57 with external jobid 'Submitted batch job 24079937'.
+[Tue Jan 18 11:55:19 2022]
+Finished job 5.
+6 of 181 steps (3%) done
+Select jobs to execute...
+
+[Tue Jan 18 11:55:19 2022]
+rule PreformatRP:
+    input: results/RenameSamples_RP_Chr05.vcf.gz
+    output: results/Preformat_RP_Chr05.vcf.gz
+    jobid: 45
+    wildcards: chr=05
+
+Submitted job 45 with external jobid 'Submitted batch job 24079940'.
+[Tue Jan 18 12:00:54 2022]
+Finished job 2.
+7 of 181 steps (4%) done
+Select jobs to execute...
+
+[Tue Jan 18 12:00:54 2022]
+rule PreformatRP:
+    input: results/RenameSamples_RP_Chr02.vcf.gz
+    output: results/Preformat_RP_Chr02.vcf.gz
+    jobid: 42
+    wildcards: chr=02
+
+Submitted job 42 with external jobid 'Submitted batch job 24079942'.
+[Tue Jan 18 12:03:42 2022]
+Finished job 13.
+8 of 181 steps (4%) done
+Select jobs to execute...
+
+[Tue Jan 18 12:03:42 2022]
+rule PreformatRP:
+    input: results/RenameSamples_RP_Chr13.vcf.gz
+    output: results/Preformat_RP_Chr13.vcf.gz
+    jobid: 53
+    wildcards: chr=13
+
+Submitted job 53 with external jobid 'Submitted batch job 24079946'.
+[Tue Jan 18 12:06:32 2022]
+Finished job 7.
+9 of 181 steps (5%) done
+Select jobs to execute...
+
+[Tue Jan 18 12:06:32 2022]
+rule PreformatRP:
+    input: results/RenameSamples_RP_Chr07.vcf.gz
+    output: results/Preformat_RP_Chr07.vcf.gz
+    jobid: 47
+    wildcards: chr=07
+
+Submitted job 47 with external jobid 'Submitted batch job 24079950'.
+[Tue Jan 18 12:07:19 2022]
+Finished job 8.
+10 of 181 steps (6%) done
+Select jobs to execute...
+
+[Tue Jan 18 12:07:19 2022]
+rule PreformatRP:
+    input: results/RenameSamples_RP_Chr08.vcf.gz
+    output: results/Preformat_RP_Chr08.vcf.gz
+    jobid: 48
+    wildcards: chr=08
+
+Submitted job 48 with external jobid 'Submitted batch job 24079951'.
+[Tue Jan 18 12:10:44 2022]
+Finished job 52.
+11 of 181 steps (6%) done
+Select jobs to execute...
+
+[Tue Jan 18 12:10:44 2022]
+rule PreformatNRP:
+    input: results/RenameSamples_NRP_Chr12.vcf.gz, results/Preformat_RP_Chr12.vcf.gz
+    output: results/Preformat_NRP_Chr12.vcf.gz
+    jobid: 72
+    wildcards: chr=12
+
+Submitted job 72 with external jobid 'Submitted batch job 24079959'.
+
+[Tue Jan 18 12:10:44 2022]
+rule ImputeRP:
+    input: results/Preformat_RP_Chr12.vcf.gz
+    output: results/ImputeRP_RP_Chr12.vcf.gz, results/beagle/ImputeRP_RP_Chr12
+    jobid: 92
+    wildcards: chr=12
+    resources: memory=65, threads=15
+
+Submitted job 92 with external jobid 'Submitted batch job 24079960'.
+[Tue Jan 18 12:11:32 2022]
+Finished job 16.
+12 of 181 steps (7%) done
+Select jobs to execute...
+
+[Tue Jan 18 12:11:32 2022]
+rule PreformatRP:
+    input: results/RenameSamples_RP_Chr16.vcf.gz
+    output: results/Preformat_RP_Chr16.vcf.gz
+    jobid: 56
+    wildcards: chr=16
+
+Submitted job 56 with external jobid 'Submitted batch job 24079962'.
+[Tue Jan 18 12:11:44 2022]
+Finished job 9.
+13 of 181 steps (7%) done
+Select jobs to execute...
+
+[Tue Jan 18 12:11:44 2022]
+rule PreformatRP:
+    input: results/RenameSamples_RP_Chr09.vcf.gz
+    output: results/Preformat_RP_Chr09.vcf.gz
+    jobid: 49
+    wildcards: chr=09
+
+Submitted job 49 with external jobid 'Submitted batch job 24079963'.
+[Tue Jan 18 12:13:43 2022]
+Finished job 57.
+14 of 181 steps (8%) done
+Select jobs to execute...
+
+[Tue Jan 18 12:13:43 2022]
+rule ImputeRP:
+    input: results/Preformat_RP_Chr17.vcf.gz
+    output: results/ImputeRP_RP_Chr17.vcf.gz, results/beagle/ImputeRP_RP_Chr17
+    jobid: 97
+    wildcards: chr=17
+    resources: memory=65, threads=15
+
+Submitted job 97 with external jobid 'Submitted batch job 24079967'.
+
+[Tue Jan 18 12:13:43 2022]
+rule PreformatNRP:
+    input: results/RenameSamples_NRP_Chr17.vcf.gz, results/Preformat_RP_Chr17.vcf.gz
+    output: results/Preformat_NRP_Chr17.vcf.gz
+    jobid: 77
+    wildcards: chr=17
+
+Submitted job 77 with external jobid 'Submitted batch job 24079968'.
+[Tue Jan 18 12:13:56 2022]
+Finished job 45.
+15 of 181 steps (8%) done
+Select jobs to execute...
+
+[Tue Jan 18 12:13:56 2022]
+rule PreformatNRP:
+    input: results/RenameSamples_NRP_Chr05.vcf.gz, results/Preformat_RP_Chr05.vcf.gz
+    output: results/Preformat_NRP_Chr05.vcf.gz
+    jobid: 65
+    wildcards: chr=05
+
+Submitted job 65 with external jobid 'Submitted batch job 24079969'.
+
+[Tue Jan 18 12:13:58 2022]
+rule ImputeRP:
+    input: results/Preformat_RP_Chr05.vcf.gz
+    output: results/ImputeRP_RP_Chr05.vcf.gz, results/beagle/ImputeRP_RP_Chr05
+    jobid: 85
+    wildcards: chr=05
+    resources: memory=65, threads=15
+
+Submitted job 85 with external jobid 'Submitted batch job 24079970'.
+[Tue Jan 18 12:14:20 2022]
+Finished job 72.
+16 of 181 steps (9%) done
+[Tue Jan 18 12:17:32 2022]
+Finished job 77.
+17 of 181 steps (9%) done
+[Tue Jan 18 12:18:09 2022]
+Finished job 65.
+18 of 181 steps (10%) done
+[Tue Jan 18 12:20:32 2022]
+Finished job 42.
+19 of 181 steps (10%) done
+Select jobs to execute...
+
+[Tue Jan 18 12:20:32 2022]
+rule ImputeRP:
+    input: results/Preformat_RP_Chr02.vcf.gz
+    output: results/ImputeRP_RP_Chr02.vcf.gz, results/beagle/ImputeRP_RP_Chr02
+    jobid: 82
+    wildcards: chr=02
+    resources: memory=65, threads=15
+
+Submitted job 82 with external jobid 'Submitted batch job 24079978'.
+
+[Tue Jan 18 12:20:32 2022]
+rule PreformatNRP:
+    input: results/RenameSamples_NRP_Chr02.vcf.gz, results/Preformat_RP_Chr02.vcf.gz
+    output: results/Preformat_NRP_Chr02.vcf.gz
+    jobid: 62
+    wildcards: chr=02
+
+Submitted job 62 with external jobid 'Submitted batch job 24079979'.
+[Tue Jan 18 12:24:20 2022]
+Finished job 62.
+20 of 181 steps (11%) done
+[Tue Jan 18 12:25:32 2022]
+Finished job 53.
+21 of 181 steps (12%) done
+Select jobs to execute...
+
+[Tue Jan 18 12:25:32 2022]
+rule PreformatNRP:
+    input: results/RenameSamples_NRP_Chr13.vcf.gz, results/Preformat_RP_Chr13.vcf.gz
+    output: results/Preformat_NRP_Chr13.vcf.gz
+    jobid: 73
+    wildcards: chr=13
+
+Submitted job 73 with external jobid 'Submitted batch job 24079984'.
+
+[Tue Jan 18 12:25:32 2022]
+rule ImputeRP:
+    input: results/Preformat_RP_Chr13.vcf.gz
+    output: results/ImputeRP_RP_Chr13.vcf.gz, results/beagle/ImputeRP_RP_Chr13
+    jobid: 93
+    wildcards: chr=13
+    resources: memory=65, threads=15
+
+Submitted job 93 with external jobid 'Submitted batch job 24079985'.
+[Tue Jan 18 12:27:21 2022]
+Finished job 47.
+22 of 181 steps (12%) done
+Select jobs to execute...
+
+[Tue Jan 18 12:27:21 2022]
+rule PreformatNRP:
+    input: results/RenameSamples_NRP_Chr07.vcf.gz, results/Preformat_RP_Chr07.vcf.gz
+    output: results/Preformat_NRP_Chr07.vcf.gz
+    jobid: 67
+    wildcards: chr=07
+
+Submitted job 67 with external jobid 'Submitted batch job 24079986'.
+
+[Tue Jan 18 12:27:22 2022]
+rule ImputeRP:
+    input: results/Preformat_RP_Chr07.vcf.gz
+    output: results/ImputeRP_RP_Chr07.vcf.gz, results/beagle/ImputeRP_RP_Chr07
+    jobid: 87
+    wildcards: chr=07
+    resources: memory=65, threads=15
+
+Submitted job 87 with external jobid 'Submitted batch job 24079987'.
+[Tue Jan 18 12:28:32 2022]
+Finished job 48.
+23 of 181 steps (13%) done
+Select jobs to execute...
+
+[Tue Jan 18 12:28:33 2022]
+rule PreformatNRP:
+    input: results/RenameSamples_NRP_Chr08.vcf.gz, results/Preformat_RP_Chr08.vcf.gz
+    output: results/Preformat_NRP_Chr08.vcf.gz
+    jobid: 68
+    wildcards: chr=08
+
+Submitted job 68 with external jobid 'Submitted batch job 24079989'.
+
+[Tue Jan 18 12:28:34 2022]
+rule ImputeRP:
+    input: results/Preformat_RP_Chr08.vcf.gz
+    output: results/ImputeRP_RP_Chr08.vcf.gz, results/beagle/ImputeRP_RP_Chr08
+    jobid: 88
+    wildcards: chr=08
+    resources: memory=65, threads=15
+
+Submitted job 88 with external jobid 'Submitted batch job 24079990'.
+[Tue Jan 18 12:29:45 2022]
+Finished job 73.
+24 of 181 steps (13%) done
+[Tue Jan 18 12:31:21 2022]
+Finished job 67.
+25 of 181 steps (14%) done
+[Tue Jan 18 12:32:33 2022]
+Finished job 68.
+26 of 181 steps (14%) done
+[Tue Jan 18 12:33:57 2022]
+Finished job 49.
+27 of 181 steps (15%) done
+Select jobs to execute...
+
+[Tue Jan 18 12:33:57 2022]
+rule PreformatNRP:
+    input: results/RenameSamples_NRP_Chr09.vcf.gz, results/Preformat_RP_Chr09.vcf.gz
+    output: results/Preformat_NRP_Chr09.vcf.gz
+    jobid: 69
+    wildcards: chr=09
+
+Submitted job 69 with external jobid 'Submitted batch job 24079998'.
+
+[Tue Jan 18 12:33:57 2022]
+rule ImputeRP:
+    input: results/Preformat_RP_Chr09.vcf.gz
+    output: results/ImputeRP_RP_Chr09.vcf.gz, results/beagle/ImputeRP_RP_Chr09
+    jobid: 89
+    wildcards: chr=09
+    resources: memory=65, threads=15
+
+Submitted job 89 with external jobid 'Submitted batch job 24079999'.
+[Tue Jan 18 12:35:09 2022]
+Finished job 56.
+28 of 181 steps (15%) done
+Select jobs to execute...
+
+[Tue Jan 18 12:35:09 2022]
+rule ImputeRP:
+    input: results/Preformat_RP_Chr16.vcf.gz
+    output: results/ImputeRP_RP_Chr16.vcf.gz, results/beagle/ImputeRP_RP_Chr16
+    jobid: 96
+    wildcards: chr=16
+    resources: memory=65, threads=15
+
+Submitted job 96 with external jobid 'Submitted batch job 24080004'.
+
+[Tue Jan 18 12:35:09 2022]
+rule PreformatNRP:
+    input: results/RenameSamples_NRP_Chr16.vcf.gz, results/Preformat_RP_Chr16.vcf.gz
+    output: results/Preformat_NRP_Chr16.vcf.gz
+    jobid: 76
+    wildcards: chr=16
+
+Submitted job 76 with external jobid 'Submitted batch job 24080005'.
+[Tue Jan 18 12:37:57 2022]
+Finished job 69.
+29 of 181 steps (16%) done
+[Tue Jan 18 12:39:10 2022]
+Finished job 76.
+30 of 181 steps (17%) done
+Removing temporary output file results/beagle/ImputeRP_RP_Chr11.
+[Tue Jan 18 13:03:00 2022]
+Finished job 91.
+31 of 181 steps (17%) done
+Select jobs to execute...
+
+[Tue Jan 18 13:03:00 2022]
+rule ImputeNRP:
+    input: results/Preformat_NRP_Chr11.vcf.gz, results/ImputeRP_RP_Chr11.vcf.gz
+    output: results/ImputeNRP_NRP_Chr11.vcf.gz, results/beagle/ImputeNRP_NRP_Chr11
+    jobid: 111
+    wildcards: chr=11
+    resources: memory=93, threads=15
+
+Submitted job 111 with external jobid 'Submitted batch job 24080064'.
+Removing temporary output file results/beagle/ImputeRP_RP_Chr12.
+[Tue Jan 18 13:43:16 2022]
+Finished job 92.
+32 of 181 steps (18%) done
+Select jobs to execute...
+
+[Tue Jan 18 13:43:16 2022]
+rule ImputeNRP:
+    input: results/Preformat_NRP_Chr12.vcf.gz, results/ImputeRP_RP_Chr12.vcf.gz
+    output: results/ImputeNRP_NRP_Chr12.vcf.gz, results/beagle/ImputeNRP_NRP_Chr12
+    jobid: 112
+    wildcards: chr=12
+    resources: memory=93, threads=15
+
+Submitted job 112 with external jobid 'Submitted batch job 24080106'.
+Removing temporary output file results/beagle/ImputeNRP_NRP_Chr11.
+[Tue Jan 18 14:04:41 2022]
+Finished job 111.
+33 of 181 steps (18%) done
+Select jobs to execute...
+
+[Tue Jan 18 14:04:41 2022]
+rule MergeVCFs:
+    input: results/ImputeRP_RP_Chr11.vcf.gz, results/ImputeNRP_NRP_Chr11.vcf.gz
+    output: results/MergeVCFs_RP_NRP_Chr11.vcf.gz
+    jobid: 131
+    wildcards: chr=11
+
+Submitted job 131 with external jobid 'Submitted batch job 24080201'.
+[Tue Jan 18 14:10:54 2022]
+Finished job 131.
+34 of 181 steps (19%) done
+Select jobs to execute...
+
+[Tue Jan 18 14:10:54 2022]
+rule SNPEff:
+    input: results/MergeVCFs_RP_NRP_Chr11.vcf.gz, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.config, /scratch/nad7wf/miniconda/pkgs/snpsift-4.3.1t-hdfd78af_3/share/snpsift-4.3.1t-3/SnpSift.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/scripts/vcfEffOnePerLine.pl
+    output: results/SNPEff_Ann_RP_NRP_Chr11.txt.gz
+    jobid: 151
+    wildcards: chr=11
+    resources: memory=30G
+
+Submitted job 151 with external jobid 'Submitted batch job 24080216'.
+Removing temporary output file results/beagle/ImputeRP_RP_Chr17.
+[Tue Jan 18 14:15:05 2022]
+Finished job 97.
+35 of 181 steps (19%) done
+Select jobs to execute...
+
+[Tue Jan 18 14:15:05 2022]
+rule ImputeNRP:
+    input: results/Preformat_NRP_Chr17.vcf.gz, results/ImputeRP_RP_Chr17.vcf.gz
+    output: results/ImputeNRP_NRP_Chr17.vcf.gz, results/beagle/ImputeNRP_NRP_Chr17
+    jobid: 117
+    wildcards: chr=17
+    resources: memory=93, threads=15
+
+Submitted job 117 with external jobid 'Submitted batch job 24080219'.
+Removing temporary output file results/beagle/ImputeRP_RP_Chr08.
+[Tue Jan 18 14:27:54 2022]
+Finished job 88.
+36 of 181 steps (20%) done
+Select jobs to execute...
+
+[Tue Jan 18 14:27:54 2022]
+rule ImputeNRP:
+    input: results/Preformat_NRP_Chr08.vcf.gz, results/ImputeRP_RP_Chr08.vcf.gz
+    output: results/ImputeNRP_NRP_Chr08.vcf.gz, results/beagle/ImputeNRP_NRP_Chr08
+    jobid: 108
+    wildcards: chr=08
+    resources: memory=93, threads=15
+
+Submitted job 108 with external jobid 'Submitted batch job 24080235'.
+[Tue Jan 18 14:28:55 2022]
+Finished job 151.
+37 of 181 steps (20%) done
+Select jobs to execute...
+
+[Tue Jan 18 14:28:55 2022]
+rule AlleleAtlas:
+    input: results/MergeVCFs_RP_NRP_Chr11.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr11.txt.gz, resources/gff/Chr11.gff.gz, rules/custom/scripts/generate_allele_atlas.py
+    output: results/AlleleAtlas_RP_NRP_Chr11.txt.gz, results/Bottleneck_genes_RP_NRP_Chr11.txt.gz, results/Housekeeping_genes_RP_NRP_Chr11.txt.gz
+    jobid: 171
+    wildcards: RP_id=RP, NRP_id=NRP, chr=11
+
+Submitted job 171 with external jobid 'Submitted batch job 24080239'.
+[Tue Jan 18 14:49:33 2022]
+Finished job 171.
+38 of 181 steps (21%) done
+Select jobs to execute...
+
+[Tue Jan 18 14:49:33 2022]
+rule SubsetUS:
+    input: results/AlleleAtlas_RP_NRP_Chr11.txt.gz
+    output: results/SubsetUS_RP_NRP_Chr11.txt.gz
+    jobid: 191
+    wildcards: RP_id=RP, NRP_id=NRP, chr=11
+
+Submitted job 191 with external jobid 'Submitted batch job 24080274'.
+[Tue Jan 18 14:50:21 2022]
+Finished job 191.
+39 of 181 steps (22%) done
+Removing temporary output file results/beagle/ImputeNRP_NRP_Chr12.
+[Tue Jan 18 14:54:46 2022]
+Finished job 112.
+40 of 181 steps (22%) done
+Select jobs to execute...
+
+[Tue Jan 18 14:54:46 2022]
+rule MergeVCFs:
+    input: results/ImputeRP_RP_Chr12.vcf.gz, results/ImputeNRP_NRP_Chr12.vcf.gz
+    output: results/MergeVCFs_RP_NRP_Chr12.vcf.gz
+    jobid: 132
+    wildcards: chr=12
+
+Submitted job 132 with external jobid 'Submitted batch job 24080282'.
+[Tue Jan 18 15:03:02 2022]
+Finished job 132.
+41 of 181 steps (23%) done
+Select jobs to execute...
+
+[Tue Jan 18 15:03:02 2022]
+rule SNPEff:
+    input: results/MergeVCFs_RP_NRP_Chr12.vcf.gz, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.config, /scratch/nad7wf/miniconda/pkgs/snpsift-4.3.1t-hdfd78af_3/share/snpsift-4.3.1t-3/SnpSift.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/scripts/vcfEffOnePerLine.pl
+    output: results/SNPEff_Ann_RP_NRP_Chr12.txt.gz
+    jobid: 152
+    wildcards: chr=12
+    resources: memory=30G
+
+Submitted job 152 with external jobid 'Submitted batch job 24080300'.
+Removing temporary output file results/beagle/ImputeRP_RP_Chr13.
+[Tue Jan 18 15:19:00 2022]
+Finished job 93.
+42 of 181 steps (23%) done
+Select jobs to execute...
+
+[Tue Jan 18 15:19:00 2022]
+rule ImputeNRP:
+    input: results/Preformat_NRP_Chr13.vcf.gz, results/ImputeRP_RP_Chr13.vcf.gz
+    output: results/ImputeNRP_NRP_Chr13.vcf.gz, results/beagle/ImputeNRP_NRP_Chr13
+    jobid: 113
+    wildcards: chr=13
+    resources: memory=93, threads=15
+
+Submitted job 113 with external jobid 'Submitted batch job 24080320'.
+[Tue Jan 18 15:25:04 2022]
+Finished job 152.
+43 of 181 steps (24%) done
+Select jobs to execute...
+
+[Tue Jan 18 15:25:04 2022]
+rule AlleleAtlas:
+    input: results/MergeVCFs_RP_NRP_Chr12.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr12.txt.gz, resources/gff/Chr12.gff.gz, rules/custom/scripts/generate_allele_atlas.py
+    output: results/AlleleAtlas_RP_NRP_Chr12.txt.gz, results/Bottleneck_genes_RP_NRP_Chr12.txt.gz, results/Housekeeping_genes_RP_NRP_Chr12.txt.gz
+    jobid: 172
+    wildcards: RP_id=RP, NRP_id=NRP, chr=12
+
+Submitted job 172 with external jobid 'Submitted batch job 24080323'.
+Removing temporary output file results/beagle/ImputeNRP_NRP_Chr17.
+[Tue Jan 18 15:38:17 2022]
+Finished job 117.
+44 of 181 steps (24%) done
+Select jobs to execute...
+
+[Tue Jan 18 15:38:17 2022]
+rule MergeVCFs:
+    input: results/ImputeRP_RP_Chr17.vcf.gz, results/ImputeNRP_NRP_Chr17.vcf.gz
+    output: results/MergeVCFs_RP_NRP_Chr17.vcf.gz
+    jobid: 137
+    wildcards: chr=17
+
+Submitted job 137 with external jobid 'Submitted batch job 24080337'.
+Removing temporary output file results/beagle/ImputeRP_RP_Chr02.
+[Tue Jan 18 15:42:41 2022]
+Finished job 82.
+45 of 181 steps (25%) done
+Select jobs to execute...
+
+[Tue Jan 18 15:42:41 2022]
+rule ImputeNRP:
+    input: results/Preformat_NRP_Chr02.vcf.gz, results/ImputeRP_RP_Chr02.vcf.gz
+    output: results/ImputeNRP_NRP_Chr02.vcf.gz, results/beagle/ImputeNRP_NRP_Chr02
+    jobid: 102
+    wildcards: chr=02
+    resources: memory=93, threads=15
+
+Submitted job 102 with external jobid 'Submitted batch job 24080347'.
+[Tue Jan 18 15:47:06 2022]
+Finished job 137.
+46 of 181 steps (25%) done
+Select jobs to execute...
+
+[Tue Jan 18 15:47:06 2022]
+rule SNPEff:
+    input: results/MergeVCFs_RP_NRP_Chr17.vcf.gz, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.config, /scratch/nad7wf/miniconda/pkgs/snpsift-4.3.1t-hdfd78af_3/share/snpsift-4.3.1t-3/SnpSift.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/scripts/vcfEffOnePerLine.pl
+    output: results/SNPEff_Ann_RP_NRP_Chr17.txt.gz
+    jobid: 157
+    wildcards: chr=17
+    resources: memory=30G
+
+Submitted job 157 with external jobid 'Submitted batch job 24080350'.
+[Tue Jan 18 15:47:07 2022]
+Finished job 172.
+47 of 181 steps (26%) done
+Select jobs to execute...
+
+[Tue Jan 18 15:47:07 2022]
+rule SubsetUS:
+    input: results/AlleleAtlas_RP_NRP_Chr12.txt.gz
+    output: results/SubsetUS_RP_NRP_Chr12.txt.gz
+    jobid: 192
+    wildcards: RP_id=RP, NRP_id=NRP, chr=12
+
+Submitted job 192 with external jobid 'Submitted batch job 24080351'.
+Removing temporary output file results/beagle/ImputeRP_RP_Chr07.
+[Tue Jan 18 15:47:28 2022]
+Finished job 87.
+48 of 181 steps (27%) done
+Select jobs to execute...
+
+[Tue Jan 18 15:47:28 2022]
+rule ImputeNRP:
+    input: results/Preformat_NRP_Chr07.vcf.gz, results/ImputeRP_RP_Chr07.vcf.gz
+    output: results/ImputeNRP_NRP_Chr07.vcf.gz, results/beagle/ImputeNRP_NRP_Chr07
+    jobid: 107
+    wildcards: chr=07
+    resources: memory=93, threads=15
+
+Submitted job 107 with external jobid 'Submitted batch job 24080352'.
+[Tue Jan 18 15:48:02 2022]
+Finished job 192.
+49 of 181 steps (27%) done
+Removing temporary output file results/beagle/ImputeNRP_NRP_Chr08.
+[Tue Jan 18 15:54:27 2022]
+Finished job 108.
+50 of 181 steps (28%) done
+Select jobs to execute...
+
+[Tue Jan 18 15:54:27 2022]
+rule MergeVCFs:
+    input: results/ImputeRP_RP_Chr08.vcf.gz, results/ImputeNRP_NRP_Chr08.vcf.gz
+    output: results/MergeVCFs_RP_NRP_Chr08.vcf.gz
+    jobid: 128
+    wildcards: chr=08
+
+Submitted job 128 with external jobid 'Submitted batch job 24080361'.
+[Tue Jan 18 16:04:11 2022]
+Finished job 128.
+51 of 181 steps (28%) done
+Select jobs to execute...
+Removing temporary output file results/beagle/ImputeRP_RP_Chr16.
+[Tue Jan 18 16:04:11 2022]
+Finished job 96.
+52 of 181 steps (29%) done
+
+[Tue Jan 18 16:04:11 2022]
+rule SNPEff:
+    input: results/MergeVCFs_RP_NRP_Chr08.vcf.gz, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.config, /scratch/nad7wf/miniconda/pkgs/snpsift-4.3.1t-hdfd78af_3/share/snpsift-4.3.1t-3/SnpSift.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/scripts/vcfEffOnePerLine.pl
+    output: results/SNPEff_Ann_RP_NRP_Chr08.txt.gz
+    jobid: 148
+    wildcards: chr=08
+    resources: memory=30G
+
+Submitted job 148 with external jobid 'Submitted batch job 24080377'.
+Select jobs to execute...
+
+[Tue Jan 18 16:04:11 2022]
+rule ImputeNRP:
+    input: results/Preformat_NRP_Chr16.vcf.gz, results/ImputeRP_RP_Chr16.vcf.gz
+    output: results/ImputeNRP_NRP_Chr16.vcf.gz, results/beagle/ImputeNRP_NRP_Chr16
+    jobid: 116
+    wildcards: chr=16
+    resources: memory=93, threads=15
+
+Submitted job 116 with external jobid 'Submitted batch job 24080378'.
+[Tue Jan 18 16:10:03 2022]
+Finished job 157.
+53 of 181 steps (29%) done
+Select jobs to execute...
+
+[Tue Jan 18 16:10:03 2022]
+rule AlleleAtlas:
+    input: results/MergeVCFs_RP_NRP_Chr17.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr17.txt.gz, resources/gff/Chr17.gff.gz, rules/custom/scripts/generate_allele_atlas.py
+    output: results/AlleleAtlas_RP_NRP_Chr17.txt.gz, results/Bottleneck_genes_RP_NRP_Chr17.txt.gz, results/Housekeeping_genes_RP_NRP_Chr17.txt.gz
+    jobid: 177
+    wildcards: RP_id=RP, NRP_id=NRP, chr=17
+
+Submitted job 177 with external jobid 'Submitted batch job 24080386'.
+[Tue Jan 18 16:29:31 2022]
+Finished job 148.
+54 of 181 steps (30%) done
+Select jobs to execute...
+
+[Tue Jan 18 16:29:31 2022]
+rule AlleleAtlas:
+    input: results/MergeVCFs_RP_NRP_Chr08.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr08.txt.gz, resources/gff/Chr08.gff.gz, rules/custom/scripts/generate_allele_atlas.py
+    output: results/AlleleAtlas_RP_NRP_Chr08.txt.gz, results/Bottleneck_genes_RP_NRP_Chr08.txt.gz, results/Housekeeping_genes_RP_NRP_Chr08.txt.gz
+    jobid: 168
+    wildcards: RP_id=RP, NRP_id=NRP, chr=08
+
+Submitted job 168 with external jobid 'Submitted batch job 24080567'.
+[Tue Jan 18 16:32:39 2022]
+Finished job 177.
+55 of 181 steps (30%) done
+Select jobs to execute...
+
+[Tue Jan 18 16:32:39 2022]
+rule SubsetUS:
+    input: results/AlleleAtlas_RP_NRP_Chr17.txt.gz
+    output: results/SubsetUS_RP_NRP_Chr17.txt.gz
+    jobid: 197
+    wildcards: RP_id=RP, NRP_id=NRP, chr=17
+
+Submitted job 197 with external jobid 'Submitted batch job 24080572'.
+[Tue Jan 18 16:33:34 2022]
+Finished job 197.
+56 of 181 steps (31%) done
+Removing temporary output file results/beagle/ImputeNRP_NRP_Chr13.
+[Tue Jan 18 16:37:47 2022]
+Finished job 113.
+57 of 181 steps (31%) done
+Select jobs to execute...
+
+[Tue Jan 18 16:37:47 2022]
+rule MergeVCFs:
+    input: results/ImputeRP_RP_Chr13.vcf.gz, results/ImputeNRP_NRP_Chr13.vcf.gz
+    output: results/MergeVCFs_RP_NRP_Chr13.vcf.gz
+    jobid: 133
+    wildcards: chr=13
+
+Submitted job 133 with external jobid 'Submitted batch job 24080585'.
+[Tue Jan 18 16:47:42 2022]
+Finished job 133.
+58 of 181 steps (32%) done
+Select jobs to execute...
+
+[Tue Jan 18 16:47:42 2022]
+rule SNPEff:
+    input: results/MergeVCFs_RP_NRP_Chr13.vcf.gz, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.config, /scratch/nad7wf/miniconda/pkgs/snpsift-4.3.1t-hdfd78af_3/share/snpsift-4.3.1t-3/SnpSift.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/scripts/vcfEffOnePerLine.pl
+    output: results/SNPEff_Ann_RP_NRP_Chr13.txt.gz
+    jobid: 153
+    wildcards: chr=13
+    resources: memory=30G
+
+Submitted job 153 with external jobid 'Submitted batch job 24080599'.
+[Tue Jan 18 17:01:51 2022]
+Finished job 168.
+59 of 181 steps (33%) done
+Select jobs to execute...
+
+[Tue Jan 18 17:01:51 2022]
+rule SubsetUS:
+    input: results/AlleleAtlas_RP_NRP_Chr08.txt.gz
+    output: results/SubsetUS_RP_NRP_Chr08.txt.gz
+    jobid: 188
+    wildcards: RP_id=RP, NRP_id=NRP, chr=08
+
+Submitted job 188 with external jobid 'Submitted batch job 24080616'.
+[Tue Jan 18 17:03:08 2022]
+Finished job 188.
+60 of 181 steps (33%) done
+Removing temporary output file results/beagle/ImputeNRP_NRP_Chr02.
+[Tue Jan 18 17:03:41 2022]
+Finished job 102.
+61 of 181 steps (34%) done
+Select jobs to execute...
+
+[Tue Jan 18 17:03:41 2022]
+rule MergeVCFs:
+    input: results/ImputeRP_RP_Chr02.vcf.gz, results/ImputeNRP_NRP_Chr02.vcf.gz
+    output: results/MergeVCFs_RP_NRP_Chr02.vcf.gz
+    jobid: 122
+    wildcards: chr=02
+
+Submitted job 122 with external jobid 'Submitted batch job 24080618'.
+[Tue Jan 18 17:13:03 2022]
+Finished job 122.
+62 of 181 steps (34%) done
+Select jobs to execute...
+
+[Tue Jan 18 17:13:03 2022]
+rule SNPEff:
+    input: results/MergeVCFs_RP_NRP_Chr02.vcf.gz, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.config, /scratch/nad7wf/miniconda/pkgs/snpsift-4.3.1t-hdfd78af_3/share/snpsift-4.3.1t-3/SnpSift.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/scripts/vcfEffOnePerLine.pl
+    output: results/SNPEff_Ann_RP_NRP_Chr02.txt.gz
+    jobid: 142
+    wildcards: chr=02
+    resources: memory=30G
+
+Submitted job 142 with external jobid 'Submitted batch job 24080629'.
+[Tue Jan 18 17:13:25 2022]
+Finished job 153.
+63 of 181 steps (35%) done
+Select jobs to execute...
+
+[Tue Jan 18 17:13:25 2022]
+rule AlleleAtlas:
+    input: results/MergeVCFs_RP_NRP_Chr13.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr13.txt.gz, resources/gff/Chr13.gff.gz, rules/custom/scripts/generate_allele_atlas.py
+    output: results/AlleleAtlas_RP_NRP_Chr13.txt.gz, results/Bottleneck_genes_RP_NRP_Chr13.txt.gz, results/Housekeeping_genes_RP_NRP_Chr13.txt.gz
+    jobid: 173
+    wildcards: RP_id=RP, NRP_id=NRP, chr=13
+
+Submitted job 173 with external jobid 'Submitted batch job 24080630'.
+Removing temporary output file results/beagle/ImputeNRP_NRP_Chr07.
+[Tue Jan 18 17:15:15 2022]
+Finished job 107.
+64 of 181 steps (35%) done
+Select jobs to execute...
+
+[Tue Jan 18 17:15:15 2022]
+rule MergeVCFs:
+    input: results/ImputeRP_RP_Chr07.vcf.gz, results/ImputeNRP_NRP_Chr07.vcf.gz
+    output: results/MergeVCFs_RP_NRP_Chr07.vcf.gz
+    jobid: 127
+    wildcards: chr=07
+
+Submitted job 127 with external jobid 'Submitted batch job 24080631'.
+[Tue Jan 18 17:24:59 2022]
+Finished job 127.
+65 of 181 steps (36%) done
+Select jobs to execute...
+
+[Tue Jan 18 17:24:59 2022]
+rule SNPEff:
+    input: results/MergeVCFs_RP_NRP_Chr07.vcf.gz, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.config, /scratch/nad7wf/miniconda/pkgs/snpsift-4.3.1t-hdfd78af_3/share/snpsift-4.3.1t-3/SnpSift.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/scripts/vcfEffOnePerLine.pl
+    output: results/SNPEff_Ann_RP_NRP_Chr07.txt.gz
+    jobid: 147
+    wildcards: chr=07
+    resources: memory=30G
+
+Submitted job 147 with external jobid 'Submitted batch job 24080645'.
+[Tue Jan 18 17:37:39 2022]
+Finished job 142.
+66 of 181 steps (36%) done
+Select jobs to execute...
+
+[Tue Jan 18 17:37:39 2022]
+rule AlleleAtlas:
+    input: results/MergeVCFs_RP_NRP_Chr02.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr02.txt.gz, resources/gff/Chr02.gff.gz, rules/custom/scripts/generate_allele_atlas.py
+    output: results/AlleleAtlas_RP_NRP_Chr02.txt.gz, results/Bottleneck_genes_RP_NRP_Chr02.txt.gz, results/Housekeeping_genes_RP_NRP_Chr02.txt.gz
+    jobid: 162
+    wildcards: RP_id=RP, NRP_id=NRP, chr=02
+
+Submitted job 162 with external jobid 'Submitted batch job 24080672'.
+[Tue Jan 18 17:45:11 2022]
+Finished job 173.
+67 of 181 steps (37%) done
+Select jobs to execute...
+
+[Tue Jan 18 17:45:11 2022]
+rule SubsetUS:
+    input: results/AlleleAtlas_RP_NRP_Chr13.txt.gz
+    output: results/SubsetUS_RP_NRP_Chr13.txt.gz
+    jobid: 193
+    wildcards: RP_id=RP, NRP_id=NRP, chr=13
+
+Submitted job 193 with external jobid 'Submitted batch job 24080684'.
+[Tue Jan 18 17:46:50 2022]
+Finished job 193.
+68 of 181 steps (38%) done
+[Tue Jan 18 17:51:04 2022]
+Finished job 147.
+69 of 181 steps (38%) done
+Select jobs to execute...
+
+[Tue Jan 18 17:51:04 2022]
+rule AlleleAtlas:
+    input: results/MergeVCFs_RP_NRP_Chr07.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr07.txt.gz, resources/gff/Chr07.gff.gz, rules/custom/scripts/generate_allele_atlas.py
+    output: results/AlleleAtlas_RP_NRP_Chr07.txt.gz, results/Bottleneck_genes_RP_NRP_Chr07.txt.gz, results/Housekeeping_genes_RP_NRP_Chr07.txt.gz
+    jobid: 167
+    wildcards: RP_id=RP, NRP_id=NRP, chr=07
+
+Submitted job 167 with external jobid 'Submitted batch job 24080688'.
+[Tue Jan 18 18:04:39 2022]
+Finished job 162.
+70 of 181 steps (39%) done
+Select jobs to execute...
+
+[Tue Jan 18 18:04:39 2022]
+rule SubsetUS:
+    input: results/AlleleAtlas_RP_NRP_Chr02.txt.gz
+    output: results/SubsetUS_RP_NRP_Chr02.txt.gz
+    jobid: 182
+    wildcards: RP_id=RP, NRP_id=NRP, chr=02
+
+Submitted job 182 with external jobid 'Submitted batch job 24080710'.
+[Tue Jan 18 18:05:56 2022]
+Finished job 182.
+71 of 181 steps (39%) done
+[Tue Jan 18 18:17:41 2022]
+Finished job 167.
+72 of 181 steps (40%) done
+Select jobs to execute...
+
+[Tue Jan 18 18:17:41 2022]
+rule SubsetUS:
+    input: results/AlleleAtlas_RP_NRP_Chr07.txt.gz
+    output: results/SubsetUS_RP_NRP_Chr07.txt.gz
+    jobid: 187
+    wildcards: RP_id=RP, NRP_id=NRP, chr=07
+
+Submitted job 187 with external jobid 'Submitted batch job 24080717'.
+[Tue Jan 18 18:18:47 2022]
+Finished job 187.
+73 of 181 steps (40%) done
+Removing temporary output file results/beagle/ImputeNRP_NRP_Chr16.
+[Tue Jan 18 18:51:39 2022]
+Finished job 116.
+74 of 181 steps (41%) done
+Select jobs to execute...
+
+[Tue Jan 18 18:51:39 2022]
+rule MergeVCFs:
+    input: results/ImputeRP_RP_Chr16.vcf.gz, results/ImputeNRP_NRP_Chr16.vcf.gz
+    output: results/MergeVCFs_RP_NRP_Chr16.vcf.gz
+    jobid: 136
+    wildcards: chr=16
+
+Submitted job 136 with external jobid 'Submitted batch job 24080796'.
+[Tue Jan 18 19:02:07 2022]
+Finished job 136.
+75 of 181 steps (41%) done
+Select jobs to execute...
+
+[Tue Jan 18 19:02:07 2022]
+rule SNPEff:
+    input: results/MergeVCFs_RP_NRP_Chr16.vcf.gz, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.config, /scratch/nad7wf/miniconda/pkgs/snpsift-4.3.1t-hdfd78af_3/share/snpsift-4.3.1t-3/SnpSift.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/scripts/vcfEffOnePerLine.pl
+    output: results/SNPEff_Ann_RP_NRP_Chr16.txt.gz
+    jobid: 156
+    wildcards: chr=16
+    resources: memory=30G
+
+Submitted job 156 with external jobid 'Submitted batch job 24080810'.
+[Tue Jan 18 19:29:51 2022]
+Finished job 156.
+76 of 181 steps (42%) done
+Select jobs to execute...
+
+[Tue Jan 18 19:29:51 2022]
+rule AlleleAtlas:
+    input: results/MergeVCFs_RP_NRP_Chr16.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr16.txt.gz, resources/gff/Chr16.gff.gz, rules/custom/scripts/generate_allele_atlas.py
+    output: results/AlleleAtlas_RP_NRP_Chr16.txt.gz, results/Bottleneck_genes_RP_NRP_Chr16.txt.gz, results/Housekeeping_genes_RP_NRP_Chr16.txt.gz
+    jobid: 176
+    wildcards: RP_id=RP, NRP_id=NRP, chr=16
+
+Submitted job 176 with external jobid 'Submitted batch job 24080839'.
+[Tue Jan 18 19:59:47 2022]
+Finished job 176.
+77 of 181 steps (43%) done
+Select jobs to execute...
+
+[Tue Jan 18 19:59:47 2022]
+rule SubsetUS:
+    input: results/AlleleAtlas_RP_NRP_Chr16.txt.gz
+    output: results/SubsetUS_RP_NRP_Chr16.txt.gz
+    jobid: 196
+    wildcards: RP_id=RP, NRP_id=NRP, chr=16
+
+Submitted job 196 with external jobid 'Submitted batch job 24080870'.
+[Tue Jan 18 20:01:59 2022]
+Finished job 196.
+78 of 181 steps (43%) done

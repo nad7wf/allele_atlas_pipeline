@@ -1,0 +1,21 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Job counts:
+	count	jobs
+	20	SubsetUS
+	1	all
+	21
+Select jobs to execute...
+
+[Thu Nov  4 11:55:11 2021]
+rule SubsetUS:
+    input: results/AlleleAtlas_RP_NRP_Chr20.txt.gz
+    output: results/SubsetUS_RP_NRP_Chr20.txt.gz
+    jobid: 200
+    wildcards: RP_id=RP, NRP_id=NRP, chr=20
+
+WorkflowError in line 1 of /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/rules/custom/SubsetUS.smk:
+'Wildcards' object has no attribute 'job-name'
+  File "/cluster/software/conda-envs/envs/snakemake-5.3.0/lib/python3.6/site-packages/snakemake/executors/__init__.py", line 135, in run_jobs
+  File "/cluster/software/conda-envs/envs/snakemake-5.3.0/lib/python3.6/site-packages/snakemake/executors/__init__.py", line 966, in run

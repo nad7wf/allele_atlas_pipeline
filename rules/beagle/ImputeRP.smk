@@ -15,7 +15,7 @@ rule ImputeRP:
 		module load bcftools
 		mkdir -p {output.out_tmp_dir}
 
-		java -Xmx{resources.memory}G \
+		java -Xmx{resources.memory} \
 			-Djava.io.tmpdir={output.out_tmp_dir} \
 			-jar {params.jar} \
 			nthreads={resources.threads} \

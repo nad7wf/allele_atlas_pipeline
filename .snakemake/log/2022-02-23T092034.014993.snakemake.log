@@ -1,0 +1,3 @@
+WorkflowError in line 33 of /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/workflow/allele_atlas.smk:
+Failed to open /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/rules/EstimateBlocks.smk.
+  File "/storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/workflow/allele_atlas.smk", line 33, in <module>

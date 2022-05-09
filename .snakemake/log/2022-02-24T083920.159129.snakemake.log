@@ -1,0 +1,4 @@
+Building DAG of jobs...
+MissingInputException in line 9 of /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/workflow/allele_atlas.smk:
+Missing input files for rule all:
+results/Fst_RP_NRP_EliteUSOnly_Chr04.weir.fst

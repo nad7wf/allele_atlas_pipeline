@@ -1,0 +1,44 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Job counts:
+	count	jobs
+	1	Subset
+	4
+Select jobs to execute...
+
+[Wed Feb 23 08:28:36 2022]
+rule Subset:
+    input: results/MergeVCFs_RP_NRP_AllAccessions_Chr04.vcf.gz, resources/EliteUSOnly.txt
+    output: results/MergeVCFs_RP_NRP_EliteUSOnly_Chr04.vcf.gz
+    jobid: 11
+    wildcards: chr=04
+
+Submitted job 11 with external jobid 'Submitted batch job 24251931'.
+[Wed Feb 23 08:28:46 2022]
+Error in rule Subset:
+    jobid: 11
+    output: results/MergeVCFs_RP_NRP_EliteUSOnly_Chr04.vcf.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/b21b0d43
+    shell:
+        
+		### Touch VCF index to avoid 'index is older than file' warning. ###
+		touch results/MergeVCFs_RP_NRP_AllAccessions_Chr04.vcf.gz.tbi
+
+		### Subset VCF file by accession list. ###
+		bcftools view 			-S resources/EliteUSOnly.txt 			--force-samples 			results/MergeVCFs_RP_NRP_AllAccessions_Chr04.vcf.gz | 			### Recode hets as missing data. ###
+                	bcftools filter -S . -e 'GT="het"' -Ou results/MergeVCFs_RP_NRP_AllAccessions_Chr04.vcf.gz resources/EliteUSOnly.txt |                 	### Calculte allele frequency for Alt alleles. ###
+                	bcftools +fill-tags -Ou -- -t AF |                 	### Remove alleles/positions with AF=0 or where there were no Ref allele calls. ###
+                	bcftools view -Q 0.99999 -a -c1 |
+			bgzip -l 9 > results/MergeVCFs_RP_NRP_EliteUSOnly_Chr04.vcf.gz
+
+		### Index VCF file. ###
+		bcftools index --tbi results/MergeVCFs_RP_NRP_EliteUSOnly_Chr04.vcf.gz
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 24251931
+
+Error executing rule Subset on cluster (jobid: 11, external: Submitted batch job 24251931, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.llvx_m82/snakejob.Subset.11.sh). For error details see the cluster log and the log files of the involved rule(s).
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/log/2022-02-23T082835.929947.snakemake.log

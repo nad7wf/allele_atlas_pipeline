@@ -1,0 +1,42 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Job counts:
+	count	jobs
+	1	EstimateBlocks
+	1	Fst
+	1	SNPsOnly
+	6
+Select jobs to execute...
+
+[Wed Feb 23 14:40:17 2022]
+rule SNPsOnly:
+    input: results/MergeVCFs_RP_NRP_EliteUSOnly_Chr04.vcf.gz
+    output: results/SNPsOnly_RP_NRP_EliteUSOnly_Chr04.vcf.gz
+    jobid: 2
+    wildcards: chr=04
+
+Submitted job 2 with external jobid 'Submitted batch job 24253441'.
+[Wed Feb 23 14:41:07 2022]
+Error in rule SNPsOnly:
+    jobid: 2
+    output: results/SNPsOnly_RP_NRP_EliteUSOnly_Chr04.vcf.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/b21b0d43
+    shell:
+        
+		### Touch index file to prevent 'index is older than file' warning. ###
+		touch results/MergeVCFs_RP_NRP_EliteUSOnly_Chr04.vcf.gz.tbi
+
+		### Extract biallelic SNPs only. ###
+		bcftools view 			--min-alleles 2 			--max-alleles 2 			--types snps 			-Ou 			results/MergeVCFs_RP_NRP_EliteUSOnly_Chr04.vcf.gz | 		bcftools annotate 			--set-id 			+'%POS' 			-Ou | 		bgzip -l 9 			> results/SNPsOnly_RP_NRP_EliteUSOnly_Chr04.vcf.gz
+
+		### Index VCF file. ###
+		bcftools index --tbi results/SNPsOnly_RP_NRP_EliteUSOnly_Chr04.vcf.gz
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 24253441
+
+Error executing rule SNPsOnly on cluster (jobid: 2, external: Submitted batch job 24253441, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.nacp6pps/snakejob.SNPsOnly.2.sh). For error details see the cluster log and the log files of the involved rule(s).
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/log/2022-02-23T144017.796197.snakemake.log

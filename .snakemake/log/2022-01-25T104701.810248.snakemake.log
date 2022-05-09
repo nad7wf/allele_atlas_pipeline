@@ -1,0 +1,278 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Job counts:
+	count	jobs
+	5	AlleleAtlas
+	1	ImputeNRP
+	2	MergeVCFs
+	2	SNPEff
+	10	SubsetUS
+	1	all
+	21
+Select jobs to execute...
+
+[Tue Jan 25 10:47:02 2022]
+rule ImputeNRP:
+    input: results/Preformat_NRP_Chr03.vcf.gz, results/ImputeRP_RP_Chr03.vcf.gz
+    output: results/ImputeNRP_NRP_Chr03.vcf.gz, results/beagle/ImputeNRP_NRP_Chr03
+    jobid: 103
+    wildcards: chr=03
+    resources: memory=100G, threads=15
+
+Submitted job 103 with external jobid 'Submitted batch job 24100137'.
+
+[Tue Jan 25 10:47:02 2022]
+rule SubsetUS:
+    input: results/AlleleAtlas_RP_NRP_Chr04.txt.gz
+    output: results/SubsetUS_RP_NRP_Chr04.txt.gz
+    jobid: 184
+    wildcards: RP_id=RP, NRP_id=NRP, chr=04
+
+Submitted job 184 with external jobid 'Submitted batch job 24100138'.
+
+[Tue Jan 25 10:47:03 2022]
+rule SubsetUS:
+    input: results/AlleleAtlas_RP_NRP_Chr19.txt.gz
+    output: results/SubsetUS_RP_NRP_Chr19.txt.gz
+    jobid: 199
+    wildcards: RP_id=RP, NRP_id=NRP, chr=19
+
+Submitted job 199 with external jobid 'Submitted batch job 24100139'.
+
+[Tue Jan 25 10:47:03 2022]
+rule SubsetUS:
+    input: results/AlleleAtlas_RP_NRP_Chr10.txt.gz
+    output: results/SubsetUS_RP_NRP_Chr10.txt.gz
+    jobid: 190
+    wildcards: RP_id=RP, NRP_id=NRP, chr=10
+
+Submitted job 190 with external jobid 'Submitted batch job 24100140'.
+
+[Tue Jan 25 10:47:03 2022]
+rule AlleleAtlas:
+    input: results/MergeVCFs_RP_NRP_Chr15.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr15.txt.gz, resources/gff/Chr15.gff.gz, rules/custom/scripts/generate_allele_atlas.py
+    output: results/AlleleAtlas_RP_NRP_Chr15.txt.gz, results/Bottleneck_genes_RP_NRP_Chr15.txt.gz, results/Housekeeping_genes_RP_NRP_Chr15.txt.gz
+    jobid: 175
+    wildcards: RP_id=RP, NRP_id=NRP, chr=15
+
+Submitted job 175 with external jobid 'Submitted batch job 24100141'.
+
+[Tue Jan 25 10:47:03 2022]
+rule SubsetUS:
+    input: results/AlleleAtlas_RP_NRP_Chr14.txt.gz
+    output: results/SubsetUS_RP_NRP_Chr14.txt.gz
+    jobid: 194
+    wildcards: RP_id=RP, NRP_id=NRP, chr=14
+
+Submitted job 194 with external jobid 'Submitted batch job 24100142'.
+
+[Tue Jan 25 10:47:03 2022]
+rule AlleleAtlas:
+    input: results/MergeVCFs_RP_NRP_Chr06.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr06.txt.gz, resources/gff/Chr06.gff.gz, rules/custom/scripts/generate_allele_atlas.py
+    output: results/AlleleAtlas_RP_NRP_Chr06.txt.gz, results/Bottleneck_genes_RP_NRP_Chr06.txt.gz, results/Housekeeping_genes_RP_NRP_Chr06.txt.gz
+    jobid: 166
+    wildcards: RP_id=RP, NRP_id=NRP, chr=06
+
+Submitted job 166 with external jobid 'Submitted batch job 24100143'.
+
+[Tue Jan 25 10:47:03 2022]
+rule MergeVCFs:
+    input: results/ImputeRP_RP_Chr18.vcf.gz, results/ImputeNRP_NRP_Chr18.vcf.gz
+    output: results/MergeVCFs_RP_NRP_Chr18.vcf.gz
+    jobid: 138
+    wildcards: chr=18
+
+Submitted job 138 with external jobid 'Submitted batch job 24100144'.
+
+[Tue Jan 25 10:47:03 2022]
+rule SubsetUS:
+    input: results/AlleleAtlas_RP_NRP_Chr20.txt.gz
+    output: results/SubsetUS_RP_NRP_Chr20.txt.gz
+    jobid: 200
+    wildcards: RP_id=RP, NRP_id=NRP, chr=20
+
+Submitted job 200 with external jobid 'Submitted batch job 24100145'.
+
+[Tue Jan 25 10:47:03 2022]
+rule AlleleAtlas:
+    input: results/MergeVCFs_RP_NRP_Chr01.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr01.txt.gz, resources/gff/Chr01.gff.gz, rules/custom/scripts/generate_allele_atlas.py
+    output: results/AlleleAtlas_RP_NRP_Chr01.txt.gz, results/Bottleneck_genes_RP_NRP_Chr01.txt.gz, results/Housekeeping_genes_RP_NRP_Chr01.txt.gz
+    jobid: 161
+    wildcards: RP_id=RP, NRP_id=NRP, chr=01
+
+Submitted job 161 with external jobid 'Submitted batch job 24100146'.
+[Tue Jan 25 10:48:07 2022]
+Finished job 184.
+1 of 21 steps (5%) done
+[Tue Jan 25 10:48:08 2022]
+Finished job 199.
+2 of 21 steps (10%) done
+[Tue Jan 25 10:48:08 2022]
+Finished job 190.
+3 of 21 steps (14%) done
+[Tue Jan 25 10:48:08 2022]
+Finished job 200.
+4 of 21 steps (19%) done
+[Tue Jan 25 10:48:18 2022]
+Finished job 194.
+5 of 21 steps (24%) done
+[Tue Jan 25 11:05:01 2022]
+Finished job 138.
+6 of 21 steps (29%) done
+Select jobs to execute...
+
+[Tue Jan 25 11:05:01 2022]
+rule SNPEff:
+    input: results/MergeVCFs_RP_NRP_Chr18.vcf.gz, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.config, /scratch/nad7wf/miniconda/pkgs/snpsift-4.3.1t-hdfd78af_3/share/snpsift-4.3.1t-3/SnpSift.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/scripts/vcfEffOnePerLine.pl
+    output: results/SNPEff_Ann_RP_NRP_Chr18.txt.gz
+    jobid: 158
+    wildcards: chr=18
+    resources: memory=30G
+
+Submitted job 158 with external jobid 'Submitted batch job 24100154'.
+[Tue Jan 25 11:15:02 2022]
+Finished job 161.
+7 of 21 steps (33%) done
+Select jobs to execute...
+
+[Tue Jan 25 11:15:02 2022]
+rule SubsetUS:
+    input: results/AlleleAtlas_RP_NRP_Chr01.txt.gz
+    output: results/SubsetUS_RP_NRP_Chr01.txt.gz
+    jobid: 181
+    wildcards: RP_id=RP, NRP_id=NRP, chr=01
+
+Submitted job 181 with external jobid 'Submitted batch job 24100186'.
+[Tue Jan 25 11:15:53 2022]
+Finished job 181.
+8 of 21 steps (38%) done
+[Tue Jan 25 11:19:13 2022]
+Finished job 166.
+9 of 21 steps (43%) done
+Select jobs to execute...
+
+[Tue Jan 25 11:19:13 2022]
+rule SubsetUS:
+    input: results/AlleleAtlas_RP_NRP_Chr06.txt.gz
+    output: results/SubsetUS_RP_NRP_Chr06.txt.gz
+    jobid: 186
+    wildcards: RP_id=RP, NRP_id=NRP, chr=06
+
+Submitted job 186 with external jobid 'Submitted batch job 24100194'.
+[Tue Jan 25 11:20:04 2022]
+Finished job 175.
+10 of 21 steps (48%) done
+Select jobs to execute...
+
+[Tue Jan 25 11:20:04 2022]
+rule SubsetUS:
+    input: results/AlleleAtlas_RP_NRP_Chr15.txt.gz
+    output: results/SubsetUS_RP_NRP_Chr15.txt.gz
+    jobid: 195
+    wildcards: RP_id=RP, NRP_id=NRP, chr=15
+
+Submitted job 195 with external jobid 'Submitted batch job 24100195'.
+[Tue Jan 25 11:20:24 2022]
+Finished job 186.
+11 of 21 steps (52%) done
+[Tue Jan 25 11:21:24 2022]
+Finished job 195.
+12 of 21 steps (57%) done
+Removing temporary output file results/beagle/ImputeNRP_NRP_Chr03.
+[Tue Jan 25 11:27:25 2022]
+Finished job 103.
+13 of 21 steps (62%) done
+Select jobs to execute...
+
+[Tue Jan 25 11:27:25 2022]
+rule MergeVCFs:
+    input: results/ImputeRP_RP_Chr03.vcf.gz, results/ImputeNRP_NRP_Chr03.vcf.gz
+    output: results/MergeVCFs_RP_NRP_Chr03.vcf.gz
+    jobid: 123
+    wildcards: chr=03
+
+Submitted job 123 with external jobid 'Submitted batch job 24100199'.
+[Tue Jan 25 11:40:26 2022]
+Finished job 123.
+14 of 21 steps (67%) done
+Select jobs to execute...
+
+[Tue Jan 25 11:40:26 2022]
+rule SNPEff:
+    input: results/MergeVCFs_RP_NRP_Chr03.vcf.gz, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.config, /scratch/nad7wf/miniconda/pkgs/snpsift-4.3.1t-hdfd78af_3/share/snpsift-4.3.1t-3/SnpSift.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/scripts/vcfEffOnePerLine.pl
+    output: results/SNPEff_Ann_RP_NRP_Chr03.txt.gz
+    jobid: 143
+    wildcards: chr=03
+    resources: memory=30G
+
+Submitted job 143 with external jobid 'Submitted batch job 24100204'.
+[Tue Jan 25 11:44:56 2022]
+Finished job 158.
+15 of 21 steps (71%) done
+Select jobs to execute...
+
+[Tue Jan 25 11:44:56 2022]
+rule AlleleAtlas:
+    input: results/MergeVCFs_RP_NRP_Chr18.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr18.txt.gz, resources/gff/Chr18.gff.gz, rules/custom/scripts/generate_allele_atlas.py
+    output: results/AlleleAtlas_RP_NRP_Chr18.txt.gz, results/Bottleneck_genes_RP_NRP_Chr18.txt.gz, results/Housekeeping_genes_RP_NRP_Chr18.txt.gz
+    jobid: 178
+    wildcards: RP_id=RP, NRP_id=NRP, chr=18
+
+Submitted job 178 with external jobid 'Submitted batch job 24100206'.
+[Tue Jan 25 12:11:18 2022]
+Finished job 143.
+16 of 21 steps (76%) done
+Select jobs to execute...
+
+[Tue Jan 25 12:11:18 2022]
+rule AlleleAtlas:
+    input: results/MergeVCFs_RP_NRP_Chr03.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr03.txt.gz, resources/gff/Chr03.gff.gz, rules/custom/scripts/generate_allele_atlas.py
+    output: results/AlleleAtlas_RP_NRP_Chr03.txt.gz, results/Bottleneck_genes_RP_NRP_Chr03.txt.gz, results/Housekeeping_genes_RP_NRP_Chr03.txt.gz
+    jobid: 163
+    wildcards: RP_id=RP, NRP_id=NRP, chr=03
+
+Submitted job 163 with external jobid 'Submitted batch job 24100212'.
+[Tue Jan 25 12:26:29 2022]
+Finished job 178.
+17 of 21 steps (81%) done
+Select jobs to execute...
+
+[Tue Jan 25 12:26:29 2022]
+rule SubsetUS:
+    input: results/AlleleAtlas_RP_NRP_Chr18.txt.gz
+    output: results/SubsetUS_RP_NRP_Chr18.txt.gz
+    jobid: 198
+    wildcards: RP_id=RP, NRP_id=NRP, chr=18
+
+Submitted job 198 with external jobid 'Submitted batch job 24100214'.
+[Tue Jan 25 12:28:09 2022]
+Finished job 198.
+18 of 21 steps (86%) done
+[Tue Jan 25 12:37:10 2022]
+Finished job 163.
+19 of 21 steps (90%) done
+Select jobs to execute...
+
+[Tue Jan 25 12:37:10 2022]
+rule SubsetUS:
+    input: results/AlleleAtlas_RP_NRP_Chr03.txt.gz
+    output: results/SubsetUS_RP_NRP_Chr03.txt.gz
+    jobid: 183
+    wildcards: RP_id=RP, NRP_id=NRP, chr=03
+
+Submitted job 183 with external jobid 'Submitted batch job 24100219'.
+[Tue Jan 25 12:38:20 2022]
+Finished job 183.
+20 of 21 steps (95%) done
+Select jobs to execute...
+
+[Tue Jan 25 12:38:20 2022]
+localrule all:
+    input: results/RenameSamples_RP_Chr01.vcf.gz, results/RenameSamples_RP_Chr02.vcf.gz, results/RenameSamples_RP_Chr03.vcf.gz, results/RenameSamples_RP_Chr04.vcf.gz, results/RenameSamples_RP_Chr05.vcf.gz, results/RenameSamples_RP_Chr06.vcf.gz, results/RenameSamples_RP_Chr07.vcf.gz, results/RenameSamples_RP_Chr08.vcf.gz, results/RenameSamples_RP_Chr09.vcf.gz, results/RenameSamples_RP_Chr10.vcf.gz, results/RenameSamples_RP_Chr11.vcf.gz, results/RenameSamples_RP_Chr12.vcf.gz, results/RenameSamples_RP_Chr13.vcf.gz, results/RenameSamples_RP_Chr14.vcf.gz, results/RenameSamples_RP_Chr15.vcf.gz, results/RenameSamples_RP_Chr16.vcf.gz, results/RenameSamples_RP_Chr17.vcf.gz, results/RenameSamples_RP_Chr18.vcf.gz, results/RenameSamples_RP_Chr19.vcf.gz, results/RenameSamples_RP_Chr20.vcf.gz, results/RenameSamples_NRP_Chr01.vcf.gz, results/RenameSamples_NRP_Chr02.vcf.gz, results/RenameSamples_NRP_Chr03.vcf.gz, results/RenameSamples_NRP_Chr04.vcf.gz, results/RenameSamples_NRP_Chr05.vcf.gz, results/RenameSamples_NRP_Chr06.vcf.gz, results/RenameSamples_NRP_Chr07.vcf.gz, results/RenameSamples_NRP_Chr08.vcf.gz, results/RenameSamples_NRP_Chr09.vcf.gz, results/RenameSamples_NRP_Chr10.vcf.gz, results/RenameSamples_NRP_Chr11.vcf.gz, results/RenameSamples_NRP_Chr12.vcf.gz, results/RenameSamples_NRP_Chr13.vcf.gz, results/RenameSamples_NRP_Chr14.vcf.gz, results/RenameSamples_NRP_Chr15.vcf.gz, results/RenameSamples_NRP_Chr16.vcf.gz, results/RenameSamples_NRP_Chr17.vcf.gz, results/RenameSamples_NRP_Chr18.vcf.gz, results/RenameSamples_NRP_Chr19.vcf.gz, results/RenameSamples_NRP_Chr20.vcf.gz, results/Preformat_RP_Chr01.vcf.gz, results/Preformat_RP_Chr02.vcf.gz, results/Preformat_RP_Chr03.vcf.gz, results/Preformat_RP_Chr04.vcf.gz, results/Preformat_RP_Chr05.vcf.gz, results/Preformat_RP_Chr06.vcf.gz, results/Preformat_RP_Chr07.vcf.gz, results/Preformat_RP_Chr08.vcf.gz, results/Preformat_RP_Chr09.vcf.gz, results/Preformat_RP_Chr10.vcf.gz, results/Preformat_RP_Chr11.vcf.gz, results/Preformat_RP_Chr12.vcf.gz, results/Preformat_RP_Chr13.vcf.gz, results/Preformat_RP_Chr14.vcf.gz, results/Preformat_RP_Chr15.vcf.gz, results/Preformat_RP_Chr16.vcf.gz, results/Preformat_RP_Chr17.vcf.gz, results/Preformat_RP_Chr18.vcf.gz, results/Preformat_RP_Chr19.vcf.gz, results/Preformat_RP_Chr20.vcf.gz, results/Preformat_NRP_Chr01.vcf.gz, results/Preformat_NRP_Chr02.vcf.gz, results/Preformat_NRP_Chr03.vcf.gz, results/Preformat_NRP_Chr04.vcf.gz, results/Preformat_NRP_Chr05.vcf.gz, results/Preformat_NRP_Chr06.vcf.gz, results/Preformat_NRP_Chr07.vcf.gz, results/Preformat_NRP_Chr08.vcf.gz, results/Preformat_NRP_Chr09.vcf.gz, results/Preformat_NRP_Chr10.vcf.gz, results/Preformat_NRP_Chr11.vcf.gz, results/Preformat_NRP_Chr12.vcf.gz, results/Preformat_NRP_Chr13.vcf.gz, results/Preformat_NRP_Chr14.vcf.gz, results/Preformat_NRP_Chr15.vcf.gz, results/Preformat_NRP_Chr16.vcf.gz, results/Preformat_NRP_Chr17.vcf.gz, results/Preformat_NRP_Chr18.vcf.gz, results/Preformat_NRP_Chr19.vcf.gz, results/Preformat_NRP_Chr20.vcf.gz, results/ImputeRP_RP_Chr01.vcf.gz, results/ImputeRP_RP_Chr02.vcf.gz, results/ImputeRP_RP_Chr03.vcf.gz, results/ImputeRP_RP_Chr04.vcf.gz, results/ImputeRP_RP_Chr05.vcf.gz, results/ImputeRP_RP_Chr06.vcf.gz, results/ImputeRP_RP_Chr07.vcf.gz, results/ImputeRP_RP_Chr08.vcf.gz, results/ImputeRP_RP_Chr09.vcf.gz, results/ImputeRP_RP_Chr10.vcf.gz, results/ImputeRP_RP_Chr11.vcf.gz, results/ImputeRP_RP_Chr12.vcf.gz, results/ImputeRP_RP_Chr13.vcf.gz, results/ImputeRP_RP_Chr14.vcf.gz, results/ImputeRP_RP_Chr15.vcf.gz, results/ImputeRP_RP_Chr16.vcf.gz, results/ImputeRP_RP_Chr17.vcf.gz, results/ImputeRP_RP_Chr18.vcf.gz, results/ImputeRP_RP_Chr19.vcf.gz, results/ImputeRP_RP_Chr20.vcf.gz, results/ImputeNRP_NRP_Chr01.vcf.gz, results/ImputeNRP_NRP_Chr02.vcf.gz, results/ImputeNRP_NRP_Chr03.vcf.gz, results/ImputeNRP_NRP_Chr04.vcf.gz, results/ImputeNRP_NRP_Chr05.vcf.gz, results/ImputeNRP_NRP_Chr06.vcf.gz, results/ImputeNRP_NRP_Chr07.vcf.gz, results/ImputeNRP_NRP_Chr08.vcf.gz, results/ImputeNRP_NRP_Chr09.vcf.gz, results/ImputeNRP_NRP_Chr10.vcf.gz, results/ImputeNRP_NRP_Chr11.vcf.gz, results/ImputeNRP_NRP_Chr12.vcf.gz, results/ImputeNRP_NRP_Chr13.vcf.gz, results/ImputeNRP_NRP_Chr14.vcf.gz, results/ImputeNRP_NRP_Chr15.vcf.gz, results/ImputeNRP_NRP_Chr16.vcf.gz, results/ImputeNRP_NRP_Chr17.vcf.gz, results/ImputeNRP_NRP_Chr18.vcf.gz, results/ImputeNRP_NRP_Chr19.vcf.gz, results/ImputeNRP_NRP_Chr20.vcf.gz, results/MergeVCFs_RP_NRP_Chr01.vcf.gz, results/MergeVCFs_RP_NRP_Chr02.vcf.gz, results/MergeVCFs_RP_NRP_Chr03.vcf.gz, results/MergeVCFs_RP_NRP_Chr04.vcf.gz, results/MergeVCFs_RP_NRP_Chr05.vcf.gz, results/MergeVCFs_RP_NRP_Chr06.vcf.gz, results/MergeVCFs_RP_NRP_Chr07.vcf.gz, results/MergeVCFs_RP_NRP_Chr08.vcf.gz, results/MergeVCFs_RP_NRP_Chr09.vcf.gz, results/MergeVCFs_RP_NRP_Chr10.vcf.gz, results/MergeVCFs_RP_NRP_Chr11.vcf.gz, results/MergeVCFs_RP_NRP_Chr12.vcf.gz, results/MergeVCFs_RP_NRP_Chr13.vcf.gz, results/MergeVCFs_RP_NRP_Chr14.vcf.gz, results/MergeVCFs_RP_NRP_Chr15.vcf.gz, results/MergeVCFs_RP_NRP_Chr16.vcf.gz, results/MergeVCFs_RP_NRP_Chr17.vcf.gz, results/MergeVCFs_RP_NRP_Chr18.vcf.gz, results/MergeVCFs_RP_NRP_Chr19.vcf.gz, results/MergeVCFs_RP_NRP_Chr20.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr01.txt.gz, results/SNPEff_Ann_RP_NRP_Chr02.txt.gz, results/SNPEff_Ann_RP_NRP_Chr03.txt.gz, results/SNPEff_Ann_RP_NRP_Chr04.txt.gz, results/SNPEff_Ann_RP_NRP_Chr05.txt.gz, results/SNPEff_Ann_RP_NRP_Chr06.txt.gz, results/SNPEff_Ann_RP_NRP_Chr07.txt.gz, results/SNPEff_Ann_RP_NRP_Chr08.txt.gz, results/SNPEff_Ann_RP_NRP_Chr09.txt.gz, results/SNPEff_Ann_RP_NRP_Chr10.txt.gz, results/SNPEff_Ann_RP_NRP_Chr11.txt.gz, results/SNPEff_Ann_RP_NRP_Chr12.txt.gz, results/SNPEff_Ann_RP_NRP_Chr13.txt.gz, results/SNPEff_Ann_RP_NRP_Chr14.txt.gz, results/SNPEff_Ann_RP_NRP_Chr15.txt.gz, results/SNPEff_Ann_RP_NRP_Chr16.txt.gz, results/SNPEff_Ann_RP_NRP_Chr17.txt.gz, results/SNPEff_Ann_RP_NRP_Chr18.txt.gz, results/SNPEff_Ann_RP_NRP_Chr19.txt.gz, results/SNPEff_Ann_RP_NRP_Chr20.txt.gz, results/AlleleAtlas_RP_NRP_Chr01.txt.gz, results/AlleleAtlas_RP_NRP_Chr02.txt.gz, results/AlleleAtlas_RP_NRP_Chr03.txt.gz, results/AlleleAtlas_RP_NRP_Chr04.txt.gz, results/AlleleAtlas_RP_NRP_Chr05.txt.gz, results/AlleleAtlas_RP_NRP_Chr06.txt.gz, results/AlleleAtlas_RP_NRP_Chr07.txt.gz, results/AlleleAtlas_RP_NRP_Chr08.txt.gz, results/AlleleAtlas_RP_NRP_Chr09.txt.gz, results/AlleleAtlas_RP_NRP_Chr10.txt.gz, results/AlleleAtlas_RP_NRP_Chr11.txt.gz, results/AlleleAtlas_RP_NRP_Chr12.txt.gz, results/AlleleAtlas_RP_NRP_Chr13.txt.gz, results/AlleleAtlas_RP_NRP_Chr14.txt.gz, results/AlleleAtlas_RP_NRP_Chr15.txt.gz, results/AlleleAtlas_RP_NRP_Chr16.txt.gz, results/AlleleAtlas_RP_NRP_Chr17.txt.gz, results/AlleleAtlas_RP_NRP_Chr18.txt.gz, results/AlleleAtlas_RP_NRP_Chr19.txt.gz, results/AlleleAtlas_RP_NRP_Chr20.txt.gz, results/Bottleneck_genes_RP_NRP_Chr01.txt.gz, results/Bottleneck_genes_RP_NRP_Chr02.txt.gz, results/Bottleneck_genes_RP_NRP_Chr03.txt.gz, results/Bottleneck_genes_RP_NRP_Chr04.txt.gz, results/Bottleneck_genes_RP_NRP_Chr05.txt.gz, results/Bottleneck_genes_RP_NRP_Chr06.txt.gz, results/Bottleneck_genes_RP_NRP_Chr07.txt.gz, results/Bottleneck_genes_RP_NRP_Chr08.txt.gz, results/Bottleneck_genes_RP_NRP_Chr09.txt.gz, results/Bottleneck_genes_RP_NRP_Chr10.txt.gz, results/Bottleneck_genes_RP_NRP_Chr11.txt.gz, results/Bottleneck_genes_RP_NRP_Chr12.txt.gz, results/Bottleneck_genes_RP_NRP_Chr13.txt.gz, results/Bottleneck_genes_RP_NRP_Chr14.txt.gz, results/Bottleneck_genes_RP_NRP_Chr15.txt.gz, results/Bottleneck_genes_RP_NRP_Chr16.txt.gz, results/Bottleneck_genes_RP_NRP_Chr17.txt.gz, results/Bottleneck_genes_RP_NRP_Chr18.txt.gz, results/Bottleneck_genes_RP_NRP_Chr19.txt.gz, results/Bottleneck_genes_RP_NRP_Chr20.txt.gz, results/Housekeeping_genes_RP_NRP_Chr01.txt.gz, results/Housekeeping_genes_RP_NRP_Chr02.txt.gz, results/Housekeeping_genes_RP_NRP_Chr03.txt.gz, results/Housekeeping_genes_RP_NRP_Chr04.txt.gz, results/Housekeeping_genes_RP_NRP_Chr05.txt.gz, results/Housekeeping_genes_RP_NRP_Chr06.txt.gz, results/Housekeeping_genes_RP_NRP_Chr07.txt.gz, results/Housekeeping_genes_RP_NRP_Chr08.txt.gz, results/Housekeeping_genes_RP_NRP_Chr09.txt.gz, results/Housekeeping_genes_RP_NRP_Chr10.txt.gz, results/Housekeeping_genes_RP_NRP_Chr11.txt.gz, results/Housekeeping_genes_RP_NRP_Chr12.txt.gz, results/Housekeeping_genes_RP_NRP_Chr13.txt.gz, results/Housekeeping_genes_RP_NRP_Chr14.txt.gz, results/Housekeeping_genes_RP_NRP_Chr15.txt.gz, results/Housekeeping_genes_RP_NRP_Chr16.txt.gz, results/Housekeeping_genes_RP_NRP_Chr17.txt.gz, results/Housekeeping_genes_RP_NRP_Chr18.txt.gz, results/Housekeeping_genes_RP_NRP_Chr19.txt.gz, results/Housekeeping_genes_RP_NRP_Chr20.txt.gz, results/SubsetUS_RP_NRP_Chr01.txt.gz, results/SubsetUS_RP_NRP_Chr02.txt.gz, results/SubsetUS_RP_NRP_Chr03.txt.gz, results/SubsetUS_RP_NRP_Chr04.txt.gz, results/SubsetUS_RP_NRP_Chr05.txt.gz, results/SubsetUS_RP_NRP_Chr06.txt.gz, results/SubsetUS_RP_NRP_Chr07.txt.gz, results/SubsetUS_RP_NRP_Chr08.txt.gz, results/SubsetUS_RP_NRP_Chr09.txt.gz, results/SubsetUS_RP_NRP_Chr10.txt.gz, results/SubsetUS_RP_NRP_Chr11.txt.gz, results/SubsetUS_RP_NRP_Chr12.txt.gz, results/SubsetUS_RP_NRP_Chr13.txt.gz, results/SubsetUS_RP_NRP_Chr14.txt.gz, results/SubsetUS_RP_NRP_Chr15.txt.gz, results/SubsetUS_RP_NRP_Chr16.txt.gz, results/SubsetUS_RP_NRP_Chr17.txt.gz, results/SubsetUS_RP_NRP_Chr18.txt.gz, results/SubsetUS_RP_NRP_Chr19.txt.gz, results/SubsetUS_RP_NRP_Chr20.txt.gz
+    jobid: 0
+
+[Tue Jan 25 12:38:20 2022]
+Finished job 0.
+21 of 21 steps (100%) done
+Complete log: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/log/2022-01-25T104701.810248.snakemake.log

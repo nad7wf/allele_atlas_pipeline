@@ -1,0 +1,49 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Job counts:
+	count	jobs
+	1	AlleleAtlas
+	1	SNPEff
+	1	all
+	3
+Select jobs to execute...
+
+[Fri Jul  9 14:50:13 2021]
+rule SNPEff:
+    input: results/MergeVCFs_RP_NRP_Chr06.vcf.gz, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.config, /scratch/nad7wf/miniconda/pkgs/snpsift-4.3.1t-hdfd78af_3/share/snpsift-4.3.1t-3/SnpSift.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/scripts/vcfEffOnePerLine.pl
+    output: results/SNPEff_Ann_RP_NRP_Chr06.txt.gz
+    jobid: 8
+    wildcards: chr=06
+    resources: memory=30G
+
+Submitted job 8 with external jobid 'Submitted batch job 23010469'.
+[Fri Jul  9 15:34:26 2021]
+Finished job 8.
+1 of 3 steps (33%) done
+Select jobs to execute...
+
+[Fri Jul  9 15:34:26 2021]
+rule AlleleAtlas:
+    input: results/MergeVCFs_RP_NRP_Chr06.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr06.txt.gz, resources/Gmax_v2.gff.gz, rules/custom/scripts/generate_allele_atlas.py
+    output: results/AlleleAtlas_RP_NRP_Chr06.txt.gz, results/Bottleneck_genes_RP_NRP_Chr06.txt.gz, results/Housekeeping_genes_RP_NRP_Chr06.txt.gz
+    jobid: 9
+    wildcards: RP_id=RP, NRP_id=NRP, chr=06
+
+Submitted job 9 with external jobid 'Submitted batch job 23011571'.
+[Fri Jul  9 15:45:46 2021]
+Error in rule AlleleAtlas:
+    jobid: 9
+    output: results/AlleleAtlas_RP_NRP_Chr06.txt.gz, results/Bottleneck_genes_RP_NRP_Chr06.txt.gz, results/Housekeeping_genes_RP_NRP_Chr06.txt.gz
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/b21b0d43
+    shell:
+        
+		zgrep -v "^##" results/MergeVCFs_RP_NRP_Chr06.vcf.gz | 			python3 rules/custom/scripts/generate_allele_atlas.py 			--vcf - 			--ann results/SNPEff_Ann_RP_NRP_Chr06.txt.gz 			--gff resources/Gmax_v2.gff.gz 			--bottleneck results/Bottleneck_genes_RP_NRP_Chr06.txt.gz 			--housekeeping results/Housekeeping_genes_RP_NRP_Chr06.txt.gz 			--out results/AlleleAtlas_RP_NRP_Chr06.txt.gz
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 23011571
+
+Error executing rule AlleleAtlas on cluster (jobid: 9, external: Submitted batch job 23011571, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.750clamg/snakejob.AlleleAtlas.9.sh). For error details see the cluster log and the log files of the involved rule(s).
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/log/2021-07-09T145013.632866.snakemake.log

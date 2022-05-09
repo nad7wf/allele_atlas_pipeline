@@ -1,0 +1,17 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Job counts:
+	count	jobs
+	1	RenameSamples
+	11
+Select jobs to execute...
+
+[Sun Feb 13 05:45:47 2022]
+rule RenameSamples:
+    input: resources/RP/RP_Chr04.vcf.gz, resources/RP/RP_sample_name_correspondence_file.txt
+    output: results/RenameSamples_RP_Chr04.vcf.gz
+    jobid: 5
+    wildcards: id=RP, chr=04
+
+Submitted job 5 with external jobid 'Submitted batch job 24196088'.

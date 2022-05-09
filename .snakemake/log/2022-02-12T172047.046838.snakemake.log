@@ -1,0 +1,4 @@
+WildcardError in line 3 of /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/rules/SNPEff/SNPEff.smk:
+No values given for wildcard 'subset'.
+  File "/storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/workflow/allele_atlas.smk", line 30, in <module>
+  File "/storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/rules/SNPEff/SNPEff.smk", line 3, in <module>

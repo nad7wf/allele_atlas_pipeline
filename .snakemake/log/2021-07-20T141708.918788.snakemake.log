@@ -1,0 +1,32 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Job counts:
+	count	jobs
+	1	AlleleAtlas
+	1	all
+	2
+Select jobs to execute...
+
+[Tue Jul 20 14:17:10 2021]
+rule AlleleAtlas:
+    input: results/MergeVCFs_RP_NRP_Chr14.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr14.txt.gz, resources/gff/Chr14.gff.gz, rules/custom/scripts/generate_allele_atlas.py
+    output: results/AlleleAtlas_RP_NRP_Chr14.txt.gz, results/Bottleneck_genes_RP_NRP_Chr14.txt.gz, results/Housekeeping_genes_RP_NRP_Chr14.txt.gz
+    jobid: 9
+    wildcards: RP_id=RP, NRP_id=NRP, chr=14
+
+Submitted job 9 with external jobid 'Submitted batch job 23088817'.
+[Tue Jul 20 14:39:40 2021]
+Finished job 9.
+1 of 2 steps (50%) done
+Select jobs to execute...
+
+[Tue Jul 20 14:39:41 2021]
+localrule all:
+    input: results/RenameSamples_RP_Chr14.vcf.gz, results/RenameSamples_NRP_Chr14.vcf.gz, results/Preformat_RP_Chr14.vcf.gz, results/Preformat_NRP_Chr14.vcf.gz, results/ImputeRP_RP_Chr14.vcf.gz, results/ImputeNRP_NRP_Chr14.vcf.gz, results/MergeVCFs_RP_NRP_Chr14.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr14.txt.gz, results/AlleleAtlas_RP_NRP_Chr14.txt.gz, results/Bottleneck_genes_RP_NRP_Chr14.txt.gz, results/Housekeeping_genes_RP_NRP_Chr14.txt.gz
+    jobid: 0
+
+[Tue Jul 20 14:39:41 2021]
+Finished job 0.
+2 of 2 steps (100%) done
+Complete log: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/log/2021-07-20T141708.918788.snakemake.log

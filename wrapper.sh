@@ -1,8 +1,8 @@
 #!/bin/bash
 
-#SBATCH --partition=Lewis
+#SBATCH --partition=Lewis,hpc5,General
 #SBATCH --mem=500M
-#SBATCH --time=0-10:00
+#SBATCH --time=1-00:00
 #SBATCH --mail-user=nad7wf@mail.missouri.edu
 #SBATCH --mail-type=END,FAIL
 #SBATCH --job-name="Master"

@@ -1,0 +1,47 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Job counts:
+	count	jobs
+	1	AlleleAtlas
+	1	SNPEff
+	1	all
+	3
+Select jobs to execute...
+
+[Wed Aug 18 23:38:15 2021]
+rule SNPEff:
+    input: results/MergeVCFs_RP_NRP_Chr04.vcf.gz, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/snpEff.config, /scratch/nad7wf/miniconda/pkgs/snpsift-4.3.1t-hdfd78af_3/share/snpsift-4.3.1t-3/SnpSift.jar, /scratch/nad7wf/miniconda/pkgs/snpeff-4.3.1t-0/share/snpeff-4.3.1t-0/scripts/vcfEffOnePerLine.pl
+    output: results/SNPEff_Ann_RP_NRP_Chr04.txt.gz
+    jobid: 8
+    wildcards: chr=04
+    resources: memory=30G
+
+Submitted job 8 with external jobid 'Submitted batch job 23206241'.
+[Thu Aug 19 00:18:47 2021]
+Finished job 8.
+1 of 3 steps (33%) done
+Select jobs to execute...
+
+[Thu Aug 19 00:18:47 2021]
+rule AlleleAtlas:
+    input: results/MergeVCFs_RP_NRP_Chr04.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr04.txt.gz, resources/gff/Chr04.gff.gz, rules/custom/scripts/generate_allele_atlas.py
+    output: results/AlleleAtlas_RP_NRP_Chr04.txt.gz, results/Bottleneck_genes_RP_NRP_Chr04.txt.gz, results/Housekeeping_genes_RP_NRP_Chr04.txt.gz
+    jobid: 9
+    wildcards: RP_id=RP, NRP_id=NRP, chr=04
+
+Submitted job 9 with external jobid 'Submitted batch job 23206318'.
+[Thu Aug 19 00:40:38 2021]
+Finished job 9.
+2 of 3 steps (67%) done
+Select jobs to execute...
+
+[Thu Aug 19 00:40:38 2021]
+localrule all:
+    input: results/RenameSamples_RP_Chr04.vcf.gz, results/RenameSamples_NRP_Chr04.vcf.gz, results/Preformat_RP_Chr04.vcf.gz, results/Preformat_NRP_Chr04.vcf.gz, results/ImputeRP_RP_Chr04.vcf.gz, results/ImputeNRP_NRP_Chr04.vcf.gz, results/MergeVCFs_RP_NRP_Chr04.vcf.gz, results/SNPEff_Ann_RP_NRP_Chr04.txt.gz, results/AlleleAtlas_RP_NRP_Chr04.txt.gz, results/Bottleneck_genes_RP_NRP_Chr04.txt.gz, results/Housekeeping_genes_RP_NRP_Chr04.txt.gz
+    jobid: 0
+
+[Thu Aug 19 00:40:38 2021]
+Finished job 0.
+3 of 3 steps (100%) done
+Complete log: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/log/2021-08-18T233814.713921.snakemake.log

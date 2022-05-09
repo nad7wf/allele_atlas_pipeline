@@ -1,0 +1,24 @@
+Building DAG of jobs...
+Creating conda environment envs/pop_analysis.yml...
+Downloading and installing remote packages.
+Environment for envs/pop_analysis.yml created (location: .snakemake/conda/ac755371)
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Job counts:
+	count	jobs
+	1	Fst
+	13
+Select jobs to execute...
+
+[Tue Mar  1 11:14:51 2022]
+rule Fst:
+    input: results/MergeVCFs_RP_NRP_EliteUSOnly_Chr10.vcf.gz, resources/ancestor_only_population_file.txt, resources/elite_only_population_file.txt
+    output: results/Fst_RP_NRP_EliteUSOnly_Chr10.windowed.weir.fst
+    jobid: 43
+    wildcards: chr=10
+
+Submitted job 43 with external jobid 'Submitted batch job 24289055'.
+[Tue Mar  1 11:15:31 2022]
+Finished job 43.
+1 of 13 steps (8%) done
+Complete log: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/log/2022-03-01T110924.906832.snakemake.log

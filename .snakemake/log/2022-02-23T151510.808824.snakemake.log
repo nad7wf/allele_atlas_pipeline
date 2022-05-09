@@ -1,0 +1,34 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Job counts:
+	count	jobs
+	1	Fst
+	4
+Select jobs to execute...
+
+[Wed Feb 23 15:15:10 2022]
+rule Fst:
+    input: results/SNPsOnly_RP_NRP_EliteUSOnly_Chr04.vcf.gz, resources/ancestor_vs_elite_population_file.txt
+    output: results/Fst_RP_NRP_EliteUSOnly_Chr04.fst
+    jobid: 11
+    wildcards: chr=04
+    resources: mem=1G
+
+Submitted job 11 with external jobid 'Submitted batch job 24253468'.
+[Wed Feb 23 15:15:50 2022]
+Error in rule Fst:
+    jobid: 11
+    output: results/Fst_RP_NRP_EliteUSOnly_Chr04.fst
+    conda-env: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/conda/739b9591
+    shell:
+        
+		plink --fst 			--within resources/ancestor_vs_elite_population_file.txt 			--double-id 			--memory 1G 			--vcf results/SNPsOnly_RP_NRP_EliteUSOnly_Chr04.vcf.gz 			--out results/Fst_RP_NRP_EliteUSOnly_Chr04
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 24253468
+
+Error executing rule Fst on cluster (jobid: 11, external: Submitted batch job 24253468, jobscript: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/tmp.i_nc78m6/snakejob.Fst.11.sh). For error details see the cluster log and the log files of the involved rule(s).
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/log/2022-02-23T151510.808824.snakemake.log

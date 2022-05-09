@@ -1,0 +1,7 @@
+Building DAG of jobs...
+WorkflowError:
+Conda env file does not exist: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/rules/plink/../envs/plink.yml
+  File "/cluster/software/conda-envs/envs/snakemake-5.3.0/lib/python3.6/site-packages/snakemake/deployment/conda.py", line 217, in create
+  File "/cluster/software/conda-envs/envs/snakemake-5.3.0/lib/python3.6/site-packages/snakemake/deployment/conda.py", line 98, in hash
+  File "/cluster/software/conda-envs/envs/snakemake-5.3.0/lib/python3.6/site-packages/snakemake/deployment/conda.py", line 83, in content
+  File "/cluster/software/conda-envs/envs/snakemake-5.3.0/lib/python3.6/site-packages/snakemake/deployment/conda.py", line 51, in content

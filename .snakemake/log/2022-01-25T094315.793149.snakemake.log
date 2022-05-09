@@ -1,0 +1,22 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Job counts:
+	count	jobs
+	1	ImputeRP
+	22
+Select jobs to execute...
+
+[Tue Jan 25 09:43:16 2022]
+rule ImputeRP:
+    input: results/Preformat_RP_Chr03.vcf.gz
+    output: results/ImputeRP_RP_Chr03.vcf.gz, results/beagle/ImputeRP_RP_Chr03
+    jobid: 83
+    wildcards: chr=03
+    resources: memory=100G, threads=15
+
+Submitted job 83 with external jobid 'Submitted batch job 24100101'.
+[Tue Jan 25 10:39:10 2022]
+Finished job 83.
+1 of 22 steps (5%) done
+Complete log: /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/.snakemake/log/2022-01-25T094315.793149.snakemake.log

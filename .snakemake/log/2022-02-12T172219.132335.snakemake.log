@@ -1,0 +1,5 @@
+Building DAG of jobs...
+MissingInputException in line 1 of /storage/hpc/group/bilyeu/nad7wf/allele_atlas_pipeline/rules/custom/Subset.smk:
+Missing input files for rule Subset:
+results/accessions.txt
+results/MergeVCFs_RP_NRP_All_Chr04.vcf.gz

@@ -1,0 +1,22 @@
+Building DAG of jobs...
+IncompleteFilesException:
+The files below seem to be incomplete. If you are sure that certain files are not incomplete, mark them as complete with
+
+    snakemake --cleanup-metadata <filenames>
+
+To re-generate the files rerun your command with the --rerun-incomplete flag.
+Incomplete files:
+results/RenameSamples_RP_Chr01.vcf.gz
+results/RenameSamples_RP_Chr03.vcf.gz
+results/RenameSamples_RP_Chr04.vcf.gz
+results/RenameSamples_RP_Chr06.vcf.gz
+results/RenameSamples_RP_Chr10.vcf.gz
+results/RenameSamples_RP_Chr14.vcf.gz
+results/RenameSamples_RP_Chr15.vcf.gz
+results/RenameSamples_RP_Chr18.vcf.gz
+results/RenameSamples_RP_Chr19.vcf.gz
+results/RenameSamples_RP_Chr20.vcf.gz
+results/ImputeRP_RP_Chr05.vcf.gz
+results/beagle/ImputeRP_RP_Chr05
+results/ImputeRP_RP_Chr09.vcf.gz
+results/beagle/ImputeRP_RP_Chr09
